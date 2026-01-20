@@ -24,7 +24,7 @@ MainContainers:{
         position:'absolute',
         width:'100%',
         height:'100%',
-        backgroundImage:"url('../Images/EspaçoRessignificarLetter.png')",
+        backgroundImage:"url('./Images/EspaçoRessignificarLetter.png')",
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
         backgroundSize:'contain',
