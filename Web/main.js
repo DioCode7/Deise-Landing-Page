@@ -1,6 +1,6 @@
 //Imports
 
-import { UmbraRender, UmbraScenes } from "../Umbra/Umbra.js";
+import { UmbraRender, UmbraScenes } from "./Umbra/Umbra.js";
 
 //Variáveis 
 let LandingPageBluePrint = {
