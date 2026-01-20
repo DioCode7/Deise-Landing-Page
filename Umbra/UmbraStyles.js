@@ -34,7 +34,8 @@ export function UmbraApplyStyle(Element,Style,Type,UmbraSync = false){
     
 
     for(let Prop in Style){
-        if(typeof Style[Prop] == 'object'){
+          console.log('Type:',typeof Style[Prop],"Name:",Prop);
+        if(typeof Style[Prop] == 'object' && !Array.isArray(Style[Prop])){
             for(let PlatformProp in Style[Prop]){
               if(Array.isArray(Style[Prop][PlatformProp])){
              ElementDOM.style[Prop] = Style[Prop][UmbraCoreBrute.ClientPlataform()];
@@ -44,8 +45,10 @@ export function UmbraApplyStyle(Element,Style,Type,UmbraSync = false){
             };
         }else{
         if(Array.isArray(Style[Prop])){
-         let Theme = UmbraCoreBrute.UmbraDOM.UiModule.ClientTheme;
-         if(Theme == 'Dark'){
+           
+         let Theme = UmbraCoreBrute.UmbraDOM.UiModule.ClientTheme();
+          
+         if(Theme == 'Dark'){ 
            ElementDOM.style[Prop] = Style[Prop][1];
          }else if(Theme == 'Light'){
              ElementDOM.style[Prop] = Style[Prop][0];
