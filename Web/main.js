@@ -61,7 +61,7 @@ MainContainers:{
         top:'7%',
         left:'50%',
         color:['white','black'],
-        fontSize:{'Mobile':'11px','Pc':'15px'},
+        fontSize:{'Mobile':'8px','Pc':'15px'},
          cursor:'default',
          transform:'translate(-50%,-50%)',
 
