@@ -18,7 +18,7 @@ MainContainers:{
             'rgb(112, 69, 69)'],
         height:{"Mobile":'20%',"Pc":"34%"},
         boxShadow:"0px 6px 6px rgba(0,0,0,0.8)",
-         backgroundImage:"url('./Images/Decoration4.gif')",
+         backgroundImage:{'Pc':"url('./Images/Decoration4.gif')",'Mobile':"url('./Images/Decoration4Mob.gif')"},
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
         backgroundSize:'100%',
