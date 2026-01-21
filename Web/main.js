@@ -145,14 +145,14 @@ MainContainers:{
      Type:'div',
      Style:{
       position:'absolute',
-      left:{'Mobile':'45%','Pc':'75%'},
-      top:{'Mobile':'6%','Pc':'51%'},
+      left:{'Mobile':'60%','Pc':'75%'},
+      top:{'Mobile':'50%','Pc':'51%'},
       backgroundImage:"url('./Images/Decoration6.gif')",
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
         backgroundSize:'contain',
-        width:{'Mobile':'40%','Pc':'40%'},
-        height:{'Mobile':'40%','Pc':'40%'},
+        width:{'Mobile':'45%','Pc':'40%'},
+        height:{'Mobile':'45%','Pc':'40%'},
         zIndex:'5',
         transform:'translate(-50%,-50%)',
         
