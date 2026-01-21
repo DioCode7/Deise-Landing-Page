@@ -172,7 +172,7 @@ MainContainers:{
          'linear-gradient(to bottom, rgb(78, 63, 63),rgba(68, 47, 47, 0.95))'
     ],
     width:'100%',
-     backgroundImage:"url('./Images/Decoration5.gif')",
+     backgroundImage:{'Pc':"url('./Images/Decoration5.gif')",'Mobile':"url('./Images/Decoration5Mob.gif')"},
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
         backgroundSize:'100%',
@@ -204,7 +204,7 @@ MainContainers:{
             left:'50%',
             transform:'translate(-50%,0%)',
             color:['white','white'],
-            fontSize:{'Pc':'50px','Mobile':'25px'},
+            fontSize:{'Pc':'50px','Mobile':'35px'},
              fontFamily: "'Imperial Script', cursive",
             fontWeight: '400',
             fontStyle: 'normal',
