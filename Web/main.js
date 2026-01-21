@@ -87,8 +87,8 @@ MainContainers:{
      Type:'div',
      Style:{
       position:'absolute',
-      left:{'Mobile':'30%','Pc':'34%'},
-      top:{'Mobile':'-5%','Pc':'2%'},
+      left:{'Mobile':'26%','Pc':'34%'},
+      top:{'Mobile':'-2%','Pc':'2%'},
       backgroundImage:"url('./Images/Decoration1.png')",
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
@@ -105,8 +105,8 @@ MainContainers:{
      Type:'div',
      Style:{
       position:'absolute',
-      left:{'Mobile':'45%','Pc':'56%'},
-      top:{'Mobile':'6%','Pc':'6%'},
+      left:{'Mobile':'70%','Pc':'56%'},
+      top:{'Mobile':'2%','Pc':'6%'},
       backgroundImage:"url('./Images/Decoration2.png')",
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
