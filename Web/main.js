@@ -18,6 +18,10 @@ MainContainers:{
             'rgb(112, 69, 69)'],
         height:{"Mobile":'20%',"Pc":"34%"},
         boxShadow:"0px 6px 6px rgba(0,0,0,0.8)",
+         backgroundImage:"url('./Images/Decoration4.gif')",
+        backgroundRepeat:'no-repeat',
+        backgroundPosition:'center',
+        backgroundSize:'100%',
     },
     Childs:{
          HeaderMainLetter:{
@@ -39,8 +43,8 @@ MainContainers:{
     Type:'div',
     Style:{
     position:'absolute',
-    left:'-3%',
-    top:'85%',
+    left:'41%',
+    top:'3%',
     width:'10%',
     height:'10%',
       backgroundImage:"url('./Images/InstagramIcon.png')",
@@ -54,10 +58,12 @@ MainContainers:{
     Type:'div',
     Style:{
         position:'absolute',
-        top:'86%',
-        left:'3%',
+        top:'7%',
+        left:'50%',
         color:['white','black'],
         fontSize:'15px',
+         cursor:'default',
+         transform:'translate(-50%,-50%)',
 
     },
     Text:'@dheisedill'
@@ -76,6 +82,84 @@ MainContainers:{
     height:{'Mobile':'35%','Pc':'120%'},
    },
    Childs:{
+    GeneralDescriptionContainerDecoration1:{
+     Id:'GeneralDescriptionContainerDecoration1',
+     Type:'div',
+     Style:{
+      position:'absolute',
+      left:{'Mobile':'45%','Pc':'34%'},
+      top:{'Mobile':'2%','Pc':'2%'},
+      backgroundImage:"url('./Images/Decoration1.png')",
+        backgroundRepeat:'no-repeat',
+        backgroundPosition:'center',
+        backgroundSize:'contain',
+        width:{'Mobile':'10%','Pc':'10%'},
+        height:{'Mobile':'10%','Pc':'10%'},
+        zIndex:'10',
+        
+
+     },
+    },
+     GeneralDescriptionContainerDecoration2:{
+     Id:'GeneralDescriptionContainerDecoration2',
+     Type:'div',
+     Style:{
+      position:'absolute',
+      left:{'Mobile':'45%','Pc':'56%'},
+      top:{'Mobile':'6%','Pc':'6%'},
+      backgroundImage:"url('./Images/Decoration2.png')",
+        backgroundRepeat:'no-repeat',
+        backgroundPosition:'center',
+        backgroundSize:'contain',
+        width:{'Mobile':'10%','Pc':'10%'},
+        height:{'Mobile':'10%','Pc':'10%'},
+        zIndex:'10',
+        transform:'scale(-1,1) rotate(-40deg)',
+        
+        
+
+     },
+    },
+      GeneralDescriptionContainerDecoration3:{
+     Id:'GeneralDescriptionContainerDecoration3',
+     Type:'div',
+     Style:{
+      position:'absolute',
+      left:{'Mobile':'45%','Pc':'50%'},
+      top:{'Mobile':'6%','Pc':'13%'},
+      backgroundImage:"url('./Images/Decoration3.png')",
+        backgroundRepeat:'no-repeat',
+        backgroundPosition:'center',
+        backgroundSize:'contain',
+        width:{'Mobile':'10%','Pc':'30%'},
+        height:{'Mobile':'10%','Pc':'30%'},
+        zIndex:'10',
+        transform:'translate(-50%,-50%)',
+        
+        
+
+     },
+    },
+      GeneralDescriptionContainerDecoration6:{
+     Id:'GeneralDescriptionContainerDecoration6',
+     Type:'div',
+     Style:{
+      position:'absolute',
+      left:{'Mobile':'45%','Pc':'75%'},
+      top:{'Mobile':'6%','Pc':'51%'},
+      backgroundImage:"url('./Images/Decoration6.gif')",
+        backgroundRepeat:'no-repeat',
+        backgroundPosition:'center',
+        backgroundSize:'contain',
+        width:{'Mobile':'10%','Pc':'40%'},
+        height:{'Mobile':'10%','Pc':'40%'},
+        zIndex:'5',
+        transform:'translate(-50%,-50%)',
+        
+        
+
+     },
+    },
     GeneralDescriptionContainerDeco:{
     Id:"GeneralDescriptionContainerDeco",
     Type:'div',
@@ -88,6 +172,10 @@ MainContainers:{
         'linear-gradient(to right, rgb(151, 103, 103),white)'
     ],
     width:'100%',
+     backgroundImage:"url('./Images/Decoration5.gif')",
+        backgroundRepeat:'no-repeat',
+        backgroundPosition:'center',
+        backgroundSize:'100%',
     borderBottom:['solid 5px black','solid 5px white'],
     height:{'Mobile':'35%','Pc':'70%'},
     },
@@ -121,6 +209,8 @@ MainContainers:{
             fontWeight: '400',
             fontStyle: 'normal',
             textShadow:'2px 4px 10px rgba(255, 72, 0, 0.9)',
+            zIndex:'20',
+            cursor:'default'
 
         },
         Text:'Seja Bem Vindo!'
@@ -130,12 +220,26 @@ MainContainers:{
       Type:'div',
       Style:{
         position:'absolute',
-        border:['solid 1px black','solid 1px white'],
-        width:{'Mobile':'40%','Pc':'27%'},
+        border:['solid 3px black','solid 1px white'],
+        width:{'Mobile':'40%','Pc':'20.5%'},
         height:{'Mobile':'40%','Pc':'40%'},
-        zIndex:2,
+        zIndex:40,
         top:{'Mobile':'5%','Pc':'19%'},
-        left:{'Mobile':'2%','Pc':'2%'},
+        left:{'Mobile':'2%','Pc':'6%'},
+         backgroundImage:"url('./Images/DescImage.jpeg')",
+        backgroundRepeat:'no-repeat',
+        backgroundPosition:'center',
+        backgroundSize:'contain',
+        boxShadow:'10px 10px 40px rgba(0, 0, 0, 0.8)',
+      },
+      Listener:{
+        UmbraHover:{
+          Style:{
+            scale:'1.2',
+            border:'none',
+             cursor:'pointer'
+          }
+        }
       }
     },
     MainDescText:{
@@ -151,6 +255,8 @@ MainContainers:{
        fontFamily: "'Parisienne', cursive",
             fontWeight: '400',
             fontStyle: 'normal',
+            cursor:'default',
+            zIndex:'25',
             
          
       

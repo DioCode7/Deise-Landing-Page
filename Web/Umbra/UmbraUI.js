@@ -1,5 +1,6 @@
 //Imports
 import { UmbraCoreBrute, UmbraNexusBrute } from "./Core.js";
+import { UmbraCore } from "./Umbra.js";
 
 //Variáveis
 
@@ -20,6 +21,8 @@ export let UmbraDOM = {
   Delete:UmbraDeleteComponenent,
   ClearChilds:UmbraClearChilds,
   GetChilds:UmbraGetChilds,
+  ClearOverrides:UmbraClearOverrides,
+
 };
 
 function UmbraClearChilds(Id){
@@ -256,4 +259,8 @@ for(let Trigger in BluePrint.BindingTriggers){
 let BindingContentRender = TriggerBluePrint.BindingContent;
 UmbraMainRender(TriggerBluePrint.Id,BindingContentRender);
 UmbraCoreBrute.UmbraLogic.UmbraBrain[TriggerBluePrint.Id].BindingTriggerStats = true;
+}
+
+function UmbraClearOverrides(ElementId){
+    delete UmbraCoreBrute.UmbraDOM.OverridesStyles[ElementId];
 }

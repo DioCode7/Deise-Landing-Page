@@ -15,6 +15,11 @@ export function UmbraApplyStyle(Element,Style,Type,UmbraSync = false){
     if(!UmbraSync){
     if(Type == "Overrides"){
         RegistUmbraDOM.Overrides(Element,Style);
+        for(let Prop in UmbraCoreBrute.UmbraDOM.OverridesStyles[Element]){
+        if(!UmbraCoreBrute.UmbraDOM.DeclaredStyles?.[Element].Style[Prop]){
+         UmbraCoreBrute.UmbraDOM.DeclaredStyles[Element].Style[Prop] = '';
+        }
+    }
     }
     if(Type == 'Declared'){
         let ParentTree = UmbraSimpleParentTreeMaker(Element);
@@ -32,8 +37,12 @@ export function UmbraApplyStyle(Element,Style,Type,UmbraSync = false){
      ElementDOM = document.getElementById(Element);
     }
     
-
+   Style = structuredClone(UmbraCoreBrute.UmbraDOM.DeclaredStyles[Element].Style);
     for(let Prop in Style){
+        if(UmbraCoreBrute.UmbraDOM.OverridesStyles[Element]?.[Prop]){
+            Style[Prop] = UmbraCoreBrute.UmbraDOM.OverridesStyles[Element][Prop];
+        }
+        
           console.log('Type:',typeof Style[Prop],"Name:",Prop);
         if(typeof Style[Prop] == 'object' && !Array.isArray(Style[Prop])){
             for(let PlatformProp in Style[Prop]){

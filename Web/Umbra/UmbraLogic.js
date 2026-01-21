@@ -1,5 +1,6 @@
 //Imports
 import { UmbraCoreBrute,UmbraNexusBrute} from "./Core.js";
+
 //Variáveis
 export let UmbraListeners = {
 Add:AddNewUmbraListener,
@@ -28,6 +29,18 @@ export function UmbraLogicCore(){
     if(UmbraCoreBrute.UmbraLogic.UmbraListeners[EventTargetId]){
        UmbraVirtualDispatcher(EventTargetId);  
     }
+    });
+    document.addEventListener('mouseover',(event)=>{
+     let EventTargetId = event.target.id;
+     if(UmbraCoreBrute.UmbraLogic.UmbraListeners[EventTargetId]){
+        UmbraMouseEnterDispatcher(EventTargetId);
+     }
+    });
+    document.addEventListener('mouseout',(event)=>{
+     let EventTargetId = event.target.id;
+     if(UmbraCoreBrute.UmbraLogic.UmbraListeners[EventTargetId]){
+        UmbraMouseOutDispatcher(EventTargetId);
+     }
     });
 }
 
@@ -60,6 +73,23 @@ function UmbraVirtualClick(VirtualElementId){
     }else{
         console.warn("Umbra Warn:",VirtualElementId," Is not a valid listener");
     }
+
+}
+
+function UmbraMouseEnterDispatcher(ElementId){
+let ListenerBluePrint = UmbraCoreBrute.UmbraLogic.UmbraListeners[ElementId];
+if(ListenerBluePrint.UmbraHover){
+    UmbraCoreBrute.UmbraDOM.UiModule.UmbraApplyStyle(ElementId,ListenerBluePrint.UmbraHover.Style,'Overrides');
+};
+
+}
+function UmbraMouseOutDispatcher(ElementId){
+let ListenerBluePrint = UmbraCoreBrute.UmbraLogic.UmbraListeners[ElementId];
+if(ListenerBluePrint.UmbraHover){
+   UmbraCoreBrute.UmbraDOM.UiModule.UmbraDOM.ClearOverrides(ElementId);
+ UmbraCoreBrute.UmbraDOM.UiModule.UmbraApplyStyle(ElementId,UmbraCoreBrute.UmbraDOM.DeclaredStyles[ElementId].Style,'Declared');
+   
+};
 
 }
 
