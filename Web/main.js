@@ -145,8 +145,8 @@ MainContainers:{
      Type:'div',
      Style:{
       position:'absolute',
-      left:{'Mobile':'60%','Pc':'75%'},
-      top:{'Mobile':'50%','Pc':'51%'},
+      left:{'Mobile':'70%','Pc':'75%'},
+      top:{'Mobile':'58%','Pc':'51%'},
       backgroundImage:"url('./Images/Decoration6.gif')",
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
