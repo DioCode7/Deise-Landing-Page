@@ -151,8 +151,8 @@ MainContainers:{
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
         backgroundSize:'contain',
-        width:{'Mobile':'10%','Pc':'40%'},
-        height:{'Mobile':'10%','Pc':'40%'},
+        width:{'Mobile':'40%','Pc':'40%'},
+        height:{'Mobile':'40%','Pc':'40%'},
         zIndex:'5',
         transform:'translate(-50%,-50%)',
         
