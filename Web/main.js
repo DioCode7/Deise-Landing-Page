@@ -43,10 +43,10 @@ MainContainers:{
     Type:'div',
     Style:{
     position:'absolute',
-    left:'41%',
+    left:{'Pc':'41%','Mobile':'37%'},,
     top:'3%',
-    width:'10%',
-    height:'10%',
+    width:{'Pc':'10%','Mobile':'6%'},
+    height:{'Pc':'10%','Mobile':'6%'},
       backgroundImage:"url('./Images/InstagramIcon.png')",
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
@@ -61,7 +61,7 @@ MainContainers:{
         top:'7%',
         left:'50%',
         color:['white','black'],
-        fontSize:'15px',
+        fontSize:{'Mobile':'11px','Pc':'15px'},
          cursor:'default',
          transform:'translate(-50%,-50%)',
 
