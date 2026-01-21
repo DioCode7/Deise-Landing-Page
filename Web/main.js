@@ -79,7 +79,7 @@ MainContainers:{
     left:'0%',
     width:'100%',
     border:['solid 1px black','solid 1px white'],
-    height:{'Mobile':'110%','Pc':'120%'},
+    height:{'Mobile':'160%','Pc':'120%'},
    },
    Childs:{
     GeneralDescriptionContainerDecoration1:{
@@ -169,7 +169,7 @@ MainContainers:{
     left:'0%',
     background:[
         'linear-gradient(to bottom, rgb(78, 63, 63),rgba(68, 47, 47, 0.95))',
-        'linear-gradient(to right, rgb(151, 103, 103),white)'
+         'linear-gradient(to bottom, rgb(78, 63, 63),rgba(68, 47, 47, 0.95))'
     ],
     width:'100%',
      backgroundImage:"url('./Images/Decoration5.gif')",
@@ -177,7 +177,7 @@ MainContainers:{
         backgroundPosition:'center',
         backgroundSize:'100%',
     borderBottom:['solid 5px black','solid 5px white'],
-    height:{'Mobile':'35%','Pc':'70%'},
+    height:{'Mobile':'70%','Pc':'70%'},
     },
     },
     GeneralDescriptionContainerDecoRight:{
@@ -222,7 +222,7 @@ MainContainers:{
         position:'absolute',
         border:['solid 3px black','solid 1px white'],
         width:{'Mobile':'40%','Pc':'20.5%'},
-        height:{'Mobile':'40%','Pc':'40%'},
+        height:{'Mobile':'13%','Pc':'40%'},
         zIndex:40,
         top:{'Mobile':'5%','Pc':'19%'},
         left:{'Mobile':'2%','Pc':'6%'},
