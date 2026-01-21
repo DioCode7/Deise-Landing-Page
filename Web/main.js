@@ -224,13 +224,14 @@ MainContainers:{
         width:{'Mobile':'38%','Pc':'20.5%'},
         height:{'Mobile':'24%','Pc':'40%'},
         zIndex:40,
-        top:{'Mobile':'45%','Pc':'19%'},
-        left:{'Mobile':'2%','Pc':'6%'},
+        top:{'Mobile':'42%','Pc':'19%'},
+        left:{'Mobile':'50%','Pc':'6%'},
          backgroundImage:"url('./Images/DescImage.jpeg')",
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
         backgroundSize:'contain',
         boxShadow:'10px 10px 40px rgba(0, 0, 0, 0.8)',
+        transform:{'Mobile':'translate(-50%,0%)','Pc':''},
       },
       Listener:{
         UmbraHover:{
