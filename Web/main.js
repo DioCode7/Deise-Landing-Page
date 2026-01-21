@@ -189,10 +189,10 @@ MainContainers:{
     left:'0%',
     background:[
         'linear-gradient(to right, rgba(78, 63, 63, 0),rgba(78, 63, 63, 0),rgba(78, 63, 63, 0),rgba(78, 63, 63, 0),rgb(255, 255, 255))',
-        'linear-gradient(to right, rgb(151, 103, 103),white)'
+        'linear-gradient(to right, rgba(78, 63, 63, 0),rgba(78, 63, 63, 0),rgba(78, 63, 63, 0),rgba(78, 63, 63, 0),rgb(255, 255, 255))'
     ],
     width:'100%',
-    height:{'Mobile':'35%','Pc':'70%'},
+    height:{'Mobile':'70%','Pc':'70%'},
     },
     },
     WelcomeLetter:{
@@ -203,8 +203,8 @@ MainContainers:{
             top:{'Mobile':'5%','Pc':'5%'},
             left:'50%',
             transform:'translate(-50%,0%)',
-            color:['white','black'],
-            fontSize:'50px',
+            color:['white','white'],
+            fontSize:{'Pc':'50px','Mobile':'25px'},
              fontFamily: "'Imperial Script', cursive",
             fontWeight: '400',
             fontStyle: 'normal',
@@ -221,10 +221,10 @@ MainContainers:{
       Style:{
         position:'absolute',
         border:['solid 3px black','solid 1px white'],
-        width:{'Mobile':'40%','Pc':'20.5%'},
+        width:{'Mobile':'37%','Pc':'20.5%'},
         height:{'Mobile':'13%','Pc':'40%'},
         zIndex:40,
-        top:{'Mobile':'5%','Pc':'19%'},
+        top:{'Mobile':'10%','Pc':'19%'},
         left:{'Mobile':'2%','Pc':'6%'},
          backgroundImage:"url('./Images/DescImage.jpeg')",
         backgroundRepeat:'no-repeat',
