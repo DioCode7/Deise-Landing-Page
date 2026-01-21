@@ -43,7 +43,7 @@ MainContainers:{
     Type:'div',
     Style:{
     position:'absolute',
-    left:{'Pc':'41%','Mobile':'37%'},,
+    left:{'Pc':'41%','Mobile':'37%'},
     top:'3%',
     width:{'Pc':'10%','Mobile':'6%'},
     height:{'Pc':'10%','Mobile':'6%'},
