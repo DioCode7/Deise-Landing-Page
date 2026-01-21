@@ -79,7 +79,7 @@ MainContainers:{
     left:'0%',
     width:'100%',
     border:['solid 1px black','solid 1px white'],
-    height:{'Mobile':'120%','Pc':'120%'},
+    height:{'Mobile':'90%','Pc':'120%'},
    },
    Childs:{
     GeneralDescriptionContainerDecoration1:{
