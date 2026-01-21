@@ -125,8 +125,8 @@ MainContainers:{
      Type:'div',
      Style:{
       position:'absolute',
-      left:{'Mobile':'50%','Pc':'50%'},
-      top:{'Mobile':'10%','Pc':'13%'},
+      left:{'Mobile':'46%','Pc':'50%'},
+      top:{'Mobile':'7%','Pc':'13%'},
       backgroundImage:"url('./Images/Decoration3.png')",
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
