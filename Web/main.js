@@ -75,11 +75,11 @@ MainContainers:{
    Type:'div',
    Style:{
     position:'absolute',
-    top:{"Mobile":'40%',"Pc":"34%"},
+    top:{"Mobile":'20%',"Pc":"34%"},
     left:'0%',
     width:'100%',
     border:['solid 1px black','solid 1px white'],
-    height:{'Mobile':'35%','Pc':'120%'},
+    height:{'Mobile':'110%','Pc':'120%'},
    },
    Childs:{
     GeneralDescriptionContainerDecoration1:{
