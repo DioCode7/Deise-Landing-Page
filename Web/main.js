@@ -221,10 +221,10 @@ MainContainers:{
       Style:{
         position:'absolute',
         border:['solid 3px black','solid 1px white'],
-        width:{'Mobile':'37%','Pc':'20.5%'},
+        width:{'Mobile':'38%','Pc':'20.5%'},
         height:{'Mobile':'24%','Pc':'40%'},
         zIndex:40,
-        top:{'Mobile':'10%','Pc':'19%'},
+        top:{'Mobile':'50%','Pc':'19%'},
         left:{'Mobile':'2%','Pc':'6%'},
          backgroundImage:"url('./Images/DescImage.jpeg')",
         backgroundRepeat:'no-repeat',
@@ -247,7 +247,7 @@ MainContainers:{
     Type:'div',
     Style:{
       position:'absolute',
-      top:{'Mobile':'5%','Pc':'20%'},
+      top:{'Mobile':'14%','Pc':'20%'},
       left:{'Mobile':'2%','Pc':'35%'},
       fontSize:{'Mobile':'15px','Pc':'24px'},
       color:['rgb(255, 255, 255)','rgb(240,240,240)'],
