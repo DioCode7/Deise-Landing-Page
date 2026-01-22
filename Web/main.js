@@ -113,7 +113,7 @@ MainContainers:{
             zIndex:'25',
             top:{'Mobile':'80%','Pc':'82%'},
             position:'absolute',
-            left:{'Mobile':'5%','Pc':'33%'},
+            left:{'Mobile':'30%','Pc':'33%'},
             borderBottom:{'Mobile':['solid 1px black','solid 1px white'],'Pc':['solid 1px black','solid 1px white']}
    },
    Text:'Saiba Mais',
