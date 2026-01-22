@@ -50,15 +50,15 @@ if(ListenerBluePrint.UseFn == true){
     if(ListenerBluePrint.Fn){
      if(Array.isArray(ListenerBluePrint.Fn)){
         for(let i = 0;i<ListenerBluePrint.Fn.length;i++){
-            if(ListenerBluePrint.FnParams[i]){
-             ListenerBluePrint.Fn[i](...ListenerBluePrint.FnParams[i]);
+            if(ListenerBluePrint.FnParams()[i]){
+             ListenerBluePrint.Fn[i](...ListenerBluePrint.FnParams()[i]);
             }else{
                 ListenerBluePrint.Fn[i]();
             }
         }
     }else if(typeof ListenerBluePrint.Fn == 'function'){
      if(ListenerBluePrint.FnParams){
-        ListenerBluePrint.Fn(...ListenerBluePrint.FnParams);
+        ListenerBluePrint.Fn(...ListenerBluePrint.FnParams());
      }else{
         ListenerBluePrint.Fn();
      }

@@ -14,6 +14,7 @@ export let UmbraScenesBrute = {
     Active:ActiveUmbraScene,
     Verify:VerifyUmbraScene,
     TurnOf:TurnOfUmbraScene,
+    Delete:DeleteUmbraScene,
 
 };
 
@@ -96,7 +97,7 @@ function UmbraDeleteComponenent(Id){
     }
 
     if(document.getElementById(Id)){
-        document.getElementById(Id).remove;
+        document.getElementById(Id).remove();
       
     }
 }
@@ -145,6 +146,10 @@ function TurnOfUmbraScene(SceneID){
 
 }
 
+function DeleteUmbraScene(SceneID){
+  delete UmbraCoreBrute.ScenesNexus[SceneID];
+}
+
 function VerifyUmbraScene(SceneID){
     let Bool = false;
 
@@ -179,6 +184,10 @@ export function UmbraMainRender(MainParent,BluePrint){
             else if(typeof BluePrint[Child].Text == 'object'){
             ChildDOM.innerText = BluePrint[Child].Text[UmbraCoreBrute.ClientLanguage()];
             }
+            else if(typeof BluePrint[Child].Text == 'function'){
+           ChildDOM.innerText = BluePrint[Child].Text();
+            }
+            
         }
         if(BluePrint[Child].Style){
           UmbraCoreBrute.UmbraDOM.UiModule.UmbraApplyStyle(ChildDOM.id,BluePrint[Child].Style,"Declared");  
