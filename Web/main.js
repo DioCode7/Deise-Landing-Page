@@ -164,7 +164,7 @@ MainContainers:{
             zIndex:'25',
             top:{'Mobile':'80%','Pc':'82%'},
             position:'absolute',
-            left:{'Mobile':'63%','Pc':'52%'},
+            left:{'Mobile':'59%','Pc':'52%'},
             borderBottom:{'Mobile':['solid 1px black','solid 1px white'],'Pc':['solid 1px black','solid 1px white']}
    },
    Text:'Sobre Mim',
@@ -189,7 +189,7 @@ MainContainers:{
             zIndex:'25',
             top:{'Mobile':'80%','Pc':'82%'},
             position:'absolute',
-            left:{'Mobile':'5%','Pc':'60%'},
+            left:{'Mobile':'66%','Pc':'60%'},
             borderBottom:{'Mobile':['solid 1px black','solid 1px white'],'Pc':['solid 1px black','solid 1px white']}
    },
    Text:'Contato',
