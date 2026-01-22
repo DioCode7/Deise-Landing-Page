@@ -1040,12 +1040,14 @@ MainContainers:{
    Style:{
     position:'absolute',
     left:'0%',
-    top:{'Mobile':'84%','Pc':'121%'},
+    top:{'Mobile':'82%','Pc':'121%'},
     height:{'Mobile':'210%','Pc':'210%'},
     border:'solid 5px black',
     width:'100%',
     zIndex:'10',
-     backgroundImage:["url('./Images/GradientMinimalistLight.png')","url('./Images/GradientMinimalistDark.png')"],
+     backgroundImage:{'Pc':
+      ["url('./Images/GradientMinimalistLight.png')","url('./Images/GradientMinimalistDark.png')"],
+      'Mobile':["url('./Images/GradientMinimalistLightMobile.png')","url('./Images/GradientMinimalistDarkMobile.png')"]},
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
         backgroundSize:'cover',
