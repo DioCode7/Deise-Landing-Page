@@ -13,8 +13,8 @@ MainContainers:{
     Type:'div',
     Style:{
       position:'fixed',
-      width:{'Mobile':'20%','Pc':'14%'},
-      height:{'Mobile':'20%','Pc':'14%'},
+      width:{'Mobile':'12%','Pc':'14%'},
+      height:{'Mobile':'12%','Pc':'14%'},
       backgroundImage:"url('./Images/EspaçoRessignificarLogo.png')",
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
@@ -22,8 +22,8 @@ MainContainers:{
         pointerEvents:'none',
         borderRadius:'100px',
         zIndex:'500',
-        top:'3%',
-        left:'-4%'
+        top:'1.5%',
+        left:'0%'
 
     }
   },
