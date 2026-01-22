@@ -65,6 +65,7 @@ MainContainers:{
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
         backgroundSize:'contain',
+        pointerEvents:'none',
     },
 
   },
@@ -468,6 +469,7 @@ MainContainers:{
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
         backgroundSize:'contain',
+        pointerEvents:'none',
     },
 
   },
