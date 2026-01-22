@@ -1040,7 +1040,7 @@ MainContainers:{
    Style:{
     position:'absolute',
     left:'0%',
-    top:{'Mobile':'100%','Pc':'121%'},
+    top:{'Mobile':'84%','Pc':'121%'},
     height:{'Mobile':'210%','Pc':'210%'},
     border:'solid 5px black',
     width:'100%',
