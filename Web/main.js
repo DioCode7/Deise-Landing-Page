@@ -1040,9 +1040,8 @@ MainContainers:{
    Style:{
     position:'absolute',
     left:'0%',
-    top:{'Mobile':'82%','Pc':'121%'},
+    top:{'Mobile':'81%','Pc':'121%'},
     height:{'Mobile':'210%','Pc':'210%'},
-    border:'solid 5px black',
     width:'100%',
     zIndex:'10',
      backgroundImage:{'Pc':
