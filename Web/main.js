@@ -724,9 +724,9 @@ MainContainers:{
             fontStyle: 'normal',
             cursor:'default',
             zIndex:'25',
-            top:{'Mobile':'80%','Pc':'82%'},
+            top:{'Mobile':'86%','Pc':'82%'},
             position:'absolute',
-            left:{'Mobile':'39%','Pc':'17.5%'},
+            left:{'Mobile':'46%','Pc':'17.5%'},
            // borderBottom://{'Mobile':['solid 1px black','solid 1px white'],'Pc':['solid 1px black','solid 1px white']}
    },
    Text:'Sobre Mim',
@@ -751,7 +751,7 @@ MainContainers:{
             zIndex:'25',
             top:{'Mobile':'86%','Pc':'82%'},
             position:'absolute',
-            left:{'Mobile':'62%','Pc':'24%'},
+            left:{'Mobile':'66%','Pc':'24%'},
             //borderBottom://{'Mobile':['solid 1px black','solid 1px white'],'Pc':['solid 1px black','solid 1px white']}
    },
    Text:'Agende Sua Consulta',
