@@ -515,7 +515,7 @@ MainContainers:{
             zIndex:'25',
             top:{'Mobile':'80%','Pc':'82%'},
             position:'absolute',
-            left:{'Mobile':'5%','Pc':'2%'},
+            left:{'Mobile':'3%','Pc':'2%'},
             borderBottom:{'Mobile':['solid 1px black','solid 1px white'],'Pc':['solid 1px black','solid 1px white']}
    },
    Text:'Saiba Mais',
@@ -541,7 +541,7 @@ MainContainers:{
             zIndex:'25',
             top:{'Mobile':'80%','Pc':'82%'},
             position:'absolute',
-            left:{'Mobile':'5%','Pc':'8.5%'},
+            left:{'Mobile':'18%','Pc':'8.5%'},
             borderBottom:{'Mobile':['solid 1px black','solid 1px white'],'Pc':['solid 1px black','solid 1px white']}
    },
    Text:'Especializações',
@@ -566,7 +566,7 @@ MainContainers:{
             zIndex:'25',
             top:{'Mobile':'80%','Pc':'82%'},
             position:'absolute',
-            left:{'Mobile':'5%','Pc':'17.5%'},
+            left:{'Mobile':'39%','Pc':'17.5%'},
             borderBottom:{'Mobile':['solid 1px black','solid 1px white'],'Pc':['solid 1px black','solid 1px white']}
    },
    Text:'Sobre Mim',
@@ -591,7 +591,7 @@ MainContainers:{
             zIndex:'25',
             top:{'Mobile':'80%','Pc':'82%'},
             position:'absolute',
-            left:{'Mobile':'5%','Pc':'24%'},
+            left:{'Mobile':'54%','Pc':'24%'},
             borderBottom:{'Mobile':['solid 1px black','solid 1px white'],'Pc':['solid 1px black','solid 1px white']}
    },
    Text:'Contato',
