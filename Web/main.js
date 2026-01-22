@@ -699,9 +699,9 @@ MainContainers:{
             fontStyle: 'normal',
             cursor:'default',
             zIndex:'25',
-            top:{'Mobile':'80%','Pc':'82%'},
+            top:{'Mobile':'86%','Pc':'82%'},
             position:'absolute',
-            left:{'Mobile':'18%','Pc':'8.5%'},
+            left:{'Mobile':'30%','Pc':'8.5%'},
            // borderBottom://{'Mobile':['solid 1px black','solid 1px white'],'Pc':['solid 1px black','solid 1px white']}
    },
    Text:'Especializações',
@@ -726,7 +726,7 @@ MainContainers:{
             zIndex:'25',
             top:{'Mobile':'86%','Pc':'82%'},
             position:'absolute',
-            left:{'Mobile':'46%','Pc':'17.5%'},
+            left:{'Mobile':'49%','Pc':'17.5%'},
            // borderBottom://{'Mobile':['solid 1px black','solid 1px white'],'Pc':['solid 1px black','solid 1px white']}
    },
    Text:'Sobre Mim',
