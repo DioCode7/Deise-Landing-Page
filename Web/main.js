@@ -20,10 +20,9 @@ MainContainers:{
         backgroundPosition:'center',
         backgroundSize:'cover',
         pointerEvents:'none',
-        borderRadius:'100px',
         zIndex:'500',
-        top:'1.5%',
-        left:'0%'
+        top:{'Mobile':'1.5%','Pc':'3%'},
+        left:{'Mobile':'0%','Pc':'-4%'}
 
     }
   },
@@ -130,6 +129,7 @@ MainContainers:{
             fontWeight: '400',
             fontStyle: 'normal',
             cursor:'default',
+             display:{'Mobile':'none','Pc':'flex'},
             zIndex:'25',
             top:{'Mobile':'80%','Pc':'5%'},
             position:'absolute',
@@ -156,6 +156,7 @@ MainContainers:{
             fontWeight: '400',
             fontStyle: 'normal',
             cursor:'default',
+            display:{'Mobile':'none','Pc':'flex'},
             zIndex:'25',
             top:{'Mobile':'80%','Pc':'5%'},
             position:'absolute',
@@ -181,6 +182,7 @@ MainContainers:{
             fontWeight: '400',
             fontStyle: 'normal',
             cursor:'default',
+             display:{'Mobile':'none','Pc':'flex'},
             zIndex:'25',
             top:{'Mobile':'80%','Pc':'5%'},
             position:'absolute',
@@ -205,6 +207,7 @@ MainContainers:{
     fontFamily: "'Delius', cursive",
             fontWeight: '400',
             fontStyle: 'normal',
+             display:{'Mobile':'none','Pc':'flex'},
             cursor:'default',
             zIndex:'25',
             top:{'Mobile':'80%','Pc':'5%'},
@@ -746,9 +749,9 @@ MainContainers:{
             fontStyle: 'normal',
             cursor:'default',
             zIndex:'25',
-            top:{'Mobile':'80%','Pc':'82%'},
+            top:{'Mobile':'86%','Pc':'82%'},
             position:'absolute',
-            left:{'Mobile':'54%','Pc':'24%'},
+            left:{'Mobile':'62%','Pc':'24%'},
             //borderBottom://{'Mobile':['solid 1px black','solid 1px white'],'Pc':['solid 1px black','solid 1px white']}
    },
    Text:'Agende Sua Consulta',
