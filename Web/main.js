@@ -226,11 +226,11 @@ MainContainers:{
         Type:'div',
         Style:{
             position:'absolute',
-            top:{'Mobile':'2%','Pc':'68%'},
+            top:{'Mobile':'60%','Pc':'68%'},
             left:'50%',
             transform:'translate(-50%,0%)',
             color:['white','white'],
-            fontSize:{'Pc':'21px','Mobile':'31px'},
+            fontSize:{'Pc':'21px','Mobile':'19px'},
              fontFamily: "'Imperial Script', cursive",
             fontWeight: '400',
             fontStyle: 'normal',
