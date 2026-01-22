@@ -673,9 +673,9 @@ MainContainers:{
             fontStyle: 'normal',
             cursor:'default',
             zIndex:'25',
-            top:{'Mobile':'80%','Pc':'82%'},
+            top:{'Mobile':'86%','Pc':'82%'},
             position:'absolute',
-            left:{'Mobile':'3%','Pc':'2%'},
+            left:{'Mobile':'8%','Pc':'2%'},
            // borderBottom:{'Mobile':['solid 1px black','solid 1px white'],'Pc':['solid 1px black','solid 1px white']}
    },
    Text:'Saiba Mais',
@@ -701,7 +701,7 @@ MainContainers:{
             zIndex:'25',
             top:{'Mobile':'86%','Pc':'82%'},
             position:'absolute',
-            left:{'Mobile':'30%','Pc':'8.5%'},
+            left:{'Mobile':'25%','Pc':'8.5%'},
            // borderBottom://{'Mobile':['solid 1px black','solid 1px white'],'Pc':['solid 1px black','solid 1px white']}
    },
    Text:'Especializações',
