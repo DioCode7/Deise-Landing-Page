@@ -501,7 +501,7 @@ MainContainers:{
     width:'100%',
      backgroundImage:{'Pc':
       ["url('./Images/Decoration5MinimalistLight.gif')","url('./Images/Decoration5MinimalistDark.png')"]
-      ,'Mobile':["url('./Images/Decoration5MinimalistLight.gif')","url('./Images/Decoration5MinimalistDark.png')"]},
+      ,'Mobile':["url('./Images/Decoration5MinimalistMobLight.png')","url('./Images/Decoration5MinimalistMobDark.png')"]},
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
         backgroundSize:'cover',
