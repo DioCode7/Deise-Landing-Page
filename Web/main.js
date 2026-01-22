@@ -13,8 +13,8 @@ MainContainers:{
     Type:'div',
     Style:{
       position:'fixed',
-      width:{'Mobile':'3%','Pc':'14%'},
-      height:{'Mobile':'1%','Pc':'14%'},
+      width:{'Mobile':'20%','Pc':'14%'},
+      height:{'Mobile':'20%','Pc':'14%'},
       backgroundImage:"url('./Images/EspaçoRessignificarLogo.png')",
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
@@ -226,7 +226,7 @@ MainContainers:{
         Type:'div',
         Style:{
             position:'absolute',
-            top:{'Mobile':'60%','Pc':'68%'},
+            top:{'Mobile':'60%','Pc':'69%'},
             left:'50%',
             transform:'translate(-50%,0%)',
             color:['white','white'],
@@ -643,11 +643,11 @@ MainContainers:{
         Type:'div',
         Style:{
             position:'absolute',
-            top:{'Mobile':'2%','Pc':'80%'},
+            top:{'Mobile':'60%','Pc':'80%'},
             left:'50%',
             transform:'translate(-50%,0%)',
             color:['white','white'],
-            fontSize:{'Pc':'30px','Mobile':'31px'},
+            fontSize:{'Pc':'30px','Mobile':'19px'},
              fontFamily: "'Imperial Script', cursive",
             fontWeight: '400',
             fontStyle: 'normal',
