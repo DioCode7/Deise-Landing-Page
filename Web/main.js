@@ -913,11 +913,11 @@ MainContainers:{
         Type:'div',
         Style:{
             position:'absolute',
-            top:{'Mobile':'2%','Pc':'15%'},
+            top:{'Mobile':'19%','Pc':'15%'},
             left:'50%',
             transform:'translate(-50%,0%)',
             color:['black','white'],
-            fontSize:{'Pc':'22px','Mobile':'31px'},
+            fontSize:{'Pc':'22px','Mobile':'19px'},
              fontFamily: "'Delius', cursive",
             fontWeight: '400',
             fontStyle: 'normal',
