@@ -97,7 +97,111 @@ MainContainers:{
 
     },
     Text:'@dheisedill'
-  }
+  },
+  
+  HeaderButtonAbout:{
+   Id:'HeaderButtonAbout',
+   Type:'div',
+   Style:{
+   color:'black',
+   
+   fontSize:{'Mobile':'11px','Pc':'17px'},
+    fontFamily: "'Delius', cursive",
+            fontWeight: '400',
+            fontStyle: 'normal',
+            cursor:'default',
+            zIndex:'25',
+            top:{'Mobile':'80%','Pc':'82%'},
+            position:'absolute',
+            left:{'Mobile':'5%','Pc':'33%'},
+            borderBottom:{'Mobile':['solid 1px black','solid 1px white'],'Pc':['solid 1px black','solid 1px white']}
+   },
+   Text:'Saiba Mais',
+   Listener:{
+    UmbraHover:{
+      Style:{
+        scale:'1.2'
+      }
+    }
+   },
+  },
+
+  HeaderButtonSpecs:{
+   Id:'HeaderButtonSpecs',
+   Type:'div',
+   Style:{
+   color:'black',
+   fontSize:{'Mobile':'11px','Pc':'17px'},
+    fontFamily: "'Delius', cursive",
+            fontWeight: '400',
+            fontStyle: 'normal',
+            cursor:'default',
+            zIndex:'25',
+            top:{'Mobile':'80%','Pc':'82%'},
+            position:'absolute',
+            left:{'Mobile':'5%','Pc':'41%'},
+            borderBottom:{'Mobile':['solid 1px black','solid 1px white'],'Pc':['solid 1px black','solid 1px white']}
+   },
+   Text:'Especializações',
+   Listener:{
+    UmbraHover:{
+      Style:{
+        scale:'1.2'
+      }
+    }
+   },
+  },
+  HeaderButtonAboutMe:{
+   Id:'HeaderButtonAboutMe',
+   Type:'div',
+   Style:{
+   color:'black',
+   fontSize:{'Mobile':'11px','Pc':'17px'},
+    fontFamily: "'Delius', cursive",
+            fontWeight: '400',
+            fontStyle: 'normal',
+            cursor:'default',
+            zIndex:'25',
+            top:{'Mobile':'80%','Pc':'82%'},
+            position:'absolute',
+            left:{'Mobile':'5%','Pc':'52%'},
+            borderBottom:{'Mobile':['solid 1px black','solid 1px white'],'Pc':['solid 1px black','solid 1px white']}
+   },
+   Text:'Sobre Mim',
+   Listener:{
+    UmbraHover:{
+      Style:{
+        scale:'1.2'
+      }
+    }
+   },
+  },
+  HeaderButtonContact:{
+   Id:'HeaderButtonContact',
+   Type:'div',
+   Style:{
+   color:'black',
+   fontSize:{'Mobile':'11px','Pc':'17px'},
+    fontFamily: "'Delius', cursive",
+            fontWeight: '400',
+            fontStyle: 'normal',
+            cursor:'default',
+            zIndex:'25',
+            top:{'Mobile':'80%','Pc':'82%'},
+            position:'absolute',
+            left:{'Mobile':'5%','Pc':'60%'},
+            borderBottom:{'Mobile':['solid 1px black','solid 1px white'],'Pc':['solid 1px black','solid 1px white']}
+   },
+   Text:'Contato',
+   Listener:{
+    UmbraHover:{
+      Style:{
+        scale:'1.2'
+      }
+    }
+   },
+  },
+    
     }
   },
   GeneralDescriptionContainer:{
@@ -396,7 +500,109 @@ MainContainers:{
 
     },
     Text:'@dheisedill'
-  }
+  },
+
+  HeaderButtonAbout:{
+   Id:'HeaderButtonAbout',
+   Type:'div',
+   Style:{
+   color:['black','white'],
+   fontSize:{'Mobile':'11px','Pc':'14px'},
+    fontFamily: "'Delius', cursive",
+            fontWeight: '400',
+            fontStyle: 'normal',
+            cursor:'default',
+            zIndex:'25',
+            top:{'Mobile':'80%','Pc':'82%'},
+            position:'absolute',
+            left:{'Mobile':'5%','Pc':'2%'},
+            borderBottom:{'Mobile':['solid 1px black','solid 1px white'],'Pc':['solid 1px black','solid 1px white']}
+   },
+   Text:'Saiba Mais',
+   Listener:{
+    UmbraHover:{
+      Style:{
+        scale:'1.2'
+      }
+    }
+   },
+  },
+
+  HeaderButtonSpecs:{
+   Id:'HeaderButtonSpecs',
+   Type:'div',
+   Style:{
+   color:['black','white'],
+   fontSize:{'Mobile':'11px','Pc':'14px'},
+    fontFamily: "'Delius', cursive",
+            fontWeight: '400',
+            fontStyle: 'normal',
+            cursor:'default',
+            zIndex:'25',
+            top:{'Mobile':'80%','Pc':'82%'},
+            position:'absolute',
+            left:{'Mobile':'5%','Pc':'8.5%'},
+            borderBottom:{'Mobile':['solid 1px black','solid 1px white'],'Pc':['solid 1px black','solid 1px white']}
+   },
+   Text:'Especializações',
+   Listener:{
+    UmbraHover:{
+      Style:{
+        scale:'1.2'
+      }
+    }
+   },
+  },
+  HeaderButtonAboutMe:{
+   Id:'HeaderButtonAboutMe',
+   Type:'div',
+   Style:{
+   color:['black','white'],
+   fontSize:{'Mobile':'11px','Pc':'14px'},
+    fontFamily: "'Delius', cursive",
+            fontWeight: '400',
+            fontStyle: 'normal',
+            cursor:'default',
+            zIndex:'25',
+            top:{'Mobile':'80%','Pc':'82%'},
+            position:'absolute',
+            left:{'Mobile':'5%','Pc':'17.5%'},
+            borderBottom:{'Mobile':['solid 1px black','solid 1px white'],'Pc':['solid 1px black','solid 1px white']}
+   },
+   Text:'Sobre Mim',
+   Listener:{
+    UmbraHover:{
+      Style:{
+        scale:'1.2'
+      }
+    }
+   },
+  },
+  HeaderButtonContact:{
+   Id:'HeaderButtonContact',
+   Type:'div',
+   Style:{
+   color:['black','white'],
+   fontSize:{'Mobile':'11px','Pc':'14px'},
+    fontFamily: "'Delius', cursive",
+            fontWeight: '400',
+            fontStyle: 'normal',
+            cursor:'default',
+            zIndex:'25',
+            top:{'Mobile':'80%','Pc':'82%'},
+            position:'absolute',
+            left:{'Mobile':'5%','Pc':'24%'},
+            borderBottom:{'Mobile':['solid 1px black','solid 1px white'],'Pc':['solid 1px black','solid 1px white']}
+   },
+   Text:'Contato',
+   Listener:{
+    UmbraHover:{
+      Style:{
+        scale:'1.2'
+      }
+    }
+   },
+  },
     }
   },
   GeneralDescriptionContainer:{
@@ -500,8 +706,8 @@ MainContainers:{
 
     width:'100%',
      backgroundImage:{'Pc':
-      ["url('./Images/Decoration5MinimalistLight.gif')","url('./Images/Decoration5MinimalistDark.png')"]
-      ,'Mobile':["url('./Images/Decoration5MinimalistMobLight.png')","url('./Images/Decoration5MinimalistMobDark.png')"]},
+      ["url('./Images/Decoration5MinimalistLight.gif')","url('./Images/Decoration5MinimalistDark.png')"],
+      'Mobile':["url('./Images/Decoration5MinimalistMobLight.png')","url('./Images/Decoration5MinimalistMobDark.png')"]},
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
         backgroundSize:'cover',

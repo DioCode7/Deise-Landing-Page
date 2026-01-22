@@ -45,21 +45,21 @@ export function UmbraApplyStyle(Element,Style,Type,UmbraSync = false){
         
           console.log('Type:',typeof Style[Prop],"Name:",Prop);
         if(typeof Style[Prop] == 'object' && !Array.isArray(Style[Prop])){
-            for(let PlatformProp in Style[Prop]){
-              if(Array.isArray(Style[Prop][PlatformProp])){
+           
+              if(Array.isArray(Style[Prop][UmbraCoreBrute.ClientPlataform()])){
                  let Theme = UmbraCoreBrute.UmbraDOM.UiModule.ClientTheme();
          if(Theme == 'Dark'){ 
-           ElementDOM.style[Prop] = Style[Prop][PlatformProp][1];
+           ElementDOM.style[Prop] = Style[Prop][UmbraCoreBrute.ClientPlataform()][1];
          }else if(Theme == 'Light'){
-             ElementDOM.style[Prop] = Style[Prop][PlatformProp][0];
+             ElementDOM.style[Prop] = Style[Prop][UmbraCoreBrute.ClientPlataform()][0];
          }
         }else if(typeof Style[Prop] == 'string'){
             ElementDOM.style[Prop] = Style[Prop];
              ElementDOM.style[Prop] = Style[Prop][UmbraCoreBrute.ClientPlataform()];
-        }else if(typeof Style[Prop][PlatformProp] == 'string'){
+        }else if(typeof Style[Prop][UmbraCoreBrute.ClientPlataform()] == 'string'){
             ElementDOM.style[Prop] = Style[Prop][UmbraCoreBrute.ClientPlataform()];
         }
-            };
+            
         }else{
         if(Array.isArray(Style[Prop])){
            
