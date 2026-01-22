@@ -47,6 +47,14 @@ export function UmbraApplyStyle(Element,Style,Type,UmbraSync = false){
         if(typeof Style[Prop] == 'object' && !Array.isArray(Style[Prop])){
             for(let PlatformProp in Style[Prop]){
               if(Array.isArray(Style[Prop][PlatformProp])){
+                 let Theme = UmbraCoreBrute.UmbraDOM.UiModule.ClientTheme();
+         if(Theme == 'Dark'){ 
+           ElementDOM.style[Prop] = Style[Prop][PlatformProp][1];
+         }else if(Theme == 'Light'){
+             ElementDOM.style[Prop] = Style[Prop][PlatformProp][0];
+         }
+        }else if(typeof Style[Prop] == 'string'){
+            ElementDOM.style[Prop] = Style[Prop];
              ElementDOM.style[Prop] = Style[Prop][UmbraCoreBrute.ClientPlataform()];
         }else if(typeof Style[Prop][PlatformProp] == 'string'){
             ElementDOM.style[Prop] = Style[Prop][UmbraCoreBrute.ClientPlataform()];

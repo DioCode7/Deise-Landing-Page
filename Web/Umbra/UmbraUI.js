@@ -114,7 +114,7 @@ function UmbraNewScene(SceneID){
 
 }
 
-function ActiveUmbraScene(SceneID){
+function ActiveUmbraScene(SceneID,ContainerStyle = null){
     if(UmbraCoreBrute.ScenesNexus[SceneID]){
     UmbraCoreBrute.ScenesNexus[SceneID].Active = true;
 
@@ -127,8 +127,12 @@ function ActiveUmbraScene(SceneID){
         height:'100%',
         left:'0px',
         top:'0px',
-        backgroundColor:'rgba(0,0,0,0)',
+        backgroundColor:'rgba(255, 0, 0, 0)',
     };
+
+    if(ContainerStyle != null){
+        SceneContainerStyle = ContainerStyle;
+    }
 
     UmbraUI.UmbraApplyStyle(SceneContainer.id,SceneContainerStyle,'Declared');
 

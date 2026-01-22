@@ -317,7 +317,9 @@ MainContainers:{
             'rgb(112, 69, 69)'],
         height:{"Mobile":'20%',"Pc":"34%"},
         boxShadow:"0px 6px 6px rgba(0,0,0,0.8)",
-         backgroundImage:{'Pc':"url('./Images/Decoration4.gif')",'Mobile':"url('./Images/Decoration4Mob.gif')"},
+         backgroundImage:{'Pc':
+      ["url('./Images/Decoration4MinimalistLight.gif')","url('./Images/Decoration4MinimalistDark.gif')"]
+      ,'Mobile':["url('./Images/Decoration4MinimalistLight.gif')","url('./Images/Decoration4MinimalistDark.gif')"]},
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
         backgroundSize:'cover',
@@ -407,6 +409,7 @@ MainContainers:{
     width:'100%',
     border:['solid 1px black','solid 1px white'],
     height:{'Mobile':'90%','Pc':'120%'},
+    backgroundColor:'rgba(0,0,0,0)',
    },
    Childs:{
     GeneralDescriptionContainerDecoration1:{
@@ -494,12 +497,11 @@ MainContainers:{
      position:'absolute',
     top:"0%",
     left:'0%',
-    background:[
-        'linear-gradient(to bottom, rgb(78, 63, 63),rgba(68, 47, 47, 0.95))',
-         'linear-gradient(to bottom, rgb(78, 63, 63),rgba(68, 47, 47, 0.95))'
-    ],
+
     width:'100%',
-     backgroundImage:{'Pc':"url('./Images/Decoration5.gif')",'Mobile':"url('./Images/Decoration5Mob.gif')"},
+     backgroundImage:{'Pc':
+      ["url('./Images/Decoration5MinimalistLight.gif')","url('./Images/Decoration5MinimalistDark.png')"]
+      ,'Mobile':["url('./Images/Decoration5MinimalistLight.gif')","url('./Images/Decoration5MinimalistDark.png')"]},
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
         backgroundSize:'cover',
@@ -514,10 +516,7 @@ MainContainers:{
      position:'absolute',
     top:"0%",
     left:'0%',
-    background:[
-        'linear-gradient(to right, rgba(78, 63, 63, 0),rgba(78, 63, 63, 0),rgba(78, 63, 63, 0),rgba(78, 63, 63, 0),rgb(255, 255, 255))',
-        'linear-gradient(to right, rgba(78, 63, 63, 0),rgba(78, 63, 63, 0),rgba(78, 63, 63, 0),rgba(78, 63, 63, 0),rgb(255, 255, 255))'
-    ],
+    
     width:'100%',
     height:{'Mobile':'70%','Pc':'70%'},
     },
@@ -530,7 +529,7 @@ MainContainers:{
             top:{'Mobile':'2%','Pc':'5%'},
             left:'50%',
             transform:'translate(-50%,0%)',
-            color:['white','white'],
+            color:['black','white'],
             fontSize:{'Pc':'50px','Mobile':'31px'},
              fontFamily: "'Imperial Script', cursive",
             fontWeight: '400',
@@ -579,7 +578,7 @@ MainContainers:{
       top:{'Mobile':'9%','Pc':'20%'},
       left:{'Mobile':'13%','Pc':'35%'},
       fontSize:{'Mobile':'12px','Pc':'20px'},
-      color:['rgb(255, 255, 255)','rgb(240,240,240)'],
+      color:['rgb(0, 0, 0)','rgb(240,240,240)'],
       width:{'Mobile':'60%','Pc':'30%'},
        fontFamily: "'Delius', cursive",
             fontWeight: '400',
@@ -611,7 +610,13 @@ if(NewTheme == 'Ludico'){
 UmbraDOMControl.Delete('LandingPageMinimalistMainSceneContainer');
 UmbraScenes.Delete('LandingPageMinimalistMainScene');
 UmbraScenes.New("LandingPageMainScene");
-UmbraScenes.Active("LandingPageMainScene");
+UmbraScenes.Active("LandingPageMainScene",{ 
+   position:'absolute',
+        width:'100%',
+        height:'100%',
+        left:'0px',
+        top:'0px',
+        backgroundColor:['rgb(255, 255, 255)','rgb(0,0,0)'],});
 UmbraRender(LandingPageBluePrint);
 } 
 if(NewTheme == 'Minimalista'){
@@ -619,7 +624,13 @@ if(NewTheme == 'Minimalista'){
 UmbraDOMControl.Delete('LandingPageMainSceneContainer');
 UmbraScenes.Delete('LandingPageMainScene');
 UmbraScenes.New("LandingPageMinimalistMainScene");
-UmbraScenes.Active("LandingPageMinimalistMainScene");
+UmbraScenes.Active("LandingPageMinimalistMainScene",{ 
+   position:'absolute',
+        width:'100%',
+        height:'100%',
+        left:'0px',
+        top:'0px',
+        backgroundColor:['rgb(255, 255, 255)','rgb(0,0,0)'],});
 UmbraRender(LandingPageMinimalistBluePrint);
 }
 }
