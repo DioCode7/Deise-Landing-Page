@@ -1228,8 +1228,8 @@ MainContainers:{
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
         backgroundSize:'cover',
-       width:{'Mobile':'8%','Pc':'10%'},
-        height:{'Mobile':'2%','Pc':'10%'},
+       width:{'Mobile':'8%','Pc':'5%'},
+        height:{'Mobile':'2%','Pc':'5%'},
         zIndex:'10',
        
 
@@ -2024,7 +2024,83 @@ MainContainers:{
         }
       }
     },
-  }}
+    
+  }},
+  AboutMeContainer:{
+    Id:'AboutMeContainer',
+    Type:'div',
+    Style:{
+       position:'absolute',
+    left:'0%',
+    top:{'Mobile':'154%','Pc':'760%'},
+    height:{'Mobile':'210%','Pc':'260%'},
+    width:'100%',
+    zIndex:'10',
+     backgroundImage:["url('./Images/GradientMinimalistLight.png')","url('./Images/GradientMinimalistDark.png')"],
+        backgroundRepeat:'no-repeat',
+        backgroundPosition:'center',
+        backgroundSize:'cover',
+    },
+    Childs:{
+    WhoIAmLetter:{
+      Id:'WhoIAmLetter',
+      Type:'div',
+      Style:{
+      position:'absolute',
+      color:['black','white'],
+      fontSize:{'Mobile':'11px','Pc':'44px'},
+       fontFamily: "'Imperial Script', cursive",
+        fontWeight: '400',
+        fontStyle: 'normal',
+        textShadow:'2px 4px 10px rgba(0, 0, 0, 0.9)',
+        zIndex:'20',
+        cursor:'default',
+       top:{'Mobile':'0%','Pc':'5%'},
+       left:{'Mobile':'50%','Pc':'50%'},
+       transform:'translate(-50%,-50%)',
+         borderBottom:['solid 1px black','solid 1px white'],
+         width:'55%',
+         textAlign:'center'
+
+      },
+      Text:'Quem Sou Eu?',
+    },
+    WhoIAmDecoration:{
+     Id:'WhoIAmDecoration',
+     Type:'div',
+     Style:{
+      position:'absolute',
+      left:{'Mobile':'23%','Pc':'37%'},
+      top:{'Mobile':'20%','Pc':'1%'},
+      backgroundImage:["url('./Images/WhoIAmDecoration.png')","url('./Images/WhoIAmDecoration.png')"],
+        backgroundRepeat:'no-repeat',
+        backgroundPosition:'center',
+        backgroundSize:'cover',
+       width:{'Mobile':'8%','Pc':'5%'},
+        height:{'Mobile':'2%','Pc':'5%'},
+      
+        zIndex:'10',
+     },
+    },
+    SelfImage:{
+      Id:'SelfImage',
+      Type:'div',
+      Style:{
+         position:'absolute',
+        width:{'Mobile':'40%',Pc:'50%'},
+        height:{'Mobile':'40%',Pc:'20%'},
+        top:{'Mobile':'16%',Pc:'10%'},
+        left:{'Mobile':'55%',Pc:'26%'},
+         backgroundImage:"url('./Images/SelfImage.png')",
+        backgroundRepeat:'no-repeat',
+        backgroundPosition:'center',
+        backgroundSize:'cover',
+        boxShadow:'rgba(0,0,0,0.6) 5px 5px 5px',
+        border:'solid 1px black',
+      },
+    }
+    },
+  }
  
 },
 
