@@ -1132,9 +1132,9 @@ MainContainers:{
       Type:'div',
       Style:{
         position:'absolute',
-        width:{'Mobile':'40%',Pc:'40%'},
-        height:{'Mobile':'10%',Pc:'40%'},
-        top:{'Mobile':'8%',Pc:'16%'},
+        width:{'Mobile':'50%',Pc:'40%'},
+        height:{'Mobile':'16%',Pc:'40%'},
+        top:{'Mobile':'6%',Pc:'16%'},
         left:{'Mobile':'55%',Pc:'55%'},
          backgroundImage:"url('./Images/NeuroPedagogyImage.png')",
         backgroundRepeat:'no-repeat',
@@ -1147,12 +1147,12 @@ MainContainers:{
     Type:'div',
     Style:{
       position:'absolute',
-      top:{'Mobile':'9%','Pc':'25%'},
+      top:{'Mobile':'6%','Pc':'25%'},
       borderLeft:['solid 1px black','solid 1px white'],
       left:{'Mobile':'13%','Pc':'30%'},
       fontSize:{'Mobile':'12px','Pc':'21px'},
       color:['rgb(0, 0, 0)','rgb(240,240,240)'],
-      width:{'Mobile':'60%','Pc':'30%'},
+      width:{'Mobile':'40%','Pc':'30%'},
      
       padding:'1%',
        fontFamily: "'Delius', cursive",
