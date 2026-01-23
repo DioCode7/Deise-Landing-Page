@@ -1080,13 +1080,13 @@ MainContainers:{
       Style:{
          position:'absolute',
       left:{'Mobile':'26%','Pc':'34%'},
-      top:{'Mobile':'-5%','Pc':'2%'},
+      top:{'Mobile':'0%','Pc':'2%'},
       backgroundImage:"url('./Images/FlowersAsset1.png')",
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
         backgroundSize:{'Mobile':'cover','Pc':'contain'},
-        width:{'Mobile':'5%','Pc':'10%'},
-        height:{'Mobile':'5%','Pc':'10%'},
+        width:{'Mobile':'9%','Pc':'10%'},
+        height:{'Mobile':'3%','Pc':'10%'},
         zIndex:'10',
       }
     },
@@ -1102,7 +1102,7 @@ MainContainers:{
             fontStyle: 'normal',
             textShadow:'2px 4px 10px rgba(0, 0, 0, 0.9)',
             position:'absolute',
-            top:{'Mobile':'1%','Pc':'15%'},
+            top:{'Mobile':'4.5%','Pc':'15%'},
             left:{'Mobile':'20%','Pc':'25%'},
              borderBottom:['solid 1px black','solid 1px white'],
              width:{'Mobile':'60%','Pc':'60%'},
@@ -1120,8 +1120,8 @@ MainContainers:{
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
         backgroundSize:'cover',
-        width:{'Mobile':'10%','Pc':'7%'},
-        height:{'Mobile':'10%','Pc':'7%'},
+        width:{'Mobile':'9%','Pc':'7%'},
+        height:{'Mobile':'3%','Pc':'7%'},
         zIndex:'10',
        
 
