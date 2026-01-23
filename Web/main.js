@@ -1174,11 +1174,11 @@ MainContainers:{
       Style:{
         position:'absolute',
         color:['black','white'],
-        top:{'Mobile':'10%','Pc':'41%'},
+        top:{'Mobile':'15%','Pc':'41%'},
         left:{'Mobile':'17%','Pc':'34%'},
         border:['solid 1px black','solid 1px white'],
         width:{'Mobile':'18%','Pc':'14%'},
-        height:{'Mobile':'3%','Pc':'2%'},
+        height:{'Mobile':'1%','Pc':'2%'},
         boxShadow:'rgba(0,0,0,0.6) 5px 5px 5px',
          fontSize:{'Pc':'15px','Mobile':'11px'},
              fontFamily: "'Delius', cursive",
