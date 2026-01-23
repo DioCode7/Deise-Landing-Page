@@ -1210,10 +1210,10 @@ MainContainers:{
             fontStyle: 'normal',
             textShadow:'2px 4px 10px rgba(0, 0, 0, 0.9)',
             position:'absolute',
-            top:{'Mobile':'17%','Pc':'50%'},
+            top:{'Mobile':'20%','Pc':'50%'},
             left:{'Mobile':'20%','Pc':'25%'},
              borderBottom:['solid 1px black','solid 1px white'],
-             width:{'Mobile':'20%','Pc':'60%'},
+             width:{'Mobile':'60%','Pc':'60%'},
 
       },
     },
@@ -1223,7 +1223,7 @@ MainContainers:{
       Style:{
          position:'absolute',
       left:{'Mobile':'23%','Pc':'20%'},
-      top:{'Mobile':'17%','Pc':'48%'},
+      top:{'Mobile':'20%','Pc':'48%'},
       backgroundImage:["url('./Images/PscikIcon1Dark.png')","url('./Images/PscikIcon1Light.png')"],
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
