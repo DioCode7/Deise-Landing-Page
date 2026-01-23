@@ -1114,8 +1114,8 @@ MainContainers:{
       Type:'div',
       Style:{
          position:'absolute',
-      left:{'Mobile':'18%','Pc':'19%'},
-      top:{'Mobile':'6%','Pc':'11%'},
+      left:{'Mobile':'17%','Pc':'19%'},
+      top:{'Mobile':'3%','Pc':'11%'},
       backgroundImage:"url('./Images/NeuroPedagogyAsset1.png')",
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
@@ -1132,10 +1132,10 @@ MainContainers:{
       Type:'div',
       Style:{
         position:'absolute',
-        width:{'Mobile':'50%',Pc:'40%'},
+        width:{'Mobile':'65%',Pc:'40%'},
         height:{'Mobile':'16%',Pc:'40%'},
         top:{'Mobile':'6%',Pc:'16%'},
-        left:{'Mobile':'55%',Pc:'55%'},
+        left:{'Mobile':'35%',Pc:'55%'},
          backgroundImage:"url('./Images/NeuroPedagogyImage.png')",
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
