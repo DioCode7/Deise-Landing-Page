@@ -185,12 +185,13 @@ export function UmbraMainRender(MainParent,BluePrint){
             if(typeof BluePrint[Child].Text == 'string'){
         ChildDOM.innerText = BluePrint[Child].Text;
             }
-            else if(typeof BluePrint[Child].Text == 'object'){
+            else if(typeof BluePrint[Child].Text == 'object' && !Array.isArray(BluePrint[Child].Text)){
             ChildDOM.innerText = BluePrint[Child].Text[UmbraCoreBrute.ClientLanguage()];
             }
             else if(typeof BluePrint[Child].Text == 'function'){
            ChildDOM.innerText = BluePrint[Child].Text();
             }
+           
             
         }
         if(BluePrint[Child].Style){

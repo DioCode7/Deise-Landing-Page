@@ -2036,6 +2036,7 @@ MainContainers:{
     height:{'Mobile':'210%','Pc':'260%'},
     width:'100%',
     zIndex:'10',
+    display:{'Mobile':'none','Pc':'flex'},
      backgroundImage:["url('./Images/GradientMinimalistLight.png')","url('./Images/GradientMinimalistDark.png')"],
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
@@ -2069,6 +2070,7 @@ MainContainers:{
      Id:'WhoIAmDecoration',
      Type:'div',
      Style:{
+      display:'block',
       position:'absolute',
       left:{'Mobile':'23%','Pc':'37%'},
       top:{'Mobile':'20%','Pc':'1%'},
@@ -2086,7 +2088,7 @@ MainContainers:{
       Id:'SelfImage',
       Type:'div',
       Style:{
-         position:'absolute',
+        position:'relative',
         width:{'Mobile':'40%',Pc:'50%'},
         height:{'Mobile':'40%',Pc:'20%'},
         top:{'Mobile':'16%',Pc:'10%'},
@@ -2094,11 +2096,142 @@ MainContainers:{
          backgroundImage:"url('./Images/SelfImage.png')",
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
+        display:'block',
+        marginBottom:'5%',
         backgroundSize:'cover',
         boxShadow:'rgba(0,0,0,0.6) 5px 5px 5px',
         border:'solid 1px black',
+        
       },
+      Childs:{
+        MySpecsText:{
+          Id:'MySpecsText',
+          Type:'div',
+          Style:{
+            whiteSpace:'pre-line',
+            fontSize:{'Mobile':'11px','Pc':'0.9rem'},
+            lineHeight:{'Mobile':'2','Pc':'1.1'},
+            fontFamily: "'Delius', cursive",
+          fontWeight: '400',
+          position:'absolute',
+          fontStyle: 'normal',
+          color:['black','white'],
+          left:{'Mobile':'45%','Pc':'47%'},
+          top:{'Mobile':'20%','Pc':'7%'},
+
+          },
+          Text:
+         `- Psicanalista;
+
+          - Psicanalista especialista em 
+            ansiedade e TDAH;
+
+          - Neuropscicopedagoga Clínca;
+
+          - Pós-Graduada em Autismo e ABA;
+
+          - Especialista em educação inclusiva, 
+            Alfabetização e letramento;,
+
+          - Orientadora Parental e Consteladora Familiar;
+
+          - Tarapeuta Comportamental;`
+        }
+      }
+    },
+    SpikesDecoration:{
+      Id:'SpikesDecoration',
+      Type:'div',
+      Style:{
+        display:'block',
+        backgroundImage:["url('./Images/Spikes1.png')","url('./Images/Spikes1Light.png')"],
+        backgroundRepeat:'no-repeat',
+        backgroundPosition:'center',
+        backgroundSize:'cover',
+        position:'absolute',
+        width:{'Mobile':'100%','Pc':'100%'},
+        height:{'Mobile':'17%','Pc':'17%'},
+        top:{'Mobile':'35%','Pc':'35%'},
+        
+      
+      }
+    },
+    MyBioLetter:{
+      Id:'MyBioLetter',
+      Type:'div',
+      Style:{
+      position:'absolute',
+      fontSize:{'Mobile':'1rem','Pc':'5rem'},
+      color:['black','white'],
+     whiteSpace: 'pre-wrap',
+      lineHeight:{'Mobile':'2','Pc':'0.8'},
+      fontFamily: "'Imperial Script', cursive",
+      fontWeight: '400',
+      fontStyle: 'normal',
+      left:{'Mobile':'55%','Pc':'55%'},
+      top:{'Mobile':'34%','Pc':'35%'},
+      },
+      Text:`Minha
+      Biografia!`,
+    },
+    MyBioDecoration1:{
+      Id:'MyBioDecoration1',
+      Type:'div',
+      Style:{
+         backgroundImage:["url('./Images/BioDeco1.png')","url('./Images/BioDeco1Light.png')"],
+        backgroundRepeat:'no-repeat',
+        backgroundPosition:'center',
+        backgroundSize:'cover',
+        position:'absolute',
+        width:{'Mobile':'100%','Pc':'16%'},
+        height:{'Mobile':'17%','Pc':'11%'},
+        top:{'Mobile':'35%','Pc':'39%'},
+        transform:'rotate(10deg)',
+        left:{'Mobile':'35%','Pc':'54%'},
+      }
+    },
+    MyBioText:{
+      Id:'MyBioText',
+      Type:'div',
+      Text:`Quem sou eu? Me chamo Deisi Dillenburg, às vésperas de completar 49 anos, formada em Educação Especial- Licenciatura, pós Graduada em Neuropsicopedagogia, pós Graduada em Alfabetização e Letramento, pós Graduada em Autismo, pós Graduada em Educação Especial na perspectiva de uma Educação Inclusiva, pós Graduanda em Análise do Comportamento, Terapeuta Cognitiva Comportamental, Orientadora Parental, AT em ABA, além de vários cursos relacionados ao autismo e ao TDAH. 
+      Mas nenhum desses títulos me deu tanta visão e tanta experiência como ser mãe do Thaigor, um autista 14 anos nível 2 de suporte, diagnosticado aos 2 anos e 8 meses como nível 3 de suporte.
+      Não tenho 30 anos na educação especial, mas tenho 14 anos de práticas e tentativas, erros e acertos, não tenho mestrado, nem tão pouco doutorado, mas tenho a certeza de tudo que fiz com meu filho surtiu resultados incríveis. 
+      Não tenho uma clínica chique, mas tenho um espaço acolhedor cheio de amor, compreensão, conversa que além da teoria apresenta a prática vivida.
+      Não quero ser melhor ou pior, não quero o espaço de ninguém, só quero ajudar as tantas famílias que me procuram, dar a elas o suporte que não tive, o acolhimento que não recebi..
+      Acompanho na consulta ao neuro sim se a família está insegura, acompanho a barbearia para auxiliar quando o corte de cabelo parece impossível, vou a escola, entro na sala de aula, converso com a direção, procuro fazer tudo que gostaria de ter recebido para meu filho, pq eu vivi na pele cada etapa desde o início, eu já passei noites chorando, já me senti culpada. 
+      Faço as avaliações mas entrego mais que um relatório de avaliação diagnóstica, entrego acolhimento, me coloco a disposição se precisar conversar.
+      Sou profissional, mas acima de tudo sou mãe atípica.`,
+       Style:{
+      position:'absolute',
+      color:['black','white'],
+      fontSize:{'Mobile':'1rem','Pc':'1.2'},
+       whiteSpace: 'pre-wrap',
+      lineHeight:{'Mobile':'2','Pc':'1.5'},
+      fontFamily: "'Delius', cursive",
+      fontWeight: '400',
+      fontStyle: 'normal',
+      left:{'Mobile':'55%','Pc':'37%'},
+      top:{'Mobile':'34%','Pc':'53%'},
+
     }
+    },
+    BackgroundBio:{
+      Id:'BackgroundBio',
+      Type:'div',
+      Style:{
+          backgroundImage:["url('./Images/BackgroundBio.png')","url('./Images/BackgroundBio.png')"],
+        backgroundRepeat:'no-repeat',
+        backgroundPosition:'center',
+        backgroundSize:'contain',
+        position:'absolute',
+        width:{'Mobile':'100%','Pc':'60%'},
+        height:{'Mobile':'17%','Pc':'25%'},
+        top:{'Mobile':'35%','Pc':'52%'},
+        transform:'rotate(10deg)',
+        left:{'Mobile':'35%','Pc':'0%'},
+      }
+    }
+   
     },
   }
  
