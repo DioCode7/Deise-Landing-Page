@@ -2156,20 +2156,40 @@ MainContainers:{
       
       }
     },
+    NameLetter:{
+      Id:'NameLetter',
+      Type:'div',
+      Text:'Deisi Dillenburg',
+      Style:{
+        position:'absolute',
+        display:'flex',
+        color:['black','white'],
+        fontSize:{'Mobile':'1rem','Pc':'2.4rem'},
+        lineHeight:{'Mobile':'2','Pc':'0.8'},
+      fontFamily: "'Imperial Script', cursive",
+      fontWeight: '400',
+      fontStyle: 'normal',
+      left:{'Mobile':'55%','Pc':'50%'},
+      transform:'translate(-50%,0%)',
+      top:{'Mobile':'34%','Pc':'7.5%'},
+       whiteSpace: 'pre-wrap',
+        
+      }
+    },
     MyBioLetter:{
       Id:'MyBioLetter',
       Type:'div',
       Style:{
       position:'absolute',
-      fontSize:{'Mobile':'1rem','Pc':'5rem'},
+      fontSize:{'Mobile':'1rem','Pc':'2.5rem'},
       color:['black','white'],
      whiteSpace: 'pre-wrap',
       lineHeight:{'Mobile':'2','Pc':'0.8'},
       fontFamily: "'Imperial Script', cursive",
       fontWeight: '400',
       fontStyle: 'normal',
-      left:{'Mobile':'55%','Pc':'55%'},
-      top:{'Mobile':'34%','Pc':'35%'},
+      left:{'Mobile':'55%','Pc':'62%'},
+      top:{'Mobile':'34%','Pc':'46%'},
       },
       Text:`Minha
       Biografia!`,
@@ -2183,11 +2203,12 @@ MainContainers:{
         backgroundPosition:'center',
         backgroundSize:'cover',
         position:'absolute',
-        width:{'Mobile':'100%','Pc':'16%'},
-        height:{'Mobile':'17%','Pc':'11%'},
-        top:{'Mobile':'35%','Pc':'39%'},
+        width:{'Mobile':'100%','Pc':'10%'},
+        height:{'Mobile':'17%','Pc':'6%'},
+        top:{'Mobile':'35%','Pc':'48%'},
+        display:'none',
         transform:'rotate(10deg)',
-        left:{'Mobile':'35%','Pc':'54%'},
+        left:{'Mobile':'35%','Pc':'60%'},
       }
     },
     MyBioText:{
@@ -2233,7 +2254,142 @@ MainContainers:{
     }
    
     },
-  }
+  },
+
+  ContactContainer:{
+   Id:'ContactContainer',
+   Type:'div',
+   Style:{
+     position:'absolute',
+    left:'0%',
+    top:{'Mobile':'154%','Pc':'1000%'},
+    height:{'Mobile':'210%','Pc':'250%'},
+    width:'100%',
+    zIndex:'10',
+    display:{'Mobile':'none','Pc':'flex'},
+     backgroundImage:["url('./Images/GradientMinimalistLight.png')","url('./Images/GradientMinimalistDark.png')"],
+        backgroundRepeat:'no-repeat',
+        backgroundPosition:'center',
+        backgroundSize:'cover',
+   },
+   Childs:{
+    ContactLetter:{
+      Id:'ContactLetter',
+      Type:'div',
+      Style:{
+     position:'absolute',
+      fontSize:{'Mobile':'1rem','Pc':'3.5rem'},
+      color:['black','white'],
+     whiteSpace: 'pre-wrap',
+      lineHeight:{'Mobile':'2','Pc':'0.8'},
+      fontFamily: "'Imperial Script', cursive",
+      fontWeight: '400',
+      transform:'translate(-50%,0%)',
+      fontStyle: 'normal',
+      left:{'Mobile':'55%','Pc':'50%'},
+      top:{'Mobile':'34%','Pc':'5%'},
+      },
+      Text:'Agende Sua Consulta!',
+
+    },
+     ContactDecoration1:{
+      Id:'ContactDecoration1',
+      Type:'div',
+      Style:{
+         backgroundImage:["url('./Images/ContactDecoration.png')","url('./Images/ContactDecoration.png')"],
+        backgroundRepeat:'no-repeat',
+        backgroundPosition:'center',
+        backgroundSize:'cover',
+        position:'absolute',
+        width:{'Mobile':'100%','Pc':'8%'},
+        height:{'Mobile':'17%','Pc':'5%'},
+        top:{'Mobile':'35%','Pc':'2%'},
+        transform:'rotate(10deg)',
+        left:{'Mobile':'35%','Pc':'26%'},
+      }
+    },
+    LocalLetter:{
+      Id:'LocalLetter',
+      Type:'div',
+      Text:'Endereço da clínica',
+      Style:{
+         position:'absolute',
+      fontSize:{'Mobile':'1rem','Pc':'2.6rem'},
+      color:['black','white'],
+     whiteSpace: 'pre-wrap',
+      lineHeight:{'Mobile':'2','Pc':'0.8'},
+      fontFamily: "'Imperial Script', cursive",
+      fontWeight: '400',
+      transform:'translate(-50%,0%)',
+      fontStyle: 'normal',
+      left:{'Mobile':'55%','Pc':'36%'},
+      top:{'Mobile':'34%','Pc':'12%'},
+      }
+    },
+    ClinicAdressText:{
+    Id:'ClinicAdressText',
+    Type:'div',
+    Text:`Não-Me-Toque/RS
+........
+........
+........`,
+     Style:{
+       position:'absolute',
+      color:['black','white'],
+      fontSize:{'Mobile':'1rem','Pc':'1.2'},
+       whiteSpace: 'pre-wrap',
+      lineHeight:{'Mobile':'2','Pc':'1.5'},
+      fontFamily: "'Delius', cursive",
+      fontWeight: '400',
+      fontStyle: 'normal',
+      left:{'Mobile':'55%','Pc':'30%'},
+      top:{'Mobile':'34%','Pc':'14.7%'},
+     
+    }
+    },
+    ContactOptionsLetter:{
+      Id:'CantactOptionsLetter',
+      Type:'div',
+      Text:'Meios De Contato',
+      Style:{
+         position:'absolute',
+      fontSize:{'Mobile':'1rem','Pc':'2.6rem'},
+      color:['black','white'],
+     whiteSpace: 'pre-wrap',
+      lineHeight:{'Mobile':'2','Pc':'0.8'},
+      fontFamily: "'Imperial Script', cursive",
+      fontWeight: '400',
+      transform:'translate(-50%,0%)',
+      fontStyle: 'normal',
+      left:{'Mobile':'55%','Pc':'72%'},
+      top:{'Mobile':'34%','Pc':'21%'},
+      }
+    },
+
+    ContactOptionsText:{
+      Id:'ContactOptionsText',
+      Type:'div',
+      Text:`@dheisedill
+54 99184-1827
+neuroppdeisedill@gmail.com`,
+Style:{
+position:'absolute',
+      color:['black','white'],
+      fontSize:{'Mobile':'1rem','Pc':'1.2'},
+       whiteSpace: 'pre-wrap',
+      lineHeight:{'Mobile':'2','Pc':'4'},
+      fontFamily: "'Delius', cursive",
+      fontWeight: '400',
+      fontStyle: 'normal',
+      left:{'Mobile':'55%','Pc':'64%'},
+      top:{'Mobile':'34%','Pc':'25%'},
+     
+}
+    }
+   
+
+   }
+  },
  
 },
 
@@ -2278,3 +2434,4 @@ UmbraScenes.Active("LandingPageMinimalistMainScene",{
 UmbraRender(LandingPageMinimalistBluePrint);
 }
 }
+
