@@ -181,6 +181,9 @@ export function UmbraMainRender(MainParent,BluePrint){
         if(BluePrint[Child].InnerType){
             ChildDOM.type = BluePrint[Child].InnerType;
         }
+        if(BluePrint[Child].Src){
+            ChildDOM.src = BluePrint[Child].Src;
+        }
         if(BluePrint[Child].Text){
             if(typeof BluePrint[Child].Text == 'string'){
         ChildDOM.innerText = BluePrint[Child].Text;

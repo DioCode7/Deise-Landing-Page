@@ -42,6 +42,7 @@ MainContainers:{
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
         backgroundSize:'cover',
+
     },
     Childs:{
       ConceptThemeSwitchButton:{
@@ -353,8 +354,7 @@ MainContainers:{
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
         backgroundSize:'cover',
-   
-    height:{'Mobile':'70%','Pc':'73%'},
+    height:{'Mobile':'70%','Pc':'69%'},
     },
     },
     GeneralDescriptionContainerDecoRight:{
@@ -872,7 +872,7 @@ MainContainers:{
         backgroundPosition:'center',
         backgroundSize:'cover',
     
-    height:{'Mobile':'70%','Pc':'73%'},
+    height:{'Mobile':'70%','Pc':'69%'},
     },
     },
     GeneralDescriptionContainerDecoRight:{
@@ -1040,7 +1040,7 @@ MainContainers:{
    Style:{
     position:'absolute',
     left:'0%',
-    top:{'Mobile':'81%','Pc':'121%'},
+    top:{'Mobile':'81%','Pc':'116%'},
     height:{'Mobile':'210%','Pc':'210%'},
     width:'100%',
     zIndex:'10',
@@ -1050,7 +1050,7 @@ MainContainers:{
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
         backgroundSize:'cover',
-
+        
 
    
    },
@@ -1316,7 +1316,7 @@ MainContainers:{
    Style:{
     position:'absolute',
     left:'0%',
-    top:{'Mobile':'154%','Pc':'310%'},
+    top:{'Mobile':'154%','Pc':'306%'},
     height:{'Mobile':'210%','Pc':'210%'},
     width:'100%',
     zIndex:'10',
@@ -1556,7 +1556,7 @@ MainContainers:{
    Style:{
     position:'absolute',
     left:'0%',
-    top:{'Mobile':'154%','Pc':'457%'},
+    top:{'Mobile':'154%','Pc':'454%'},
     height:{'Mobile':'210%','Pc':'210%'},
     width:'100%',
     zIndex:'10',
@@ -1794,7 +1794,7 @@ MainContainers:{
    Style:{
     position:'absolute',
     left:'0%',
-    top:{'Mobile':'154%','Pc':'600%'},
+    top:{'Mobile':'154%','Pc':'596%'},
     height:{'Mobile':'210%','Pc':'210%'},
     width:'100%',
     zIndex:'10',
@@ -2347,6 +2347,20 @@ MainContainers:{
      
     }
     },
+    ClinicAdressMap:{
+      Id:"ClinicAdressMap",
+      Type:"iframe",
+      Style:{
+      position:`absolute`,
+      top:{Mobile:'20%',Pc:"22%"},
+      left:{Mobile:"15%",Pc:'28%'},
+      width:{Mobile:"30%",Pc:"30%"},
+      height:{Mobile:`10%`,Pc:'17%'},
+      border:[`solid 1px black`,`solid 1px white`],
+      },
+      Src:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.5846256170535!2d-52.81804822522044!3d-28.461935275758293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94fd4930d1aa4cb7%3A0xec4a7325745ef3cd!2sR.%20Pedro%20Augustin%20-%20N%C3%A3o-Me-Toque%2C%20RS%2C%2099470-000!5e0!3m2!1spt-BR!2sbr!4v1769355775168!5m2!1spt-BR!2sbr",
+      
+    },
     ContactOptionsLetter:{
       Id:'CantactOptionsLetter',
       Type:'div',
@@ -2362,8 +2376,8 @@ MainContainers:{
       transform:'translate(-50%,0%)',
       fontStyle: 'normal',
       left:{'Mobile':'55%','Pc':'72%'},
-      top:{'Mobile':'34%','Pc':'21%'},
-      }
+      top:{'Mobile':'34%','Pc':'23%'},
+      },
     },
 
     ContactOptionsText:{
@@ -2382,7 +2396,8 @@ position:'absolute',
       fontWeight: '400',
       fontStyle: 'normal',
       left:{'Mobile':'55%','Pc':'64%'},
-      top:{'Mobile':'34%','Pc':'25%'},
+      top:{'Mobile':'34%','Pc':'27%'},
+      
      
 }
     }
