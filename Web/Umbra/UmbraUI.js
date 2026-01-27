@@ -403,6 +403,9 @@ function UmbraActiveAnimation(Id,Element){
                 'FrameRateController':structuredClone(DeclaredFrameRate),
                 'Time':DeclaredTime,'Repeat':DeclaredRepeat,'FrameRate':DeclaredFrameRate,'PropertieName':Prop,
             }
+            if(UmbraCoreBrute.UmbraDOM.AnimationsNexus[Id].Curve){
+                NewAnimationObj.Properties[Prop]['Curve'] = structuredClone(UmbraCoreBrute.UmbraDOM.AnimationsNexus[Id].Curve);
+            }
             UmbraCoreBrute.UmbraDOM.ActiveAnimations[Id+Element+Prop] = {AnimationConfig:NewAnimationObj.Properties[Prop],
                 Element:Element,Id:Id};
           
@@ -452,6 +455,14 @@ function UmbraAnimationRender(AnimationConfig,Element,Id){
         }
 
     if(Metric != null){
+        if(AnimationConfig.Curve){
+             if(AnimationConfig.RealStartIn < EndValue){
+       ActualValue = UmbraInterpolationEngine(ActualValue,EndValue,Speed,AnimationConfig.Curve,);
+             }
+             if(AnimationConfig.RealStartIn > EndValue){
+                 ActualValue = UmbraInterpolationEngine(ActualValue,EndValue,-Speed,AnimationConfig.Curve,);
+            }
+        }else{
         if(AnimationConfig.RealStartIn < EndValue){
         ActualValue += Speed;
         }
@@ -459,7 +470,7 @@ function UmbraAnimationRender(AnimationConfig,Element,Id){
         ActualValue -= Speed;
        
         }
-    
+        }
     }
 
     if((ActualValue > EndValue && AnimationConfig.RealStartIn < EndValue) ||
@@ -517,7 +528,43 @@ function UmbraAnimationRenderMetrics(){
 
 }
 
-function UmbraInterpolationEngine(StartValue,EndValue,IncrementValue){
+const UmbraCurves = {
+ 'Ease-In':UmbraEaseInCurve,
+ 'Ease-Out':UmbraEaseOutCurve,
+  'Ease-Out+':UmbraEaseOutPlusCurve,
+};
 
+function UmbraInterpolationEngine(StartValue,EndValue,IncrementValue,Curve){
+
+    if(Object.keys(UmbraCurves).includes(Curve)){
+     return UmbraCurves[Curve](StartValue,EndValue,IncrementValue);
+    }else{
+        
+        return StartValue += IncrementValue;
+    }
+
+
+}
+
+function UmbraEaseInCurve(StartValue,EndValue,IncrementValue){
+
+    let Distance = Math.abs(StartValue - EndValue);
+   return StartValue +=  (IncrementValue / (Distance / EndValue));   
+
+
+}
+
+function UmbraEaseOutCurve(StartValue,EndValue,IncrementValue){
+
+  let Distance = Math.abs(StartValue - EndValue);
+  return StartValue +=  (IncrementValue * (Distance / EndValue));   
+
+
+}
+
+function UmbraEaseOutPlusCurve(StartValue,EndValue,IncrementValue){
+
+  let Distance = Math.abs(StartValue - EndValue);
+  return StartValue +=  (IncrementValue * Distance);   
 
 }

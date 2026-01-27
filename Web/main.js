@@ -1076,7 +1076,7 @@ MainContainers:{
    Style:{
     position:'absolute',
     left:'0%',
-     boxShadow:['rgba(0,0,0,0.4) 10px -10px 10px','rgba(0, 0, 0, 0.8) 10px -10px 10px'],
+     boxShadow:{'Pc':['rgba(0,0,0,0.4) 10px -10px 10px','rgba(0, 0, 0, 0.8) 10px -10px 10px'],'Mobile':''},
     top:{'Mobile':'81%','Pc':'116%'},
     height:{'Mobile':'210%','Pc':'210%'},
     width:'100%',
@@ -1323,8 +1323,8 @@ MainContainers:{
       Type:'div',
       Style:{
          position:'absolute',
-      left:{'Mobile':'23%','Pc':'20%'},
-      top:{'Mobile':'20%','Pc':'48%'},
+      left:{'Mobile':'20%','Pc':'20%'},
+      top:{'Mobile':'19%','Pc':'48%'},
       backgroundImage:["url('./Images/PscikIcon1Dark.png')","url('./Images/PscikIcon1Light.png')"],
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
@@ -2883,7 +2883,7 @@ MainContainers:{
     },
 
     ContactOptionsInstaText:{
-      Id:'ContactOptionsInstaText',
+      Id:' ContactOptionsInstaText',
       Type:'div',
       Text:`@dheisedill`,
 Style:{
@@ -2914,7 +2914,7 @@ position:'absolute',
      
     UmbraViewportLogic:{
       Action:UmbraAnimations.Active,
-      Params:['SlideForRightAnimation','ContactOptionsInstaText'],
+      Params:['SlideForRightAnimation',' ContactOptionsInstaText'],
 
     
    },
@@ -3187,8 +3187,8 @@ let SlideForRightAnimationBluePrint = {
 },
    Repeat:0,
    Time:50,
-   FrameRate:60
-   //Curve:'Ease-In',
+   FrameRate:60,
+   Curve:'Ease-Out',
 
 
 };
