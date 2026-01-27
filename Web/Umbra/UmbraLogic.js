@@ -17,6 +17,8 @@ const UmbraViewportObserver = new IntersectionObserver((entries,UmbraViewportObs
         UmbraViewportObserver.unobserve(entry.target);
         }
     })
+},{
+     threshold: 0.2
 })
 
 function UmbraViewportExecuter(Id){

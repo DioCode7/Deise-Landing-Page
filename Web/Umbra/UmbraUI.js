@@ -310,7 +310,8 @@ let UmbraMetricsAnimations = [
 ]
 
 let UmbraNoMetricsAnimations = [
-    'opacity'
+    'opacity',
+    'scale',
 ];
 
 function UmbraAnimationsSpeedCalc(AnimationConfig,Element){

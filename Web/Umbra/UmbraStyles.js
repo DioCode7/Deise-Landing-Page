@@ -14,7 +14,7 @@ export function UmbraApplyStyle(Element,Style,Type,UmbraSync = false){
 
     if(!UmbraSync){
     if(Type == "Overrides"){
-        RegistUmbraDOM.Overrides(Element,Style);
+        RegistUmbraDOM.Overrides(Element,structuredClone(Style));
         for(let Prop in UmbraCoreBrute.UmbraDOM.OverridesStyles[Element]){
         if(!UmbraCoreBrute.UmbraDOM.DeclaredStyles?.[Element].Style[Prop]){
          UmbraCoreBrute.UmbraDOM.DeclaredStyles[Element].Style[Prop] = '';
@@ -23,8 +23,8 @@ export function UmbraApplyStyle(Element,Style,Type,UmbraSync = false){
     }
     if(Type == 'Declared'){
         let ParentTree = UmbraSimpleParentTreeMaker(Element);
-        RegistUmbraDOM.Declared(Element,Style,ParentTree);
-        RegistUmbraDOM.Computed(Element,Style,ParentTree);
+        RegistUmbraDOM.Declared(Element,structuredClone(Style),ParentTree);
+        RegistUmbraDOM.Computed(Element,structuredClone(Style),ParentTree);
         UmbraParentTreeMaker(Element,ParentTree);
     }
     }

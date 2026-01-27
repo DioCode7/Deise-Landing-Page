@@ -900,7 +900,6 @@ MainContainers:{
      position:'absolute',
     top:"0%",
     left:'0%',
-
     width:'100%',
      backgroundImage:{'Pc':
       ["url('./Images/Decoration5MinimalistLight.png')","url('./Images/Decoration5MinimalistDark.png')"],
@@ -1293,7 +1292,7 @@ MainContainers:{
       }
     },
      ClinicPsicLetter:{
-      Id:' ClinicPsicLetter',
+      Id:'ClinicPsicLetter',
       type:'div',
       Text:'Psicanálise Clínica',
       Style:{
@@ -1304,12 +1303,20 @@ MainContainers:{
             fontStyle: 'normal',
             textShadow:'2px 4px 10px rgba(0, 0, 0, 0.9)',
             position:'absolute',
+            opacity:'0',
             top:{'Mobile':'20%','Pc':'50%'},
             left:{'Mobile':'20%','Pc':'25%'},
              borderBottom:['solid 1px black','solid 1px white'],
              width:{'Mobile':'60%','Pc':'60%'},
 
       },
+        Listener:{
+    UmbraViewportLogic:{
+      Action:UmbraAnimations.Active,
+      Params:['SlideForRightAnimation','ClinicPsicLetter'],
+
+    }
+   },
     },
      ClinicPsicLetterDecoration1:{
       Id:'ClinicPsicLetterDecoration1',
@@ -1322,12 +1329,20 @@ MainContainers:{
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
         backgroundSize:'cover',
+        opacity:'0',
        width:{'Mobile':'8%','Pc':'5%'},
         height:{'Mobile':'2%','Pc':'5%'},
         zIndex:'10',
        
 
-      }
+      },
+        Listener:{
+    UmbraViewportLogic:{
+      Action:UmbraAnimations.Active,
+      Params:['SlideForRightAnimation','ClinicPsicLetterDecoration1'],
+
+    }
+   },
     },
 
     ClinicPsicImage:{
@@ -1338,15 +1353,23 @@ MainContainers:{
         width:{'Mobile':'40%',Pc:'40%'},
         height:{'Mobile':'40%',Pc:'40%'},
         top:{'Mobile':'16%',Pc:'48%'},
+        opacity:'0',
         left:{'Mobile':'55%',Pc:'20%'},
          backgroundImage:"url('./Images/PisciImage.png')",
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
         backgroundSize:'cover',
-      }
+      },
+        Listener:{
+    UmbraViewportLogic:{
+      Action:UmbraAnimations.Active,
+      Params:['SlideForRightAnimation','ClinicPsicImage'],
+
+    }
+   },
     },
      ClinicPsicText:{
-    Id:' ClinicPsicText',
+    Id:'ClinicPsicText',
     Type:'div',
     Style:{
       position:'absolute',
@@ -1356,7 +1379,7 @@ MainContainers:{
       fontSize:{'Mobile':'12px','Pc':'21px'},
       color:['rgb(0, 0, 0)','rgb(240,240,240)'],
       width:{'Mobile':'60%','Pc':'30%'},
-     
+     opacity:'0',
       padding:'1%',
        fontFamily: "'Delius', cursive",
             fontWeight: '400',
@@ -1368,6 +1391,13 @@ MainContainers:{
          
       
     },
+      Listener:{
+    UmbraViewportLogic:{
+      Action:UmbraAnimations.Active,
+      Params:['SlideForRightAnimation','ClinicPsicText'],
+
+    }
+   },
     Text:"Atendimento terapêutico focado em saúde emocional, autoconhecimento e elaboração de conflitos internos.",
     },
      ClinicPsicMoreAboutButton:{
@@ -1382,6 +1412,7 @@ MainContainers:{
         border:['solid 1px black','solid 1px white'],
         width:{'Mobile':'20%','Pc':'14%'},
         height:{'Mobile':'40%','Pc':'2%'},
+        opacity:'0',
         boxShadow:'rgba(0,0,0,0.6) 5px 5px 5px',
          fontSize:{'Pc':'15px','Mobile':'31px'},
              fontFamily: "'Delius', cursive",
@@ -1398,7 +1429,14 @@ MainContainers:{
           Style:{
             scale:'1.2',
           }
-        }
+        },
+          
+    UmbraViewportLogic:{
+      Action:UmbraAnimations.Active,
+      Params:['SlideForRightAnimation','ClinicPsicMoreAboutButton'],
+
+    
+   },
       }
     },
    
@@ -1410,6 +1448,7 @@ MainContainers:{
    Style:{
     position:'absolute',
     left:'0%',
+
     top:{'Mobile':'154%','Pc':'306%'},
     height:{'Mobile':'210%','Pc':'210%'},
     width:'100%',
@@ -1433,6 +1472,7 @@ MainContainers:{
       fontSize:{'Mobile':'11px','Pc':'25px'},
        fontFamily: "'Delius', cursive",
             fontWeight: '400',
+            opacity:'0',
             fontStyle: 'normal',
             textShadow:'2px 4px 10px rgba(0, 0, 0, 0.9)',
             position:'absolute',
@@ -1442,6 +1482,13 @@ MainContainers:{
              width:{'Mobile':'20%','Pc':'60%'},
 
       },
+        Listener:{
+    UmbraViewportLogic:{
+      Action:UmbraAnimations.Active,
+      Params:['SlideForRightAnimation','SpecialEducationLetter'],
+
+    }
+   },
     },
        SpecialEducationLetterDecoration:{
       Id:'SpecialEducationLetterDecoration',
@@ -1454,15 +1501,23 @@ MainContainers:{
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
         backgroundSize:'cover',
+        opacity:'0',
         width:{'Mobile':'10%','Pc':'8%'},
         height:{'Mobile':'10%','Pc':'8%'},
         zIndex:'10',
        
 
-      }
+      },
+        Listener:{
+    UmbraViewportLogic:{
+      Action:UmbraAnimations.Active,
+      Params:['SlideForRightAnimation','SpecialEducationLetterDecoration'],
+
+    }
+   },
     },
    SpecialEducationImage:{
-      Id:' SpecialEducationImage',
+      Id:'SpecialEducationImage',
       Type:'div',
       Style:{
         position:'absolute',
@@ -1474,10 +1529,18 @@ MainContainers:{
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
         backgroundSize:'cover',
-      }
+        opacity:'0',
+      },
+        Listener:{
+    UmbraViewportLogic:{
+      Action:UmbraAnimations.Active,
+      Params:['SlideForRightAnimation','SpecialEducationImage'],
+
+    }
+   },
     },
    SpecialEducationText:{
-    Id:' SpecialEducationText',
+    Id:'SpecialEducationText',
     Type:'div',
     Style:{
       position:'absolute',
@@ -1493,11 +1556,19 @@ MainContainers:{
             fontStyle: 'normal',
             cursor:'default',
             zIndex:'25',
+            opacity:'0',
            // boxShadow:'rgba(0,0,0,0.5) 5px 5px 5px'
             
          
       
     },
+      Listener:{
+    UmbraViewportLogic:{
+      Action:UmbraAnimations.Active,
+      Params:['SlideForRightAnimation','SpecialEducationText'],
+
+    }
+   },
     Text:"Avaliação e intervenção em dificuldades de aprendizagem, com estratégias personalizadas para o desenvolvimento cognitivo.",
     },
      SpecialEducationMoreAboutButton:{
@@ -1520,6 +1591,7 @@ MainContainers:{
             textShadow:'2px 4px 10px rgba(0, 0, 0, 0.9)',
             textAlign:'center',
             cursor:'pointer',
+            opacity:'0',
             backgroundColor:['rgba(45, 47, 51, 0)','rgba(0, 0, 0, 0)']
 
       },
@@ -1528,7 +1600,14 @@ MainContainers:{
           Style:{
             scale:'1.2',
           }
-        }
+        },
+          
+    UmbraViewportLogic:{
+      Action:UmbraAnimations.Active,
+      Params:['SlideForRightAnimation','SpecialEducationMoreAboutButton1'],
+
+    
+   },
       }
     },
 
@@ -1544,12 +1623,20 @@ MainContainers:{
             fontStyle: 'normal',
             textShadow:'2px 4px 10px rgba(0, 0, 0, 0.9)',
             position:'absolute',
+             opacity:'0',
             top:{'Mobile':'47%','Pc':'32%'},
             left:{'Mobile':'20%','Pc':'25%'},
              borderBottom:['solid 1px black','solid 1px white'],
              width:{'Mobile':'20%','Pc':'60%'},
 
       },
+        Listener:{
+    UmbraViewportLogic:{
+      Action:UmbraAnimations.Active,
+      Params:['SlideForRightAnimation','TEALetterLetter'],
+
+    }
+   },
     },
      TEALetterLetterDecoration1:{
       Id:'TEALetterLetterDecoration1',
@@ -1561,13 +1648,21 @@ MainContainers:{
       backgroundImage:"url('./Images/AutismIcon.png')",
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
+         opacity:'0',
         backgroundSize:'cover',
         width:{'Mobile':'10%','Pc':'5%'},
         height:{'Mobile':'10%','Pc':'5%'},
         zIndex:'10',
        
 
-      }
+      },
+        Listener:{
+    UmbraViewportLogic:{
+      Action:UmbraAnimations.Active,
+      Params:['SlideForRightAnimation','TEALetterLetterDecoration1'],
+
+    }
+   },
     },
 
     TEALetterImage:{
@@ -1578,12 +1673,20 @@ MainContainers:{
         width:{'Mobile':'40%',Pc:'35%'},
         height:{'Mobile':'40%',Pc:'35%'},
         top:{'Mobile':'16%',Pc:'34%'},
+         opacity:'0',
         left:{'Mobile':'55%',Pc:'20%'},
          backgroundImage:"url('./Images/AutismImage.png')",
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
         backgroundSize:'cover',
-      }
+      },
+        Listener:{
+    UmbraViewportLogic:{
+      Action:UmbraAnimations.Active,
+      Params:['SlideForRightAnimation','TEALetterImage'],
+
+    }
+   },
     },
      TEALetterText:{
     Id:'TEALetterText',
@@ -1596,7 +1699,7 @@ MainContainers:{
       fontSize:{'Mobile':'12px','Pc':'21px'},
       color:['rgb(0, 0, 0)','rgb(240,240,240)'],
       width:{'Mobile':'60%','Pc':'30%'},
-     
+      opacity:'0',
       padding:'1%',
        fontFamily: "'Delius', cursive",
             fontWeight: '400',
@@ -1608,6 +1711,13 @@ MainContainers:{
          
       
     },
+      Listener:{
+    UmbraViewportLogic:{
+      Action:UmbraAnimations.Active,
+      Params:['SlideForRightAnimation','TEALetterText'],
+
+    }
+   },
     Text:"Acompanhamento especializado para pessoas no espectro autista, com foco em comunicação, socialização, autonomia e aprendizagem.",
     },
     TEALetterMoreAboutButton:{
@@ -1617,6 +1727,7 @@ MainContainers:{
       Style:{
         position:'absolute',
         color:['black','white'],
+        opacity:'0',
         top:{'Mobile':'75%','Pc':'52%'},
         left:{'Mobile':'75%','Pc':'65%'},
         border:['solid 1px black','solid 1px white'],
@@ -1638,7 +1749,14 @@ MainContainers:{
           Style:{
             scale:'1.2',
           }
-        }
+        },
+      
+    UmbraViewportLogic:{
+      Action:UmbraAnimations.Active,
+      Params:['SlideForRightAnimation','TEALetterMoreAboutButton'],
+
+    
+   },
       }
     },
   }
@@ -1677,11 +1795,19 @@ MainContainers:{
             textShadow:'2px 4px 10px rgba(0, 0, 0, 0.9)',
             position:'absolute',
             top:{'Mobile':'20%','Pc':'1%'},
+               opacity:'0',
             left:{'Mobile':'20%','Pc':'25%'},
              borderBottom:['solid 1px black','solid 1px white'],
              width:{'Mobile':'20%','Pc':'60%'},
 
       },
+      Listener:{
+    UmbraViewportLogic:{
+      Action:UmbraAnimations.Active,
+      Params:['SlideForRightAnimation','ABALetter'],
+
+    }
+   },
     },
       ABALetterDecoration:{
       Id:'ABALetterDecoration',
@@ -1693,31 +1819,47 @@ MainContainers:{
       backgroundImage:"url('./Images/ABAIcon.png')",
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
+           opacity:'0',
         backgroundSize:'cover',
         width:{'Mobile':'10%','Pc':'5%'},
         height:{'Mobile':'10%','Pc':'5%'},
         zIndex:'10',
        
 
-      }
+      },
+      Listener:{
+    UmbraViewportLogic:{
+      Action:UmbraAnimations.Active,
+      Params:['SlideForRightAnimation','ABALetterDecoration'],
+
+    }
+   },
     },
    ABAImage:{
-      Id:' ABAImage',
+      Id:'ABAImage',
       Type:'div',
       Style:{
         position:'absolute',
         width:{'Mobile':'40%',Pc:'33%'},
         height:{'Mobile':'40%',Pc:'33%'},
         top:{'Mobile':'16%',Pc:'4%'},
+           opacity:'0',
         left:{'Mobile':'55%',Pc:'55%'},
          backgroundImage:"url('./Images/ABAImage.png')",
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
         backgroundSize:'cover',
-      }
+      },
+      Listener:{
+    UmbraViewportLogic:{
+      Action:UmbraAnimations.Active,
+      Params:['SlideForRightAnimation','ABAImage'],
+
+    }
+   },
     },
    ABAText:{
-    Id:'SpecialEducationText',
+    Id:'ABAText',
     Type:'div',
     Style:{
       position:'absolute',
@@ -1725,6 +1867,7 @@ MainContainers:{
       borderLeft:['solid 1px black','solid 1px white'],
       left:{'Mobile':'13%','Pc':'30%'},
       fontSize:{'Mobile':'12px','Pc':'21px'},
+      opacity:'0',
       color:['rgb(0, 0, 0)','rgb(240,240,240)'],
       width:{'Mobile':'60%','Pc':'25%'},
       padding:'1%',
@@ -1738,6 +1881,13 @@ MainContainers:{
          
       
     },
+    Listener:{
+    UmbraViewportLogic:{
+      Action:UmbraAnimations.Active,
+      Params:['SlideForRightAnimation','ABAText'],
+
+    }
+   },
     Text:"Intervenções baseadas em evidências para desenvolvimento de habilidades, redução de comportamentos desafiadores e fortalecimento da autonomia.",
     },
      ABAMoreAboutButton:{
@@ -1746,6 +1896,7 @@ MainContainers:{
       Text:'Saiba Mais',
       Style:{
         position:'absolute',
+           opacity:'0',
         color:['black','white'],
         top:{'Mobile':'75%','Pc':'25%'},
         left:{'Mobile':'75%','Pc':'34%'},
@@ -1768,7 +1919,14 @@ MainContainers:{
           Style:{
             scale:'1.2',
           }
-        }
+        },
+      
+    UmbraViewportLogic:{
+      Action:UmbraAnimations.Active,
+      Params:['SlideForRightAnimation','ABAMoreAboutButton1'],
+
+    
+   },
       }
     },
      TerapyLetter:{
@@ -1781,6 +1939,7 @@ MainContainers:{
        fontFamily: "'Delius', cursive",
             fontWeight: '400',
             fontStyle: 'normal',
+             opacity:'0',
             textShadow:'2px 4px 10px rgba(0, 0, 0, 0.9)',
             position:'absolute',
             top:{'Mobile':'47%','Pc':'32%'},
@@ -1789,6 +1948,13 @@ MainContainers:{
              width:{'Mobile':'20%','Pc':'60%'},
 
       },
+      Listener:{
+    UmbraViewportLogic:{
+      Action:UmbraAnimations.Active,
+      Params:['SlideForRightAnimation','TerapyLetter'],
+
+    }
+   },
     },
      TerapyLetterDecoration1:{
       Id:'TerapyLetterDecoration1',
@@ -1800,13 +1966,21 @@ MainContainers:{
       backgroundImage:"url('./Images/TerapyIcon.png')",
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
+         opacity:'0',
         backgroundSize:'cover',
         width:{'Mobile':'10%','Pc':'5%'},
         height:{'Mobile':'10%','Pc':'5%'},
         zIndex:'10',
        
 
-      }
+      },
+      Listener:{
+    UmbraViewportLogic:{
+      Action:UmbraAnimations.Active,
+      Params:['SlideForRightAnimation','TerapyLetterDecoration1'],
+
+    }
+   },
     },
 
     TerapyImage:{
@@ -1817,12 +1991,20 @@ MainContainers:{
         width:{'Mobile':'40%',Pc:'35%'},
         height:{'Mobile':'40%',Pc:'35%'},
         top:{'Mobile':'16%',Pc:'34%'},
+         opacity:'0',
         left:{'Mobile':'55%',Pc:'20%'},
          backgroundImage:"url('./Images/TherapyImage.png')",
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
         backgroundSize:'cover',
-      }
+      },
+      Listener:{
+    UmbraViewportLogic:{
+      Action:UmbraAnimations.Active,
+      Params:['SlideForRightAnimation','TerapyImage'],
+
+    }
+   },
     },
      TerapyText:{
     Id:'TerapyText',
@@ -1832,6 +2014,7 @@ MainContainers:{
       top:{'Mobile':'9%','Pc':'39%'},
       borderLeft:['solid 1px black','solid 1px white'],
       left:{'Mobile':'13%','Pc':'58%'},
+       opacity:'0',
       fontSize:{'Mobile':'12px','Pc':'21px'},
       color:['rgb(0, 0, 0)','rgb(240,240,240)'],
       width:{'Mobile':'60%','Pc':'30%'},
@@ -1847,6 +2030,13 @@ MainContainers:{
          
       
     },
+    Listener:{
+    UmbraViewportLogic:{
+      Action:UmbraAnimations.Active,
+      Params:['SlideForRightAnimation','TerapyText'],
+
+    }
+   },
     Text:"Trabalho com emoções, comportamentos, rotina, autorregulação e habilidades sociais.",
     },
    TerapyMoreAboutButton:{
@@ -1859,6 +2049,7 @@ MainContainers:{
         top:{'Mobile':'75%','Pc':'52%'},
         left:{'Mobile':'75%','Pc':'65%'},
         border:['solid 1px black','solid 1px white'],
+         opacity:'0',
         width:{'Mobile':'20%','Pc':'14%'},
         height:{'Mobile':'40%','Pc':'2%'},
         boxShadow:'rgba(0,0,0,0.6) 5px 5px 5px',
@@ -1877,7 +2068,14 @@ MainContainers:{
           Style:{
             scale:'1.2',
           }
-        }
+        },
+        
+    UmbraViewportLogic:{
+      Action:UmbraAnimations.Active,
+      Params:['SlideForRightAnimation','TerapyMoreAboutButton'],
+
+    
+   },
       }
     },
 
@@ -1911,6 +2109,7 @@ MainContainers:{
       fontSize:{'Mobile':'11px','Pc':'25px'},
        fontFamily: "'Delius', cursive",
             fontWeight: '400',
+             opacity:'0',
             fontStyle: 'normal',
             textShadow:'2px 4px 10px rgba(0, 0, 0, 0.9)',
             position:'absolute',
@@ -1920,6 +2119,13 @@ MainContainers:{
              width:{'Mobile':'20%','Pc':'60%'},
 
       },
+      Listener:{
+    UmbraViewportLogic:{
+      Action:UmbraAnimations.Active,
+      Params:['SlideForRightAnimation','ParentLetter'],
+
+    }
+   },
     },
       ParentLetterDecoration:{
       Id:'ParentLetterDecoration',
@@ -1928,6 +2134,7 @@ MainContainers:{
          position:'absolute',
       left:{'Mobile':'26%','Pc':'19%'},
       top:{'Mobile':'-2%','Pc':'-1%'},
+       opacity:'0',
       backgroundImage:"url('./Images/ParentIcon.png')",
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
@@ -1937,22 +2144,37 @@ MainContainers:{
         zIndex:'10',
        
 
-      }
+      },
+      Listener:{
+    UmbraViewportLogic:{
+      Action:UmbraAnimations.Active,
+      Params:['SlideForRightAnimation','ParentLetterDecoration'],
+
+    }
+   },
     },
    ParentImage:{
-      Id:' ParentImage',
+      Id:'ParentImage',
       Type:'div',
       Style:{
         position:'absolute',
         width:{'Mobile':'40%',Pc:'33%'},
         height:{'Mobile':'40%',Pc:'33%'},
         top:{'Mobile':'16%',Pc:'4%'},
+         opacity:'0',
         left:{'Mobile':'55%',Pc:'55%'},
          backgroundImage:"url('./Images/ParentImage.png')",
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
         backgroundSize:'cover',
-      }
+      },
+      Listener:{
+    UmbraViewportLogic:{
+      Action:UmbraAnimations.Active,
+      Params:['SlideForRightAnimation','ParentImage'],
+
+    }
+   },
     },
    ParentText:{
     Id:'ParentText',
@@ -1966,6 +2188,7 @@ MainContainers:{
       color:['rgb(0, 0, 0)','rgb(240,240,240)'],
       width:{'Mobile':'60%','Pc':'25%'},
       padding:'1%',
+       opacity:'0',
        fontFamily: "'Delius', cursive",
             fontWeight: '400',
             fontStyle: 'normal',
@@ -1976,6 +2199,13 @@ MainContainers:{
          
       
     },
+    Listener:{
+    UmbraViewportLogic:{
+      Action:UmbraAnimations.Active,
+      Params:['SlideForRightAnimation','ParentText'],
+
+    }
+   },
     Text:"Suporte prático para pais e responsáveis, com estratégias para o dia a dia e fortalecimento do vínculo familiar.",
     },
      ParentMoreAboutButton:{
@@ -1988,6 +2218,7 @@ MainContainers:{
         top:{'Mobile':'75%','Pc':'25%'},
         left:{'Mobile':'75%','Pc':'34%'},
         border:['solid 1px black','solid 1px white'],
+         opacity:'0',
         width:{'Mobile':'20%','Pc':'14%'},
         height:{'Mobile':'40%','Pc':'2%'},
         boxShadow:'rgba(0,0,0,0.6) 5px 5px 5px',
@@ -2006,7 +2237,14 @@ MainContainers:{
           Style:{
             scale:'1.2',
           }
-        }
+        },
+        
+    UmbraViewportLogic:{
+      Action:UmbraAnimations.Active,
+      Params:['SlideForRightAnimation','ParentMoreAboutButton1'],
+
+    
+   },
       }
     },
     TDAHLetter:{
@@ -2019,6 +2257,7 @@ MainContainers:{
        fontFamily: "'Delius', cursive",
             fontWeight: '400',
             fontStyle: 'normal',
+             opacity:'0',
             textShadow:'2px 4px 10px rgba(0, 0, 0, 0.9)',
             position:'absolute',
             top:{'Mobile':'47%','Pc':'32%'},
@@ -2027,8 +2266,15 @@ MainContainers:{
              width:{'Mobile':'20%','Pc':'60%'},
 
       },
+      Listener:{
+    UmbraViewportLogic:{
+      Action:UmbraAnimations.Active,
+      Params:['SlideForRightAnimation','TDAHLetter'],
+
+    }
+   },
     },
-     TerapyLetterDecoration1:{
+     TDAHLetterDecoration1:{
       Id:'TDAHLetterDecoration1',
       Type:'div',
       Style:{
@@ -2037,6 +2283,7 @@ MainContainers:{
       top:{'Mobile':'-2%','Pc':'27%'},
       backgroundImage:"url('./Images/TDAHIcon.png')",
         backgroundRepeat:'no-repeat',
+         opacity:'0',
         backgroundPosition:'center',
         backgroundSize:'cover',
         width:{'Mobile':'10%','Pc':'9%'},
@@ -2044,7 +2291,14 @@ MainContainers:{
         zIndex:'10',
        
 
-      }
+      },
+      Listener:{
+    UmbraViewportLogic:{
+      Action:UmbraAnimations.Active,
+      Params:['SlideForRightAnimation','TDAHLetterDecoration1'],
+
+    }
+   },
     },
 
     TDAHImage:{
@@ -2056,11 +2310,19 @@ MainContainers:{
         height:{'Mobile':'40%',Pc:'35%'},
         top:{'Mobile':'16%',Pc:'34%'},
         left:{'Mobile':'55%',Pc:'20%'},
+         opacity:'0',
          backgroundImage:"url('./Images/TDAHImage.png')",
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
         backgroundSize:'cover',
-      }
+      },
+      Listener:{
+    UmbraViewportLogic:{
+      Action:UmbraAnimations.Active,
+      Params:['SlideForRightAnimation','TDAHImage'],
+
+    }
+   },
     },
     TDAHText:{
     Id:'TDAHText',
@@ -2070,6 +2332,7 @@ MainContainers:{
       top:{'Mobile':'9%','Pc':'39%'},
       borderLeft:['solid 1px black','solid 1px white'],
       left:{'Mobile':'13%','Pc':'58%'},
+       opacity:'0',
       fontSize:{'Mobile':'12px','Pc':'21px'},
       color:['rgb(0, 0, 0)','rgb(240,240,240)'],
       width:{'Mobile':'60%','Pc':'30%'},
@@ -2085,6 +2348,13 @@ MainContainers:{
          
       
     },
+    Listener:{
+    UmbraViewportLogic:{
+      Action:UmbraAnimations.Active,
+      Params:['SlideForRightAnimation','TDAHText'],
+
+    }
+   },
     Text:"Acompanhamento especializado para atenção, organização, impulsividade e desempenho escolar.",
     },
    TDAHMoreAboutButton:{
@@ -2099,6 +2369,7 @@ MainContainers:{
         border:['solid 1px black','solid 1px white'],
         width:{'Mobile':'20%','Pc':'14%'},
         height:{'Mobile':'40%','Pc':'2%'},
+         opacity:'0',
         boxShadow:'rgba(0,0,0,0.6) 5px 5px 5px',
          fontSize:{'Pc':'15px','Mobile':'31px'},
              fontFamily: "'Delius', cursive",
@@ -2115,7 +2386,14 @@ MainContainers:{
           Style:{
             scale:'1.2',
           }
-        }
+        },
+        
+    UmbraViewportLogic:{
+      Action:UmbraAnimations.Active,
+      Params:['SlideForRightAnimation','TDAHMoreAboutButton'],
+
+    
+   },
       }
     },
     
@@ -2157,10 +2435,17 @@ MainContainers:{
        transform:'translate(-50%,-50%)',
          borderBottom:['solid 1px black','solid 1px white'],
          width:'55%',
-         textAlign:'center'
-
+         textAlign:'center',
+         opacity:'0',
       },
       Text:'Quem Sou Eu?',
+      Listener:{
+    UmbraViewportLogic:{
+      Action:UmbraAnimations.Active,
+      Params:['SlideForRightAnimation','WhoIAmLetter'],
+
+    }
+   },
     },
     WhoIAmDecoration:{
      Id:'WhoIAmDecoration',
@@ -2177,9 +2462,16 @@ MainContainers:{
         backgroundSize:'cover',
        width:{'Mobile':'8%','Pc':'5%'},
         height:{'Mobile':'2%','Pc':'5%'},
-      
+         opacity:'0',
         zIndex:'10',
      },
+     Listener:{
+    UmbraViewportLogic:{
+      Action:UmbraAnimations.Active,
+      Params:['SlideForRightAnimation','WhoIAmDecoration'],
+
+    }
+   },
     },
     SelfImage:{
       Id:'SelfImage',
@@ -2198,8 +2490,16 @@ MainContainers:{
         backgroundSize:'cover',
         boxShadow:'rgba(0,0,0,0.6) 5px 5px 5px',
         border:'solid 1px black',
+         opacity:'0',
         
       },
+      Listener:{
+    UmbraViewportLogic:{
+      Action:UmbraAnimations.Active,
+      Params:['SlideForRightAnimation','SelfImage'],
+
+    }
+   },
       Childs:{
         MySpecsText:{
           Id:'MySpecsText',
@@ -2215,8 +2515,16 @@ MainContainers:{
           color:['black','white'],
           left:{'Mobile':'45%','Pc':'47%'},
           top:{'Mobile':'20%','Pc':'7%'},
+           opacity:'0',
 
           },
+          Listener:{
+    UmbraViewportLogic:{
+      Action:UmbraAnimations.Active,
+      Params:['SlideForRightAnimation','MySpecsText'],
+
+    }
+   },
           Text:
          `- Psicanalista;
 
@@ -2246,12 +2554,21 @@ MainContainers:{
         backgroundPosition:'center',
         backgroundSize:'cover',
         position:'absolute',
+         opacity:'0',
+         left:'0%',
         width:{'Mobile':'100%','Pc':'100%'},
         height:{'Mobile':'17%','Pc':'17%'},
         top:{'Mobile':'35%','Pc':'35%'},
         
       
-      }
+      },
+      Listener:{
+    UmbraViewportLogic:{
+      Action:UmbraAnimations.Active,
+      Params:['SlideForRightAnimation','SpikesDecoration'],
+
+    }
+   },
     },
     NameLetter:{
       Id:'NameLetter',
@@ -2265,13 +2582,21 @@ MainContainers:{
         lineHeight:{'Mobile':'2','Pc':'0.8'},
       fontFamily: "'Imperial Script', cursive",
       fontWeight: '400',
+       opacity:'0',
       fontStyle: 'normal',
       left:{'Mobile':'55%','Pc':'50%'},
       transform:'translate(-50%,0%)',
       top:{'Mobile':'34%','Pc':'7.5%'},
        whiteSpace: 'pre-wrap',
         
-      }
+      },
+      Listener:{
+    UmbraViewportLogic:{
+      Action:UmbraAnimations.Active,
+      Params:['SlideForRightAnimation','NameLetter'],
+
+    }
+   },
     },
     MyBioLetter:{
       Id:'MyBioLetter',
@@ -2284,12 +2609,20 @@ MainContainers:{
       lineHeight:{'Mobile':'2','Pc':'0.8'},
       fontFamily: "'Imperial Script', cursive",
       fontWeight: '400',
+       opacity:'0',
       fontStyle: 'normal',
       left:{'Mobile':'55%','Pc':'53%'},
       top:{'Mobile':'34%','Pc':'38%'},
       },
       Text:`Minha
       Biografia!`,
+      Listener:{
+    UmbraViewportLogic:{
+      Action:UmbraAnimations.Active,
+      Params:['SlideForRightAnimation','MyBioLetter'],
+
+    }
+   },
     },
     MyBioDecoration1:{
       Id:'MyBioDecoration1',
@@ -2299,6 +2632,7 @@ MainContainers:{
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
         backgroundSize:'cover',
+         opacity:'0',
         position:'absolute',
         width:{'Mobile':'100%','Pc':'10%'},
         height:{'Mobile':'17%','Pc':'6%'},
@@ -2306,7 +2640,14 @@ MainContainers:{
         display:'none',
         transform:'rotate(10deg)',
         left:{'Mobile':'35%','Pc':'60%'},
-      }
+      },
+      Listener:{
+    UmbraViewportLogic:{
+      Action:UmbraAnimations.Active,
+      Params:['SlideForRightAnimation','MyBioDecoration1'],
+
+    }
+   },
     },
     MyBioText:{
       Id:'MyBioText',
@@ -2328,10 +2669,18 @@ MainContainers:{
       fontFamily: "'Delius', cursive",
       fontWeight: '400',
       fontStyle: 'normal',
+       opacity:'0',
       left:{'Mobile':'55%','Pc':'37%'},
       top:{'Mobile':'34%','Pc':'53%'},
 
+    },
+    Listener:{
+    UmbraViewportLogic:{
+      Action:UmbraAnimations.Active,
+      Params:['SlideForRightAnimation','MyBioText'],
+
     }
+   },
     },
     BackgroundBio:{
       Id:'BackgroundBio',
@@ -2342,12 +2691,20 @@ MainContainers:{
         backgroundPosition:'center',
         backgroundSize:'contain',
         position:'absolute',
+         opacity:'0',
         width:{'Mobile':'100%','Pc':'60%'},
         height:{'Mobile':'17%','Pc':'25%'},
         top:{'Mobile':'35%','Pc':'63%'},
         transform:'rotate(10deg)',
         left:{'Mobile':'35%','Pc':'0%'},
-      }
+      },
+      Listener:{
+    UmbraViewportLogic:{
+      Action:UmbraAnimations.Active,
+      Params:['SlideForRightAnimation','BackgroundBio'],
+
+    }
+   },
     }
    
     },
@@ -2382,12 +2739,20 @@ MainContainers:{
       lineHeight:{'Mobile':'2','Pc':'0.8'},
       fontFamily: "'Imperial Script', cursive",
       fontWeight: '400',
+      opacity:'0',
       transform:'translate(-50%,0%)',
       fontStyle: 'normal',
       left:{'Mobile':'55%','Pc':'50%'},
       top:{'Mobile':'34%','Pc':'5%'},
       },
       Text:'Agende Sua Consulta!',
+      Listener:{
+    UmbraViewportLogic:{
+      Action:UmbraAnimations.Active,
+      Params:['SlideForRightAnimation','ContactLetter'],
+
+    }
+   },
 
     },
      ContactDecoration1:{
@@ -2399,12 +2764,20 @@ MainContainers:{
         backgroundPosition:'center',
         backgroundSize:'cover',
         position:'absolute',
+        opacity:'0',
         width:{'Mobile':'100%','Pc':'5%'},
         height:{'Mobile':'17%','Pc':'3%'},
         top:{'Mobile':'35%','Pc':'3.5%'},
         transform:'rotate(10deg)',
         left:{'Mobile':'35%','Pc':'30%'},
-      }
+      },
+      Listener:{
+    UmbraViewportLogic:{
+      Action:UmbraAnimations.Active,
+      Params:['SlideForRightAnimation','ContactDecoration1'],
+
+    }
+   },
     },
     LocalLetter:{
       Id:'LocalLetter',
@@ -2415,6 +2788,7 @@ MainContainers:{
       fontSize:{'Mobile':'1rem','Pc':'2.6rem'},
       color:['black','white'],
      whiteSpace: 'pre-wrap',
+     opacity:'0',
       lineHeight:{'Mobile':'2','Pc':'0.8'},
       fontFamily: "'Imperial Script', cursive",
       fontWeight: '400',
@@ -2422,7 +2796,14 @@ MainContainers:{
       fontStyle: 'normal',
       left:{'Mobile':'55%','Pc':'36%'},
       top:{'Mobile':'34%','Pc':'12%'},
-      }
+      },
+      Listener:{
+    UmbraViewportLogic:{
+      Action:UmbraAnimations.Active,
+      Params:['SlideForRightAnimation','LocalLetter'],
+
+    }
+   },
     },
     ClinicAdressText:{
     Id:'ClinicAdressText',
@@ -2436,6 +2817,7 @@ MainContainers:{
       color:['black','white'],
       fontSize:{'Mobile':'1rem','Pc':'1.2'},
        whiteSpace: 'pre-wrap',
+       opacity:'0',
       lineHeight:{'Mobile':'2','Pc':'1.5'},
       fontFamily: "'Delius', cursive",
       fontWeight: '400',
@@ -2443,7 +2825,14 @@ MainContainers:{
       left:{'Mobile':'55%','Pc':'30%'},
       top:{'Mobile':'34%','Pc':'14.7%'},
      
+    },
+    Listener:{
+    UmbraViewportLogic:{
+      Action:UmbraAnimations.Active,
+      Params:['SlideForRightAnimation','ClinicAdressText'],
+
     }
+   },
     },
     ClinicAdressMap:{
       Id:"ClinicAdressMap",
@@ -2452,12 +2841,19 @@ MainContainers:{
       position:`absolute`,
       top:{Mobile:'20%',Pc:"45%"},
       left:{Mobile:"15%",Pc:'28%'},
+      opacity:'0',
       width:{Mobile:"30%",Pc:"60%"},
       height:{Mobile:`10%`,Pc:'29%'},
       border:[`solid 3px black`,`solid 1px white`],
       },
       Src:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.5846256170535!2d-52.81804822522044!3d-28.461935275758293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94fd4930d1aa4cb7%3A0xec4a7325745ef3cd!2sR.%20Pedro%20Augustin%20-%20N%C3%A3o-Me-Toque%2C%20RS%2C%2099470-000!5e0!3m2!1spt-BR!2sbr!4v1769355775168!5m2!1spt-BR!2sbr",
-      
+      Listener:{
+    UmbraViewportLogic:{
+      Action:UmbraAnimations.Active,
+      Params:['SlideForRightAnimation','ClinicAdressMap'],
+
+    }
+   },
     },
     ContactOptionsLetter:{
       Id:'CantactOptionsLetter',
@@ -2465,6 +2861,7 @@ MainContainers:{
       Text:'Meios De Contato',
       Style:{
          position:'absolute',
+         opacity:'0',
       fontSize:{'Mobile':'1rem','Pc':'2.6rem'},
       color:['black','white'],
      whiteSpace: 'pre-wrap',
@@ -2476,6 +2873,13 @@ MainContainers:{
       left:{'Mobile':'55%','Pc':'72%'},
       top:{'Mobile':'34%','Pc':'23%'},
       },
+      Listener:{
+    UmbraViewportLogic:{
+      Action:UmbraAnimations.Active,
+      Params:['SlideForRightAnimation','ContactOptionsLetter'],
+
+    }
+   },
     },
 
     ContactOptionsInstaText:{
@@ -2485,6 +2889,7 @@ MainContainers:{
 Style:{
 position:'absolute',
       color:['black','white'],
+      opacity:'0',
       fontSize:{'Mobile':'1rem','Pc':'1.2'},
        whiteSpace: 'pre-wrap',
       lineHeight:{'Mobile':'2','Pc':'4'},
@@ -2505,7 +2910,14 @@ position:'absolute',
         }
       },
       UseFn:true,
-      Fn:()=>{window.open("https://www.instagram.com/dheisedill/", "_blank")}
+      Fn:()=>{window.open("https://www.instagram.com/dheisedill/", "_blank")},
+     
+    UmbraViewportLogic:{
+      Action:UmbraAnimations.Active,
+      Params:['SlideForRightAnimation','ContactOptionsInstaText'],
+
+    
+   },
     }
 
     },
@@ -2521,6 +2933,7 @@ position:'absolute',
       lineHeight:{'Mobile':'2','Pc':'4'},
       fontFamily: "'Delius', cursive",
       fontWeight: '400',
+      opacity:'0',
       fontStyle: 'normal',
       left:{'Mobile':'55%','Pc':'64%'},
       top:{'Mobile':'34%','Pc':'35.6%'},
@@ -2528,6 +2941,13 @@ position:'absolute',
       
      
 },
+ Listener:{
+    UmbraViewportLogic:{
+      Action:UmbraAnimations.Active,
+      Params:['SlideForRightAnimation','ContactOptionsEmailText'],
+
+    }
+   },
  
 
     },
@@ -2544,6 +2964,7 @@ position:'absolute',
       lineHeight:{'Mobile':'2','Pc':'4'},
       fontFamily: "'Delius', cursive",
       fontWeight: '400',
+      opacity:'0',
       fontStyle: 'normal',
       left:{'Mobile':'55%','Pc':'64%'},
       top:{'Mobile':'34%','Pc':'31.3%'},
@@ -2558,7 +2979,14 @@ position:'absolute',
         }
       },
       UseFn:true,
-      Fn:()=>{window.open("https://wa.me/5554991841827", "_blank");}
+      Fn:()=>{window.open("https://wa.me/5554991841827", "_blank");},
+       
+    UmbraViewportLogic:{
+      Action:UmbraAnimations.Active,
+      Params:['SlideForRightAnimation','ContactOptionsWhatsText'],
+
+    
+   },
     }
 
     },
@@ -2570,12 +2998,20 @@ position:'absolute',
     left:{'Pc':'62%','Mobile':'62%'},
     top:{'Pc':'28.6%','Mobile':'29%'},
     width:{'Pc':'2%','Mobile':'2%'},
+    opacity:'0',
     height:{'Pc':'1.2%','Mobile':'0.4%'},
       backgroundImage:"url('./Images/InstagramIcon.png')",
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
         backgroundSize:'contain',
-      }
+      },
+       Listener:{
+    UmbraViewportLogic:{
+      Action:UmbraAnimations.Active,
+      Params:['SlideForRightAnimation','InstagramContactIcon'],
+
+    }
+   },
     },
      WhatsContactIcon:{
       Id:'WhatsContactIcon',
@@ -2586,11 +3022,19 @@ position:'absolute',
     top:{'Pc':'32.3%','Mobile':'37%'},
     width:{'Pc':'3%','Mobile':'2%'},
     height:{'Pc':'2.3%','Mobile':'0.4%'},
+    opacity:'0',
       backgroundImage:"url('./Images/WhatsIcon.png')",
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
         backgroundSize:'contain',
-      }
+      },
+       Listener:{
+    UmbraViewportLogic:{
+      Action:UmbraAnimations.Active,
+      Params:['SlideForRightAnimation','WhatsContactIcon'],
+
+    }
+   },
     },
      EmailContactIcon:{
       Id:'EmailContactIcon',
@@ -2601,11 +3045,19 @@ position:'absolute',
     top:{'Pc':'36.8%','Mobile':'41%'},
     width:{'Pc':'3%','Mobile':'2%'},
     height:{'Pc':'2.3%','Mobile':'0.4%'},
+    opacity:'0',
       backgroundImage:"url('./Images/EmailIcon.png')",
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
         backgroundSize:'contain',
-      }
+      },
+       Listener:{
+    UmbraViewportLogic:{
+      Action:UmbraAnimations.Active,
+      Params:['SlideForRightAnimation','EmailContactIcon'],
+
+    }
+   },
     },
     ContactBackground:{
       Id:'ContactBackground',
@@ -2615,12 +3067,20 @@ position:'absolute',
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
         backgroundSize:'cover',
+        opacity:'0',
         position:'absolute',
         width:{'Mobile':'100%','Pc':'20%'},
         height:{'Mobile':'17%','Pc':'13%'},
         top:{'Mobile':'35%','Pc':'27%'},
         left:{'Mobile':'35%','Pc':'37%'},
-      }
+      },
+       Listener:{
+    UmbraViewportLogic:{
+      Action:UmbraAnimations.Active,
+      Params:['SlideForRightAnimation','ContactBackground'],
+
+    }
+   },
     }
    
 
@@ -2718,6 +3178,10 @@ let SlideForRightAnimationBluePrint = {
       StartIn:0,
       EndIn:1,
       
+    },
+    scale:{
+      StartIn:0,
+      EndIn:1,
     }
     
 },
