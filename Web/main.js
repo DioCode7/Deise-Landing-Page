@@ -906,7 +906,7 @@ MainContainers:{
       'Mobile':["url('./Images/Decoration5MinimalistMobLight.png')","url('./Images/Decoration5MinimalistMobDark.png')"]},
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
-        backgroundSize:'cover',
+        backgroundSize:{'Pc':'cover','Mobile':'contain'},
     
     height:{'Mobile':'70%','Pc':'69%'},
     },
