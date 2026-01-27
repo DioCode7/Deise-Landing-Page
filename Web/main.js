@@ -1472,17 +1472,17 @@ MainContainers:{
       Text:'Educação Especial',
       Style:{
       color:['black','white'],
-      fontSize:{'Mobile':'11px','Pc':'25px'},
+      fontSize:{'Mobile':'1rem','Pc':'25px'},
        fontFamily: "'Delius', cursive",
             fontWeight: '400',
             opacity:'0',
             fontStyle: 'normal',
             textShadow:'2px 4px 10px rgba(0, 0, 0, 0.9)',
             position:'absolute',
-            top:{'Mobile':'20%','Pc':'1%'},
-            left:{'Mobile':'20%','Pc':'25%'},
+            top:{'Mobile':{'Portrait':'4.5%','Landscape':'4.5'},'Pc':'1%'},
+            left:{'Mobile':{'Portrait':'20%','Landscape':'20%'},'Pc':'25%'},
              borderBottom:['solid 1px black','solid 1px white'],
-             width:{'Mobile':'20%','Pc':'60%'},
+             width:{'Mobile':'60%','Pc':'60%'},
 
       },
         Listener:{
