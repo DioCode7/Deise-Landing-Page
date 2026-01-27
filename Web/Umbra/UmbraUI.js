@@ -8,12 +8,19 @@ let UmbraUI = UmbraCoreBrute.UmbraDOM.UiModule;
 
 //Funções
 
+export let UmbraAnimationsCore = {
+    New:UmbraNewAnimation,
+    Delete:UmbraDeleteAnimation,
+    TurnOff:UmbraTurnOffAnimation,
+    Active:UmbraActiveAnimation,
+}
+
 
 export let UmbraScenesBrute = {
     New:UmbraNewScene,
     Active:ActiveUmbraScene,
     Verify:VerifyUmbraScene,
-    TurnOf:TurnOfUmbraScene,
+    TurnOff:TurnOfUmbraScene,
     Delete:DeleteUmbraScene,
 
 };
@@ -263,7 +270,7 @@ let ActiveBinding = null;
 for(let Trigger in BluePrint.BindingTriggers){
     let TriggerId = BluePrint.BindingTriggers[Trigger].Id;
   if(UmbraCoreBrute.UmbraLogic.UmbraBrain[TriggerId].BindingTriggerStats == true){
-   UmbraCoreBrute.UmbraLogic.UmbraBrain[TriggerId].BindingTriggerStats == false;
+   UmbraCoreBrute.UmbraLogic.UmbraBrain[TriggerId].BindingTriggerStats = false;
    let BindingContent = BluePrint.BindingTriggers[Trigger].BindingContent;
    for(let Content in BindingContent){
     console.warn('oiii',BindingContent[Content].Id);
@@ -273,6 +280,7 @@ for(let Trigger in BluePrint.BindingTriggers){
    
   }
 }
+
 let BindingContentRender = TriggerBluePrint.BindingContent;
 UmbraMainRender(TriggerBluePrint.Id,BindingContentRender);
 UmbraCoreBrute.UmbraLogic.UmbraBrain[TriggerBluePrint.Id].BindingTriggerStats = true;
@@ -280,4 +288,235 @@ UmbraCoreBrute.UmbraLogic.UmbraBrain[TriggerBluePrint.Id].BindingTriggerStats = 
 
 function UmbraClearOverrides(ElementId){
     delete UmbraCoreBrute.UmbraDOM.OverridesStyles[ElementId];
+}
+
+
+
+function UmbraNewAnimation(Id,AnimationConfig){
+    AnimationConfig.Id = Id;
+     UmbraCoreBrute.UmbraDOM.AnimationsNexus[Id] = AnimationConfig;
+}
+
+
+let UmbraMetricsAnimations = [
+    'left',
+    'right',
+    'top',
+    'bottom',
+    'fontSize',
+    'height',
+    'width',
+
+]
+
+let UmbraNoMetricsAnimations = [
+    'opacity'
+];
+
+function UmbraAnimationsSpeedCalc(AnimationConfig,Element){
+    let DeclaredTime = AnimationConfig.Time;
+
+        for(let Prop in AnimationConfig.Properties){
+            if(UmbraMetricsAnimations.includes(Prop) || UmbraNoMetricsAnimations.includes(Prop)){
+        let NewSpeed = 0;
+        let StartValue = AnimationConfig.Properties[Prop].StartIn;
+        let FinalValue = AnimationConfig.Properties[Prop].EndIn;
+        if(FinalValue == 'Actual'){
+            if(typeof UmbraCoreBrute.UmbraDOM.DeclaredStyles[Element].Style[Prop] == 'object'
+                 && !Array.isArray(UmbraCoreBrute.UmbraDOM.DeclaredStyles[Element].Style[Prop])){
+               let ClientPlataform = UmbraCoreBrute.ClientPlataform();
+               if(Array.isArray(UmbraCoreBrute.UmbraDOM.DeclaredStyles[Element].Style[Prop][ClientPlataform])){
+                let ClientTheme = UmbraCoreBrute.ClientTheme();
+                if(ClientTheme == 'Dark'){
+                    FinalValue = parseFloat(UmbraCoreBrute.UmbraDOM.DeclaredStyles[Element].Style[Prop][ClientPlataform][1]);
+                }
+                  if(ClientTheme == 'Light'){
+                    FinalValue = parseFloat(UmbraCoreBrute.UmbraDOM.DeclaredStyles[Element].Style[Prop][ClientPlataform][0]);
+                }
+               }else{
+                 FinalValue = parseFloat(UmbraCoreBrute.UmbraDOM.DeclaredStyles[Element].Style[Prop][ClientPlataform]);
+               
+               }
+            }else if(typeof UmbraCoreBrute.UmbraDOM.DeclaredStyles[Element].Style[Prop] == 'string'){
+            FinalValue = parseFloat(UmbraCoreBrute.UmbraDOM.DeclaredStyles[Element].Style[Prop]);
+            }else if(Array.isArray(UmbraCoreBrute.UmbraDOM.DeclaredStyles[Element].Style[Prop])){
+                let ClientTheme = UmbraCoreBrute.ClientTheme();
+                if(ClientTheme == 'Dark'){
+                    FinalValue = parseFloat(UmbraCoreBrute.UmbraDOM.DeclaredStyles[Element].Style[Prop][1]);
+                }
+                  if(ClientTheme == 'Light'){
+                    FinalValue = parseFloat(UmbraCoreBrute.UmbraDOM.DeclaredStyles[Element].Style[Prop][0]);
+                }
+            }
+            AnimationConfig.Properties[Prop].EndIn = FinalValue;
+        }
+         if(StartValue == 'Actual'){
+           if(typeof UmbraCoreBrute.UmbraDOM.DeclaredStyles[Element].Style[Prop] == 'object'
+                 && !Array.isArray(UmbraCoreBrute.UmbraDOM.DeclaredStyles[Element].Style[Prop])){
+               let ClientPlataform = UmbraCoreBrute.ClientPlataform();
+               if(Array.isArray(UmbraCoreBrute.UmbraDOM.DeclaredStyles[Element].Style[Prop][ClientPlataform])){
+                let ClientTheme = UmbraCoreBrute.ClientTheme();
+                if(ClientTheme == 'Dark'){
+                   StartValue = parseFloat(UmbraCoreBrute.UmbraDOM.DeclaredStyles[Element].Style[Prop][ClientPlataform][1]);
+                }
+                  if(ClientTheme == 'Light'){
+                   StartValue = parseFloat(UmbraCoreBrute.UmbraDOM.DeclaredStyles[Element].Style[Prop][ClientPlataform][0]);
+                }
+               }else{
+                StartValue = UmbraCoreBrute.UmbraDOM.DeclaredStyles[Element].Style[Prop][ClientPlataform];
+               }
+            }else if(typeof UmbraCoreBrute.UmbraDOM.DeclaredStyles[Element].Style[Prop] == 'string'){
+           StartValue = parseFloat(UmbraCoreBrute.UmbraDOM.DeclaredStyles[Element].Style[Prop]);
+            }else if(Array.isArray(UmbraCoreBrute.UmbraDOM.DeclaredStyles[Element].Style[Prop])){
+                let ClientTheme = UmbraCoreBrute.ClientTheme();
+                if(ClientTheme == 'Dark'){
+                    StartValue = parseFloat(UmbraCoreBrute.UmbraDOM.DeclaredStyles[Element].Style[Prop][1]);
+                }
+                  if(ClientTheme == 'Light'){
+                    StartValue = parseFloat(UmbraCoreBrute.UmbraDOM.DeclaredStyles[Element].Style[Prop][0]);
+                }
+            }
+            AnimationConfig.Properties[Prop].EndIn = StartValue;
+        }
+       
+        let ValuesDiff = StartValue - FinalValue; 
+        ValuesDiff = Math.abs(ValuesDiff);
+        let FinalSpeed = ValuesDiff / DeclaredTime;
+        AnimationConfig.Properties[Prop].Speed = FinalSpeed;
+    }
+        }
+        return AnimationConfig;
+    }
+
+function UmbraActiveAnimation(Id,Element){
+ 
+    UmbraCoreBrute.UmbraDOM.AnimationsNexus[Id].State = 'Active';
+        let NewAnimationObj = structuredClone(UmbraCoreBrute.UmbraDOM.AnimationsNexus[Id]);
+        NewAnimationObj = UmbraAnimationsSpeedCalc(NewAnimationObj,Element);
+        let DeclaredTime = NewAnimationObj.Time;
+        let DeclaredFrameRate = NewAnimationObj.FrameRate;
+        let DeclaredRepeat = NewAnimationObj.Repeat;
+        for(let Prop in NewAnimationObj.Properties){
+            NewAnimationObj.Properties[Prop] = {...NewAnimationObj.Properties[Prop],
+                'RealStartIn':NewAnimationObj.Properties[Prop].StartIn,
+                'FrameRateController':structuredClone(DeclaredFrameRate),
+                'Time':DeclaredTime,'Repeat':DeclaredRepeat,'FrameRate':DeclaredFrameRate,'PropertieName':Prop,
+            }
+            UmbraCoreBrute.UmbraDOM.ActiveAnimations[Id+Element+Prop] = {AnimationConfig:NewAnimationObj.Properties[Prop],
+                Element:Element,Id:Id};
+          
+            
+        }
+
+        
+        
+
+
+}
+
+function UmbraDeleteAnimation(Id){
+     delete UmbraCoreBrute.UmbraDOM.AnimationsNexus[Id];
+}
+
+function UmbraTurnOffAnimation(){
+
+}
+
+function UmbraAnimationRender(AnimationConfig,Element,Id){
+    console.warn(AnimationConfig,Element,Id)
+    let FrameRateController = AnimationConfig.FrameRateController;
+    let Speed = AnimationConfig.Speed;
+    let StartValue = AnimationConfig.StartIn;
+    let EndValue = AnimationConfig.EndIn;
+    let Time = AnimationConfig.Time;
+    let Repeat = AnimationConfig.Repeat;
+    let FrameRate = AnimationConfig.FrameRate;
+    let ActualValue = StartValue;
+    let Metric = null;
+    let RepeatControler = Repeat;
+   // let DeltaFrameRate = UmbraCoreBrute.UmbraTime.DeltaFrameRate;
+     
+    
+    //if(DeltaFrameRate <= 0){
+       // console.error( 'reser')
+        //  AnimationConfig.FrameRateController = structuredClone(AnimationConfig.FrameRate);
+    //}
+   // if(AnimationConfig.FrameRateController <= 0){return;};
+   //AnimationConfig.FrameRateController -= 1;
+       if(UmbraMetricsAnimations.includes(AnimationConfig.PropertieName)){
+        Metric = AnimationConfig.Metric;
+        }
+        if(UmbraNoMetricsAnimations.includes(AnimationConfig.PropertieName)){
+         Metric = 'NoMetric';
+        }
+
+    if(Metric != null){
+        if(AnimationConfig.RealStartIn < EndValue){
+        ActualValue += Speed;
+        }
+     if(AnimationConfig.RealStartIn > EndValue){
+        ActualValue -= Speed;
+       
+        }
+    
+    }
+
+    if((ActualValue > EndValue && AnimationConfig.RealStartIn < EndValue) ||
+(ActualValue < EndValue && AnimationConfig.RealStartIn > EndValue)){
+
+        if(RepeatControler > 0 || Repeat == 'Infinity'){
+            if(Repeat != 'Infinity'){
+            AnimationConfig.Repeat -= 1;
+            }
+            
+            ActualValue = AnimationConfig.RealStartIn;
+             
+        }else{
+            ActualValue = EndValue;
+            UmbraCoreBrute.UmbraDOM.AnimationsNexus[Id].State = 'Off';
+            delete UmbraCoreBrute.UmbraDOM.ActiveAnimations[Id + Element + AnimationConfig.PropertieName];
+        }
+    }
+    if(Metric != null){
+        console.warn(ActualValue + Metric,Speed);
+        AnimationConfig.StartIn = ActualValue;
+    if(Metric == 'NoMetric'){
+  UmbraCoreBrute.UmbraDOM.DeclaredStyles[Element]['Style'][AnimationConfig.PropertieName] = String(ActualValue);
+
+    }else{
+    UmbraCoreBrute.UmbraDOM.DeclaredStyles[Element]['Style'][AnimationConfig.PropertieName] = ActualValue + Metric;
+    }
+    UmbraUI.UmbraApplyStyle(Element,{backgroundColor:'red'},'Declared',true);
+
+    }
+
+
+    
+    
+ 
+
+    
+
+
+}
+
+function UmbraAnimationLoop(){
+    for(let Animation in UmbraCoreBrute.UmbraDOM.ActiveAnimations){
+        
+    UmbraAnimationRender(UmbraCoreBrute.UmbraDOM.ActiveAnimations[Animation].AnimationConfig,
+    UmbraCoreBrute.UmbraDOM.ActiveAnimations[Animation].Element,UmbraCoreBrute.UmbraDOM.ActiveAnimations[Animation].Id )
+        
+    }
+
+    requestAnimationFrame(UmbraAnimationLoop);
+}
+UmbraAnimationLoop();
+
+function UmbraAnimationRenderMetrics(){
+
+}
+
+function UmbraInterpolationEngine(StartValue,EndValue,IncrementValue){
+
+
 }

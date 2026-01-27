@@ -9,12 +9,47 @@ Update:UpdateUmbraListener,
 
 };
 
+const UmbraViewportObserver = new IntersectionObserver((entries,UmbraViewportObserver) =>{
+    entries.forEach(entry =>{
+        if(entry.isIntersecting){
+        UmbraViewportExecuter(entry.target.id);
+       
+        UmbraViewportObserver.unobserve(entry.target);
+        }
+    })
+})
+
+function UmbraViewportExecuter(Id){
+    let ListenerObj = UmbraCoreBrute.UmbraLogic.UmbraListeners[Id];
+    if(ListenerObj.UmbraViewportLogic.Action){
+        if(Array.isArray(ListenerObj.UmbraViewportLogic.Action)){
+            for(let i = 0;i<ListenerObj.UmbraViewportLogic.Action.length;i++){
+          if(ListenerObj.UmbraViewportLogic.Params[i]){
+               ListenerObj.UmbraViewportLogic.Action[i](...ListenerObj.Params[i]);
+          }else{
+            ListenerObj.UmbraViewportLogic.Action[i]();
+          }
+        }
+        }else{
+            if(ListenerObj.UmbraViewportLogic.Params){
+             ListenerObj.UmbraViewportLogic.Action(...ListenerObj.UmbraViewportLogic.Params);
+            }else{
+                ListenerObj.UmbraViewportLogic.Action();
+            }
+        }
+    }
+}
+
+
 export const UmbraVirtualMethods = {
     Click:UmbraVirtualClick,
 }
 //Funções
 function AddNewUmbraListener(ListenerDOM,ListenerBluePrint){
 UmbraCoreBrute.UmbraLogic.UmbraListeners[ListenerDOM] = ListenerBluePrint;
+if(ListenerBluePrint.UmbraViewportLogic){
+    UmbraViewportObserver.observe(document.getElementById(ListenerDOM));
+}
 }
 function DeleteUmbraListener(ListenerDOM){
 delete UmbraCoreBrute.UmbraLogic.UmbraListeners[ListenerDOM];

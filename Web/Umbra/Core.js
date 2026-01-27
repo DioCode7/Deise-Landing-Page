@@ -39,6 +39,9 @@ return isMobile ? "Mobile" : "Pc";},
       let IsDark = window.matchMedia('(prefers-color-scheme : dark)').matches;
       return IsDark? 'Dark' : 'Light';
     },
+    UmbraTime:{
+      DeltaFrameRate:60,
+    },
     UmbraDOM:{
 
       DeclaredStyles:{},
@@ -50,8 +53,8 @@ return isMobile ? "Mobile" : "Pc";},
         
       }},
       UiModule:{},
-
-
+      AnimationsNexus:{},
+      ActiveAnimations:{}
 
     }
   }

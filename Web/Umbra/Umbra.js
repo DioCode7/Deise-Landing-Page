@@ -1,9 +1,10 @@
 //Imports
 import { UmbraCoreBrute,UmbraNexusBrute } from "./Core.js";
 import { UmbraApplyStyle } from "./UmbraStyles.js";
-import {UmbraScenesBrute,UmbraPageRender, UmbraDOM } from "./UmbraUI.js";
+import {UmbraScenesBrute,UmbraPageRender, UmbraDOM,UmbraAnimationsCore } from "./UmbraUI.js";
 import { UmbraTranslationsCore } from "./UmbraTranslations.js";
 import { UmbraListeners } from "./UmbraLogic.js";
+
 
 //Variáveis
 
@@ -15,6 +16,7 @@ export let UmbraRender = UmbraPageRender;
 export let UmbraTranslationsNexus = UmbraTranslationsCore;
 export let UmbraListenersControl = UmbraListeners;
 export let UmbraDOMControl = UmbraDOM;
+export let UmbraAnimations = UmbraAnimationsCore;
 //Funções
 
 

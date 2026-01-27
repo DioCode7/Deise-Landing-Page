@@ -1,6 +1,6 @@
 //Imports
 
-import { UmbraDOMControl, UmbraRender, UmbraScenes } from "./Umbra/Umbra.js";
+import { UmbraAnimations, UmbraDOMControl, UmbraRender, UmbraScenes } from "./Umbra/Umbra.js";
 
 //Variáveis 
 
@@ -102,6 +102,7 @@ MainContainers:{
         backgroundPosition:'center',
         backgroundSize:'contain',
     },
+
   },
   HeaderInstagramReference:{
     Id:"HeaderInstagramReference",
@@ -116,7 +117,17 @@ MainContainers:{
          transform:'translate(-50%,-50%)',
 
     },
-    Text:'@dheisedill'
+    Text:'@dheisedill',
+     Listener:{
+      UmbraHover:{
+        Style:{
+        color:'blue',
+         fontSize:{'Mobile':'11px','Pc':'17px'},
+        }
+      },
+      UseFn:true,
+      Fn:()=>{window.open("https://www.instagram.com/dheisedill/", "_blank")}
+    }
   },
   
   HeaderButtonAbout:{
@@ -638,7 +649,17 @@ MainContainers:{
          transform:'translate(-50%,-50%)',
 
     },
-    Text:'@dheisedill'
+    Text:'@dheisedill',
+    Listener:{
+      UmbraHover:{
+        Style:{
+        color:'blue',
+         fontSize:{'Mobile':'11px','Pc':'17px'},
+        }
+      },
+      UseFn:true,
+      Fn:()=>{window.open("https://www.instagram.com/dheisedill/", "_blank")}
+    }
   },
 
   WorkLetter:{
@@ -684,7 +705,11 @@ MainContainers:{
       Style:{
         scale:'1.2'
       }
-    }
+    },
+    UseFn:true,
+    Fn:()=>{document.getElementById('GeneralDescriptionContainer').scrollIntoView({
+       behavior: "smooth"
+    })}
    },
   },
 
@@ -710,7 +735,11 @@ MainContainers:{
       Style:{
         scale:'1.2'
       }
-    }
+    },
+     UseFn:true,
+    Fn:()=>{document.getElementById('SpecsContainer').scrollIntoView({
+       behavior: "smooth"
+    })}
    },
   },
   HeaderButtonAboutMe:{
@@ -735,7 +764,11 @@ MainContainers:{
       Style:{
         scale:'1.2'
       }
-    }
+    },
+     UseFn:true,
+    Fn:()=>{document.getElementById('AboutMeContainer').scrollIntoView({
+       behavior: "smooth"
+    })}
    },
   },
   HeaderButtonContact:{
@@ -760,7 +793,11 @@ MainContainers:{
       Style:{
         scale:'1.2'
       }
-    }
+    },
+     UseFn:true,
+    Fn:()=>{document.getElementById('ContactContainer').scrollIntoView({
+       behavior: "smooth"
+    })}
    },
   },
     }
@@ -1040,6 +1077,7 @@ MainContainers:{
    Style:{
     position:'absolute',
     left:'0%',
+     boxShadow:['rgba(0,0,0,0.4) 10px -10px 10px','rgba(0, 0, 0, 0.8) 10px -10px 10px'],
     top:{'Mobile':'81%','Pc':'116%'},
     height:{'Mobile':'210%','Pc':'210%'},
     width:'100%',
@@ -1054,6 +1092,7 @@ MainContainers:{
 
    
    },
+   
    Childs:{
     SpecsLetter:{
       Id:'SpecsLetter',
@@ -1071,8 +1110,16 @@ MainContainers:{
             fontStyle: 'normal',
             textShadow:'2px 4px 10px rgba(0, 0, 0, 0.9)',
             zIndex:'20',
-            cursor:'default'
-      }
+            cursor:'default',
+            opacity:'0',
+      },
+      Listener:{
+    UmbraViewportLogic:{
+      Action:UmbraAnimations.Active,
+      Params:['SlideForRightAnimation','SpecsLetter'],
+
+    }
+   },
     },
     SpecsLetterDecoration1:{
       Id:'SpecsLetterDecoration1',
@@ -1088,7 +1135,15 @@ MainContainers:{
         width:{'Mobile':'9%','Pc':'10%'},
         height:{'Mobile':'3%','Pc':'10%'},
         zIndex:'10',
-      }
+         opacity:'0',
+      },
+      Listener:{
+    UmbraViewportLogic:{
+      Action:UmbraAnimations.Active,
+      Params:['SlideForRightAnimation','SpecsLetterDecoration1'],
+
+    }
+   },
     },
     NeuroPedagogyLetter:{
       Id:'NeuroPedagogyLetter',
@@ -1106,8 +1161,16 @@ MainContainers:{
             left:{'Mobile':'20%','Pc':'25%'},
              borderBottom:['solid 1px black','solid 1px white'],
              width:{'Mobile':'60%','Pc':'60%'},
+              opacity:'0',
 
       },
+       Listener:{
+    UmbraViewportLogic:{
+      Action:UmbraAnimations.Active,
+      Params:['SlideForRightAnimation','NeuroPedagogyLetter'],
+
+    }
+   },
     },
        NeuroPedagogyLetterDecoration1:{
       Id:'NeuroPedagogyLetterDecoration1',
@@ -1122,10 +1185,18 @@ MainContainers:{
         backgroundSize:'cover',
         width:{'Mobile':'8%','Pc':'7%'},
         height:{'Mobile':'2%','Pc':'7%'},
+         opacity:'0',
         zIndex:'10',
        
 
-      }
+      },
+       Listener:{
+    UmbraViewportLogic:{
+      Action:UmbraAnimations.Active,
+      Params:['SlideForRightAnimation','NeuroPedagogyLetterDecoration1'],
+
+    }
+   },
     },
     NeuroPedagogyImage:{
       Id:'NeuroPedagogyImage',
@@ -1139,8 +1210,16 @@ MainContainers:{
          backgroundImage:"url('./Images/NeuroPedagogyImage.png')",
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
+         opacity:'0',
         backgroundSize:'cover',
-      }
+      },
+        Listener:{
+    UmbraViewportLogic:{
+      Action:UmbraAnimations.Active,
+      Params:['SlideForRightAnimation','NeuroPedagogyImage'],
+
+    }
+   },
     },
    NeuroPedagogyText:{
     Id:'NeuroPedagogyText',
@@ -1153,7 +1232,7 @@ MainContainers:{
       fontSize:{'Mobile':'12px','Pc':'21px'},
       color:['rgb(0, 0, 0)','rgb(240,240,240)'],
       width:{'Mobile':'40%','Pc':'30%'},
-     
+      opacity:'0',
       padding:'1%',
        fontFamily: "'Delius', cursive",
             fontWeight: '400',
@@ -1165,6 +1244,13 @@ MainContainers:{
          
       
     },
+      Listener:{
+    UmbraViewportLogic:{
+      Action:UmbraAnimations.Active,
+      Params:['SlideForRightAnimation','NeuroPedagogyText'],
+
+    }
+   },
     Text:"Avaliação e intervenção em dificuldades de aprendizagem, com estratégias personalizadas para o desenvolvimento cognitivo.",
     },
     NeuroPedagogyMoreAboutButton:{
@@ -1183,6 +1269,7 @@ MainContainers:{
          fontSize:{'Pc':'15px','Mobile':'11px'},
              fontFamily: "'Delius', cursive",
             fontWeight: '400',
+             opacity:'0',
             fontStyle: 'normal',
             textShadow:'2px 4px 10px rgba(0, 0, 0, 0.9)',
             textAlign:'center',
@@ -1195,7 +1282,14 @@ MainContainers:{
           Style:{
             scale:'1.2',
           }
-        }
+        },
+        
+    UmbraViewportLogic:{
+      Action:UmbraAnimations.Active,
+      Params:['SlideForRightAnimation','NeuroPedagogyMoreAboutButton'],
+
+    
+   },
       }
     },
      ClinicPsicLetter:{
@@ -2036,6 +2130,8 @@ MainContainers:{
     height:{'Mobile':'210%','Pc':'260%'},
     width:'100%',
     zIndex:'10',
+    
+    boxShadow:['rgba(0,0,0,0.4) 10px -10px 10px','rgba(0, 0, 0, 0.8) 10px -10px 10px'],
     display:{'Mobile':'none','Pc':'flex'},
      backgroundImage:["url('./Images/GradientMinimalistLight.png')","url('./Images/GradientMinimalistDark.png')"],
         backgroundRepeat:'no-repeat',
@@ -2072,8 +2168,9 @@ MainContainers:{
      Style:{
       display:'block',
       position:'absolute',
+      zIndex:'100',
       left:{'Mobile':'23%','Pc':'37%'},
-      top:{'Mobile':'20%','Pc':'1%'},
+      top:{'Mobile':'20%','Pc':'2%'},
       backgroundImage:["url('./Images/WhoIAmDecoration.png')","url('./Images/WhoIAmDecoration.png')"],
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
@@ -2181,15 +2278,15 @@ MainContainers:{
       Type:'div',
       Style:{
       position:'absolute',
-      fontSize:{'Mobile':'1rem','Pc':'2.5rem'},
+      fontSize:{'Mobile':'1rem','Pc':'5rem'},
       color:['black','white'],
      whiteSpace: 'pre-wrap',
       lineHeight:{'Mobile':'2','Pc':'0.8'},
       fontFamily: "'Imperial Script', cursive",
       fontWeight: '400',
       fontStyle: 'normal',
-      left:{'Mobile':'55%','Pc':'62%'},
-      top:{'Mobile':'34%','Pc':'46%'},
+      left:{'Mobile':'55%','Pc':'53%'},
+      top:{'Mobile':'34%','Pc':'38%'},
       },
       Text:`Minha
       Biografia!`,
@@ -2247,7 +2344,7 @@ MainContainers:{
         position:'absolute',
         width:{'Mobile':'100%','Pc':'60%'},
         height:{'Mobile':'17%','Pc':'25%'},
-        top:{'Mobile':'35%','Pc':'52%'},
+        top:{'Mobile':'35%','Pc':'63%'},
         transform:'rotate(10deg)',
         left:{'Mobile':'35%','Pc':'0%'},
       }
@@ -2262,6 +2359,7 @@ MainContainers:{
    Style:{
      position:'absolute',
     left:'0%',
+    boxShadow:['rgba(0,0,0,0.4) 10px -10px 10px','rgba(0, 0, 0, 0.8) 10px -10px 10px'],
     top:{'Mobile':'154%','Pc':'1000%'},
     height:{'Mobile':'210%','Pc':'250%'},
     width:'100%',
@@ -2301,11 +2399,11 @@ MainContainers:{
         backgroundPosition:'center',
         backgroundSize:'cover',
         position:'absolute',
-        width:{'Mobile':'100%','Pc':'8%'},
-        height:{'Mobile':'17%','Pc':'5%'},
-        top:{'Mobile':'35%','Pc':'2%'},
+        width:{'Mobile':'100%','Pc':'5%'},
+        height:{'Mobile':'17%','Pc':'3%'},
+        top:{'Mobile':'35%','Pc':'3.5%'},
         transform:'rotate(10deg)',
-        left:{'Mobile':'35%','Pc':'26%'},
+        left:{'Mobile':'35%','Pc':'30%'},
       }
     },
     LocalLetter:{
@@ -2352,11 +2450,11 @@ MainContainers:{
       Type:"iframe",
       Style:{
       position:`absolute`,
-      top:{Mobile:'20%',Pc:"22%"},
+      top:{Mobile:'20%',Pc:"45%"},
       left:{Mobile:"15%",Pc:'28%'},
-      width:{Mobile:"30%",Pc:"30%"},
-      height:{Mobile:`10%`,Pc:'17%'},
-      border:[`solid 1px black`,`solid 1px white`],
+      width:{Mobile:"30%",Pc:"60%"},
+      height:{Mobile:`10%`,Pc:'29%'},
+      border:[`solid 3px black`,`solid 1px white`],
       },
       Src:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.5846256170535!2d-52.81804822522044!3d-28.461935275758293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94fd4930d1aa4cb7%3A0xec4a7325745ef3cd!2sR.%20Pedro%20Augustin%20-%20N%C3%A3o-Me-Toque%2C%20RS%2C%2099470-000!5e0!3m2!1spt-BR!2sbr!4v1769355775168!5m2!1spt-BR!2sbr",
       
@@ -2380,12 +2478,10 @@ MainContainers:{
       },
     },
 
-    ContactOptionsText:{
-      Id:'ContactOptionsText',
+    ContactOptionsInstaText:{
+      Id:'ContactOptionsInstaText',
       Type:'div',
-      Text:`@dheisedill
-54 99184-1827
-neuroppdeisedill@gmail.com`,
+      Text:`@dheisedill`,
 Style:{
 position:'absolute',
       color:['black','white'],
@@ -2397,15 +2493,207 @@ position:'absolute',
       fontStyle: 'normal',
       left:{'Mobile':'55%','Pc':'64%'},
       top:{'Mobile':'34%','Pc':'27%'},
+      cursor:'pointer'
       
      
-}
+},
+  Listener:{
+      UmbraHover:{
+        Style:{
+        color:'blue',
+         fontSize:{'Mobile':'11px','Pc':'17px'},
+        }
+      },
+      UseFn:true,
+      Fn:()=>{window.open("https://www.instagram.com/dheisedill/", "_blank")}
+    }
+
+    },
+     ContactOptionsEmailText:{
+      Id:'ContactOptionsEmailText',
+      Type:'div',
+      Text:`neuroppdeisedill@gmail.com`,
+Style:{
+position:'absolute',
+      color:['black','white'],
+      fontSize:{'Mobile':'1rem','Pc':'1.2'},
+       whiteSpace: 'pre-wrap',
+      lineHeight:{'Mobile':'2','Pc':'4'},
+      fontFamily: "'Delius', cursive",
+      fontWeight: '400',
+      fontStyle: 'normal',
+      left:{'Mobile':'55%','Pc':'64%'},
+      top:{'Mobile':'34%','Pc':'35.6%'},
+      cursor:'default'
+      
+     
+},
+ 
+
+    },
+     ContactOptionsWhatsText:{
+      Id:'ContactOptionsWhatsText',
+      Type:'div',
+      Text:`54 99184-1827`,
+Style:{
+position:'absolute',
+      color:['black','white'],
+      pointer:'cursor',
+      fontSize:{'Mobile':'1rem','Pc':'1.2'},
+       whiteSpace: 'pre-wrap',
+      lineHeight:{'Mobile':'2','Pc':'4'},
+      fontFamily: "'Delius', cursive",
+      fontWeight: '400',
+      fontStyle: 'normal',
+      left:{'Mobile':'55%','Pc':'64%'},
+      top:{'Mobile':'34%','Pc':'31.3%'},
+      
+     
+},
+  Listener:{
+      UmbraHover:{
+        Style:{
+        color:'blue',
+         fontSize:{'Mobile':'11px','Pc':'17px'},
+        }
+      },
+      UseFn:true,
+      Fn:()=>{window.open("https://wa.me/5554991841827", "_blank");}
+    }
+
+    },
+    InstagramContactIcon:{
+      Id:'InstagramContactIcon',
+      Type:'div',
+      Style:{
+         position:'absolute',
+    left:{'Pc':'62%','Mobile':'62%'},
+    top:{'Pc':'28.6%','Mobile':'29%'},
+    width:{'Pc':'2%','Mobile':'2%'},
+    height:{'Pc':'1.2%','Mobile':'0.4%'},
+      backgroundImage:"url('./Images/InstagramIcon.png')",
+        backgroundRepeat:'no-repeat',
+        backgroundPosition:'center',
+        backgroundSize:'contain',
+      }
+    },
+     WhatsContactIcon:{
+      Id:'WhatsContactIcon',
+      Type:'div',
+      Style:{
+         position:'absolute',
+    left:{'Pc':'61.5%','Mobile':'62%'},
+    top:{'Pc':'32.3%','Mobile':'37%'},
+    width:{'Pc':'3%','Mobile':'2%'},
+    height:{'Pc':'2.3%','Mobile':'0.4%'},
+      backgroundImage:"url('./Images/WhatsIcon.png')",
+        backgroundRepeat:'no-repeat',
+        backgroundPosition:'center',
+        backgroundSize:'contain',
+      }
+    },
+     EmailContactIcon:{
+      Id:'EmailContactIcon',
+      Type:'div',
+      Style:{
+         position:'absolute',
+    left:{'Pc':'61.5%','Mobile':'62%'},
+    top:{'Pc':'36.8%','Mobile':'41%'},
+    width:{'Pc':'3%','Mobile':'2%'},
+    height:{'Pc':'2.3%','Mobile':'0.4%'},
+      backgroundImage:"url('./Images/EmailIcon.png')",
+        backgroundRepeat:'no-repeat',
+        backgroundPosition:'center',
+        backgroundSize:'contain',
+      }
+    },
+    ContactBackground:{
+      Id:'ContactBackground',
+      Type:'div',
+      Style:{
+         backgroundImage:["url('./Images/ContactBackground.png')","url('./Images/ContactBackground.png')"],
+        backgroundRepeat:'no-repeat',
+        backgroundPosition:'center',
+        backgroundSize:'cover',
+        position:'absolute',
+        width:{'Mobile':'100%','Pc':'20%'},
+        height:{'Mobile':'17%','Pc':'13%'},
+        top:{'Mobile':'35%','Pc':'27%'},
+        left:{'Mobile':'35%','Pc':'37%'},
+      }
     }
    
 
-   }
+   },
   },
- 
+  FooterContainer:{
+    Id:"FooterContainer",
+    Type:'div',
+    Style:{
+    position:'absolute',
+    width:'100%',
+    height:{'Mobile':'10%','Pc':'20%'},
+    backgroundColor:['rgb(255, 255, 255)','rgb(20,20,20)'],
+     boxShadow:['rgba(0,0,0,0.4) 10px -10px 10px','rgba(0, 0, 0, 0.8) 10px -10px 10px'],
+    top:'1230%',
+    zIndex:'10000',
+    left:'0%',
+
+    },
+    Childs:{
+  FooterLogo:{
+    Id:'FooterLogo',
+    Type:'div',
+    Style:{
+      position:'absolute',
+      width:{'Mobile':'3%','Pc':'15%'},
+      height:{'Mobile':'1%','Pc':'80%'},
+      backgroundImage:"url('./Images/EspaçoRessignificarLogo.png')",
+        backgroundRepeat:'no-repeat',
+        backgroundPosition:'center',
+        backgroundSize:'cover',
+        pointerEvents:'none',
+        borderRadius:'100px',
+        zIndex:'500',
+        top:'50%',
+        left:'50%',
+        transform:'translate(-50%,-50%)'
+  },
+},
+CreditsFooter:{
+  Id:'CreditsFooter',
+  Type:'div',
+  Style:{
+    position:'absolute',
+    color:['rgb(10, 10, 10)','rgb(174,174,174)'],
+    fontSize:{'Mobile':'11px','Pc':'11px'},
+    top:'90%',
+    left:'1%',
+    transform:'translate(0%,-50%)',
+    whiteSpace: 'pre-wrap',
+      lineHeight:{'Mobile':'2','Pc':'1.5'},
+      fontFamily: "'Delius', cursive",
+      fontWeight: '400',
+      fontStyle: 'normal',
+      cursor:'pointer'
+
+  },
+  Text:'DioMhwl',
+   Listener:{
+      UmbraHover:{
+        Style:{
+        color:'blue',
+         fontSize:{'Mobile':'11px','Pc':'17px'},
+        }
+      },
+      UseFn:true,
+      Fn:()=>{window.open("https://www.instagram.com/diomhwl/", "_blank")}
+    }
+}
+
+},
+  },
+  
 },
 
  
@@ -2417,6 +2705,54 @@ document.addEventListener("DOMContentLoaded",()=>{
 UmbraScenes.New("LandingPageMainScene");
 UmbraScenes.Active("LandingPageMainScene");
 UmbraRender(LandingPageBluePrint);
+
+let SlideForRightAnimationBluePrint = {
+  Id:'SlideForRightAnimation',
+    Properties:{
+    left:{
+        StartIn:-100,
+        EndIn:'Actual',
+        Metric:'%'
+    },  
+      opacity:{
+      StartIn:0,
+      EndIn:1,
+      
+    }
+    
+},
+   Repeat:0,
+   Time:50,
+   FrameRate:60
+   //Curve:'Ease-In',
+
+
+};
+
+
+let SlideForLeftAnimationBluePrint = {
+  Id:'SlideForLeftAnimation',
+    Properties:{
+    left:{
+        StartIn:100,
+        EndIn:'Actual',
+        Metric:'%'
+    },  
+  
+    
+},
+   Repeat:0,
+   Time:50,
+   FrameRate:60
+   //Curve:'Ease-In',
+
+
+};
+
+UmbraAnimations.New('SlideForRightAnimation',SlideForRightAnimationBluePrint);
+UmbraAnimations.New('SlideForLeftAnimation',SlideForLeftAnimationBluePrint);
+
+
 });
 
 function ConceptThemeSwitchs(NewTheme){
