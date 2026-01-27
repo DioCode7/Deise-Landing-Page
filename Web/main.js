@@ -908,7 +908,7 @@ MainContainers:{
         'Landscape':["url('./Images/Decoration5MinimalistLight.png')","url('./Images/Decoration5MinimalistDark.png')"]}},
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
-        backgroundSize:{'Pc':'cover','Mobile':'contain'},
+        backgroundSize:{'Pc':'cover','Mobile':'cover'},
     Minheight:{'Mobile':'40vh','Pc':'none'},
     height:{'Mobile':{'Portrait':'45vh','Landscape':'45vw'},'Pc':'69%'},
     },
