@@ -325,6 +325,23 @@ function UmbraAnimationsSpeedCalc(AnimationConfig,Element){
         if(FinalValue == 'Actual'){
             if(typeof UmbraCoreBrute.UmbraDOM.DeclaredStyles[Element].Style[Prop] == 'object'
                  && !Array.isArray(UmbraCoreBrute.UmbraDOM.DeclaredStyles[Element].Style[Prop])){
+                    if(typeof UmbraCoreBrute.UmbraDOM.DeclaredStyles[Element].Style[Prop][ClientPlataform] == 'object' && 
+                        !Array.isArray(UmbraCoreBrute.UmbraDOM.DeclaredStyles[Element].Style[Prop][ClientPlataform])
+                    ){
+                        if(ClientPlataform == 'Mobile'){
+                            let Orientation = UmbraCoreBrute.WindowOrientantion();
+                            if(Array.isArray(UmbraCoreBrute.UmbraDOM.DeclaredStyles[Element].Style[Prop][ClientPlataform][Orientation])){
+                        if(ClientTheme == 'Dark'){
+                             FinalValue = parseFloat(UmbraCoreBrute.UmbraDOM.DeclaredStyles[Element].Style[Prop][ClientPlataform][Orientation][1]);
+                             }
+                         if(ClientTheme == 'Light'){
+                             FinalValue = parseFloat(UmbraCoreBrute.UmbraDOM.DeclaredStyles[Element].Style[Prop][ClientPlataform][Orientation][0]);
+                            }
+                            }else{
+                                FinalValue = parseFloat(UmbraCoreBrute.UmbraDOM.DeclaredStyles[Element].Style[Prop][ClientPlataform][Orientation]);
+                            }
+                        }
+                    }
                let ClientPlataform = UmbraCoreBrute.ClientPlataform();
                if(Array.isArray(UmbraCoreBrute.UmbraDOM.DeclaredStyles[Element].Style[Prop][ClientPlataform])){
                 let ClientTheme = UmbraCoreBrute.ClientTheme();
