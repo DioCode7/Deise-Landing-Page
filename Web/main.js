@@ -1375,10 +1375,10 @@ MainContainers:{
     Type:'div',
     Style:{
       position:'absolute',
-      top:{'Mobile':'24%','Pc':'57%'},
+      top:{'Mobile':'23%','Pc':'57%'},
       borderLeft:['solid 1px black','solid 1px white'],
-      left:{'Mobile':{'Portrait':'56%','Landscape':'60%'},'Pc':'58%'},
-      fontSize:{'Mobile':'0.7rem','Pc':'21px'},
+      left:{'Mobile':{'Portrait':'57%','Landscape':'60%'},'Pc':'58%'},
+      fontSize:{'Mobile':'0.6rem','Pc':'21px'},
       color:['rgb(0, 0, 0)','rgb(240,240,240)'],
       width:{'Mobile':'40%','Pc':'30%'},
      opacity:'0',
