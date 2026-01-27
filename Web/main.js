@@ -1450,7 +1450,7 @@ MainContainers:{
    Style:{
     position:'absolute',
     left:'0%',
-    top:{'Mobile':{'Portrait':'291%','Landscape':'291%'},'Pc':'306%'},
+    top:{'Mobile':{'Portrait':'210%','Landscape':'291%'},'Pc':'306%'},
     height:{'Mobile':{'Portrait':'210%','Landscape':'210%'},'Pc':'210%'},
     width:'100%',
     zIndex:'11',
