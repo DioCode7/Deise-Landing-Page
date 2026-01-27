@@ -45,8 +45,8 @@ export function UmbraApplyStyle(Element,Style,Type,UmbraSync = false){
         
           console.log('Type:',typeof Style[Prop],"Name:",Prop);
         if(typeof Style[Prop] == 'object' && !Array.isArray(Style[Prop])){
-            if(typeof Style[Prop][UmbraCoreBrute.ClientPlataform] == 'object' && !Array.isArray(Style[Prop])){
-             let ClientPlataform = UmbraCoreBrute.UmbraDOM.UiModule.ClientPlataform();
+            if(typeof Style[Prop][UmbraCoreBrute.ClientPlataform()] == 'object' && !Array.isArray(Style[Prop][UmbraCoreBrute.ClientPlataform()])){
+             let ClientPlataform = UmbraCoreBrute.ClientPlataform();
              if(ClientPlataform == 'Mobile'){
                 if(Array.isArray(Style[Prop][ClientPlataform][Orientation])){
                      let Theme = UmbraCoreBrute.UmbraDOM.UiModule.ClientTheme();
