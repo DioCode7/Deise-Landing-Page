@@ -48,16 +48,15 @@ export function UmbraApplyStyle(Element,Style,Type,UmbraSync = false){
             if(typeof Style[Prop][UmbraCoreBrute.ClientPlataform()] == 'object' && !Array.isArray(Style[Prop][UmbraCoreBrute.ClientPlataform()])){
              let ClientPlataform = UmbraCoreBrute.ClientPlataform();
              if(ClientPlataform == 'Mobile'){
+                 let Orientation = UmbraCoreBrute.WindowOrientantion();
                 if(Array.isArray(Style[Prop][ClientPlataform][Orientation])){
-                     let Theme = UmbraCoreBrute.UmbraDOM.UiModule.ClientTheme();
-                      let Orientation = UmbraCoreBrute.WindowOrientantion();
+                     let Theme = UmbraCoreBrute.UmbraDOM.UiModule.ClientTheme();                 
          if(Theme == 'Dark'){ 
            ElementDOM.style[Prop] = Style[Prop][UmbraCoreBrute.ClientPlataform()][Orientation][1];
          }else if(Theme == 'Light'){
              ElementDOM.style[Prop] = Style[Prop][UmbraCoreBrute.ClientPlataform()][Orientation][0];
          }
                 }else{
-                let Orientation = UmbraCoreBrute.WindowOrientantion();
                 ElementDOM.style[Prop] = Style[Prop][ClientPlataform][Orientation];
                 }
              }
