@@ -910,7 +910,7 @@ MainContainers:{
         backgroundPosition:'center',
         backgroundSize:{'Pc':'cover','Mobile':'cover'},
     Minheight:{'Mobile':'40vh','Pc':'none'},
-    height:{'Mobile':{'Portrait':'45vh','Landscape':'45vw'},'Pc':'69%'},
+    height:{'Mobile':{'Portrait':'63%','Landscape':'45vw'},'Pc':'69%'},
     },
     },
     GeneralDescriptionContainerDecoRight:{
@@ -1299,7 +1299,7 @@ MainContainers:{
       Text:'Psicanálise Clínica',
       Style:{
       color:['black','white'],
-      fontSize:{'Mobile':'12px','Pc':'25px'},
+      fontSize:{'Mobile':'1.1rem','Pc':'25px'},
        fontFamily: "'Delius', cursive",
             fontWeight: '400',
             fontStyle: 'normal',
@@ -1352,11 +1352,11 @@ MainContainers:{
       Type:'div',
       Style:{
         position:'absolute',
-        width:{'Mobile':'65%',Pc:'40%'},
-        height:{'Mobile':'16%',Pc:'40%'},
-        top:{'Mobile':'19%',Pc:'48%'},
+        width:{'Mobile':{'Portrait':'65%','Landscape':'65%'},Pc:'40%'},
+        height:{'Mobile':{'Portrait':'16%','Landscape':'16%'},Pc:'40%'},
+        top:{'Mobile':{'Portrait':'19%','Landscape':'19%'},Pc:'48%'},
         opacity:'0',
-        left:{'Mobile':'-2%',Pc:'20%'},
+        left:{'Mobile':{'Portrait':'0%','Landscape':'0%'},Pc:'20%'},
          backgroundImage:"url('./Images/PisciImage.png')",
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
