@@ -45,7 +45,23 @@ export function UmbraApplyStyle(Element,Style,Type,UmbraSync = false){
         
           console.log('Type:',typeof Style[Prop],"Name:",Prop);
         if(typeof Style[Prop] == 'object' && !Array.isArray(Style[Prop])){
-           
+            if(typeof Style[Prop][UmbraCoreBrute.ClientPlataform] == 'object' && !Array.isArray(Style[Prop])){
+             let ClientPlataform = UmbraCoreBrute.UmbraDOM.UiModule.ClientPlataform();
+             if(ClientPlataform == 'Mobile'){
+                if(Array.isArray(Style[Prop][ClientPlataform][Orientation])){
+                     let Theme = UmbraCoreBrute.UmbraDOM.UiModule.ClientTheme();
+                      let Orientation = UmbraCoreBrute.WindowOrientantion();
+         if(Theme == 'Dark'){ 
+           ElementDOM.style[Prop] = Style[Prop][UmbraCoreBrute.ClientPlataform()][Orientation][1];
+         }else if(Theme == 'Light'){
+             ElementDOM.style[Prop] = Style[Prop][UmbraCoreBrute.ClientPlataform()][Orientation][0];
+         }
+                }else{
+                let Orientation = UmbraCoreBrute.WindowOrientantion();
+                ElementDOM.style[Prop] = Style[Prop][ClientPlataform][Orientation];
+                }
+             }
+            }else{
               if(Array.isArray(Style[Prop][UmbraCoreBrute.ClientPlataform()])){
                  let Theme = UmbraCoreBrute.UmbraDOM.UiModule.ClientTheme();
          if(Theme == 'Dark'){ 
@@ -60,7 +76,7 @@ export function UmbraApplyStyle(Element,Style,Type,UmbraSync = false){
             ElementDOM.style[Prop] = Style[Prop][UmbraCoreBrute.ClientPlataform()];
         }
             
-        }else{
+        }}else{
         if(Array.isArray(Style[Prop])){
            
          let Theme = UmbraCoreBrute.UmbraDOM.UiModule.ClientTheme();

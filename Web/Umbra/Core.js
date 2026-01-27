@@ -39,6 +39,10 @@ return isMobile ? "Mobile" : "Pc";},
       let IsDark = window.matchMedia('(prefers-color-scheme : dark)').matches;
       return IsDark? 'Dark' : 'Light';
     },
+    WindowOrientantion:()=>{
+    const isLandscape = window.matchMedia("(orientation: landscape)").matches;
+    return isLandscape ? "Landscape" : "portrait";
+    },
     UmbraTime:{
       DeltaFrameRate:60,
     },
