@@ -1455,7 +1455,7 @@ MainContainers:{
     width:'100%',
     zIndex:'11',
      backgroundImage:{Pc:["url('./Images/GradientMinimalistLight.png')","url('./Images/GradientMinimalistDark.png')"],
-      Mobile:{'Portrait':["url('./Images/GradientMinimalistLight.png')","url('./Images/GradientMinimalistDark.png')"],'Landscape':["url('./Images/GradientMinimalistLight.png')","url('./Images/GradientMinimalistDark.png')"]}
+      Mobile:{'Portrait':"url('./Images/GradientMinimalistLight.png')",'Landscape':"url('./Images/GradientMinimalistLight.png')"}
      },
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
