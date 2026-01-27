@@ -1348,12 +1348,12 @@ MainContainers:{
     },
 
     ClinicPsicImage:{
-      Id:'ClinicPsicImage1',
+      Id:'ClinicPsicImage',
       Type:'div',
       Style:{
         position:'absolute',
         width:{'Mobile':{'Portrait':'65%','Landscape':'65%'},Pc:'40%'},
-        height:{'Mobile':{'Portrait':'16%','Landscape':'16%'},Pc:'40%'},
+        height:{'Mobile':{'Portrait':'25%','Landscape':'16%'},Pc:'40%'},
         top:{'Mobile':{'Portrait':'19%','Landscape':'19%'},Pc:'48%'},
         opacity:'0',
         left:{'Mobile':{'Portrait':'6%','Landscape':'6%'},Pc:'20%'},
@@ -1365,7 +1365,7 @@ MainContainers:{
         Listener:{
     UmbraViewportLogic:{
       Action:UmbraAnimations.Active,
-      Params:['SlideForRightAnimation','ClinicPsicImage1'],
+      Params:['SlideForRightAnimation','ClinicPsicImage'],
 
     }
    },
@@ -1377,7 +1377,7 @@ MainContainers:{
       position:'absolute',
       top:{'Mobile':'24%','Pc':'57%'},
       borderLeft:['solid 1px black','solid 1px white'],
-      left:{'Mobile':'65%','Pc':'58%'},
+      left:{'Mobile':{'Portrait':'60%','Landscape':'60%'},'Pc':'58%'},
       fontSize:{'Mobile':'0.8rem','Pc':'21px'},
       color:['rgb(0, 0, 0)','rgb(240,240,240)'],
       width:{'Mobile':'60%','Pc':'30%'},
