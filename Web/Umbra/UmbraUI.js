@@ -342,7 +342,7 @@ function UmbraAnimationsSpeedCalc(AnimationConfig,Element){
                                 FinalValue = parseFloat(UmbraCoreBrute.UmbraDOM.DeclaredStyles[Element].Style[Prop][ClientPlataform][Orientation]);
                             }
                         }
-                    }
+                    }else{
               
                if(Array.isArray(UmbraCoreBrute.UmbraDOM.DeclaredStyles[Element].Style[Prop][ClientPlataform])){
                 let ClientTheme = UmbraCoreBrute.ClientTheme();
@@ -356,7 +356,7 @@ function UmbraAnimationsSpeedCalc(AnimationConfig,Element){
                  FinalValue = parseFloat(UmbraCoreBrute.UmbraDOM.DeclaredStyles[Element].Style[Prop][ClientPlataform]);
                
                }
-            }else if(typeof UmbraCoreBrute.UmbraDOM.DeclaredStyles[Element].Style[Prop] == 'string'){
+            }}else if(typeof UmbraCoreBrute.UmbraDOM.DeclaredStyles[Element].Style[Prop] == 'string'){
             FinalValue = parseFloat(UmbraCoreBrute.UmbraDOM.DeclaredStyles[Element].Style[Prop]);
             }else if(Array.isArray(UmbraCoreBrute.UmbraDOM.DeclaredStyles[Element].Style[Prop])){
                 let ClientTheme = UmbraCoreBrute.ClientTheme();
