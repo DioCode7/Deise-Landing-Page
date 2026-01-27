@@ -904,7 +904,8 @@ MainContainers:{
     width:'100%',
      backgroundImage:{'Pc':
       ["url('./Images/Decoration5MinimalistLight.png')","url('./Images/Decoration5MinimalistDark.png')"],
-      'Mobile':["url('./Images/Decoration5MinimalistMobLight.png')","url('./Images/Decoration5MinimalistMobDark.png')"]},
+      'Mobile':{'Portrait':["url('./Images/Decoration5MinimalistMobLight.png')","url('./Images/Decoration5MinimalistMobDark.png')"],
+        'Landscape':["url('./Images/Decoration5MinimalistLight.png')","url('./Images/Decoration5MinimalistDark.png')"]}},
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
         backgroundSize:{'Pc':'cover','Mobile':'contain'},

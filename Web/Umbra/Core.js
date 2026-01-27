@@ -41,7 +41,7 @@ return isMobile ? "Mobile" : "Pc";},
     },
     WindowOrientantion:()=>{
     const isLandscape = window.matchMedia("(orientation: landscape)").matches;
-    return isLandscape ? "Landscape" : "portrait";
+    return isLandscape ? "Landscape" : "Portrait";
     },
     UmbraTime:{
       DeltaFrameRate:60,
