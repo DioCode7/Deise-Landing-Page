@@ -1033,7 +1033,7 @@ MainContainers:{
     Type:'div',
     Style:{
       position:'absolute',
-      top:{'Mobile':'9%','Pc':'20%'},
+      top:{'Mobile':'11%','Pc':'20%'},
       left:{'Mobile':'13%','Pc':'35%'},
       fontSize:{'Mobile':'0.6rem','Pc':'17px'},
       color:['rgb(0, 0, 0)','rgb(240,240,240)'],
@@ -1054,7 +1054,7 @@ MainContainers:{
     Type:'div',
     Style:{
       position:'absolute',
-      top:{'Mobile':'15%','Pc':'33%'},
+      top:{'Mobile':'18%','Pc':'33%'},
       left:{'Mobile':'13%','Pc':'35%'},
       fontSize:{'Mobile':'0.6rem','Pc':'17px'},
       color:['rgb(0, 0, 0)','rgb(240,240,240)'],
