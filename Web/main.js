@@ -1647,7 +1647,7 @@ MainContainers:{
       Style:{
          position:'absolute',
       left:{'Mobile':{'Portrait':'12%','Landscape':'14%'},'Pc':'20%'},
-      top:{'Mobile':{'Portrait':'20%','Landscape':'19%'},'Pc':'30%'},
+      top:{'Mobile':{'Portrait':'23%','Landscape':'19%'},'Pc':'30%'},
       backgroundImage:"url('./Images/AutismIcon.png')",
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
@@ -1731,7 +1731,7 @@ MainContainers:{
         position:'absolute',
         color:['black','white'],
         opacity:'0',
-        top:{'Mobile':{'Portrait':'27%','Landscape':'27%'},'Pc':'52%'},
+        top:{'Mobile':{'Portrait':'30%','Landscape':'27%'},'Pc':'52%'},
         left:{'Mobile':{'Portrait':'65%','Landscape':'65%'},'Pc':'65%'},
         border:['solid 1px black','solid 1px white'],
         width:{'Mobile':{'Portrait':'18%','Landscape':'18%'},'Pc':'14%'},
@@ -1771,7 +1771,7 @@ MainContainers:{
    Style:{
     position:'absolute',
     left:'0%',
-    top:{'Mobile':{'Portrait':'150%','Landscape':'150%'},'Pc':'454%'},
+    top:{'Mobile':{'Portrait':'200%','Landscape':'200%'},'Pc':'454%'},
     height:{'Mobile':{'Portrait':'210%','Landscape':'210%'},'Pc':'210%'},
     width:'100%',
     zIndex:'10',
@@ -1793,7 +1793,7 @@ MainContainers:{
       Text:'ABA / AT (Análise do Comportamento Aplicada)',
       Style:{
       color:['black','white'],
-      fontSize:{'Mobile':'11px','Pc':'25px'},
+      fontSize:{'Mobile':'1rem','Pc':'25px'},
        fontFamily: "'Delius', cursive",
             fontWeight: '400',
             fontStyle: 'normal',
