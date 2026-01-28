@@ -1,6 +1,7 @@
 //Imports
 import { UmbraCoreBrute, UmbraNexusBrute } from "./Core.js";
 import { UmbraCore } from "./Umbra.js";
+import { AwaitFlag } from "./UmbraLogic.js";
 
 //Variáveis
 
@@ -22,6 +23,7 @@ export let UmbraScenesBrute = {
     Verify:VerifyUmbraScene,
     TurnOff:TurnOfUmbraScene,
     Delete:DeleteUmbraScene,
+    Transition:TransitionUmbraScene,
 
 };
 
@@ -109,15 +111,90 @@ function UmbraDeleteComponenent(Id){
     }
 }
 
-function UmbraNewScene(SceneID){
+function UmbraNewScene(SceneID,PageBind = null,ContainerStyle = null){
 
     UmbraCoreBrute.ScenesNexus[SceneID] = {
         Active:false,
     };
 
+    if(ContainerStyle != null){
+        if(!UmbraCoreBrute.UmbraDOM.DeclaredStyles[SceneID+'Container']){
+        UmbraCoreBrute.UmbraDOM.DeclaredStyles[SceneID+'Container'] = {};
+        }
+        UmbraCoreBrute.UmbraDOM.DeclaredStyles[SceneID+'Container'].Style = ContainerStyle;
+    }
+
+    if(PageBind != null){
+      UmbraCoreBrute.ScenesNexus[SceneID].PageBindBluePrint = PageBind;
+    }
+
+
     
 
     
+
+}
+
+async function TransitionUmbraScene(OldSceneId,NewSceneId,TransitionAnimation = null,TransitionElement=null,ContainerStyle = null){
+    if(TransitionAnimation != null){
+        if(!UmbraCoreBrute.UmbraDOM.AnimationsNexus[TransitionAnimation.In].AwaitFlag){
+       UmbraCoreBrute.UmbraDOM.AnimationsNexus[TransitionAnimation.In].AwaitFlag =  NewSceneId+'AwaitFlagTransitionIn';;
+       UmbraCoreBrute.UmbraDOM.AnimationsFlags[TransitionAnimation.In.AwaitFlag] = false;
+        }
+        if(TransitionElement != null){
+            if(!UmbraCoreBrute.UmbraDOM.AnimationsNexus[TransitionElement.OutAnimation].AwaitFlag){
+            UmbraCoreBrute.UmbraDOM.AnimationsNexus[TransitionElement.OutAnimation].AwaitFlag =  NewSceneId+'AwaitFlagTransitionOutElement';;
+       UmbraCoreBrute.UmbraDOM.AnimationsFlags[TransitionElement.OutAnimation.AwaitFlag] = false;
+            }
+        }
+         if(!UmbraCoreBrute.UmbraDOM.AnimationsNexus[TransitionAnimation.Out].AwaitFlag){
+
+       UmbraCoreBrute.UmbraDOM.AnimationsNexus[TransitionAnimation.Out].AwaitFlag =  OldSceneId+'AwaitFlagTransitionOut';
+       UmbraCoreBrute.UmbraDOM.AnimationsFlags[TransitionAnimation.Out.AwaitFlag] = false;
+         }
+       let InFlag =  UmbraCoreBrute.UmbraDOM.AnimationsNexus[TransitionAnimation.In].AwaitFlag;
+       let OutFlag =  UmbraCoreBrute.UmbraDOM.AnimationsNexus[TransitionAnimation.Out].AwaitFlag;
+       let ElementOutFlag = UmbraCoreBrute.UmbraDOM.AnimationsNexus[TransitionElement.OutAnimation].AwaitFlag;
+       let AnimationTarget = OldSceneId+'Container';
+       if(TransitionAnimation.NewElement){
+       UmbraMainRender('Document',{'NewElement':TransitionAnimation.NewElement});
+       AnimationTarget = TransitionAnimation.NewElement.Id;
+       
+       }
+       if(TransitionElement != null){
+          UmbraMainRender('Document',{'NewElement':TransitionElement});
+          if(TransitionElement.InAnimation){
+             UmbraAnimationsCore.Active(TransitionElement.InAnimation,TransitionElement.Id);
+          }
+       }
+       
+       UmbraAnimationsCore.Active(TransitionAnimation.Out,AnimationTarget);
+       await UmbraCoreBrute.UmbraLogic.LogicModule.UmbraAwaitFlag(()=>UmbraCoreBrute.UmbraDOM.AnimationsFlags[OutFlag]);   
+       TurnOfUmbraScene(OldSceneId);
+
+              UmbraCoreBrute.UmbraDOM.AnimationsFlags[TransitionAnimation.Out.AwaitFlag] = false;
+        
+            if(TransitionElement != null){
+          if(TransitionElement.OutAnimation){
+             UmbraAnimationsCore.Active(TransitionElement.OutAnimation,TransitionElement.Id);
+              await UmbraCoreBrute.UmbraLogic.LogicModule.UmbraAwaitFlag(()=>UmbraCoreBrute.UmbraDOM.AnimationsFlags[ElementOutFlag]);   
+            UmbraDOM.Delete(TransitionElement.Id);            
+          }else{  
+          UmbraDOM.Delete(TransitionElement.Id);
+          }
+       }
+       
+        UmbraAnimationsCore.Active(TransitionAnimation.In,AnimationTarget);
+         ActiveUmbraScene(NewSceneId,ContainerStyle);
+       await UmbraCoreBrute.UmbraLogic.LogicModule.UmbraAwaitFlag(()=>UmbraCoreBrute.UmbraDOM.AnimationsFlags[InFlag]);   
+         
+    
+   
+    UmbraCoreBrute.UmbraDOM.AnimationsFlags[TransitionAnimation.In.AwaitFlag] = false;
+    }else{
+    TurnOfUmbraScene(OldSceneId);
+    ActiveUmbraScene(NewSceneId,ContainerStyle);
+    }
 
 }
 
@@ -141,7 +218,15 @@ function ActiveUmbraScene(SceneID,ContainerStyle = null){
         SceneContainerStyle = ContainerStyle;
     }
 
+    if(UmbraCoreBrute.UmbraDOM.DeclaredStyles[SceneID + 'Container']?.Style){
+        SceneContainerStyle = UmbraCoreBrute.UmbraDOM.DeclaredStyles[SceneID + 'Container'].Style;
+    }
+
     UmbraUI.UmbraApplyStyle(SceneContainer.id,SceneContainerStyle,'Declared');
+
+    if(UmbraCoreBrute.ScenesNexus[SceneID].PageBindBluePrint){
+        UmbraPageRender(UmbraCoreBrute.ScenesNexus[SceneID].PageBindBluePrint);
+    }
 
 
 
@@ -154,6 +239,19 @@ function ActiveUmbraScene(SceneID,ContainerStyle = null){
 };
 
 function TurnOfUmbraScene(SceneID){
+     if(UmbraCoreBrute.ScenesNexus[SceneID]){
+    UmbraCoreBrute.ScenesNexus[SceneID].Active = false;
+
+    let SceneContainer = document.getElementById(SceneID + 'Container');
+    SceneContainer.remove();
+
+
+
+
+    }else{
+        console.warn("Umbra:TurnOf Scene Need use of a Existing Scene!");
+    }
+
 
 }
 
@@ -183,8 +281,15 @@ export function UmbraMainRender(MainParent,BluePrint){
         }else{
         let ChildDOM = document.createElement(BluePrint[Child].Type);
         ChildDOM.id = BluePrint[Child].Id;
-
+       if(MainParent == 'Body'){
+document.body.appendChild(ChildDOM);
+       }
+       if(MainParent == 'Document'){
+document.documentElement.appendChild(ChildDOM);
+       }
+       if(MainParent != 'Document' && MainParent != 'Body'){
         document.getElementById(MainParent).appendChild(ChildDOM);
+    }
         if(BluePrint[Child].InnerType){
             ChildDOM.type = BluePrint[Child].InnerType;
         }
@@ -398,10 +503,9 @@ function UmbraAnimationsSpeedCalc(AnimationConfig,Element){
             AnimationConfig.Properties[Prop].EndIn = StartValue;
         }
        
-        let ValuesDiff = StartValue - FinalValue; 
-        ValuesDiff = Math.abs(ValuesDiff);
-        let FinalSpeed = ValuesDiff / DeclaredTime;
-        AnimationConfig.Properties[Prop].Speed = FinalSpeed;
+        let ValuesDiff = FinalValue - StartValue;  
+      
+        AnimationConfig.Properties[Prop].Speed = ValuesDiff;
     }
         }
         return AnimationConfig;
@@ -424,9 +528,15 @@ function UmbraActiveAnimation(Id,Element){
             if(UmbraCoreBrute.UmbraDOM.AnimationsNexus[Id].Curve){
                 NewAnimationObj.Properties[Prop]['Curve'] = structuredClone(UmbraCoreBrute.UmbraDOM.AnimationsNexus[Id].Curve);
             }
+             if(UmbraCoreBrute.UmbraDOM.AnimationsNexus[Id].AwaitFlag){
+                  NewAnimationObj.Properties[Prop]['AwaitFlag'] = structuredClone(UmbraCoreBrute.UmbraDOM.AnimationsNexus[Id].AwaitFlag);
+            UmbraCoreBrute.UmbraDOM.AnimationsFlags[UmbraCoreBrute.UmbraDOM.AnimationsNexus[Id].AwaitFlag] = false;
+          }
+           NewAnimationObj.Properties[Prop].StartTime = performance.now();
+
             UmbraCoreBrute.UmbraDOM.ActiveAnimations[Id+Element+Prop] = {AnimationConfig:NewAnimationObj.Properties[Prop],
                 Element:Element,Id:Id};
-          
+         
             
         }
 
@@ -445,12 +555,20 @@ function UmbraTurnOffAnimation(){
 }
 
 function UmbraAnimationRender(AnimationConfig,Element,Id){
-    console.warn(AnimationConfig,Element,Id)
+    
+       
+    
+    if(!document.getElementById(Element)){
+    delete UmbraCoreBrute.UmbraDOM.ActiveAnimations[Id + Element + AnimationConfig.PropertieName];
+    }
     let FrameRateController = AnimationConfig.FrameRateController;
     let Speed = AnimationConfig.Speed;
     let StartValue = AnimationConfig.StartIn;
     let EndValue = AnimationConfig.EndIn;
-    let Time = AnimationConfig.Time;
+    let Now = performance.now();
+    let EnlapsedTime = Now - AnimationConfig.StartTime;
+    let Time = EnlapsedTime / UmbraCoreBrute.UmbraDOM.AnimationsNexus[Id].Time;
+    Time = Math.min(Time,1);
     let Repeat = AnimationConfig.Repeat;
     let FrameRate = AnimationConfig.FrameRate;
     let ActualValue = StartValue;
@@ -473,28 +591,18 @@ function UmbraAnimationRender(AnimationConfig,Element,Id){
         }
 
     if(Metric != null){
-        if(AnimationConfig.Curve){
-             if(AnimationConfig.RealStartIn < EndValue){
-       ActualValue = UmbraInterpolationEngine(ActualValue,EndValue,Speed,AnimationConfig.Curve,);
-             }
-             if(AnimationConfig.RealStartIn > EndValue){
-                 ActualValue = UmbraInterpolationEngine(ActualValue,EndValue,-Speed,AnimationConfig.Curve,);
-            }
+        if(AnimationConfig.Curve){       
+       ActualValue = UmbraInterpolationEngine(AnimationConfig.RealStartIn,EndValue,Time,AnimationConfig.Curve,);
         }else{
-        if(AnimationConfig.RealStartIn < EndValue){
-        ActualValue += Speed;
-        }
-     if(AnimationConfig.RealStartIn > EndValue){
-        ActualValue -= Speed;
-       
-        }
+        ActualValue = AnimationConfig.RealStartIn + Speed * Time;
         }
     }
 
-    if((ActualValue > EndValue && AnimationConfig.RealStartIn < EndValue) ||
-(ActualValue < EndValue && AnimationConfig.RealStartIn > EndValue)){
+    
 
-        if(RepeatControler > 0 || Repeat == 'Infinity'){
+    if(Time >= 1){
+
+        if(AnimationConfig.Repeat > 0 || Repeat == 'Infinity'){
             if(Repeat != 'Infinity'){
             AnimationConfig.Repeat -= 1;
             }
@@ -504,7 +612,13 @@ function UmbraAnimationRender(AnimationConfig,Element,Id){
         }else{
             ActualValue = EndValue;
             UmbraCoreBrute.UmbraDOM.AnimationsNexus[Id].State = 'Off';
+            if(UmbraCoreBrute.UmbraDOM.AnimationsNexus[Id].AwaitFlag){
+                
+                UmbraCoreBrute.UmbraDOM.AnimationsFlags[UmbraCoreBrute.UmbraDOM.AnimationsNexus[Id].AwaitFlag] = true;
+            }
+            console.error(UmbraCoreBrute.UmbraDOM.ActiveAnimations[Id + Element + AnimationConfig.PropertieName])
             delete UmbraCoreBrute.UmbraDOM.ActiveAnimations[Id + Element + AnimationConfig.PropertieName];
+
         }
     }
     if(Metric != null){
@@ -532,10 +646,12 @@ function UmbraAnimationRender(AnimationConfig,Element,Id){
 
 function UmbraAnimationLoop(){
     for(let Animation in UmbraCoreBrute.UmbraDOM.ActiveAnimations){
-        
+        try{
     UmbraAnimationRender(UmbraCoreBrute.UmbraDOM.ActiveAnimations[Animation].AnimationConfig,
-    UmbraCoreBrute.UmbraDOM.ActiveAnimations[Animation].Element,UmbraCoreBrute.UmbraDOM.ActiveAnimations[Animation].Id )
-        
+    UmbraCoreBrute.UmbraDOM.ActiveAnimations[Animation].Element,UmbraCoreBrute.UmbraDOM.ActiveAnimations[Animation]?.Id )
+    }catch(e){
+        console.error(e,UmbraCoreBrute.UmbraDOM.ActiveAnimations[Animation]?.Id);
+    }
     }
 
     requestAnimationFrame(UmbraAnimationLoop);
@@ -550,42 +666,45 @@ const UmbraCurves = {
  'Ease-In':UmbraEaseInCurve,
  'Ease-Out':UmbraEaseOutCurve,
   'Ease-Out+':UmbraEaseOutPlusCurve,
+    'Ease-Out-Smooth':UmbraEaseOutSmoothCurve,
+  'Ease-In-Out':UmbraEaseInOutCurve
 };
 
-function UmbraInterpolationEngine(StartValue,EndValue,IncrementValue,Curve){
+function UmbraInterpolationEngine(start, end, t, curve) {
+    let easedT = curve && UmbraCurves[curve]
+        ? UmbraCurves[curve](t)
+        : t;
 
-    if(Object.keys(UmbraCurves).includes(Curve)){
-     return UmbraCurves[Curve](StartValue,EndValue,IncrementValue);
-    }else{
-        
-        return StartValue += IncrementValue;
-    }
+    return start + (end - start) * easedT;
+}
+
+function UmbraEaseInCurve(t){
+
+    return t*t; 
 
 
 }
 
-function UmbraEaseInCurve(StartValue,EndValue,IncrementValue){
+function UmbraEaseOutCurve(t){
 
-    let Distance = Math.abs(StartValue - EndValue);
-   return StartValue +=  (IncrementValue / (Distance / EndValue));   
-
+  return 1 - Math.pow(1 - t, 2);
 
 }
 
-function UmbraEaseOutCurve(StartValue,EndValue,IncrementValue){
+function UmbraEaseOutSmoothCurve(t){
 
-  let Distance = Math.abs(StartValue - EndValue);
-  if(UmbraCoreBrute.ClientPlataform() == 'Mobile'){
-    return StartValue +=  (IncrementValue * ((Distance / (EndValue / 2)) * 7));   
-  }else{
-  return StartValue +=  (IncrementValue * (Distance / EndValue));   
-  }
+  return 1 - Math.pow(1 - t, 5);
 
 }
 
-function UmbraEaseOutPlusCurve(StartValue,EndValue,IncrementValue){
+function UmbraEaseInOutCurve(t) {
+    return t < 0.5
+        ? 2 * t * t
+        : 1 - Math.pow(-2 * t + 2, 2) / 2;
+}
 
-  let Distance = Math.abs(StartValue - EndValue);
-  return StartValue +=  (IncrementValue * Distance);   
-
+function UmbraEaseOutPlusCurve(t){
+  const c1 = 1.70158;
+    const c3 = c1 + 1;
+    return 1 + c3 * Math.pow(t - 1, 3) + c1 * Math.pow(t - 1, 2);
 }

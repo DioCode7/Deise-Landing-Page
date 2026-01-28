@@ -58,7 +58,8 @@ return isMobile ? "Mobile" : "Pc";},
       }},
       UiModule:{},
       AnimationsNexus:{},
-      ActiveAnimations:{}
+      ActiveAnimations:{},
+      AnimationsFlags:{}
 
     }
   }

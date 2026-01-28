@@ -4,7 +4,23 @@ import { UmbraAnimations, UmbraDOMControl, UmbraRender, UmbraScenes } from "./Um
 
 //Variáveis 
 
+
+
 let ActualConceptTheme = 'Estilo Lúdico';
+
+let GeneralMoreAboutBluePrint = {
+  MainParent:'GeneralMoreAboutSceneContainer',
+  MainContainers:{
+  TestText:{
+    Id:'TestText23',
+    Text:'Deu Certo!',
+    Style:{
+      color:'red',
+      fontSize:'100px',
+    },
+  }
+  }
+}
 let LandingPageBluePrint = {
 MainParent:"LandingPageMainSceneContainer",
 MainContainers:{
@@ -1024,6 +1040,53 @@ MainContainers:{
         UmbraHover:{
           Style:{
             scale:'1.2',
+          }
+        },
+        SceneTransition:{
+          OldScene:'LandingPageMinimalistMainScene',
+          NewScene:'GeneralMoreAboutScene',
+          TransitionAnimation:{
+            In:'ScenesTransitionsInAnimation',
+            Out:'ScenesTransitionsOutAnimation',
+            NewElement:{
+              Id:'TransitionAnimationsElement',
+              Type:'div',
+              Style:{
+                position:'fixed',
+                width:'10%',
+                top:'0%',
+                left:'0%',
+                zIndex:'2000',
+                maxWidth:'100vw',
+                maxHeight:'100vh',
+                height:'10%',
+                scale:'0',
+                background:['radial-gradient(circle,rgba(240, 179, 255, 0.94),rgb(246, 246, 247),rgba(255, 255, 255, 0),rgba(2, 127, 211, 0))',
+                  'radial-gradient(circle,rgb(0, 0, 0),rgba(255, 255, 255, 0))'],
+              }
+            }
+          },
+          TransitionElement:{
+            Id:'LogoTransitionElement',
+            Type:'div',
+            Style:{
+               position:'fixed',
+      width:{'Mobile':'3%','Pc':'50%'},
+      height:{'Mobile':'1%','Pc':'50%'},
+      backgroundImage:"url('./Images/EspaçoRessignificarLogo.png')",
+        backgroundRepeat:'no-repeat',
+        backgroundPosition:'center',
+        backgroundSize:'cover',
+        pointerEvents:'none',
+        transform:'translate(-60%,-50%)',
+        borderRadius:'100px',
+        zIndex:'50000',
+        opacity:'0',
+        top:'50%',
+        left:'50%',
+            },
+        InAnimation:'FadeInAnimation',
+        OutAnimation:'FadeOutAnimation',
           }
         }
       }
@@ -3171,6 +3234,15 @@ CreditsFooter:{
 //Funções
 document.addEventListener("DOMContentLoaded",()=>{
 UmbraScenes.New("LandingPageMainScene");
+UmbraScenes.New("GeneralMoreAboutScene",GeneralMoreAboutBluePrint,{
+  position:'relative',
+  width:'100%',
+  height:'100vh',
+  backgroundColor:['rgb(255, 255, 255)','rgba(0,0,0,1)'],
+  display:'block',
+  zIndex:'100'
+  
+});
 UmbraScenes.Active("LandingPageMainScene");
 UmbraRender(LandingPageBluePrint);
 
@@ -3194,9 +3266,9 @@ let SlideForRightAnimationBluePrint = {
     
 },
    Repeat:0,
-   Time:50,
+   Time:1000,
    FrameRate:60,
-   Curve:'Ease-Out',
+   Curve:'Ease-Out-Smooth',
 
 
 };
@@ -3210,6 +3282,7 @@ let SlideForLeftAnimationBluePrint = {
         EndIn:'Actual',
         Metric:'%'
     },  
+   
   
     
 },
@@ -3224,6 +3297,79 @@ let SlideForLeftAnimationBluePrint = {
 UmbraAnimations.New('SlideForRightAnimation',SlideForRightAnimationBluePrint);
 UmbraAnimations.New('SlideForLeftAnimation',SlideForLeftAnimationBluePrint);
 
+
+let ScenesTransitionsInAnimation = {
+  Id:'ScenesTransitionsInAnimation',
+  Properties:{
+    scale:{
+      StartIn:1000,
+      EndIn:0,
+    },
+     opacity:{
+      StartIn:1,
+      EndIn:0,
+    }
+   
+    
+},
+   Repeat:0,
+   Time:9000,
+   FrameRate:60,
+   Curve:'Ease-Out-Smooth'
+   
+}
+
+let ScenesTransitionsOutAnimation = {
+Id:'ScenesTransitionsOutAnimation',
+    Properties:{
+    scale:{
+      StartIn:0,
+      EndIn:1000,
+    }
+    
+},
+   Repeat:0,
+   Time:1000,
+   FrameRate:60,
+   Curve:'Ease-In',
+   
+
+}
+
+let FadeInAnimation = {
+  Id:'FadeInAnimation',
+    Properties:{
+    opacity:{
+      StartIn:0,
+      EndIn:1,
+    }
+    
+},
+   Repeat:0,
+   Time:500,
+   FrameRate:60,
+}
+
+
+let FadeOutAnimation = {
+  Id:'FadeInAnimation',
+    Properties:{
+    opacity:{
+      StartIn:1,
+      EndIn:0,
+    },
+   
+    
+},
+   Repeat:0,
+   Time:500,
+   FrameRate:60,
+}
+
+UmbraAnimations.New('ScenesTransitionsOutAnimation',ScenesTransitionsOutAnimation);
+UmbraAnimations.New('ScenesTransitionsInAnimation',ScenesTransitionsInAnimation);
+UmbraAnimations.New('FadeInAnimation',FadeInAnimation);
+UmbraAnimations.New('FadeOutAnimation',FadeOutAnimation);
 
 });
 

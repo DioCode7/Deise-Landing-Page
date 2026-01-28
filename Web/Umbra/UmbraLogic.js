@@ -102,6 +102,14 @@ if(ListenerBluePrint.UseFn == true){
     }   
     }
 }
+if(ListenerBluePrint.SceneTransition){
+    let OldScene = ListenerBluePrint.SceneTransition.OldScene;
+    let NewScene = ListenerBluePrint.SceneTransition.NewScene;
+    let TransitionAnimation = ListenerBluePrint.SceneTransition.TransitionAnimation;
+    let TransitionElement = ListenerBluePrint.SceneTransition.TransitionElement;
+
+    UmbraCoreBrute.UmbraDOM.UiModule.UmbraScenes.Transition(OldScene,NewScene,TransitionAnimation,TransitionElement);
+}
 }
 
 function UmbraVirtualClick(VirtualElementId){
@@ -132,5 +140,27 @@ if(ListenerBluePrint.UmbraHover){
 
 
 
+export async function AwaitFlag(Flag){
+
+   return new Promise(resolve =>{
+
+   let interval = setInterval(() => {
+    console.error('Flag:',Flag());
+    if(Flag()){
+     clearInterval(interval);
+     resolve();
+
+    }
+    
+   },10);
+
+
+
+
+   });
+
+
+
+}
 UmbraLogicCore();
-UmbraNexusBrute.Set(['UmbraLogic','LogicModule'],{UmbraListeners:UmbraListeners,UmbraLogicCore:UmbraLogicCore});
+UmbraNexusBrute.Set(['UmbraLogic','LogicModule'],{UmbraListeners:UmbraListeners,UmbraLogicCore:UmbraLogicCore,UmbraAwaitFlag:AwaitFlag});

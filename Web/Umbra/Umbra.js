@@ -3,7 +3,7 @@ import { UmbraCoreBrute,UmbraNexusBrute } from "./Core.js";
 import { UmbraApplyStyle } from "./UmbraStyles.js";
 import {UmbraScenesBrute,UmbraPageRender, UmbraDOM,UmbraAnimationsCore } from "./UmbraUI.js";
 import { UmbraTranslationsCore } from "./UmbraTranslations.js";
-import { UmbraListeners } from "./UmbraLogic.js";
+import { UmbraListeners,AwaitFlag } from "./UmbraLogic.js";
 
 
 //Variáveis
@@ -17,6 +17,7 @@ export let UmbraTranslationsNexus = UmbraTranslationsCore;
 export let UmbraListenersControl = UmbraListeners;
 export let UmbraDOMControl = UmbraDOM;
 export let UmbraAnimations = UmbraAnimationsCore;
+export let UmbraAwaitFlag = AwaitFlag;
 //Funções
 
 
