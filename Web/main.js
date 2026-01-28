@@ -1647,7 +1647,7 @@ MainContainers:{
       Style:{
          position:'absolute',
       left:{'Mobile':{'Portrait':'12%','Landscape':'14%'},'Pc':'20%'},
-      top:{'Mobile':{'Portrait':'23%','Landscape':'19%'},'Pc':'30%'},
+      top:{'Mobile':{'Portrait':'21.6%','Landscape':'19%'},'Pc':'30%'},
       backgroundImage:"url('./Images/AutismIcon.png')",
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
@@ -1771,10 +1771,10 @@ MainContainers:{
    Style:{
     position:'absolute',
     left:'0%',
-    top:{'Mobile':{'Portrait':'200%','Landscape':'200%'},'Pc':'454%'},
+    top:{'Mobile':{'Portrait':'170%','Landscape':'170%'},'Pc':'454%'},
     height:{'Mobile':{'Portrait':'210%','Landscape':'210%'},'Pc':'210%'},
     width:'100%',
-    zIndex:'10',
+    zIndex:'11',
     backgroundImage:{Pc:["url('./Images/GradientMinimalistLight.png')","url('./Images/GradientMinimalistDark.png')"],
       Mobile:{'Portrait':["url('./Images/GradientMinimalistLightMobile.png')","url('./Images/GradientMinimalistDarkMobile.png')"],'Landscape':["url('./Images/GradientMinimalistLightMobile.png')","url('./Images/GradientMinimalistDarkMobile.png')"]}
      },
