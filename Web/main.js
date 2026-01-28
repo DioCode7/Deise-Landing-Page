@@ -1008,7 +1008,7 @@ MainContainers:{
         left:{'Mobile':{'Portrait':'60%','Landscape':'60%'},'Pc':'53%'},
         border:['solid 1px black','solid 1px white'],
         width:{'Mobile':{'Portrait':'18%','Landscape':'18%'},'Pc':'14%'},
-        height:{'Mobile':{'Portrait':'4%','Landscape':'4%'},'Pc':'3%'},
+        height:{'Mobile':{'Portrait':'2%','Landscape':'2%'},'Pc':'3%'},
         boxShadow:'rgba(0,0,0,0.6) 5px 5px 5px',
          fontSize:{'Pc':'15px','Mobile':'0.7rem'},
              fontFamily: "'Delius', cursive",
