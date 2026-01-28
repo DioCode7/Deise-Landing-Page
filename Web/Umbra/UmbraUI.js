@@ -576,7 +576,7 @@ function UmbraEaseOutCurve(StartValue,EndValue,IncrementValue){
 
   let Distance = Math.abs(StartValue - EndValue);
   if(UmbraCoreBrute.ClientPlataform() == 'Mobile'){
-    return StartValue +=  (IncrementValue * ((Distance / EndValue) * 7));   
+    return StartValue +=  (IncrementValue * ((Distance / (EndValue / 2)) * 7));   
   }else{
   return StartValue +=  (IncrementValue * (Distance / EndValue));   
   }
