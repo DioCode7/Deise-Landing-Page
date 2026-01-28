@@ -1450,7 +1450,7 @@ MainContainers:{
    Style:{
     position:'absolute',
     left:'0%',
-    top:{'Mobile':{'Portrait':'150%','Landscape':'291%'},'Pc':'306%'},
+    top:{'Mobile':{'Portrait':'152%','Landscape':'291%'},'Pc':'306%'},
     height:{'Mobile':{'Portrait':'210%','Landscape':'210%'},'Pc':'210%'},
     width:'100%',
     zIndex:'11',
@@ -1675,7 +1675,7 @@ MainContainers:{
         position:'absolute',
         width:{'Mobile':{'Portrait':'65%','Landscape':'65%'},Pc:'35%'},
         height:{'Mobile':{'Portrait':'16%','Landscape':'16%'},Pc:'35%'},
-        top:{'Mobile':{'Portrait':'19%','Landscape':'19%'},Pc:'34%'},
+        top:{'Mobile':{'Portrait':'21%','Landscape':'19%'},Pc:'34%'},
          opacity:'0',
         left:{'Mobile':{'Portrait':'0%','Landscape':'0%'},Pc:'20%'},
          backgroundImage:"url('./Images/AutismImage.png')",
