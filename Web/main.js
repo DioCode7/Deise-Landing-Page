@@ -2141,7 +2141,7 @@ MainContainers:{
       Style:{
          position:'absolute',
       left:{'Mobile':{'Portrait':'12%','Landscape':'12%'},'Pc':'19%'},
-      top:{'Mobile':{'Portrait':'5%','Landscape':'21%'},'Pc':'-1%'},
+      top:{'Mobile':{'Portrait':'4%','Landscape':'21%'},'Pc':'-1%'},
        opacity:'0',
       backgroundImage:"url('./Images/ParentIcon.png')",
         backgroundRepeat:'no-repeat',
@@ -2189,12 +2189,12 @@ MainContainers:{
     Type:'div',
     Style:{
       position:'absolute',
-      top:{'Mobile':'9%','Pc':'9%'},
+      top:{'Mobile':'7%','Pc':'9%'},
       borderLeft:['solid 1px black','solid 1px white'],
       left:{'Mobile':'13%','Pc':'30%'},
       fontSize:{'Mobile':'12px','Pc':'21px'},
       color:['rgb(0, 0, 0)','rgb(240,240,240)'],
-      width:{'Mobile':'60%','Pc':'25%'},
+      width:{'Mobile':'40%','Pc':'25%'},
       padding:'1%',
        opacity:'0',
        fontFamily: "'Delius', cursive",
