@@ -1,6 +1,5 @@
 //Imports
 import { UmbraCoreBrute, UmbraNexusBrute } from "./Core.js";
-import { UmbraCore } from "./Umbra.js";
 import { AwaitFlag } from "./UmbraLogic.js";
 
 //Variáveis
@@ -148,7 +147,6 @@ async function TransitionUmbraScene(OldSceneId,NewSceneId,TransitionAnimation = 
             }
         }
          if(!UmbraCoreBrute.UmbraDOM.AnimationsNexus[TransitionAnimation.Out].AwaitFlag){
-
        UmbraCoreBrute.UmbraDOM.AnimationsNexus[TransitionAnimation.Out].AwaitFlag =  OldSceneId+'AwaitFlagTransitionOut';
        UmbraCoreBrute.UmbraDOM.AnimationsFlags[TransitionAnimation.Out.AwaitFlag] = false;
          }
@@ -157,12 +155,16 @@ async function TransitionUmbraScene(OldSceneId,NewSceneId,TransitionAnimation = 
        let ElementOutFlag = UmbraCoreBrute.UmbraDOM.AnimationsNexus[TransitionElement.OutAnimation].AwaitFlag;
        let AnimationTarget = OldSceneId+'Container';
        if(TransitionAnimation.NewElement){
+        if(!document.getElementById(TransitionAnimation.NewElement.Id)){
        UmbraMainRender('Document',{'NewElement':TransitionAnimation.NewElement});
+        }
        AnimationTarget = TransitionAnimation.NewElement.Id;
        
        }
        if(TransitionElement != null){
-          UmbraMainRender('Document',{'NewElement':TransitionElement});
+        if(!document.getElementById(TransitionElement.Id)){
+     UmbraMainRender('Document',{'NewElement':TransitionElement});
+        }
           if(TransitionElement.InAnimation){
              UmbraAnimationsCore.Active(TransitionElement.InAnimation,TransitionElement.Id);
           }
@@ -178,7 +180,8 @@ async function TransitionUmbraScene(OldSceneId,NewSceneId,TransitionAnimation = 
           if(TransitionElement.OutAnimation){
              UmbraAnimationsCore.Active(TransitionElement.OutAnimation,TransitionElement.Id);
               await UmbraCoreBrute.UmbraLogic.LogicModule.UmbraAwaitFlag(()=>UmbraCoreBrute.UmbraDOM.AnimationsFlags[ElementOutFlag]);   
-            UmbraDOM.Delete(TransitionElement.Id);            
+            UmbraDOM.Delete(TransitionElement.Id);   
+
           }else{  
           UmbraDOM.Delete(TransitionElement.Id);
           }
@@ -187,10 +190,11 @@ async function TransitionUmbraScene(OldSceneId,NewSceneId,TransitionAnimation = 
         UmbraAnimationsCore.Active(TransitionAnimation.In,AnimationTarget);
          ActiveUmbraScene(NewSceneId,ContainerStyle);
        await UmbraCoreBrute.UmbraLogic.LogicModule.UmbraAwaitFlag(()=>UmbraCoreBrute.UmbraDOM.AnimationsFlags[InFlag]);   
-         
-    
-   
     UmbraCoreBrute.UmbraDOM.AnimationsFlags[TransitionAnimation.In.AwaitFlag] = false;
+     if(TransitionAnimation.NewElement){
+        UmbraDOM.Delete(TransitionAnimation.NewElement.Id);
+       
+       }
     }else{
     TurnOfUmbraScene(OldSceneId);
     ActiveUmbraScene(NewSceneId,ContainerStyle);
@@ -243,7 +247,7 @@ function TurnOfUmbraScene(SceneID){
     UmbraCoreBrute.ScenesNexus[SceneID].Active = false;
 
     let SceneContainer = document.getElementById(SceneID + 'Container');
-    SceneContainer.remove();
+    UmbraDOM.Delete(SceneContainer.id);
 
 
 
@@ -519,6 +523,13 @@ function UmbraActiveAnimation(Id,Element){
         let DeclaredTime = NewAnimationObj.Time;
         let DeclaredFrameRate = NewAnimationObj.FrameRate;
         let DeclaredRepeat = NewAnimationObj.Repeat;
+
+         if(Object.keys(UmbraCoreBrute.UmbraDOM.ElementsAnimations).includes(Element)){
+            for(let Animation in UmbraCoreBrute.UmbraDOM.ElementsAnimations[Element]){
+              
+                delete UmbraCoreBrute.UmbraDOM.ActiveAnimations[UmbraCoreBrute.UmbraDOM.ElementsAnimations[Element][Animation]];
+            }
+           }
         for(let Prop in NewAnimationObj.Properties){
             NewAnimationObj.Properties[Prop] = {...NewAnimationObj.Properties[Prop],
                 'RealStartIn':NewAnimationObj.Properties[Prop].StartIn,
@@ -533,6 +544,16 @@ function UmbraActiveAnimation(Id,Element){
             UmbraCoreBrute.UmbraDOM.AnimationsFlags[UmbraCoreBrute.UmbraDOM.AnimationsNexus[Id].AwaitFlag] = false;
           }
            NewAnimationObj.Properties[Prop].StartTime = performance.now();
+
+          
+
+           if(UmbraCoreBrute.UmbraDOM.ElementsAnimations[Element]){
+            UmbraCoreBrute.UmbraDOM.ElementsAnimations[Element].push(Id+Element+Prop);
+           }else{
+            UmbraCoreBrute.UmbraDOM.ElementsAnimations[Element] = [];
+               UmbraCoreBrute.UmbraDOM.ElementsAnimations[Element].push(Id+Element+Prop);
+           }
+           
 
             UmbraCoreBrute.UmbraDOM.ActiveAnimations[Id+Element+Prop] = {AnimationConfig:NewAnimationObj.Properties[Prop],
                 Element:Element,Id:Id};

@@ -1,5 +1,6 @@
 //Imports
 
+
 import { UmbraAnimations, UmbraDOMControl, UmbraRender, UmbraScenes } from "./Umbra/Umbra.js";
 
 //Variáveis 
@@ -11,13 +12,225 @@ let ActualConceptTheme = 'Estilo Lúdico';
 let GeneralMoreAboutBluePrint = {
   MainParent:'GeneralMoreAboutSceneContainer',
   MainContainers:{
-  TestText:{
-    Id:'TestText23',
-    Text:'Deu Certo!',
+     StaticLogo:{
+    Id:'StaticLogo',
+    Type:'div',
     Style:{
-      color:'red',
-      fontSize:'100px',
+      position:'fixed',
+      width:{'Mobile':'12%','Pc':'14%'},
+      height:{'Mobile':'12%','Pc':'16%'},
+      backgroundImage:"url('./Images/EspaçoRessignificarLogo.png')",
+        backgroundRepeat:'no-repeat',
+        backgroundPosition:'center',
+        backgroundSize:'cover',
+        pointerEvents:'none',
+        zIndex:'500',
+        top:{'Mobile':'1.5%','Pc':'83vh'},
+        left:{'Mobile':'0%','Pc':'85vw'}
+
+    }
+  },
+  Header:{
+    Id:'MoreAboutHeaderContainer',
+    Type:'div',
+    Style:{
+      position:'relative',
+      display:'block',
+      height:'25vh',
+      margin:'0px',
+      width:'100vw',
+      top:'0px',
+
     },
+    Childs:{
+      HeaderLogo:{
+      Id:'MoreAboutHeaderLogo',
+      Type:'div',
+      Style:{
+        position:'relative',
+        display:'inline-block',
+        width:{'Mobile':{'Portrait':'30vw','Landscape':'30vh'},'Pc':'20%'},
+        height:'100%',
+        marginLeft:'-5%',
+         backgroundImage:"url('./Images/EspaçoRessignificarLogo.png')",
+        backgroundRepeat:'no-repeat',
+        backgroundPosition:'center',
+        backgroundSize:'contain',
+        pointerEvents:'none',
+      }
+      },
+       HeaderLetter:{
+      Id:'MoreAboutHeaderLetter',
+      Type:'div',
+      Style:{
+        position:'absolute',
+        display:'inline-block',
+        width:{'Mobile':{'Portrait':'30vw','Landscape':'30vh'},'Pc':'30%'},
+        color:['black','white'],
+        transform:'translate(0%,-50%)',
+        top:'40%',
+        left:'12%',
+         fontFamily: "'Imperial Script', cursive",
+            fontWeight: '400',
+            fontStyle: 'normal',
+            cursor:'default',
+        fontSize:{'Mobile':{'Portrait':'1rem','Lanscape':'1rem'},'Pc':'2.5rem'},
+        pointerEvents:'none',
+        borderBottom:['solid 1px black','solid 1px white'],
+      },
+      Text:`Espaço Ressignificar`,
+      },
+      BackToMainPageButton:{
+        Id:'BackToMainPageButton',
+        Text:'Voltar',
+        Type:'div',
+        Style:{
+          position:'absolute',
+          top:'10%',
+          left:'75%',
+          pointerEvents:'all',
+          zIndex:'2',
+          display:'inline-block',
+          width:{'Mobile':{'Portrait':'20%','Landscape':'20%'},'Pc':'7%'},
+          height:{'Mobile':{'Portrait':'20%','Landscape':'20%'},'Pc':'14%'},
+          textAlign:'center',
+          color:['black','white'],
+          fontFamily: "'Delius', cursive",
+          fontWeight: '400',
+          fontStyle: 'normal',
+          cursor:'pointer',
+        fontSize:{'Mobile':{'Portrait':'1rem','Lanscape':'1rem'},'Pc':'0.9rem'},
+        boxShadow:'rgba(0,0,0,0.8) 5px 5px 10px'
+
+        },
+        Listener:{
+          UmbraHover:{
+            Style:{
+              scale:'1.1'
+            }
+          },
+           SceneTransition:{
+          OldScene:'GeneralMoreAboutScene',
+          NewScene:'LandingPageMinimalistMainScene',
+          TransitionAnimation:{
+            In:'ScenesTransitionsInAnimation',
+            Out:'ScenesTransitionsOutAnimation',
+            NewElement:{
+              Id:'TransitionAnimationsElement',
+              Type:'div',
+              Style:{
+                position:'fixed',
+                width:'10%',
+                top:'0%',
+                left:'0%',
+                pointerEvents:'none',
+                zIndex:'2000',
+                maxWidth:'100vw',
+                maxHeight:'100vh',
+                height:'10%',
+                scale:'0',
+                background:['radial-gradient(circle,rgba(240, 179, 255, 0.94),rgb(246, 246, 247),rgba(255, 255, 255, 0),rgba(2, 127, 211, 0))',
+                  'radial-gradient(circle,rgb(0, 0, 0),rgba(255, 255, 255, 0))'],
+              }
+            }
+          },
+          TransitionElement:{
+            Id:'LogoTransitionElement',
+            Type:'div',
+            Style:{
+               position:'fixed',
+      width:{'Mobile':'3%','Pc':'50%'},
+      height:{'Mobile':'1%','Pc':'50%'},
+      backgroundImage:"url('./Images/EspaçoRessignificarLogo.png')",
+        backgroundRepeat:'no-repeat',
+        backgroundPosition:'center',
+        backgroundSize:'cover',
+        pointerEvents:'none',
+        transform:'translate(-60%,-50%)',
+        borderRadius:'100px',
+        zIndex:'50000',
+        opacity:'0',
+        top:'50%',
+        left:'50%',
+            },
+        InAnimation:'FadeInAnimation',
+        OutAnimation:'FadeOutAnimation',
+          }
+        }
+        }
+      },
+      DeiseCredits:{
+        Id:'DeiseCredits',
+        Type:'div',
+        Style:{
+         position:'fixed',
+         transform:'translate(-50%,-50%)',
+         left:'50vw',
+         top:'2vh',
+         color:['black','white',],
+            textAlign:'center',
+          color:['black','white'],
+          fontFamily: "'Delius', cursive",
+          fontWeight: '400',
+          fontStyle: 'normal',
+          cursor:'pointer',
+        fontSize:{'Mobile':{'Portrait':'1rem','Lanscape':'1rem'},'Pc':'0.9rem'},
+        },
+        Text:'@dheisedill',
+        Listener:{
+            UmbraHover:{
+        Style:{
+        color:'blue',
+         fontSize:{'Mobile':'11px','Pc':'17px'},
+        }
+      },
+      UseFn:true,
+      Fn:()=>{window.open("https://www.instagram.com/dheisedill/", "_blank")},
+     
+    UmbraViewportLogic:{
+      Action:UmbraAnimations.Active,
+      Params:['SlideForRightAnimation',' ContactOptionsInstaText'],
+
+    
+   },
+        }
+
+      },
+    }
+
+  },
+  FirstBodyContainer:{
+    Id:'FirstBodyContainer',
+    Type:'div',
+    Style:{
+      position:'relative',
+      display:'block',
+      border:'solid 1px black',
+      height:{'Mobile':{'Portrait':'200vh','Landscape':'200vw'},'Pc':'150vh'},
+     
+    },
+    Childs:{
+      FirstMainLetter:{
+        Id:'FirstMainLetter',
+        Type:'div',
+        Style:{
+        position:'relative',
+        display:'inline-block',
+      color:['black','white'],
+      width:'100%',
+      height:'5%',
+      border:'solid 1px black',
+        textAlign:'start',
+        paddingLeft:'5%',
+        fontFamily: "'Delius', cursive",
+          fontWeight: '400',
+          fontStyle: 'normal',
+          cursor:'pointer',
+        fontSize:{'Mobile':{'Portrait':'1rem','Lanscape':'1rem'},'Pc':'1.4rem'},
+        },
+        Text:'Do que se trata a Espaço Ressignificar?',
+      }
+    }
   }
   }
 }
@@ -1056,6 +1269,7 @@ MainContainers:{
                 width:'10%',
                 top:'0%',
                 left:'0%',
+                pointerEvents:'none',
                 zIndex:'2000',
                 maxWidth:'100vw',
                 maxHeight:'100vh',
@@ -1082,8 +1296,8 @@ MainContainers:{
         borderRadius:'100px',
         zIndex:'50000',
         opacity:'0',
-        top:'50%',
-        left:'50%',
+        top:'50vh',
+        left:'50vw',
             },
         InAnimation:'FadeInAnimation',
         OutAnimation:'FadeOutAnimation',
@@ -1141,7 +1355,7 @@ MainContainers:{
    Style:{
     position:'absolute',
     left:'0%',
-     boxShadow:{'Pc':['rgba(0,0,0,0.4) 10px -10px 10px','rgba(0, 0, 0, 0.8) 10px -10px 10px'],'Mobile':''},
+     
     top:{'Mobile':'81%','Pc':'116%'},
     height:{'Mobile':'210%','Pc':'210%'},
     width:'100%',
@@ -3325,6 +3539,10 @@ Id:'ScenesTransitionsOutAnimation',
     scale:{
       StartIn:0,
       EndIn:1000,
+    },
+    opacity:{
+      StartIn:1,
+      EndIn:1,
     }
     
 },
@@ -3371,13 +3589,21 @@ UmbraAnimations.New('ScenesTransitionsInAnimation',ScenesTransitionsInAnimation)
 UmbraAnimations.New('FadeInAnimation',FadeInAnimation);
 UmbraAnimations.New('FadeOutAnimation',FadeOutAnimation);
 
+UmbraScenes.New("LandingPageMinimalistMainScene",LandingPageMinimalistBluePrint,{
+      position:'absolute',
+        width:'100%',
+        height:'100%',
+        left:'0px',
+        top:'0px',
+        backgroundColor:['rgb(255, 255, 255)','rgb(0,0,0)']});
+
 });
 
 function ConceptThemeSwitchs(NewTheme){
 if(NewTheme == 'Ludico'){
   ActualConceptTheme = 'Tema Lúdico';
 UmbraDOMControl.Delete('LandingPageMinimalistMainSceneContainer');
-UmbraScenes.Delete('LandingPageMinimalistMainScene');
+UmbraScenes.TurnOff('LandingPageMinimalistMainScene');
 UmbraScenes.New("LandingPageMainScene");
 UmbraScenes.Active("LandingPageMainScene",{ 
    position:'absolute',
@@ -3392,7 +3618,6 @@ if(NewTheme == 'Minimalista'){
    ActualConceptTheme = 'Tema Minimalista'
 UmbraDOMControl.Delete('LandingPageMainSceneContainer');
 UmbraScenes.Delete('LandingPageMainScene');
-UmbraScenes.New("LandingPageMinimalistMainScene");
 UmbraScenes.Active("LandingPageMinimalistMainScene",{ 
    position:'absolute',
         width:'100%',
@@ -3400,7 +3625,7 @@ UmbraScenes.Active("LandingPageMinimalistMainScene",{
         left:'0px',
         top:'0px',
         backgroundColor:['rgb(255, 255, 255)','rgb(0,0,0)'],});
-UmbraRender(LandingPageMinimalistBluePrint);
+
 }
 }
 
