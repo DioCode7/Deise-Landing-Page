@@ -2094,6 +2094,7 @@ MainContainers:{
     top:{'Mobile':'154%','Pc':'596%'},
     height:{'Mobile':'210%','Pc':'210%'},
     width:'100%',
+    opacity:{'Pc':'1','Mobile':'0'},
     zIndex:'12',
      backgroundImage:["url('./Images/GradientMinimalistLight.png')","url('./Images/GradientMinimalistDark.png')"],
         backgroundRepeat:'no-repeat',
