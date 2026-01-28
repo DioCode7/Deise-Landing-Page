@@ -2091,7 +2091,7 @@ MainContainers:{
    Style:{
     position:'absolute',
     left:'0%',
-    top:{'Mobile':'220%','Pc':'596%'},
+    top:{'Mobile':'310%','Pc':'596%'},
     height:{'Mobile':'210%','Pc':'210%'},
     width:'100%',
     opacity:{'Pc':'1','Mobile':'1'},
