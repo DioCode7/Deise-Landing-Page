@@ -1647,7 +1647,7 @@ MainContainers:{
       Style:{
          position:'absolute',
       left:{'Mobile':{'Portrait':'12%','Landscape':'14%'},'Pc':'20%'},
-      top:{'Mobile':{'Portrait':'19%','Landscape':'19%'},'Pc':'30%'},
+      top:{'Mobile':{'Portrait':'20%','Landscape':'19%'},'Pc':'30%'},
       backgroundImage:"url('./Images/AutismIcon.png')",
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
@@ -1696,7 +1696,7 @@ MainContainers:{
     Type:'div',
     Style:{
       position:'absolute',
-      top:{'Mobile':{'Portrait':'23%','Landscape':'23%'},'Pc':'39%'},
+      top:{'Mobile':{'Portrait':'24%','Landscape':'23%'},'Pc':'39%'},
       borderLeft:['solid 1px black','solid 1px white'],
       left:{'Mobile':{'Portrait':'57%','Landscape':'57%'},'Pc':'58%'},
       fontSize:{'Mobile':'0.7rem','Pc':'21px'},
@@ -1737,7 +1737,7 @@ MainContainers:{
         width:{'Mobile':{'Portrait':'18%','Landscape':'18%'},'Pc':'14%'},
         height:{'Mobile':{'Portrait':'1%','Landscape':'1%'},'Pc':'2%'},
         boxShadow:'rgba(0,0,0,0.6) 5px 5px 5px',
-         fontSize:{'Pc':'15px','Mobile':'31px'},
+         fontSize:{'Pc':'15px','Mobile':'0.7rem'},
              fontFamily: "'Delius', cursive",
             fontWeight: '400',
             fontStyle: 'normal',
@@ -1771,11 +1771,13 @@ MainContainers:{
    Style:{
     position:'absolute',
     left:'0%',
-    top:{'Mobile':'154%','Pc':'454%'},
-    height:{'Mobile':'210%','Pc':'210%'},
+    top:{'Mobile':{'Portrait':'150%','Landscape':'150%'},'Pc':'454%'},
+    height:{'Mobile':{'Portrait':'210%','Landscape':'210%'},'Pc':'210%'},
     width:'100%',
     zIndex:'10',
-     backgroundImage:["url('./Images/GradientMinimalistLight.png')","url('./Images/GradientMinimalistDark.png')"],
+    backgroundImage:{Pc:["url('./Images/GradientMinimalistLight.png')","url('./Images/GradientMinimalistDark.png')"],
+      Mobile:{'Portrait':["url('./Images/GradientMinimalistLightMobile.png')","url('./Images/GradientMinimalistDarkMobile.png')"],'Landscape':["url('./Images/GradientMinimalistLightMobile.png')","url('./Images/GradientMinimalistDarkMobile.png')"]}
+     },
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
         backgroundSize:'cover',
@@ -1797,11 +1799,11 @@ MainContainers:{
             fontStyle: 'normal',
             textShadow:'2px 4px 10px rgba(0, 0, 0, 0.9)',
             position:'absolute',
-            top:{'Mobile':'20%','Pc':'1%'},
+            top:{'Mobile':{'Portrait':'4.5%','Landscape':'4.5%'},'Pc':'1%'},
                opacity:'0',
-            left:{'Mobile':'20%','Pc':'25%'},
+            left:{'Mobile':{'Portrait':'20%','Landscape':'20%'},'Pc':'25%'},
              borderBottom:['solid 1px black','solid 1px white'],
-             width:{'Mobile':'20%','Pc':'60%'},
+             width:{'Mobile':'60%','Pc':'60%'},
 
       },
       Listener:{
