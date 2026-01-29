@@ -39,6 +39,7 @@ let GeneralMoreAboutBluePrint = {
       height:'25vh',
       margin:'0px',
       width:'100vw',
+      background:'linear-gradient(to bottom,rgba(123, 169, 253, 0.59),rgba(255,255,255,0),rgba(255,255,255,0),rgba(255,255,255,0))',
       top:'0px',
 
     },
@@ -172,6 +173,7 @@ let GeneralMoreAboutBluePrint = {
           color:['black','white'],
           fontFamily: "'Delius', cursive",
           fontWeight: '400',
+          zIndex:'200000',
           fontStyle: 'normal',
           cursor:'pointer',
         fontSize:{'Mobile':{'Portrait':'1rem','Lanscape':'1rem'},'Pc':'0.9rem'},
@@ -205,7 +207,7 @@ let GeneralMoreAboutBluePrint = {
     Style:{
       position:'relative',
       display:'block',
-      border:'solid 1px black',
+      //border:'solid 1px black',
       height:{'Mobile':{'Portrait':'200vh','Landscape':'200vw'},'Pc':'80vh'},
      
     },
@@ -219,7 +221,7 @@ let GeneralMoreAboutBluePrint = {
       color:['black','white'],
       width:'100%',
       height:'5%',
-      border:'solid 1px black',
+     // border:'solid 1px black',
         textAlign:'start',
         paddingLeft:'5%',
         fontFamily: "'Delius', cursive",
@@ -247,7 +249,7 @@ let GeneralMoreAboutBluePrint = {
           height:{'Mobile':{'Portrait':'30%','Landscape':'30%'},'Pc':'100%'},
           zIndex:'3',
            backgroundImage:"url('./Images/LogoBackground.png')",
-           marginTop:'5%',
+           marginTop:'-5%',
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
         backgroundSize:'cover',
@@ -285,8 +287,8 @@ let GeneralMoreAboutBluePrint = {
     Style:{
        position:'relative',
       display:'block',
-      border:'solid 1px black',
-      height:{'Mobile':{'Portrait':'200vh','Landscape':'200vw'},'Pc':'130vh'},
+      //border:'solid 1px black',
+      height:{'Mobile':{'Portrait':'200vh','Landscape':'200vw'},'Pc':'110vh'},
     },
     Childs:{
       SecondMainLetterContainer:{
@@ -295,16 +297,17 @@ let GeneralMoreAboutBluePrint = {
         Style:{
         position:'relative',
         display:'inline-block',
-      color:['black','white'],
+      color:['rgb(0, 0, 0)','white'],
       width:'100%',
-      height:'9%',
-      border:'solid 1px black',
+      height:'16%',
+      //border:'solid 1px black',
         textAlign:'start',
+        
         paddingLeft:'5%',
         fontFamily: "'Delius', cursive",
           fontWeight: '400',
           fontStyle: 'normal',
-        fontSize:{'Mobile':{'Portrait':'1rem','Lanscape':'1rem'},'Pc':'1.4rem'},
+        fontSize:{'Mobile':{'Portrait':'1rem','Lanscape':'1rem'},'Pc':'1.7rem'},
         },
         Childs:{
           SecondMainLetter:{
@@ -313,7 +316,8 @@ let GeneralMoreAboutBluePrint = {
             Style:{
               position:'absolute',
               top:'50%',
-
+              borderBottom:['solid 1px black','solid 1px white'],
+              width:'40%',
             },
             Text:'Conheça nossa equipe!',
              Listener:{
@@ -333,7 +337,7 @@ let GeneralMoreAboutBluePrint = {
         Style:{
             position:'absolute',
           width:{'Mobile':{'Portrait':'100%','Landscape':'100%'},'Pc':'100%'},
-          height:{'Mobile':{'Portrait':'30%','Landscape':'30%'},'Pc':'55%'},
+          height:{'Mobile':{'Portrait':'30%','Landscape':'30%'},'Pc':'70%'},
           zIndex:'3',
            backgroundImage:"url('./Images/TeamBackgroundDeise.png')",
            left:'0%',
@@ -353,8 +357,8 @@ let GeneralMoreAboutBluePrint = {
       color:['black','white'],
       width:'100%',
       height:'9%',
-      border:'solid 1px black',
-        textAlign:'start',
+      //border:'solid 1px black',
+        textAlign:'center',
         paddingLeft:'5%',
         fontFamily: "'Imperial Script', cursive",
           fontWeight: '400',
@@ -368,10 +372,296 @@ let GeneralMoreAboutBluePrint = {
             Style:{
               position:'absolute',
               top:'50%',
+                 width:'50%',
+              borderBottom:['solid 1px black','solid 1px white'],
               left:'50%',
               transform:'translate(-50%,-50%)',
             },
             Text:'Deise Dillenburg',
+          }
+        },
+      },
+      SecondTextContainer:{
+        Id:'SecondTextContainer',
+        Type:'div',
+        Style:{
+           position:'relative',
+        display:'inline-block',
+      color:['black','white'],
+      width:'100%',
+      height:'60%',
+      //border:'solid 1px black',
+        textAlign:'start',
+        paddingLeft:'5%',
+        marginTop:'5%',
+        fontFamily: "'Delius', cursive",
+          fontWeight: '400',
+          fontStyle: 'normal',
+        fontSize:{'Mobile':{'Portrait':'1rem','Lanscape':'1rem'},'Pc':'1rem'},
+        },
+        Childs:{
+          SecondText:{
+            Id:'SecondText',
+            Type:'div',
+            Style:{
+              position:'absolute',
+              left:'30%',
+              
+              
+
+            },
+            Text:`- Psicanalista;
+
+          - Psicanalista especialista em 
+            ansiedade e TDAH;
+
+          - Neuropscicopedagoga Clínca;
+
+          - Pós-Graduada em Autismo e ABA;
+
+          - Especialista em educação inclusiva, 
+            Alfabetização e letramento;,
+
+          - Orientadora Parental e Consteladora Familiar;
+
+          - Tarapeuta Comportamental;`
+          }
+        }
+
+      },
+       ThirdLetterContainer:{
+        Id:'ThirdLetterContainer',
+        Type:'div',
+        Style:{
+           position:'relative',
+        display:'inline-block',
+      color:['black','white'],
+      width:'100%',
+      height:'9%',
+      zIndex:'5',
+      //border:'solid 1px black',
+        textAlign:'start',
+        paddingLeft:'5%',
+        fontFamily: "'Delius', cursive",
+          fontWeight: '400',
+          fontStyle: 'normal',
+        fontSize:{'Mobile':{'Portrait':'1rem','Lanscape':'1rem'},'Pc':'1.1rem'},
+        },
+        Childs:{
+         ThirdLetter:{
+            Id:'ThirdLetter',
+            Type:'div',
+            Style:{
+             position:'absolute',
+             top:'50%',
+             left:'15%',
+             transform:'translate(-50%,-50%)',
+            },
+            Text:'Horários De Atendimento'
+          }
+        }
+      },
+      FourTextContainer:{
+        Id:'FourTextContainer',
+        Type:'div',
+        Style:{
+            position:'relative',
+        display:'inline-block',
+      color:['black','white'],
+      width:'100%',
+      //border:'solid 1px black',
+        textAlign:'start',
+        zIndex:'5',
+        paddingLeft:'5%',
+        fontFamily: "'Delius', cursive",
+          fontWeight: '400',
+          fontStyle: 'normal',
+        fontSize:{'Mobile':{'Portrait':'1rem','Lanscape':'1rem'},'Pc':'0.9rem'},
+        },
+        Childs:{
+          FourText:{
+            Id:'FourText',
+            Type:'div',
+            Style:{
+               position:'absolute',
+             top:'2%',
+             left:'15%',
+             lineHeight:'1.5',
+             transform:'translate(-50%,-50%)',
+              
+            },
+            Text:`Turno Manhã:    Alguns Horários Dísponiveis.
+            Turno Tarde:      Agenda Lotada(Com Espera).`
+          }
+        }
+      }
+    }
+  },
+   ThirdBodyContainer:{
+    Id:'ThirdBodyContainer',
+    Type:'div',
+    Style:{
+       position:'relative',
+      display:'block',
+      marginTop:'10%',
+      //border:'solid 1px black',
+      height:{'Mobile':{'Portrait':'200vh','Landscape':'200vw'},'Pc':'110vh'},
+    },
+    Childs:{
+     
+      ThirdImage:{
+        Id:'ThirdImage',
+        Type:'div',
+        Style:{
+            position:'absolute',
+          width:{'Mobile':{'Portrait':'100%','Landscape':'100%'},'Pc':'100%'},
+          height:{'Mobile':{'Portrait':'30%','Landscape':'30%'},'Pc':'70%'},
+          zIndex:'3',
+           backgroundImage:"url('./Images/TeamBackgroundTais.png')",
+           left:'0%',
+           marginTop:'5%',
+        backgroundRepeat:'no-repeat',
+        backgroundPosition:'center',
+        backgroundSize:'cover',
+        pointerEvents:'none',
+        }
+      },
+      SecondLetterContainer:{
+        Id:'SecondLetterContainer',
+        Type:'div',
+        Style:{
+           position:'relative',
+        display:'inline-block',
+      color:['black','white'],
+      width:'100%',
+      height:'9%',
+     // border:'solid 1px black',
+        textAlign:'center',
+        paddingLeft:'5%',
+        fontFamily: "'Imperial Script', cursive",
+          fontWeight: '400',
+          fontStyle: 'normal',
+        fontSize:{'Mobile':{'Portrait':'1rem','Lanscape':'1rem'},'Pc':'2.7rem'},
+        },
+        Childs:{
+          SecondLetter:{
+            Id:'SecondLetter',
+            Type:'div',
+            Style:{
+              position:'absolute',
+              top:'50%',
+              left:'50%',
+              width:'50%',
+              borderBottom:['solid 1px black','solid 1px white'],
+              transform:'translate(-50%,-50%)',
+            },
+            Text:'Tais Oliveira Dos Santos',
+            
+          }
+        },
+      },
+      ThirdTextContainer:{
+        Id:'ThirdTextContainer',
+        Type:'div',
+        Style:{
+           position:'relative',
+        display:'inline-block',
+      color:['black','white'],
+      width:'100%',
+      height:'60%',
+      zIndex:'6',
+     // border:'solid 1px black',
+        textAlign:'start',
+        paddingLeft:'5%',
+        fontFamily: "'Delius', cursive",
+          fontWeight: '400',
+          fontStyle: 'normal',
+        fontSize:{'Mobile':{'Portrait':'1rem','Lanscape':'1rem'},'Pc':'1rem'},
+        },
+        Childs:{
+          ThirdText:{
+            Id:'ThirdText',
+            Type:'div',
+            Style:{
+              position:'absolute',
+              left:'30%',
+              marginTop:'5%',
+              
+              
+
+            },
+            Text:`- Pedagoga;
+
+          - Pós Graduanda em ABA;
+
+          - Atendimento a TDAH;`
+          }
+        }
+
+      },
+      FourLetterContainer:{
+        Id:'FourLetterContainer',
+        Type:'div',
+        Style:{
+           position:'relative',
+        display:'inline-block',
+      color:['black','white'],
+      width:'100%',
+      height:'9%',
+      zIndex:'5',
+      //border:'solid 1px black',
+        textAlign:'start',
+        paddingLeft:'5%',
+        fontFamily: "'Delius', cursive",
+          fontWeight: '400',
+          fontStyle: 'normal',
+        fontSize:{'Mobile':{'Portrait':'1rem','Lanscape':'1rem'},'Pc':'1.1rem'},
+        },
+        Childs:{
+          FourLetter:{
+            Id:'FourLetter',
+            Type:'div',
+            Style:{
+             position:'absolute',
+             top:'70%',
+             left:'15%',
+             transform:'translate(-50%,-50%)',
+            },
+            Text:'Horários De Atendimento'
+          }
+        }
+      },
+        FifthTextContainer:{
+        Id:'FifthTextContainer',
+        Type:'div',
+        Style:{
+            position:'relative',
+        display:'inline-block',
+      color:['black','white'],
+      width:'100%',
+      //border:'solid 1px black',
+        textAlign:'start',
+        zIndex:'5',
+        paddingLeft:'5%',
+        fontFamily: "'Delius', cursive",
+          fontWeight: '400',
+          fontStyle: 'normal',
+        fontSize:{'Mobile':{'Portrait':'1rem','Lanscape':'1rem'},'Pc':'0.9rem'},
+        },
+        Childs:{
+          FifthText:{
+            Id:'FifthText',
+            Type:'div',
+            Style:{
+               position:'absolute',
+             top:'2%',
+             left:'15%',
+             lineHeight:'1.5',
+             transform:'translate(-50%,-50%)',
+              
+            },
+            Text:`
+            Turno Tarde:       Alguns Horários Dísponiveis.`
           }
         }
       }
@@ -3596,8 +3886,9 @@ UmbraScenes.New("LandingPageMainScene");
 UmbraScenes.New("GeneralMoreAboutScene",GeneralMoreAboutBluePrint,{
   position:'relative',
   width:'100%',
-  height:'100vh',
-  backgroundColor:['rgb(255, 255, 255)','rgba(0,0,0,1)'],
+        background:['linear-gradient(to left,rgba(106, 146, 255, 0.59),rgb(255, 255, 255),rgb(255, 255, 255),rgb(255, 255, 255),rgb(255, 255, 255),rgb(255, 255, 255),rgb(255, 255, 255),rgb(255, 255, 255))',
+          'linear-gradient(to left,rgba(106, 146, 255, 0.59),rgb(0, 0, 0),rgb(0, 0, 0),rgb(0, 0, 0),rgb(0, 0, 0),rgb(rgb(0, 0, 0)55, 255, 255),rgb(0, 0, 0))'
+        ],
   display:'block',
   zIndex:'100'
   
