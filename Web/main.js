@@ -19,7 +19,7 @@ let GeneralMoreAboutBluePrint = {
       position:'fixed',
       width:{'Mobile':'12%','Pc':'14%'},
       height:{'Mobile':'12%','Pc':'16%'},
-      backgroundImage:"url('./Images/EspaçoRessignificarLogo.png')",
+      backgroundImage:"url('./Images/EspaçoRessignificarLogo1.png')",
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
         backgroundSize:'cover',
@@ -39,6 +39,7 @@ let GeneralMoreAboutBluePrint = {
       height:'25vh',
       margin:'0px',
       width:'100vw',
+    
       background:'linear-gradient(to bottom,rgba(123, 169, 253, 0.59),rgba(255,255,255,0),rgba(255,255,255,0),rgba(255,255,255,0))',
       top:'0px',
 
@@ -53,7 +54,7 @@ let GeneralMoreAboutBluePrint = {
         width:{'Mobile':{'Portrait':'30vw','Landscape':'30vh'},'Pc':'20%'},
         height:'100%',
         marginLeft:'-5%',
-         backgroundImage:"url('./Images/EspaçoRessignificarLogo.png')",
+         backgroundImage:"url('./Images/EspaçoRessignificarLogo1.png')",
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
         backgroundSize:'contain',
@@ -142,7 +143,7 @@ let GeneralMoreAboutBluePrint = {
                position:'fixed',
       width:{'Mobile':'3%','Pc':'50%'},
       height:{'Mobile':'1%','Pc':'50%'},
-      backgroundImage:"url('./Images/EspaçoRessignificarLogo.png')",
+      backgroundImage:"url('./Images/EspaçoRessignificarLogo1.png')",
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
         backgroundSize:'cover',
@@ -287,6 +288,7 @@ let GeneralMoreAboutBluePrint = {
     Style:{
        position:'relative',
       display:'block',
+   
       //border:'solid 1px black',
       height:{'Mobile':{'Portrait':'200vh','Landscape':'200vw'},'Pc':'110vh'},
     },
@@ -300,9 +302,9 @@ let GeneralMoreAboutBluePrint = {
       color:['rgb(0, 0, 0)','white'],
       width:'100%',
       height:'16%',
+      marginBottom:'10vh',
       //border:'solid 1px black',
-        textAlign:'start',
-        
+        textAlign:'center',
         paddingLeft:'5%',
         fontFamily: "'Delius', cursive",
           fontWeight: '400',
@@ -318,6 +320,9 @@ let GeneralMoreAboutBluePrint = {
               top:'50%',
               borderBottom:['solid 1px black','solid 1px white'],
               width:'40%',
+              left:'50%',
+              boxShadow:'10px 10px 10px rgba(0,0,0,0.5)',
+              transform:'translate(-50%,-50%)'
             },
             Text:'Conheça nossa equipe!',
              Listener:{
@@ -372,10 +377,11 @@ let GeneralMoreAboutBluePrint = {
             Style:{
               position:'absolute',
               top:'50%',
+              color:'rgb(21, 0, 114)',
                  width:'50%',
-              borderBottom:['solid 1px black','solid 1px white'],
-              left:'50%',
-              transform:'translate(-50%,-50%)',
+             // borderBottom:['solid 1px black','solid 1px white'],
+              left:'-2%',
+              
             },
             Text:'Deise Dillenburg',
           }
@@ -425,67 +431,28 @@ let GeneralMoreAboutBluePrint = {
           - Orientadora Parental e Consteladora Familiar;
 
           - Tarapeuta Comportamental;`
-          }
-        }
-
-      },
-       ThirdLetterContainer:{
-        Id:'ThirdLetterContainer',
-        Type:'div',
-        Style:{
-           position:'relative',
-        display:'inline-block',
-      color:['black','white'],
-      width:'100%',
-      height:'9%',
-      zIndex:'5',
-      //border:'solid 1px black',
-        textAlign:'start',
-        paddingLeft:'5%',
-        fontFamily: "'Delius', cursive",
-          fontWeight: '400',
-          fontStyle: 'normal',
-        fontSize:{'Mobile':{'Portrait':'1rem','Lanscape':'1rem'},'Pc':'1.1rem'},
-        },
-        Childs:{
-         ThirdLetter:{
-            Id:'ThirdLetter',
+          },
+            ThirdLetter:{
+            Id:'ThirdLetter1',
             Type:'div',
             Style:{
              position:'absolute',
-             top:'50%',
-             left:'15%',
+             top:'10%',
+             color:'rgb(42, 96, 212)',
+             fontSize:{'Mobile':'1.1rem','Pc':'1.5rem'},
+             left:'75%',
              transform:'translate(-50%,-50%)',
             },
             Text:'Horários De Atendimento'
-          }
-        }
-      },
-      FourTextContainer:{
-        Id:'FourTextContainer',
-        Type:'div',
-        Style:{
-            position:'relative',
-        display:'inline-block',
-      color:['black','white'],
-      width:'100%',
-      //border:'solid 1px black',
-        textAlign:'start',
-        zIndex:'5',
-        paddingLeft:'5%',
-        fontFamily: "'Delius', cursive",
-          fontWeight: '400',
-          fontStyle: 'normal',
-        fontSize:{'Mobile':{'Portrait':'1rem','Lanscape':'1rem'},'Pc':'0.9rem'},
-        },
-        Childs:{
-          FourText:{
-            Id:'FourText',
+          },
+            FourText:{
+            Id:'FourText1',
             Type:'div',
             Style:{
                position:'absolute',
-             top:'2%',
-             left:'15%',
+             top:'22%',
+             textAlign:'center',
+             left:'75%',
              lineHeight:'1.5',
              transform:'translate(-50%,-50%)',
               
@@ -494,7 +461,10 @@ let GeneralMoreAboutBluePrint = {
             Turno Tarde:      Agenda Lotada(Com Espera).`
           }
         }
-      }
+
+      },
+      
+     
     }
   },
    ThirdBodyContainer:{
@@ -550,9 +520,9 @@ let GeneralMoreAboutBluePrint = {
             Style:{
               position:'absolute',
               top:'50%',
-              left:'50%',
+              left:'75%',
+              color:'rgb(109, 37, 116)',
               width:'50%',
-              borderBottom:['solid 1px black','solid 1px white'],
               transform:'translate(-50%,-50%)',
             },
             Text:'Tais Oliveira Dos Santos',
@@ -584,7 +554,7 @@ let GeneralMoreAboutBluePrint = {
             Type:'div',
             Style:{
               position:'absolute',
-              left:'30%',
+              left:'55%',
               marginTop:'5%',
               
               
@@ -595,67 +565,27 @@ let GeneralMoreAboutBluePrint = {
           - Pós Graduanda em ABA;
 
           - Atendimento a TDAH;`
-          }
-        }
-
-      },
-      FourLetterContainer:{
-        Id:'FourLetterContainer',
-        Type:'div',
-        Style:{
-           position:'relative',
-        display:'inline-block',
-      color:['black','white'],
-      width:'100%',
-      height:'9%',
-      zIndex:'5',
-      //border:'solid 1px black',
-        textAlign:'start',
-        paddingLeft:'5%',
-        fontFamily: "'Delius', cursive",
-          fontWeight: '400',
-          fontStyle: 'normal',
-        fontSize:{'Mobile':{'Portrait':'1rem','Lanscape':'1rem'},'Pc':'1.1rem'},
-        },
-        Childs:{
-          FourLetter:{
+          },
+            FourLetter:{
             Id:'FourLetter',
             Type:'div',
             Style:{
              position:'absolute',
-             top:'70%',
-             left:'15%',
+             top:'30%',
+              color:'rgb(42, 96, 212)',
+                fontSize:{'Mobile':'1.1rem','Pc':'1.5rem'},
+             left:'25%',
              transform:'translate(-50%,-50%)',
             },
             Text:'Horários De Atendimento'
-          }
-        }
-      },
-        FifthTextContainer:{
-        Id:'FifthTextContainer',
-        Type:'div',
-        Style:{
-            position:'relative',
-        display:'inline-block',
-      color:['black','white'],
-      width:'100%',
-      //border:'solid 1px black',
-        textAlign:'start',
-        zIndex:'5',
-        paddingLeft:'5%',
-        fontFamily: "'Delius', cursive",
-          fontWeight: '400',
-          fontStyle: 'normal',
-        fontSize:{'Mobile':{'Portrait':'1rem','Lanscape':'1rem'},'Pc':'0.9rem'},
-        },
-        Childs:{
-          FifthText:{
+          },
+           FifthText:{
             Id:'FifthText',
             Type:'div',
             Style:{
                position:'absolute',
-             top:'2%',
-             left:'15%',
+             top:'37%',
+             left:'25%',
              lineHeight:'1.5',
              transform:'translate(-50%,-50%)',
               
@@ -664,7 +594,152 @@ let GeneralMoreAboutBluePrint = {
             Turno Tarde:       Alguns Horários Dísponiveis.`
           }
         }
+
+      },
+     
+        
+    }
+  },
+  FinalContainer:{
+    Id:'FinalContainer',
+    Type:'div',
+    Style:{
+ position:'relative',
+      display:'block',
+      height:{'Mobile':{'Portrait':'20vh','Landscape':'20vw'},'Pc':'30vh'},
+     
+
+    },
+    Childs:{
+      FinalLetterContainer:{
+        Id:'FinalLetterContainer',
+        Type:'div',
+        Style:{
+            position:'relative',
+        display:'inline-block',
+      color:['black','white'],
+      width:'100%',
+      height:'9%',
+        textAlign:'center',
+        paddingLeft:'5%',
+        fontFamily: "'Imperial Script', cursive",
+          fontWeight: '400',
+          fontStyle: 'normal',
+        fontSize:{'Mobile':{'Portrait':'1rem','Lanscape':'1rem'},'Pc':'3rem'},
+        },
+       Childs:{
+        FinalLetter:{
+          Id:'FinalLetter',
+          Type:'div',
+          STyle:{
+            position:'absolute',
+            left:'-35%',
+            top:'0%',
+          
+          },
+          Text:'Estamos Sempre A Disposição!',
+
+        },
+       }
+
+      },
+      FinalTextContainer:{
+        Id:'FinalTextContainer',
+        Style:{
+    position:'relative',
+        display:'inline-block',
+      color:['black','white'],
+      width:'100%',
+      height:'60%',
+      zIndex:'6',
+        textAlign:'start',
+        paddingLeft:'5%',
+        fontFamily: "'Tangerine', cursive",
+          fontWeight: '400',
+          fontStyle: 'normal',
+        fontSize:{'Mobile':{'Portrait':'1rem','Lanscape':'1rem'},'Pc':'2rem'},
+        },
+        Type:'div',
+        Childs:{
+          FinalText:{
+            Id:'FinalText',
+            Type:'div',
+            Style:{
+              position:'absolute',
+              left:'50%',
+              top:'60%',
+              textAlign:'center',
+              transform:'translate(-50%,-50%)',
+              width:'40%',
+            },
+            Text:`Nosso cérebro é o melhor brinquedo já criado: Nele se encontram todos os segredos, inclusive o da felicidade!
+                                                            (Charles Chaplin)`
+          }
+        }
       }
+    }
+  },
+  FooterContainer:{
+    Id:'FooterContainer',
+    Type:'div',
+    Style:{
+      position:'relative',
+      display:'block',
+      height:{'Mobile':{'Portrait':'20vh','Landscape':'20vw'},'Pc':'20vh'},
+      borderTop:['solid 1px black','solid 1px white'],
+
+    },
+
+    Childs:{
+       FooterLogo:{
+    Id:'FooterLogo',
+    Type:'div',
+    Style:{
+      position:'absolute',
+      width:{'Mobile':'3%','Pc':'15%'},
+      height:{'Mobile':'1%','Pc':'80%'},
+      backgroundImage:"url('./Images/EspaçoRessignificarLogo1.png')",
+        backgroundRepeat:'no-repeat',
+        backgroundPosition:'center',
+        backgroundSize:'cover',
+        pointerEvents:'none',
+        borderRadius:'100px',
+        zIndex:'500',
+        top:'50%',
+        left:'50%',
+        transform:'translate(-50%,-50%)'
+  },
+},
+CreditsFooter:{
+  Id:'CreditsFooter',
+  Type:'div',
+  Style:{
+    position:'absolute',
+    color:['rgb(10, 10, 10)','rgb(174,174,174)'],
+    fontSize:{'Mobile':'11px','Pc':'11px'},
+    top:'90%',
+    left:'1%',
+    transform:'translate(0%,-50%)',
+    whiteSpace: 'pre-wrap',
+      lineHeight:{'Mobile':'2','Pc':'1.5'},
+      fontFamily: "'Delius', cursive",
+      fontWeight: '400',
+      fontStyle: 'normal',
+      cursor:'pointer'
+
+  },
+  Text:'DioMhwl',
+   Listener:{
+      UmbraHover:{
+        Style:{
+        color:'blue',
+         fontSize:{'Mobile':'11px','Pc':'17px'},
+        }
+      },
+      UseFn:true,
+      Fn:()=>{window.open("https://www.instagram.com/diomhwl/", "_blank")}
+    }
+}
     }
   }
   }
@@ -679,7 +754,7 @@ MainContainers:{
       position:'fixed',
       width:{'Mobile':'12%','Pc':'14%'},
       height:{'Mobile':'12%','Pc':'14%'},
-      backgroundImage:"url('./Images/EspaçoRessignificarLogo.png')",
+      backgroundImage:"url('./Images/EspaçoRessignificarLogo1.png')",
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
         backgroundSize:'cover',
@@ -1210,7 +1285,7 @@ MainContainers:{
       position:'fixed',
       width:{'Mobile':'3%','Pc':'14%'},
       height:{'Mobile':'1%','Pc':'14%'},
-      backgroundImage:"url('./Images/EspaçoRessignificarLogo.png')",
+      backgroundImage:"url('./Images/EspaçoRessignificarLogo1.png')",
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
         backgroundSize:'cover',
@@ -1233,7 +1308,8 @@ MainContainers:{
             'linear-gradient(to right,rgb(170, 111, 57),rgb(92, 61, 61),white)',
             'rgb(112, 69, 69)'],
         height:{"Mobile":'20%',"Pc":"34%"},
-        boxShadow:"0px 6px 6px rgba(0,0,0,0.8)",
+        borderBottom:['dashed 1px black','dashed 1px white'],
+        //boxShadow:"0px 6px 6px rgba(0,0,0,0.8)",
          backgroundImage:{'Pc':
       ["url('./Images/Decoration4MinimalistLight.gif')","url('./Images/Decoration4MinimalistDark.gif')"]
       ,'Mobile':["url('./Images/Decoration4MinimalistLight.gif')","url('./Images/Decoration4MinimalistDark.gif')"]},
@@ -1277,7 +1353,7 @@ MainContainers:{
         position:'absolute',
         width:'100%',
         height:'100%',
-        backgroundImage:"url('./Images/EspaçoRessignificarLetter.png')",
+        backgroundImage:["url('./Images/EspaçoRessignificarLetter1.png')","url('./Images/EspaçoRessignificarLetter3.png')"],
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
         backgroundSize:'contain',
@@ -1307,7 +1383,7 @@ MainContainers:{
         position:'absolute',
         top:'7%',
         left:'50%',
-        color:['white','black'],
+        color:['black','white'],
         fontSize:{'Mobile':'9px','Pc':'15px'},
          cursor:'default',
          transform:'translate(-50%,-50%)',
@@ -1334,7 +1410,7 @@ MainContainers:{
             top:{'Mobile':'60%','Pc':'80%'},
             left:'50%',
             transform:'translate(-50%,0%)',
-            color:['white','white'],
+            color:['black','white'],
             fontSize:{'Pc':'30px','Mobile':'19px'},
              fontFamily: "'Imperial Script', cursive",
             fontWeight: '400',
@@ -1722,7 +1798,7 @@ MainContainers:{
                position:'fixed',
       width:{'Mobile':'3%','Pc':'50%'},
       height:{'Mobile':'1%','Pc':'50%'},
-      backgroundImage:"url('./Images/EspaçoRessignificarLogo.png')",
+      backgroundImage:"url('./Images/EspaçoRessignificarLogo1.png')",
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
         backgroundSize:'cover',
@@ -1745,9 +1821,9 @@ MainContainers:{
     Type:'div',
     Style:{
       position:'absolute',
-      top:{'Mobile':'11%','Pc':'20%'},
+      top:{'Mobile':'11%','Pc':'23%'},
       left:{'Mobile':'13%','Pc':'35%'},
-      fontSize:{'Mobile':'0.6rem','Pc':'17px'},
+      fontSize:{'Mobile':'0.6rem','Pc':'15px'},
       color:['rgb(0, 0, 0)','rgb(240,240,240)'],
       width:{'Mobile':'80%','Pc':'30%'},
        fontFamily: "'Delius', cursive",
@@ -1766,9 +1842,9 @@ MainContainers:{
     Type:'div',
     Style:{
       position:'absolute',
-      top:{'Mobile':'18%','Pc':'33%'},
+      top:{'Mobile':'18%','Pc':'32%'},
       left:{'Mobile':'13%','Pc':'35%'},
-      fontSize:{'Mobile':'0.6rem','Pc':'17px'},
+      fontSize:{'Mobile':'0.6rem','Pc':'15px'},
       color:['rgb(0, 0, 0)','rgb(240,240,240)'],
       width:{'Mobile':'80%','Pc':'30%'},
        fontFamily: "'Delius', cursive",
@@ -3828,7 +3904,7 @@ position:'absolute',
       position:'absolute',
       width:{'Mobile':'3%','Pc':'15%'},
       height:{'Mobile':'1%','Pc':'80%'},
-      backgroundImage:"url('./Images/EspaçoRessignificarLogo.png')",
+      backgroundImage:"url('./Images/EspaçoRessignificarLogo1.png')",
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
         backgroundSize:'cover',
@@ -3886,9 +3962,10 @@ UmbraScenes.New("LandingPageMainScene");
 UmbraScenes.New("GeneralMoreAboutScene",GeneralMoreAboutBluePrint,{
   position:'relative',
   width:'100%',
-        background:['linear-gradient(to left,rgba(106, 146, 255, 0.59),rgb(255, 255, 255),rgb(255, 255, 255),rgb(255, 255, 255),rgb(255, 255, 255),rgb(255, 255, 255),rgb(255, 255, 255),rgb(255, 255, 255))',
-          'linear-gradient(to left,rgba(106, 146, 255, 0.59),rgb(0, 0, 0),rgb(0, 0, 0),rgb(0, 0, 0),rgb(0, 0, 0),rgb(rgb(0, 0, 0)55, 255, 255),rgb(0, 0, 0))'
-        ],
+    backgroundColor:['white','black'],
+        //background:['linear-gradient(to left,rgba(106, 146, 255, 0.59),rgb(255, 255, 255),rgb(255, 255, 255),rgb(255, 255, 255),rgb(255, 255, 255),rgb(255, 255, 255),rgb(255, 255, 255),rgb(255, 255, 255))',
+       //   'linear-gradient(to left,rgba(106, 146, 255, 0.59),rgb(0, 0, 0),rgb(0, 0, 0),rgb(0, 0, 0),rgb(0, 0, 0),rgb(rgb(0, 0, 0)55, 255, 255),rgb(0, 0, 0))'
+       // ],
   display:'block',
   zIndex:'100'
   
