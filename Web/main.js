@@ -25,7 +25,7 @@ let GeneralMoreAboutBluePrint = {
         backgroundSize:'cover',
         pointerEvents:'none',
         zIndex:'500',
-        top:{'Mobile':'1.5%','Pc':'83vh'},
+        top:{'Mobile':'1.5%','Pc':'80vh'},
         left:{'Mobile':'0%','Pc':'85vw'}
 
     }
@@ -206,7 +206,7 @@ let GeneralMoreAboutBluePrint = {
       position:'relative',
       display:'block',
       border:'solid 1px black',
-      height:{'Mobile':{'Portrait':'200vh','Landscape':'200vw'},'Pc':'150vh'},
+      height:{'Mobile':{'Portrait':'200vh','Landscape':'200vw'},'Pc':'80vh'},
      
     },
     Childs:{
@@ -225,10 +225,155 @@ let GeneralMoreAboutBluePrint = {
         fontFamily: "'Delius', cursive",
           fontWeight: '400',
           fontStyle: 'normal',
-          cursor:'pointer',
+          cursor:'default',
         fontSize:{'Mobile':{'Portrait':'1rem','Lanscape':'1rem'},'Pc':'1.4rem'},
         },
         Text:'Do que se trata a Espaço Ressignificar?',
+         Listener:{
+    UmbraViewportLogic:{
+      Action:UmbraAnimations.Active,
+      Params:['SlideForRightAnimation','FirstMainsLetter'],
+
+    }
+   },
+      },
+      FirstImage:{
+        Id:'FirstImage',
+        Type:'div',
+        Style:{
+          position:'relative',
+          display:'inline-block',
+          width:{'Mobile':{'Portrait':'100%','Landscape':'100%'},'Pc':'100%'},
+          height:{'Mobile':{'Portrait':'30%','Landscape':'30%'},'Pc':'100%'},
+          zIndex:'3',
+           backgroundImage:"url('./Images/LogoBackground.png')",
+           marginTop:'5%',
+        backgroundRepeat:'no-repeat',
+        backgroundPosition:'center',
+        backgroundSize:'cover',
+        pointerEvents:'none',
+        }
+      },
+      FirstText:{
+        Id:'FirstText',
+        Type:'div',
+        Style:{
+          position:'absolute',
+          top:{'Mobile':{'Portrait':'10%','Landscape':'10%'},'Pc':'10%'},
+          left:{'Mobile':{'Portrait':'10%','Landscape':'10%'},'Pc':'5%'},
+          fontFamily: "'Delius', cursive",
+          fontWeight: '400',
+          fontStyle: 'normal',
+          cursor:'default',
+          width:{'Mobile':{'Portrait':'10%','Landscape':'10%'},'Pc':'50%'},
+          borderLeft:['solid 1px black','solid 1px white'],
+          padding:'3%',
+        fontSize:{'Mobile':{'Portrait':'1rem','Lanscape':'1rem'},'Pc':'1.2rem'},
+
+        },
+        
+        Text:`O Espaço Ressignificar é um ambiente especializado em promover a transformação e o desenvolvimento cognitivo e emocional,
+        com uma abordagem neuropsicopedagógica, nossa missão é proporcionar apoio e acompanhamento  a crianças e adultos para superar desafios e alcançar seu potencial pleno.
+        
+        Atualmento possuimos dois anos de atendimento, nesse espaço pensado com carrinho para atender crianças, adolescentes e adultos.`
+      }
+    }
+  },
+  SecondBodyContainer:{
+    Id:'SecondBodyContainer',
+    Type:'div',
+    Style:{
+       position:'relative',
+      display:'block',
+      border:'solid 1px black',
+      height:{'Mobile':{'Portrait':'200vh','Landscape':'200vw'},'Pc':'130vh'},
+    },
+    Childs:{
+      SecondMainLetterContainer:{
+        Id:'SecondMainLetterContainer',
+        Type:'div',
+        Style:{
+        position:'relative',
+        display:'inline-block',
+      color:['black','white'],
+      width:'100%',
+      height:'9%',
+      border:'solid 1px black',
+        textAlign:'start',
+        paddingLeft:'5%',
+        fontFamily: "'Delius', cursive",
+          fontWeight: '400',
+          fontStyle: 'normal',
+        fontSize:{'Mobile':{'Portrait':'1rem','Lanscape':'1rem'},'Pc':'1.4rem'},
+        },
+        Childs:{
+          SecondMainLetter:{
+            Id:'SecondMainLetter',
+            Type:'div',
+            Style:{
+              position:'absolute',
+              top:'50%',
+
+            },
+            Text:'Conheça nossa equipe!',
+             Listener:{
+    UmbraViewportLogic:{
+      Action:UmbraAnimations.Active,
+      Params:['SlideForRightAnimation','SecondMainLetter'],
+
+    }
+   },
+
+          }
+        }
+      },
+      SecondImage:{
+        Id:'SecondImage',
+        Type:'div',
+        Style:{
+            position:'absolute',
+          width:{'Mobile':{'Portrait':'100%','Landscape':'100%'},'Pc':'100%'},
+          height:{'Mobile':{'Portrait':'30%','Landscape':'30%'},'Pc':'55%'},
+          zIndex:'3',
+           backgroundImage:"url('./Images/TeamBackgroundDeise.png')",
+           left:'0%',
+           marginTop:'5%',
+        backgroundRepeat:'no-repeat',
+        backgroundPosition:'center',
+        backgroundSize:'cover',
+        pointerEvents:'none',
+        }
+      },
+      FirstLetterContainer:{
+        Id:'FirstLetterContainer',
+        Type:'div',
+        Style:{
+           position:'relative',
+        display:'inline-block',
+      color:['black','white'],
+      width:'100%',
+      height:'9%',
+      border:'solid 1px black',
+        textAlign:'start',
+        paddingLeft:'5%',
+        fontFamily: "'Imperial Script', cursive",
+          fontWeight: '400',
+          fontStyle: 'normal',
+        fontSize:{'Mobile':{'Portrait':'1rem','Lanscape':'1rem'},'Pc':'2.7rem'},
+        },
+        Childs:{
+          FirstLetter:{
+            Id:'FirstLetter',
+            Type:'div',
+            Style:{
+              position:'absolute',
+              top:'50%',
+              left:'50%',
+              transform:'translate(-50%,-50%)',
+            },
+            Text:'Deise Dillenburg',
+          }
+        }
       }
     }
   }
