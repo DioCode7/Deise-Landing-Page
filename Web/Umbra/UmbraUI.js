@@ -247,7 +247,10 @@ function TurnOfUmbraScene(SceneID){
     UmbraCoreBrute.ScenesNexus[SceneID].Active = false;
 
     let SceneContainer = document.getElementById(SceneID + 'Container');
+    let ActualStyle =  UmbraCoreBrute.UmbraDOM.DeclaredStyles[SceneID + 'Container'].Style;
     UmbraDOM.Delete(SceneContainer.id);
+    UmbraCoreBrute.UmbraDOM.DeclaredStyles[SceneID + 'Container'] = {};
+    UmbraCoreBrute.UmbraDOM.DeclaredStyles[SceneID + 'Container'].Style = ActualStyle ;
 
 
 
