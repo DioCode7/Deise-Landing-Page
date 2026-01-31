@@ -2246,7 +2246,7 @@ MainContainers:{
     //top:{"Mobile":'20%',"Pc":"34%"},
     left:'0%',
     width:'100%',
-    borderTop:'solid 1px black',
+   // borderTop:"solid 1px black",
     height:{'Mobile':'90%','Pc':'120%'},
     backgroundColor:'rgba(0,0,0,0)',
    },
@@ -2348,6 +2348,7 @@ MainContainers:{
         width:{'Mobile':'45%','Pc':'40%'},
         height:{'Mobile':'45%','Pc':'40%'},
         zIndex:'5',
+        display:"none",
         transform:'translate(-50%,-50%)',
         pointerEvents:'none',
         
@@ -2408,17 +2409,17 @@ MainContainers:{
         Style:{
             position:'absolute',
             top:{'Mobile':'2%','Pc':'5%'},
-            left:'50%',
+            left:'20%',
             transform:'translate(-50%,0%)',
             color:['black','white'],
-            fontSize:{'Pc':'25px','Mobile':'31px'},
+            fontSize:{'Pc':'40px','Mobile':'31px'},
            fontFamily: '"Google Sans Code", monospace',
        fontOpticalSizing: 'auto',
-      fontWeight: '400',
+      fontWeight: '700',
       fontStyle: 'normal',
             opacity:'0',
            
-            textShadow:'2px 4px 10px rgba(0, 0, 0, 0.9)',
+          //  textShadow:'2px 4px 10px rgba(0, 0, 0, 0.9)',
             zIndex:'20',
             cursor:'default'
 
@@ -2441,12 +2442,13 @@ MainContainers:{
             left:'50%',
             transform:'translate(-50%,0%)',
             opacity:'0',
+            display:`none`,
             color:['black','white'],
             fontSize:{'Pc':'22px','Mobile':'11px'},
              fontFamily: "'Delius', cursive",
             fontWeight: '400',
             fontStyle: 'normal',
-            textShadow:'2px 4px 10px rgba(0, 0, 0, 0.9)',
+           // textShadow:'2px 4px 10px rgba(0, 0, 0, 0.9)',
             zIndex:'20',
             cursor:'default',
             borderBottom:['solid 1px black','solid 1px black'],
@@ -2471,7 +2473,7 @@ MainContainers:{
         height:{'Mobile':'20%','Pc':'30%'},
         zIndex:40,
         opacity:'0',
-        display:'flex',
+        display:'none',
         top:{'Mobile':'40%','Pc':'19%'},
         left:{'Mobile':'80%','Pc':'75%'},
          backgroundImage:"url('./Images/DescImage.jpeg')",
@@ -2502,26 +2504,18 @@ MainContainers:{
     MoreAboutButton:{
       Id:'MoreAboutButton',
       Type:'div',
-      Text:'Saiba Mais',
+     
       Style:{
-        position:'absolute',
-        color:['black','white'],
-        opacity:'0',
-        top:{'Mobile':{'Portrait':'30%','Landscape':'30%'},'Pc':'62%'},
-        left:{'Mobile':{'Portrait':'60%','Landscape':'60%'},'Pc':'53%'},
-        border:['solid 1px black','solid 1px white'],
-        width:{'Mobile':{'Portrait':'18%','Landscape':'18%'},'Pc':'14%'},
-        height:{'Mobile':{'Portrait':'2%','Landscape':'2%'},'Pc':'3%'},
-        boxShadow:'rgba(0,0,0,0.6) 5px 5px 5px',
-         fontSize:{'Pc':'15px','Mobile':'0.7rem'},
-             fontFamily: "'Delius', cursive",
-            fontWeight: '400',
-            fontStyle: 'normal',
-            textShadow:'2px 4px 10px rgba(0, 0, 0, 0.9)',
-            textAlign:'center',
-            cursor:'pointer',
-            backgroundColor:['rgba(45, 47, 51, 0)','rgba(0, 0, 0, 0)']
-
+      
+               boxShadow:'rgba(0,0,0,0.2) 2px 10px 10px',
+               width:'20%',
+               height:'4%',
+               position:'absolute',
+               opacity:'0',
+               top:'60%',
+               left:'50%',
+               transform:'translate(-50%,-50%)',
+               background:'linear-gradient(to left, rgba(0,0,255,0.2),rgba(255, 37, 255, 0.2))',
       },
       Listener:{
         
@@ -2584,6 +2578,27 @@ MainContainers:{
         OutAnimation:'FadeOutAnimation',
           }
         }
+      },
+      Childs:{
+        MoreAboutText:{
+          Id:`MoreAboutText`,
+          Type:'div',
+          Style:{
+           position:'absolute',
+              left:'50%',
+              top:'50%',
+              transform:'translate(-50%,-50%)',
+              textAlign:'center',
+                fontSize:{'Pc':'15px','Mobile':'31px'},
+           fontFamily: '"Google Sans Code", monospace',
+            fontOpticalSizing: 'auto',
+            fontWeight: '600',
+            fontStyle: 'normal',
+            width:'100%',
+            pointerEvents:'none',
+          },
+          Text:`Saiba Mais`,
+        }
       }
     },
     MainDescText:{
@@ -2591,15 +2606,16 @@ MainContainers:{
     Type:'div',
     Style:{
       position:'absolute',
-      top:{'Mobile':'11%','Pc':'23%'},
-      left:{'Mobile':'13%','Pc':'35%'},
-      fontSize:{'Mobile':'0.6rem','Pc':'15px'},
+      top:{'Mobile':'11%','Pc':'18%'},
+      left:{'Mobile':'13%','Pc':'5%'},
+      fontSize:{'Mobile':'0.6rem','Pc':'22px'},
       color:['rgb(0, 0, 0)','rgb(240,240,240)'],
-      width:{'Mobile':'80%','Pc':'30%'},
-       fontFamily: "'Delius', cursive",
+      width:{'Mobile':'80%','Pc':'35%'},
+       fontFamily: '"Delius", cursive',
+       fontOpticalSizing: 'auto',
+      fontWeight: '500',
+      fontStyle: 'normal',
        opacity:'0',
-            fontWeight: '400',
-            fontStyle: 'normal',
             cursor:'default',
             zIndex:'25',
             
@@ -2621,14 +2637,15 @@ MainContainers:{
     Style:{
       position:'absolute',
       opacity:'0',
-      top:{'Mobile':'18%','Pc':'32%'},
-      left:{'Mobile':'13%','Pc':'35%'},
-      fontSize:{'Mobile':'0.6rem','Pc':'15px'},
+      top:{'Mobile':'18%','Pc':'33%'},
+      left:{'Mobile':'13%','Pc':'5%'},
+      fontSize:{'Mobile':'0.6rem','Pc':'22px'},
       color:['rgb(0, 0, 0)','rgb(240,240,240)'],
       width:{'Mobile':'80%','Pc':'30%'},
-       fontFamily: "'Delius', cursive",
-            fontWeight: '400',
-            fontStyle: 'normal',
+        fontFamily: '"delius", cursive',
+       fontOpticalSizing: 'auto',
+      fontWeight: '300',
+      fontStyle: 'normal',
             cursor:'default',
             zIndex:'25',
             
@@ -2652,14 +2669,15 @@ MainContainers:{
    Style:{
     position:'relative',
     left:'0%',
-     marginTop:'-18%',
+     marginTop:'-18.5%',
     //top:{'Mobile':'81%','Pc':'116%'},
     height:{'Mobile':'210%','Pc':'210%'},
+    //borderTop:"1px solid red",
     width:'100%',
     zIndex:'10',
-     backgroundImage:{'Pc':
-      ["url('./Images/GradientMinimalistLight.png')","url('./Images/GradientMinimalistDark.png')"],
-      'Mobile':["url('./Images/GradientMinimalistLightMobile.png')","url('./Images/GradientMinimalistDarkMobile.png')"]},
+    // backgroundImage:{'Pc':
+     // ["url('./Images/GradientMinimalistLight.png')","url('./Images/GradientMinimalistDark.png')"],
+     // 'Mobile':["url('./Images/GradientMinimalistLightMobile.png')","url('./Images/GradientMinimalistDarkMobile.png')"]},
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
         backgroundSize:'cover',
@@ -2679,12 +2697,12 @@ MainContainers:{
             left:'50%',
             transform:'translate(-50%,0%)',
             color:['black','white'],
-            fontSize:{'Pc':'25px','Mobile':'31px'},
+            fontSize:{'Pc':'40px','Mobile':'31px'},
             fontFamily: '"Google Sans Code", monospace',
             fontOpticalSizing: 'auto',
             fontWeight: '400',
             fontStyle: 'normal',
-            textShadow:'2px 4px 10px rgba(0, 0, 0, 0.9)',
+           // textShadow:'2px 4px 10px rgba(0, 0, 0, 0.9)',
             zIndex:'20',
             cursor:'default',
             opacity:'0',
@@ -2702,7 +2720,7 @@ MainContainers:{
       Type:'div',
       Style:{
          position:'absolute',
-      left:{'Mobile':'26%','Pc':'34%'},
+      left:{'Mobile':'26%','Pc':'29%'},
       top:{'Mobile':'0%','Pc':'2%'},
       backgroundImage:"url('./Images/FlowersAsset1.png')",
         backgroundRepeat:'no-repeat',
@@ -2731,7 +2749,7 @@ MainContainers:{
        fontFamily: "'Delius', cursive",
             fontWeight: '400',
             fontStyle: 'normal',
-            textShadow:'2px 4px 10px rgba(0, 0, 0, 0.9)',
+            //textShadow:'2px 4px 10px rgba(0, 0, 0, 0.9)',
             position:'absolute',
             top:{'Mobile':'4.5%','Pc':'15%'},
             left:{'Mobile':'20%','Pc':'25%'},
@@ -2832,26 +2850,37 @@ MainContainers:{
     NeuroPedagogyMoreAboutButton:{
       Id:'NeuroPedagogyMoreAboutButton',
       Type:'div',
-      Text:'Saiba Mais',
       Style:{
-        position:'absolute',
-        color:['black','white'],
-        top:{'Mobile':'15%','Pc':'41%'},
-        left:{'Mobile':'17%','Pc':'34%'},
-        border:['solid 1px black','solid 1px white'],
-        width:{'Mobile':'18%','Pc':'14%'},
-        height:{'Mobile':'1%','Pc':'2%'},
-        boxShadow:'rgba(0,0,0,0.6) 5px 5px 5px',
-         fontSize:{'Pc':'15px','Mobile':'11px'},
-             fontFamily: "'Delius', cursive",
-            fontWeight: '400',
-             opacity:'0',
+        boxShadow:'rgba(0,0,0,0.2) 2px 10px 10px',
+               width:'14%',
+               height:'2%',
+               position:'absolute',
+               opacity:'0',
+               top:'40%',
+               left:'40%',
+               transform:'translate(-50%,-50%)',
+              
+      },
+      Childs:{
+       NeuroPedagogyMoreAboutButtonText:{
+        Id:"NeuroPedagogyMoreAboutButtonText",
+        Type:`div`,
+        Style:{
+ position:'absolute',
+              left:'50%',
+              top:'50%',
+              transform:'translate(-50%,-50%)',
+              textAlign:'center',
+                fontSize:{'Pc':'15px','Mobile':'31px'},
+           fontFamily: '"Google Sans Code", monospace',
+            fontOpticalSizing: 'auto',
+            fontWeight: '600',
             fontStyle: 'normal',
-            textShadow:'2px 4px 10px rgba(0, 0, 0, 0.9)',
-            textAlign:'center',
-            cursor:'pointer',
-            backgroundColor:['rgba(45, 47, 51, 0)','rgba(0, 0, 0, 0)']
-
+            width:'100%',
+            pointerEvents:'none',
+        },
+        Text:`Saiba Mais`,
+       },
       },
       Listener:{
         UmbraHover:{
@@ -2878,7 +2907,7 @@ MainContainers:{
        fontFamily: "'Delius', cursive",
             fontWeight: '400',
             fontStyle: 'normal',
-            textShadow:'2px 4px 10px rgba(0, 0, 0, 0.9)',
+           // textShadow:'2px 4px 10px rgba(0, 0, 0, 0.9)',
             position:'absolute',
             opacity:'0',
             top:{'Mobile':{'Portrait':'20%','Landscape':'20%'},'Pc':'50%'},
@@ -2980,13 +3009,12 @@ MainContainers:{
      ClinicPsicMoreAboutButton:{
       Id:'ClinicPsicMoreAboutButton',
       Type:'div',
-      Text:'Saiba Mais',
       Style:{
         position:'absolute',
         color:['black','white'],
         top:{'Mobile':{'Portrait':'27%','Landscape':'27%'},'Pc':'67%'},
         left:{'Mobile':{'Portrait':'65%','Landscape':'65%'},'Pc':'65%'},
-        border:['solid 1px black','solid 1px white'],
+       // border:['solid 1px black','solid 1px white'],
         width:{'Mobile':{'Portrait':'18%','Landscape':'18%'},'Pc':'14%'},
         height:{'Mobile':{'Portrait':'1%','Landscape':'1%'},'Pc':'2%'},
         opacity:'0',
@@ -2995,11 +3023,32 @@ MainContainers:{
              fontFamily: "'Delius', cursive",
             fontWeight: '400',
             fontStyle: 'normal',
-            textShadow:'2px 4px 10px rgba(0, 0, 0, 0.9)',
+           // textShadow:'2px 4px 10px rgba(0, 0, 0, 0.9)',
             textAlign:'center',
             cursor:'pointer',
             backgroundColor:['rgba(45, 47, 51, 0)','rgba(0, 0, 0, 0)']
 
+      },
+       Childs:{
+       ClinicPsicMoreAboutButtonText:{
+        Id:"ClinicPsicMoreAboutButtonText",
+        Type:`div`,
+        Style:{
+ position:'absolute',
+              left:'50%',
+              top:'50%',
+              transform:'translate(-50%,-50%)',
+              textAlign:'center',
+                fontSize:{'Pc':'15px','Mobile':'31px'},
+           fontFamily: '"Google Sans Code", monospace',
+            fontOpticalSizing: 'auto',
+            fontWeight: '600',
+            fontStyle: 'normal',
+            width:'100%',
+            pointerEvents:'none',
+        },
+        Text:`Saiba Mais`,
+       },
       },
       Listener:{
         UmbraHover:{
@@ -3030,9 +3079,9 @@ MainContainers:{
     width:'100%',
     marginTop:'-7%',
     zIndex:'11',
-     backgroundImage:{Pc:["url('./Images/GradientMinimalistLight.png')","url('./Images/GradientMinimalistDark.png')"],
-      Mobile:{'Portrait':["url('./Images/GradientMinimalistLightMobile.png')","url('./Images/GradientMinimalistDarkMobile.png')"],'Landscape':["url('./Images/GradientMinimalistLightMobile.png')","url('./Images/GradientMinimalistDarkMobile.png')"]}
-     },
+    // backgroundImage:{Pc:["url('./Images/GradientMinimalistLight.png')","url('./Images/GradientMinimalistDark.png')"],
+    //  Mobile:{'Portrait':["url('./Images/GradientMinimalistLightMobile.png')","url('./Images/GradientMinimalistDarkMobile.png')"],'Landscape':["url('./Images/GradientMinimalistLightMobile.png')","url('./Images/GradientMinimalistDarkMobile.png')"]}
+    // },
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
         backgroundSize:'cover',
@@ -3053,7 +3102,7 @@ MainContainers:{
             fontWeight: '400',
             opacity:'0',
             fontStyle: 'normal',
-            textShadow:'2px 4px 10px rgba(0, 0, 0, 0.9)',
+           // textShadow:'2px 4px 10px rgba(0, 0, 0, 0.9)',
             position:'absolute',
             top:{'Mobile':{'Portrait':'4.5%','Landscape':'4.5'},'Pc':'1%'},
             left:{'Mobile':{'Portrait':'20%','Landscape':'20%'},'Pc':'25%'},
@@ -3153,13 +3202,12 @@ MainContainers:{
      SpecialEducationMoreAboutButton:{
       Id:'SpecialEducationMoreAboutButton1',
       Type:'div',
-      Text:'Saiba Mais',
       Style:{
         position:'absolute',
         color:['black','white'],
         top:{'Mobile':{'Portrait':'15%','Landscape':'15%'},'Pc':'25%'},
         left:{'Mobile':{'Portrait':'17%','Landscape':'17%'},'Pc':'34%'},
-        border:['solid 1px black','solid 1px white'],
+       // border:['solid 1px black','solid 1px white'],
         width:{'Mobile':{'Portrait':'18%','Landscape':'18%'},'Pc':'14%'},
         height:{'Mobile':{'Portrait':'1%','Landscape':'1%'},'Pc':'2%'},
         boxShadow:'rgba(0,0,0,0.6) 5px 5px 5px',
@@ -3167,12 +3215,33 @@ MainContainers:{
              fontFamily: "'Delius', cursive",
             fontWeight: '400',
             fontStyle: 'normal',
-            textShadow:'2px 4px 10px rgba(0, 0, 0, 0.9)',
+          //  textShadow:'2px 4px 10px rgba(0, 0, 0, 0.9)',
             textAlign:'center',
             cursor:'pointer',
             opacity:'0',
             backgroundColor:['rgba(45, 47, 51, 0)','rgba(0, 0, 0, 0)']
 
+      },
+       Childs:{
+       SpecialEducationMoreAboutButtonText:{
+        Id:"SpecialEducationMoreAboutButtonText",
+        Type:`div`,
+        Style:{
+ position:'absolute',
+              left:'50%',
+              top:'50%',
+              transform:'translate(-50%,-50%)',
+              textAlign:'center',
+                fontSize:{'Pc':'15px','Mobile':'31px'},
+           fontFamily: '"Google Sans Code", monospace',
+            fontOpticalSizing: 'auto',
+            fontWeight: '600',
+            fontStyle: 'normal',
+            width:'100%',
+            pointerEvents:'none',
+        },
+        Text:`Saiba Mais`,
+       },
       },
       Listener:{
         UmbraHover:{
@@ -3200,7 +3269,7 @@ MainContainers:{
        fontFamily: "'Delius', cursive",
             fontWeight: '400',
             fontStyle: 'normal',
-            textShadow:'2px 4px 10px rgba(0, 0, 0, 0.9)',
+          //  textShadow:'2px 4px 10px rgba(0, 0, 0, 0.9)',
             position:'absolute',
              opacity:'0',
             top:{'Mobile':{'Portrait':'22%','Landscape':'20%'},'Pc':'32%'},
@@ -3302,14 +3371,13 @@ MainContainers:{
     TEALetterMoreAboutButton:{
       Id:'TEALetterMoreAboutButton',
       Type:'div',
-      Text:'Saiba Mais',
       Style:{
         position:'absolute',
         color:['black','white'],
         opacity:'0',
         top:{'Mobile':{'Portrait':'30%','Landscape':'27%'},'Pc':'52%'},
         left:{'Mobile':{'Portrait':'65%','Landscape':'65%'},'Pc':'65%'},
-        border:['solid 1px black','solid 1px white'],
+      //  border:['solid 1px black','solid 1px white'],
         width:{'Mobile':{'Portrait':'18%','Landscape':'18%'},'Pc':'14%'},
         height:{'Mobile':{'Portrait':'1%','Landscape':'1%'},'Pc':'2%'},
         boxShadow:'rgba(0,0,0,0.6) 5px 5px 5px',
@@ -3317,11 +3385,32 @@ MainContainers:{
              fontFamily: "'Delius', cursive",
             fontWeight: '400',
             fontStyle: 'normal',
-            textShadow:'2px 4px 10px rgba(0, 0, 0, 0.9)',
+          //  textShadow:'2px 4px 10px rgba(0, 0, 0, 0.9)',
             textAlign:'center',
             cursor:'pointer',
             backgroundColor:['rgba(45, 47, 51, 0)','rgba(0, 0, 0, 0)']
 
+      },
+       Childs:{
+       TEAMoreAboutButtonText:{
+        Id:"TEAMoreAboutButtonText",
+        Type:`div`,
+        Style:{
+ position:'absolute',
+              left:'50%',
+              top:'50%',
+              transform:'translate(-50%,-50%)',
+              textAlign:'center',
+                fontSize:{'Pc':'15px','Mobile':'31px'},
+           fontFamily: '"Google Sans Code", monospace',
+            fontOpticalSizing: 'auto',
+            fontWeight: '600',
+            fontStyle: 'normal',
+            width:'100%',
+            pointerEvents:'none',
+        },
+        Text:`Saiba Mais`,
+       },
       },
       Listener:{
         UmbraHover:{
@@ -3352,9 +3441,9 @@ MainContainers:{
     height:{'Mobile':{'Portrait':'210%','Landscape':'210%'},'Pc':'210%'},
     width:'100%',
     zIndex:'11',
-    backgroundImage:{Pc:["url('./Images/GradientMinimalistLight.png')","url('./Images/GradientMinimalistDark.png')"],
-      Mobile:{'Portrait':["url('./Images/GradientMinimalistLightMobile.png')","url('./Images/GradientMinimalistDarkMobile.png')"],'Landscape':["url('./Images/GradientMinimalistLightMobile.png')","url('./Images/GradientMinimalistDarkMobile.png')"]}
-     },
+   // backgroundImage:{Pc:["url('./Images/GradientMinimalistLight.png')","url('./Images/GradientMinimalistDark.png')"],
+    //  Mobile:{'Portrait':["url('./Images/GradientMinimalistLightMobile.png')","url('./Images/GradientMinimalistDarkMobile.png')"],'Landscape':["url('./Images/GradientMinimalistLightMobile.png')","url('./Images/GradientMinimalistDarkMobile.png')"]}
+   // },
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
         backgroundSize:'cover',
@@ -3374,7 +3463,7 @@ MainContainers:{
        fontFamily: "'Delius', cursive",
             fontWeight: '400',
             fontStyle: 'normal',
-            textShadow:'2px 4px 10px rgba(0, 0, 0, 0.9)',
+          //  textShadow:'2px 4px 10px rgba(0, 0, 0, 0.9)',
             position:'absolute',
             top:{'Mobile':{'Portrait':'4.5%','Landscape':'4.5%'},'Pc':'1%'},
                opacity:'0',
@@ -3475,14 +3564,13 @@ MainContainers:{
      ABAMoreAboutButton:{
       Id:'ABAMoreAboutButton1',
       Type:'div',
-      Text:'Saiba Mais',
       Style:{
         position:'absolute',
            opacity:'0',
         color:['black','white'],
         top:{'Mobile':{'Portrait':'17%','Landscape':'17%'},'Pc':'25%'},
         left:{'Mobile':{'Portrait':'15%','Landscape':'15%'},'Pc':'34%'},
-        border:['solid 1px black','solid 1px white'],
+       // border:['solid 1px black','solid 1px white'],
         width:{'Mobile':{'Portrait':'18%','Landscape':'18%'},'Pc':'14%'},
         height:{'Mobile':{'Portrait':'1%','Landscape':'1%'},'Pc':'2%'},
         boxShadow:'rgba(0,0,0,0.6) 5px 5px 5px',
@@ -3490,11 +3578,32 @@ MainContainers:{
              fontFamily: "'Delius', cursive",
             fontWeight: '400',
             fontStyle: 'normal',
-            textShadow:'2px 4px 10px rgba(0, 0, 0, 0.9)',
+          //  textShadow:'2px 4px 10px rgba(0, 0, 0, 0.9)',
             textAlign:'center',
             cursor:'pointer',
             backgroundColor:['rgba(45, 47, 51, 0)','rgba(0, 0, 0, 0)']
 
+      },
+       Childs:{
+       ABAMoreAboutButtonText:{
+        Id:"ABAMoreAboutButtonText",
+        Type:`div`,
+        Style:{
+ position:'absolute',
+              left:'50%',
+              top:'50%',
+              transform:'translate(-50%,-50%)',
+              textAlign:'center',
+                fontSize:{'Pc':'15px','Mobile':'31px'},
+           fontFamily: '"Google Sans Code", monospace',
+            fontOpticalSizing: 'auto',
+            fontWeight: '600',
+            fontStyle: 'normal',
+            width:'100%',
+            pointerEvents:'none',
+        },
+        Text:`Saiba Mais`,
+       },
       },
       Listener:{
         UmbraHover:{
@@ -3522,7 +3631,7 @@ MainContainers:{
             fontWeight: '400',
             fontStyle: 'normal',
              opacity:'0',
-            textShadow:'2px 4px 10px rgba(0, 0, 0, 0.9)',
+           // textShadow:'2px 4px 10px rgba(0, 0, 0, 0.9)',
             position:'absolute',
             top:{'Mobile':{'Portrait':'22%','Landscape':'22%'},'Pc':'32%'},
             left:{'Mobile':{'Portrait':'20%','Landscape':'20%'},'Pc':'25%'},
@@ -3624,13 +3733,12 @@ MainContainers:{
    TerapyMoreAboutButton:{
       Id:'TerapyMoreAboutButton',
       Type:'div',
-      Text:'Saiba Mais',
       Style:{
         position:'absolute',
         color:['black','white'],
         top:{'Mobile':{'Portrait':'30%','Landscape':'27%'},'Pc':'52%'},
         left:{'Mobile':{'Portrait':'65%','Landscape':'65%'},'Pc':'65%'},
-        border:['solid 1px black','solid 1px white'],
+       // border:['solid 1px black','solid 1px white'],
          opacity:'0',
         width:{'Mobile':{'Portrait':'18%','Landscape':'18%'},'Pc':'14%'},
         height:{'Mobile':{'Portrait':'1%','Landscape':'1%'},'Pc':'2%'},
@@ -3639,11 +3747,32 @@ MainContainers:{
              fontFamily: "'Delius', cursive",
             fontWeight: '400',
             fontStyle: 'normal',
-            textShadow:'2px 4px 10px rgba(0, 0, 0, 0.9)',
+          //  textShadow:'2px 4px 10px rgba(0, 0, 0, 0.9)',
             textAlign:'center',
             cursor:'pointer',
             backgroundColor:['rgba(45, 47, 51, 0)','rgba(0, 0, 0, 0)']
 
+      },
+       Childs:{
+       TerapyMoreAboutButtonText:{
+        Id:"TerapyMoreAboutButtonText",
+        Type:`div`,
+        Style:{
+ position:'absolute',
+              left:'50%',
+              top:'50%',
+              transform:'translate(-50%,-50%)',
+              textAlign:'center',
+                fontSize:{'Pc':'15px','Mobile':'31px'},
+           fontFamily: '"Google Sans Code", monospace',
+            fontOpticalSizing: 'auto',
+            fontWeight: '600',
+            fontStyle: 'normal',
+            width:'100%',
+            pointerEvents:'none',
+        },
+        Text:`Saiba Mais`,
+       },
       },
       Listener:{
         UmbraHover:{
@@ -3674,9 +3803,9 @@ MainContainers:{
     width:'100%',
     opacity:{'Pc':'1','Mobile':'1'},
     zIndex:'12',
-     backgroundImage:{'Pc':
-      ["url('./Images/GradientMinimalistLight.png')","url('./Images/GradientMinimalistDark.png')"],
-      'Mobile':["url('./Images/GradientMinimalistLightMobile.png')","url('./Images/GradientMinimalistDarkMobile.png')"]},
+    // backgroundImage:{'Pc':
+     // ["url('./Images/GradientMinimalistLight.png')","url('./Images/GradientMinimalistDark.png')"],
+      //'Mobile':["url('./Images/GradientMinimalistLightMobile.png')","url('./Images/GradientMinimalistDarkMobile.png')"]},
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
         backgroundSize:'cover',
@@ -3697,7 +3826,7 @@ MainContainers:{
             fontWeight: '400',
              opacity:'0',
             fontStyle: 'normal',
-            textShadow:'2px 4px 10px rgba(0, 0, 0, 0.9)',
+           // textShadow:'2px 4px 10px rgba(0, 0, 0, 0.9)',
             position:'absolute',
             top:{'Mobile':{'Portrait':'4.5%','Landscape':'4.5%'},'Pc':'1%'},
             left:{'Mobile':{'Portrait':'20%','Landscape':'20%'},'Pc':'25%'},
@@ -3797,13 +3926,12 @@ MainContainers:{
      ParentMoreAboutButton:{
       Id:'ParentMoreAboutButton1',
       Type:'div',
-      Text:'Saiba Mais',
       Style:{
         position:'absolute',
         color:['black','white'],
         top:{'Mobile':{'Portrait':'15%','Landscape':'15%'},'Pc':'25%'},
         left:{'Mobile':{'Portrait':'15%','Landscape':'15%'},'Pc':'34%'},
-        border:['solid 1px black','solid 1px white'],
+       // border:['solid 1px black','solid 1px white'],
          opacity:'0',
         width:{'Mobile':{'Portrait':'18%','Landscape':'18%'},'Pc':'14%'},
         height:{'Mobile':{'Portrait':'1%','Landscape':'1%'},'Pc':'2%'},
@@ -3812,11 +3940,32 @@ MainContainers:{
              fontFamily: "'Delius', cursive",
             fontWeight: '400',
             fontStyle: 'normal',
-            textShadow:'2px 4px 10px rgba(0, 0, 0, 0.9)',
+          //  textShadow:'2px 4px 10px rgba(0, 0, 0, 0.9)',
             textAlign:'center',
             cursor:'pointer',
             backgroundColor:['rgba(45, 47, 51, 0)','rgba(0, 0, 0, 0)']
 
+      },
+       Childs:{
+      ParentMoreAboutButtonText:{
+        Id:"ParentMoreAboutButtonText",
+        Type:`div`,
+        Style:{
+ position:'absolute',
+              left:'50%',
+              top:'50%',
+              transform:'translate(-50%,-50%)',
+              textAlign:'center',
+                fontSize:{'Pc':'15px','Mobile':'31px'},
+           fontFamily: '"Google Sans Code", monospace',
+            fontOpticalSizing: 'auto',
+            fontWeight: '600',
+            fontStyle: 'normal',
+            width:'100%',
+            pointerEvents:'none',
+        },
+        Text:`Saiba Mais`,
+       },
       },
       Listener:{
         UmbraHover:{
@@ -3844,7 +3993,7 @@ MainContainers:{
             fontWeight: '400',
             fontStyle: 'normal',
              opacity:'0',
-            textShadow:'2px 4px 10px rgba(0, 0, 0, 0.9)',
+           // textShadow:'2px 4px 10px rgba(0, 0, 0, 0.9)',
             position:'absolute',
             top:{'Mobile':{'Portrait':'22%','Landscape':'22%'},'Pc':'32%'},
             left:{'Mobile':{'Portrait':'20%','Landscape':'20%'},'Pc':'25%'},
@@ -3946,13 +4095,12 @@ MainContainers:{
    TDAHMoreAboutButton:{
       Id:'TDAHMoreAboutButton',
       Type:'div',
-      Text:'Saiba Mais',
       Style:{
         position:'absolute',
         color:['black','white'],
         top:{'Mobile':{'Portrait':'30%','Landscape':'30%'},'Pc':'52%'},
         left:{'Mobile':{'Portrait':'75%','Landscape':'75%'},'Pc':'65%'},
-        border:['solid 1px black','solid 1px white'],
+       // border:['solid 1px black','solid 1px white'],
         width:{'Mobile':{'Portrait':'18%','Landscape':'18%'},'Pc':'14%'},
         height:{'Mobile':{'Portrait':'1%','Landscape':'1%'},'Pc':'2%'},
          opacity:'0',
@@ -3961,11 +4109,32 @@ MainContainers:{
              fontFamily: "'Delius', cursive",
             fontWeight: '400',
             fontStyle: 'normal',
-            textShadow:'2px 4px 10px rgba(0, 0, 0, 0.9)',
+           // textShadow:'2px 4px 10px rgba(0, 0, 0, 0.9)',
             textAlign:'center',
             cursor:'pointer',
             backgroundColor:['rgba(45, 47, 51, 0)','rgba(0, 0, 0, 0)']
 
+      },
+       Childs:{
+       TDAHMoreAboutButtonText:{
+        Id:"TDAHMoreAboutButtonText",
+        Type:`div`,
+        Style:{
+ position:'absolute',
+              left:'50%',
+              top:'50%',
+              transform:'translate(-50%,-50%)',
+              textAlign:'center',
+                fontSize:{'Pc':'15px','Mobile':'31px'},
+           fontFamily: '"Google Sans Code", monospace',
+            fontOpticalSizing: 'auto',
+            fontWeight: '600',
+            fontStyle: 'normal',
+            width:'100%',
+            pointerEvents:'none',
+        },
+        Text:`Saiba Mais`,
+       },
       },
       Listener:{
         UmbraHover:{
@@ -3995,10 +4164,11 @@ MainContainers:{
     height:{'Mobile':'210%','Pc':'260%'},
     width:'100%',
     zIndex:'13',
-    
-    boxShadow:['rgba(0,0,0,0.4) 10px -10px 10px','rgba(0, 0, 0, 0.8) 10px -10px 10px'],
+    backgroundColor:[`white`,'rgb(10,10,10)'],
+    borderTop:'solid 1px black',
+    //boxShadow:['rgba(0,0,0,0.4) 10px -10px 10px','rgba(0, 0, 0, 0.8) 10px -10px 10px'],
     display:{'Mobile':'none','Pc':'flex'},
-     backgroundImage:["url('./Images/GradientMinimalistLight.png')","url('./Images/GradientMinimalistDark.png')"],
+    // backgroundImage:["url('./Images/GradientMinimalistLight.png')","url('./Images/GradientMinimalistDark.png')"],
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
         backgroundSize:'cover',
@@ -4011,18 +4181,18 @@ MainContainers:{
       position:'absolute',
       
       color:['black','white'],
-      fontSize:{'Mobile':'11px','Pc':'25px'},
+      fontSize:{'Mobile':'11px','Pc':'40px'},
         fontFamily: '"Google Sans Code", monospace',
        fontOpticalSizing: 'auto',
-      fontWeight: '400',
+      fontWeight: '600',
       fontStyle: 'normal',
-        textShadow:'2px 4px 10px rgba(0, 0, 0, 0.9)',
+        //textShadow:'2px 4px 10px rgba(0, 0, 0, 0.9)',
         zIndex:'20',
         cursor:'default',
        top:{'Mobile':'0%','Pc':'5%'},
-       left:{'Mobile':'50%','Pc':'50%'},
+       left:{'Mobile':'50%','Pc':'22%'},
        transform:'translate(-50%,-50%)',
-         borderBottom:['solid 1px black','solid 1px white'],
+        // borderBottom:['solid 1px black','solid 1px white'],
          width:'55%',
          textAlign:'center',
          opacity:'0',
@@ -4043,7 +4213,7 @@ MainContainers:{
       display:'block',
       position:'absolute',
       zIndex:'100',
-      left:{'Mobile':'23%','Pc':'37%'},
+      left:{'Mobile':'23%','Pc':'5%'},
       top:{'Mobile':'20%','Pc':'2%'},
       backgroundImage:["url('./Images/WhoIAmDecoration.png')","url('./Images/WhoIAmDecoration.png')"],
         backgroundRepeat:'no-repeat',
@@ -4067,18 +4237,18 @@ MainContainers:{
       Type:'div',
       Style:{
         position:'relative',
-        width:{'Mobile':'40%',Pc:'50%'},
-        height:{'Mobile':'40%',Pc:'20%'},
+        width:{'Mobile':'40%',Pc:'100%'},
+        height:{'Mobile':'40%',Pc:'33%'},
         top:{'Mobile':'16%',Pc:'10%'},
-        left:{'Mobile':'55%',Pc:'26%'},
+        left:{'Mobile':'55%',Pc:'0%'},
          backgroundImage:"url('./Images/SelfImage.png')",
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
         display:'block',
         marginBottom:'5%',
         backgroundSize:'cover',
-        boxShadow:'rgba(0,0,0,0.6) 5px 5px 5px',
-        border:'solid 1px black',
+      //  boxShadow:'rgba(0,0,0,0.6) 5px 5px 5px',
+       // border:'solid 1px black',
          opacity:'0',
         
       },
@@ -4089,32 +4259,27 @@ MainContainers:{
 
     }
    },
-      Childs:{
-        MySpecsText:{
-          Id:'MySpecsText',
-          Type:'div',
-          Style:{
-            whiteSpace:'pre-line',
-            fontSize:{'Mobile':'11px','Pc':'0.9rem'},
+      
+    },
+    WhoIAmText:{
+      Id:`WhoIAmText`,
+      Type:`div`,
+      Style:{
+         whiteSpace:'pre-line',
+            fontSize:{'Mobile':'11px','Pc':'1.3rem'},
             lineHeight:{'Mobile':'2','Pc':'1.1'},
-            fontFamily: "'Delius', cursive",
-          fontWeight: '400',
+          fontFamily: '"Google Sans Code", monospace',
+       fontOpticalSizing: 'auto',
+      fontWeight: '600',
+      fontStyle: 'normal',
           position:'absolute',
           fontStyle: 'normal',
           color:['black','white'],
-          left:{'Mobile':'45%','Pc':'47%'},
-          top:{'Mobile':'20%','Pc':'7%'},
+          left:{'Mobile':'45%','Pc':'20%'},
+          top:{'Mobile':'20%','Pc':'18%'},
            opacity:'0',
-
-          },
-          Listener:{
-    UmbraViewportLogic:{
-      Action:UmbraAnimations.Active,
-      Params:['SlideForRightAnimation','MySpecsText'],
-
-    }
-   },
-          Text:
+      },
+        Text:
          `- Psicanalista;
 
           - Psicanalista especialista em 
@@ -4129,20 +4294,26 @@ MainContainers:{
 
           - Orientadora Parental e Consteladora Familiar;
 
-          - Tarapeuta Comportamental;`
-        }
-      }
+          - Tarapeuta Comportamental;`,
+            Listener:{
+    UmbraViewportLogic:{
+      Action:UmbraAnimations.Active,
+      Params:['SlideForRightAnimation','WhoIAmText'],
+
+    }
+   },
     },
     SpikesDecoration:{
       Id:'SpikesDecoration',
       Type:'div',
       Style:{
-        display:'block',
+        display:'none',
         backgroundImage:["url('./Images/Spikes1.png')","url('./Images/Spikes1Light.png')"],
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
         backgroundSize:'cover',
         position:'absolute',
+        
          opacity:'0',
          left:'0%',
         width:{'Mobile':'100%','Pc':'100%'},
@@ -4167,16 +4338,16 @@ MainContainers:{
         position:'absolute',
         display:'flex',
         color:['black','white'],
-        fontSize:{'Mobile':'1rem','Pc':'1.5rem'},
+        fontSize:{'Mobile':'1rem','Pc':'2rem'},
          fontFamily: '"Google Sans Code", monospace',
        fontOpticalSizing: 'auto',
-      fontWeight: '400',
+      fontWeight: '800',
       fontStyle: 'normal',
        opacity:'0',
       fontStyle: 'normal',
-      left:{'Mobile':'55%','Pc':'50%'},
+      left:{'Mobile':'55%','Pc':'25%'},
       transform:'translate(-50%,0%)',
-      top:{'Mobile':'34%','Pc':'7.5%'},
+      top:{'Mobile':'34%','Pc':'13%'},
        whiteSpace: 'pre-wrap',
         
       },
@@ -4203,7 +4374,7 @@ MainContainers:{
        opacity:'0',
       fontStyle: 'normal',
       left:{'Mobile':'55%','Pc':'53%'},
-      top:{'Mobile':'34%','Pc':'38%'},
+      top:{'Mobile':'34%','Pc':'46%'},
       },
       Text:`Minha
   Biografia!`,
