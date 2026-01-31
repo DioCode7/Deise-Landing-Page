@@ -11,6 +11,10 @@ let InicialAnimationsElements=[
   'HeaderButtonSpecs',
   'HeaderButtonContact',
   'HeaderButtonAboutMe',
+  'HeadLine',
+  'SubHeadLine',
+  'CTA',
+  'HeroBackground'
 ];
 
 
@@ -1826,7 +1830,7 @@ MainContainers:{
         width:'100%',
         backgroundColor:['white','black'],
         height:{"Mobile":'20%',"Pc":"15%"},
-        borderBottom:['dashed 1px black','dashed 1px white'],
+       // borderBottom:['dashed 1px black','dashed 1px white'],
         //boxShadow:"0px 6px 6px rgba(0,0,0,0.8)",
        /*  backgroundImage:{'Pc':
       ["url('./Images/Decoration4MinimalistLight.gif')","url('./Images/Decoration4MinimalistDark.gif')"]
@@ -2071,6 +2075,168 @@ MainContainers:{
       position:'relative',
       height:'85%',
     },
+    Childs:{
+      HeroBackground:{
+        Id:'HeroBackground',
+        Type:'div',
+        Style:{
+         position:'absolute',
+         width:'100%',
+         height:'100%',
+         left:'0%',
+         opacity:'0',
+          backgroundImage:"url('./Images/HeroBackground.png')",
+        backgroundRepeat:'no-repeat',
+        backgroundPosition:'center',
+        backgroundSize:'cover',
+         
+           
+        }
+      },
+      HeadLineContainer:{
+        Id:'HeadLineContainer',
+        Type:'div',
+        Style:{
+         position:'relative',
+         //border:'solid 1px black',
+         width:'100%',
+         height:'30%',
+         display:'block',
+
+        },
+        Childs:{
+          HeadLine:{
+            Id:'HeadLine',
+            Type:'div',
+            Style:{
+            position:'absolute',
+            left:'44%',
+            width:'100%',
+            top:'50%',
+            textAlign:'start',
+            color:['black','white'],
+            //borderBottom:'solid 1px black',
+              fontSize:{'Pc':'40px','Mobile':'31px'},
+           fontFamily: '"Google Sans Code", monospace',
+            fontOpticalSizing: 'auto',
+            fontWeight: '600',
+            fontStyle: 'normal',
+            opacity:'0',
+           // textShadow:'2px 4px 10px rgba(0, 0, 0, 0.9)',
+            },
+            Text:`Cuidando do aprender em todas 
+                   as fases da vida!`,
+            
+
+  
+          }
+        }
+      },
+      SubHeadLineContainer:{
+        Id:'SubHeadLineContainer',
+        Type:'div',
+       Style:{
+         position:'relative',
+       //  border:'solid 1px black',
+         width:'100%',
+         height:'40%',
+         display:'block',
+
+        },
+        Childs:{
+          SubHeadLine:{
+            Id:'SubHeadLine',
+            Type:'div',
+            Text:'Atendimento em neuropedagogia, psicopedagogia e educação inclusiva para crianças, adolescentes e adultos.',
+            Style:{
+            position:'absolute',
+            left:'71%',
+            textAlign:'start',
+            width:'50%',
+            top:'55%',
+            transform:'translate(-50%,-50%)',
+            color:['black','white'],
+              fontSize:{'Pc':'20px','Mobile':'31px'},
+           fontFamily: '"Google Sans Code", monospace',
+            fontOpticalSizing: 'auto',
+            fontWeight: '600',
+            fontStyle: 'normal',
+            opacity:'0',
+            textShadow:'2px 4px 10px rgba(0, 0, 0, 0.41)',
+            },
+          }
+        }
+      },
+      CTAContainer:{
+        Id:'CTAContainer',
+        Type:'div',
+        Style:{
+          position:"relative",
+          display:'block',
+          width:'100%',
+          height:'30%',
+        },
+        Childs:{
+          CTA:{
+            Id:'CTA',
+            Type:'div',
+            Style:{
+               boxShadow:'rgba(0,0,0,0.2) 2px 10px 10px',
+               width:'20%',
+               height:'25%',
+               position:'absolute',
+               opacity:'0',
+               top:'25%',
+               left:'70%',
+               transform:'translate(-50%,-50%)',
+               background:'linear-gradient(to left, rgba(0,0,255,0.2),rgba(255, 37, 255, 0.2))',
+               
+
+            },
+             Listener:{
+      UmbraHover:{
+        Style:{
+        color:'orange',
+        scale:'1.12',
+         fontSize:{'Mobile':'11px','Pc':'17px'},
+        }
+      },
+      UseFn:true,
+      Fn:()=>{window.open("https://wa.me/5554991841827", "_blank");},
+       
+    UmbraViewportLogic:{
+      Action:UmbraAnimations.Active,
+      Params:['SlideForRightAnimation','ContactOptionsWhatsText'],
+
+    
+   },
+    },
+            Childs:{
+                 CTAText:{
+            Id:'CTAText',
+            Type:'div',
+            Style:{
+              position:'absolute',
+              left:'50%',
+              top:'50%',
+              transform:'translate(-50%,-50%)',
+              textAlign:'center',
+                fontSize:{'Pc':'15px','Mobile':'31px'},
+           fontFamily: '"Google Sans Code", monospace',
+            fontOpticalSizing: 'auto',
+            fontWeight: '600',
+            fontStyle: 'normal',
+            width:'100%',
+            pointerEvents:'none',
+            },
+            Text:'Agende Já Sua Consulta!'
+          }
+            }
+          },
+       
+        }
+      }
+    }
   },
   GeneralDescriptionContainer:{
    Id:'GeneralDescriptionContainer',
@@ -2080,6 +2246,7 @@ MainContainers:{
     //top:{"Mobile":'20%',"Pc":"34%"},
     left:'0%',
     width:'100%',
+    borderTop:'solid 1px black',
     height:{'Mobile':'90%','Pc':'120%'},
     backgroundColor:'rgba(0,0,0,0)',
    },
