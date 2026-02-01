@@ -1828,7 +1828,7 @@ MainContainers:{
         zIndex:'10',
         position:'relative',
         width:'100%',
-        backgroundColor:['white','black'],
+        backgroundColor:['white','rgb(17,17,17)'],
         height:{"Mobile":'20%',"Pc":"15%"},
        // borderBottom:['dashed 1px black','dashed 1px white'],
         //boxShadow:"0px 6px 6px rgba(0,0,0,0.8)",
@@ -1851,7 +1851,7 @@ MainContainers:{
         left:'50%',
         top:'50%',
         transform:'translate(-50%,-50%)',
-         backgroundImage:"url('./Images/EspaçoRessignificarLetter1.png')",
+         backgroundImage:["url('./Images/EspaçoRessignificarLetter1.png')","url('./Images/EspaçoRessignificarLetter3.png')"],
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
         backgroundSize:'cover',
@@ -2085,7 +2085,7 @@ MainContainers:{
          height:'100%',
          left:'0%',
          opacity:'0',
-          backgroundImage:"url('./Images/HeroBackground.png')",
+          backgroundImage:["url('./Images/HeroBackground.png')","url('./Images/HeroBackground2.png')"],
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
         backgroundSize:'cover',
@@ -2219,6 +2219,7 @@ MainContainers:{
               position:'absolute',
               left:'50%',
               top:'50%',
+              color:['black','white'],
               transform:'translate(-50%,-50%)',
               textAlign:'center',
                 fontSize:{'Pc':'15px','Mobile':'31px'},
@@ -2248,7 +2249,7 @@ MainContainers:{
     width:'100%',
    // borderTop:"solid 1px black",
     height:{'Mobile':'90%','Pc':'120%'},
-    backgroundColor:'rgba(0,0,0,0)',
+    backgroundColor:['white','rgb(17,17,17)'],
    },
    Childs:{
     GeneralDescriptionContainerDecoration1:{
@@ -2311,6 +2312,7 @@ MainContainers:{
      Style:{
       position:'absolute',
       left:{'Mobile':'46%','Pc':'50%'},
+      display:'none',
       top:{'Mobile':'7%','Pc':'13%'},
       backgroundImage:"url('./Images/Decoration3.png')",
         backgroundRepeat:'no-repeat',
@@ -2370,10 +2372,10 @@ MainContainers:{
     top:"0%",
     opacity:'0',
     left:'0%',
-    
+    backgroundColor:['white','rgb(17,17,17)'],
     width:'100%',
      backgroundImage:{'Pc':
-      ["url('./Images/Decoration5MinimalistLight.png')","url('./Images/Decoration5MinimalistDark.png')"],
+      ["url('./Images/Decoration5MinimalistLight.png')","url('./Images/Decoration5MinimalistLight.png')"],
       'Mobile':{'Portrait':["url('./Images/Decoration5MinimalistMobLight.png')","url('./Images/Decoration5MinimalistMobDark.png')"],
         'Landscape':["url('./Images/Decoration5MinimalistLight.png')","url('./Images/Decoration5MinimalistDark.png')"]}},
         backgroundRepeat:'no-repeat',
@@ -2589,6 +2591,7 @@ MainContainers:{
               top:'50%',
               transform:'translate(-50%,-50%)',
               textAlign:'center',
+              color:['black','white'],
                 fontSize:{'Pc':'15px','Mobile':'31px'},
            fontFamily: '"Google Sans Code", monospace',
             fontOpticalSizing: 'auto',
@@ -2675,6 +2678,7 @@ MainContainers:{
     //borderTop:"1px solid red",
     width:'100%',
     zIndex:'10',
+    backgroundColor:['white','rgb(17,17,17)'],
     // backgroundImage:{'Pc':
      // ["url('./Images/GradientMinimalistLight.png')","url('./Images/GradientMinimalistDark.png')"],
      // 'Mobile':["url('./Images/GradientMinimalistLightMobile.png')","url('./Images/GradientMinimalistDarkMobile.png')"]},
@@ -2869,6 +2873,7 @@ MainContainers:{
  position:'absolute',
               left:'50%',
               top:'50%',
+              color:['black','white'],
               transform:'translate(-50%,-50%)',
               textAlign:'center',
                 fontSize:{'Pc':'15px','Mobile':'31px'},
@@ -3039,6 +3044,7 @@ MainContainers:{
               top:'50%',
               transform:'translate(-50%,-50%)',
               textAlign:'center',
+              color:['black','white'],
                 fontSize:{'Pc':'15px','Mobile':'31px'},
            fontFamily: '"Google Sans Code", monospace',
             fontOpticalSizing: 'auto',
@@ -3077,6 +3083,7 @@ MainContainers:{
    // top:{'Mobile':{'Portrait':'152%','Landscape':'291%'},'Pc':'306%'},
     height:{'Mobile':{'Portrait':'210%','Landscape':'210%'},'Pc':'210%'},
     width:'100%',
+     backgroundColor:['white','rgb(17,17,17)'],
     marginTop:'-7%',
     zIndex:'11',
     // backgroundImage:{Pc:["url('./Images/GradientMinimalistLight.png')","url('./Images/GradientMinimalistDark.png')"],
@@ -3230,6 +3237,7 @@ MainContainers:{
  position:'absolute',
               left:'50%',
               top:'50%',
+              color:['black','white'],
               transform:'translate(-50%,-50%)',
               textAlign:'center',
                 fontSize:{'Pc':'15px','Mobile':'31px'},
@@ -3399,6 +3407,7 @@ MainContainers:{
  position:'absolute',
               left:'50%',
               top:'50%',
+              color:['black','white'],
               transform:'translate(-50%,-50%)',
               textAlign:'center',
                 fontSize:{'Pc':'15px','Mobile':'31px'},
@@ -3437,6 +3446,7 @@ MainContainers:{
     position:'relative',
     left:'0%',
     marginTop:'-25%',
+     backgroundColor:['white','rgb(17,17,17)'],
    // top:{'Mobile':{'Portrait':'233%','Landscape':'170%'},'Pc':'454%'},
     height:{'Mobile':{'Portrait':'210%','Landscape':'210%'},'Pc':'210%'},
     width:'100%',
@@ -3592,6 +3602,7 @@ MainContainers:{
  position:'absolute',
               left:'50%',
               top:'50%',
+              color:['black','white'],
               transform:'translate(-50%,-50%)',
               textAlign:'center',
                 fontSize:{'Pc':'15px','Mobile':'31px'},
@@ -3761,6 +3772,7 @@ MainContainers:{
  position:'absolute',
               left:'50%',
               top:'50%',
+              color:['black','white'],
               transform:'translate(-50%,-50%)',
               textAlign:'center',
                 fontSize:{'Pc':'15px','Mobile':'31px'},
@@ -3797,6 +3809,7 @@ MainContainers:{
    Style:{
     position:'relative',
     left:'0%',
+     backgroundColor:['white','rgb(17,17,17)'],
     marginTop:'-25%',
    // top:{'Mobile':'311%','Pc':'596%'},
     height:{'Mobile':'210%','Pc':'210%'},
@@ -3954,6 +3967,7 @@ MainContainers:{
  position:'absolute',
               left:'50%',
               top:'50%',
+              color:['black','white'],
               transform:'translate(-50%,-50%)',
               textAlign:'center',
                 fontSize:{'Pc':'15px','Mobile':'31px'},
@@ -4125,6 +4139,7 @@ MainContainers:{
               top:'50%',
               transform:'translate(-50%,-50%)',
               textAlign:'center',
+              color:['black','white'],
                 fontSize:{'Pc':'15px','Mobile':'31px'},
            fontFamily: '"Google Sans Code", monospace',
             fontOpticalSizing: 'auto',
@@ -4151,7 +4166,31 @@ MainContainers:{
    },
       }
     },
+   TransitionDecoration:{
+    Id:'TransitionDecoration1',
+    Type:'div',
+    Style:{
+        position:'absolute',
+        width:{'Mobile':{'Portrait':'100%','Landscape':'100%'},Pc:'100%'},
+        height:{'Mobile':{'Portrait':'16%','Landscape':'16%'},Pc:'35%'},
+        top:{'Mobile':{'Portrait':'23%','Landscape':'23%'},Pc:'53%'},
+        left:{'Mobile':{'Portrait':'0%','Landscape':'0%'},Pc:'0%'},
+         opacity:'0',
+         zIndex:'-1',
+         backgroundImage:["url('./Images/TransitionDecoration.png')","url('./Images/TransitionDecoration2.png')"],
+        backgroundRepeat:'no-repeat',
+        backgroundPosition:'center',
+        backgroundSize:'cover',
+    },
+      Listener:{
+    UmbraViewportLogic:{
+      Action:UmbraAnimations.Active,
+      Params:['SlideForRightAnimation','TransitionDecoration1'],
+
     
+   },
+      }
+   } 
   }},
   AboutMeContainer:{
     Id:'AboutMeContainer',
@@ -4164,8 +4203,8 @@ MainContainers:{
     height:{'Mobile':'210%','Pc':'260%'},
     width:'100%',
     zIndex:'13',
-    backgroundColor:[`white`,'rgb(10,10,10)'],
-    borderTop:'solid 1px black',
+    backgroundColor:[`white`,'rgb(17,17,17)'],
+   
     //boxShadow:['rgba(0,0,0,0.4) 10px -10px 10px','rgba(0, 0, 0, 0.8) 10px -10px 10px'],
     display:{'Mobile':'none','Pc':'flex'},
     // backgroundImage:["url('./Images/GradientMinimalistLight.png')","url('./Images/GradientMinimalistDark.png')"],
@@ -4241,7 +4280,8 @@ MainContainers:{
         height:{'Mobile':'40%',Pc:'33%'},
         top:{'Mobile':'16%',Pc:'10%'},
         left:{'Mobile':'55%',Pc:'0%'},
-         backgroundImage:"url('./Images/SelfImage.png')",
+        backgroundColor:['white','rgb(17,17,17)'],
+         backgroundImage:["url('./Images/SelfImage.png')","url('./Images/SelfImage2.png')"],
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
         display:'block',
@@ -4369,15 +4409,14 @@ MainContainers:{
      whiteSpace: 'pre-wrap',
         fontFamily: '"Google Sans Code", monospace',
        fontOpticalSizing: 'auto',
-      fontWeight: '400',
+      fontWeight: '700',
       fontStyle: 'normal',
        opacity:'0',
       fontStyle: 'normal',
-      left:{'Mobile':'55%','Pc':'53%'},
+      left:{'Mobile':'55%','Pc':'15%'},
       top:{'Mobile':'34%','Pc':'46%'},
       },
-      Text:`Minha
-  Biografia!`,
+      Text:`Minha Biografia!`,
       Listener:{
     UmbraViewportLogic:{
       Action:UmbraAnimations.Active,
@@ -4429,10 +4468,11 @@ MainContainers:{
        whiteSpace: 'pre-wrap',
       lineHeight:{'Mobile':'2','Pc':'1.5'},
       fontFamily: "'Delius', cursive",
-      fontWeight: '400',
+      fontWeight: '600',
       fontStyle: 'normal',
        opacity:'0',
-      left:{'Mobile':'55%','Pc':'37%'},
+      left:{'Mobile':'55%','Pc':'10%'},
+      width:'60%',
       top:{'Mobile':'34%','Pc':'53%'},
 
     },
@@ -4456,9 +4496,9 @@ MainContainers:{
          opacity:'0',
         width:{'Mobile':'100%','Pc':'60%'},
         height:{'Mobile':'17%','Pc':'25%'},
-        top:{'Mobile':'35%','Pc':'63%'},
+        top:{'Mobile':'35%','Pc':'59%'},
         transform:'rotate(10deg)',
-        left:{'Mobile':'35%','Pc':'0%'},
+        left:{'Mobile':'35%','Pc':'70%'},
       },
       Listener:{
     UmbraViewportLogic:{
@@ -4467,8 +4507,8 @@ MainContainers:{
 
     }
    },
-    }
-   
+    },
+  
     },
   },
 
@@ -4478,24 +4518,50 @@ MainContainers:{
    Style:{
      position:'relative',
     left:'0%',
-    boxShadow:['rgba(0,0,0,0.4) 10px -10px 10px','rgba(0, 0, 0, 0.8) 10px -10px 10px'],
+ 
    // top:{'Mobile':'154%','Pc':'1000%'},
     height:{'Mobile':'210%','Pc':'250%'},
     width:'100%',
     zIndex:'14',
+    backgroundColor:['white','rgb(17,17,17)'],
     display:{'Mobile':'none','Pc':'flex'},
-     backgroundImage:["url('./Images/GradientMinimalistLight.png')","url('./Images/GradientMinimalistDark.png')"],
+    // backgroundImage:["url('./Images/GradientMinimalistLight.png')","url('./Images/GradientMinimalistDark.png')"],
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
         backgroundSize:'cover',
    },
    Childs:{
+     TransitionDecoration:{
+     Id:'TransitionDecoration2',
+     Type:'div',
+     Style:{
+        position:'absolute',
+        width:{'Mobile':{'Portrait':'100%','Landscape':'100%'},Pc:'100%'},
+        height:{'Mobile':{'Portrait':'16%','Landscape':'16%'},Pc:'35%'},
+        top:{'Mobile':{'Portrait':'23%','Landscape':'23%'},Pc:'-22%'},
+        left:{'Mobile':{'Portrait':'0%','Landscape':'0%'},Pc:'0%'},
+         opacity:'0',
+         zIndex:'-1',
+         backgroundImage:["url('./Images/TransitionDecoration.png')","url('./Images/TransitionDecoration2.png')"],
+        backgroundRepeat:'no-repeat',
+        backgroundPosition:'center',
+        backgroundSize:'cover',
+    },
+      Listener:{
+    UmbraViewportLogic:{
+      Action:UmbraAnimations.Active,
+      Params:['SlideForRightAnimation','TransitionDecoration2'],
+
+    
+   },
+      }
+   },
     ContactLetter:{
       Id:'ContactLetter',
       Type:'div',
       Style:{
      position:'absolute',
-      fontSize:{'Mobile':'1rem','Pc':'1.5rem'},
+      fontSize:{'Mobile':'1rem','Pc':'2.2rem'},
       color:['black','white'],
      whiteSpace: 'pre-wrap',
        fontFamily: '"Google Sans Code", monospace',
@@ -4505,7 +4571,7 @@ MainContainers:{
       opacity:'0',
       transform:'translate(-50%,0%)',
       fontStyle: 'normal',
-      left:{'Mobile':'55%','Pc':'50%'},
+      left:{'Mobile':'55%','Pc':'65%'},
       top:{'Mobile':'34%','Pc':'5%'},
       },
       Text:'Agende Sua Consulta!',
@@ -4528,11 +4594,12 @@ MainContainers:{
         backgroundSize:'cover',
         position:'absolute',
         opacity:'0',
+        display:'none',
         width:{'Mobile':'100%','Pc':'5%'},
         height:{'Mobile':'17%','Pc':'3%'},
-        top:{'Mobile':'35%','Pc':'3.5%'},
+        top:{'Mobile':'35%','Pc':'4%'},
         transform:'rotate(10deg)',
-        left:{'Mobile':'35%','Pc':'30%'},
+        left:{'Mobile':'35%','Pc':'42%'},
       },
       Listener:{
     UmbraViewportLogic:{
@@ -4548,17 +4615,17 @@ MainContainers:{
       Text:'Endereço da clínica',
       Style:{
          position:'absolute',
-      fontSize:{'Mobile':'1rem','Pc':'1.3rem'},
+      fontSize:{'Mobile':'1rem','Pc':'1.8rem'},
       color:['black','white'],
      whiteSpace: 'pre-wrap',
      opacity:'0',
         fontFamily: '"Google Sans Code", monospace',
        fontOpticalSizing: 'auto',
-      fontWeight: '400',
+      fontWeight: '600',
       fontStyle: 'normal',
       transform:'translate(-50%,0%)',
       fontStyle: 'normal',
-      left:{'Mobile':'55%','Pc':'36%'},
+      left:{'Mobile':'55%','Pc':'58%'},
       top:{'Mobile':'34%','Pc':'12%'},
       },
       Listener:{
@@ -4579,14 +4646,14 @@ MainContainers:{
      Style:{
        position:'absolute',
       color:['black','white'],
-      fontSize:{'Mobile':'1rem','Pc':'1.2'},
+      fontSize:{'Mobile':'1rem','Pc':'1.5'},
        whiteSpace: 'pre-wrap',
        opacity:'0',
       lineHeight:{'Mobile':'2','Pc':'1.5'},
       fontFamily: "'Delius', cursive",
-      fontWeight: '400',
+      fontWeight: '500',
       fontStyle: 'normal',
-      left:{'Mobile':'55%','Pc':'30%'},
+      left:{'Mobile':'55%','Pc':'47%'},
       top:{'Mobile':'34%','Pc':'14.7%'},
      
     },
@@ -4603,7 +4670,7 @@ MainContainers:{
       Type:"iframe",
       Style:{
       position:`absolute`,
-      top:{Mobile:'20%',Pc:"45%"},
+      top:{Mobile:'20%',Pc:"50%"},
       left:{Mobile:"15%",Pc:'28%'},
       opacity:'0',
       width:{Mobile:"30%",Pc:"60%"},
@@ -4620,22 +4687,23 @@ MainContainers:{
    },
     },
     ContactOptionsLetter:{
-      Id:'CantactOptionsLetter',
+      Id:'ContactOptionsLetter',
       Type:'div',
       Text:'Meios De Contato',
       Style:{
          position:'absolute',
          opacity:'0',
-      fontSize:{'Mobile':'1rem','Pc':'2.6rem'},
+      fontSize:{'Mobile':'1rem','Pc':'2rem'},
       color:['black','white'],
      whiteSpace: 'pre-wrap',
       lineHeight:{'Mobile':'2','Pc':'0.8'},
-      fontFamily: "'Imperial Script', cursive",
-      fontWeight: '400',
-      transform:'translate(-50%,0%)',
+    fontFamily: '"Google Sans Code", monospace',
+       fontOpticalSizing: 'auto',
+      fontWeight: '600',
       fontStyle: 'normal',
+      transform:'translate(-50%,0%)',
       left:{'Mobile':'55%','Pc':'72%'},
-      top:{'Mobile':'34%','Pc':'23%'},
+      top:{'Mobile':'34%','Pc':'26%'},
       },
       Listener:{
     UmbraViewportLogic:{
@@ -4654,14 +4722,15 @@ Style:{
 position:'absolute',
       color:['black','white'],
       opacity:'0',
-      fontSize:{'Mobile':'1rem','Pc':'1.2'},
+      fontSize:{'Mobile':'1rem','Pc':'1.4rem'},
        whiteSpace: 'pre-wrap',
       lineHeight:{'Mobile':'2','Pc':'4'},
-      fontFamily: "'Delius', cursive",
-      fontWeight: '400',
+     fontFamily: '"Google Sans Code", monospace',
+       fontOpticalSizing: 'auto',
+      fontWeight: '800',
       fontStyle: 'normal',
       left:{'Mobile':'55%','Pc':'64%'},
-      top:{'Mobile':'34%','Pc':'27%'},
+      top:{'Mobile':'34%','Pc':'30%'},
       cursor:'pointer'
       
      
@@ -4670,7 +4739,7 @@ position:'absolute',
       UmbraHover:{
         Style:{
         color:'blue',
-         fontSize:{'Mobile':'11px','Pc':'17px'},
+      
         }
       },
       UseFn:true,
@@ -4692,15 +4761,17 @@ position:'absolute',
 Style:{
 position:'absolute',
       color:['black','white'],
-      fontSize:{'Mobile':'1rem','Pc':'1.2'},
+      fontSize:{'Mobile':'1rem','Pc':'1.4rem'},
        whiteSpace: 'pre-wrap',
       lineHeight:{'Mobile':'2','Pc':'4'},
-      fontFamily: "'Delius', cursive",
-      fontWeight: '400',
+      fontFamily: '"Google Sans Code", monospace',
+       fontOpticalSizing: 'auto',
+      fontWeight: '800',
+      fontStyle: 'normal',
       opacity:'0',
       fontStyle: 'normal',
       left:{'Mobile':'55%','Pc':'64%'},
-      top:{'Mobile':'34%','Pc':'35.6%'},
+      top:{'Mobile':'34%','Pc':'42.5%'},
       cursor:'default'
       
      
@@ -4723,15 +4794,18 @@ Style:{
 position:'absolute',
       color:['black','white'],
       pointer:'cursor',
-      fontSize:{'Mobile':'1rem','Pc':'1.2'},
+      fontSize:{'Mobile':'1rem','Pc':'1.4rem'},
        whiteSpace: 'pre-wrap',
       lineHeight:{'Mobile':'2','Pc':'4'},
-      fontFamily: "'Delius', cursive",
-      fontWeight: '400',
+      fontFamily: '"Google Sans Code", monospace',
+       fontOpticalSizing: 'auto',
+      fontWeight: '800',
+      fontStyle: 'normal',
       opacity:'0',
+      cursor:'pointer',
       fontStyle: 'normal',
       left:{'Mobile':'55%','Pc':'64%'},
-      top:{'Mobile':'34%','Pc':'31.3%'},
+      top:{'Mobile':'34%','Pc':'36.4%'},
       
      
 },
@@ -4739,7 +4813,7 @@ position:'absolute',
       UmbraHover:{
         Style:{
         color:'blue',
-         fontSize:{'Mobile':'11px','Pc':'17px'},
+        
         }
       },
       UseFn:true,
@@ -4759,14 +4833,15 @@ position:'absolute',
       Type:'div',
       Style:{
          position:'absolute',
-    left:{'Pc':'62%','Mobile':'62%'},
-    top:{'Pc':'28.6%','Mobile':'29%'},
-    width:{'Pc':'2%','Mobile':'2%'},
+    left:{'Pc':'60%','Mobile':'60%'},
+    top:{'Pc':'32%','Mobile':'32%'},
+    width:{'Pc':'2%','Mobile':'4%'},
     opacity:'0',
-    height:{'Pc':'1.2%','Mobile':'0.4%'},
+    height:{'Pc':'2%','Mobile':'0.4%'},
       backgroundImage:"url('./Images/InstagramIcon.png')",
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
+        pointerEvents:'none',
         backgroundSize:'contain',
       },
        Listener:{
@@ -4782,15 +4857,16 @@ position:'absolute',
       Type:'div',
       Style:{
          position:'absolute',
-    left:{'Pc':'61.5%','Mobile':'62%'},
-    top:{'Pc':'32.3%','Mobile':'37%'},
-    width:{'Pc':'3%','Mobile':'2%'},
-    height:{'Pc':'2.3%','Mobile':'0.4%'},
+    left:{'Pc':'58.9%','Mobile':'62%'},
+    top:{'Pc':'38%','Mobile':'37%'},
+    width:{'Pc':'5%','Mobile':'2%'},
+    height:{'Pc':'3%','Mobile':'0.4%'},
     opacity:'0',
       backgroundImage:"url('./Images/WhatsIcon.png')",
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
         backgroundSize:'contain',
+        pointerEvents:'none'
       },
        Listener:{
     UmbraViewportLogic:{
@@ -4805,15 +4881,16 @@ position:'absolute',
       Type:'div',
       Style:{
          position:'absolute',
-    left:{'Pc':'61.5%','Mobile':'62%'},
-    top:{'Pc':'36.8%','Mobile':'41%'},
-    width:{'Pc':'3%','Mobile':'2%'},
-    height:{'Pc':'2.3%','Mobile':'0.4%'},
+    left:{'Pc':'59%','Mobile':'62%'},
+    top:{'Pc':'44%','Mobile':'41%'},
+    width:{'Pc':'5%','Mobile':'2%'},
+    height:{'Pc':'3%','Mobile':'0.4%'},
     opacity:'0',
       backgroundImage:"url('./Images/EmailIcon.png')",
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
         backgroundSize:'contain',
+        pointerEvents:'none'
       },
        Listener:{
     UmbraViewportLogic:{
@@ -4827,16 +4904,17 @@ position:'absolute',
       Id:'ContactBackground',
       Type:'div',
       Style:{
-         backgroundImage:["url('./Images/ContactBackground.png')","url('./Images/ContactBackground.png')"],
+         backgroundImage:["url('./Images/ContactBackground.png')","url('./Images/ContactBackground2.png')"],
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
         backgroundSize:'cover',
         opacity:'0',
         position:'absolute',
-        width:{'Mobile':'100%','Pc':'20%'},
-        height:{'Mobile':'17%','Pc':'13%'},
-        top:{'Mobile':'35%','Pc':'27%'},
-        left:{'Mobile':'35%','Pc':'37%'},
+        width:{'Mobile':'100%','Pc':'100%'},
+        height:{'Mobile':'17%','Pc':'40%'},
+        top:{'Mobile':'35%','Pc':'5%'},
+        left:{'Mobile':'35%','Pc':'0%'},
+        pointerEvents:'none',
       },
        Listener:{
     UmbraViewportLogic:{
@@ -4944,7 +5022,7 @@ UmbraScenes.New("LandingPageMinimalistMainScene",LandingPageMinimalistBluePrint,
         height:'100%',
         left:'0px',
         top:'0px',
-        backgroundColor:['rgb(255, 255, 255)','rgb(0,0,0)']});
+        backgroundColor:['rgb(255, 255, 255)','rgb(17, 17, 17)']});
 UmbraScenes.Active("LandingPageMinimalistMainScene");
 
 
