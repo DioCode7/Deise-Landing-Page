@@ -1759,7 +1759,7 @@ MainContainers:{
         },
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
-        backgroundSize:'cotain',
+        backgroundSize:{Pc:'cover',Mobile:'contain'},
         pointerEvents:'none',
         },
       },
