@@ -1730,7 +1730,7 @@ MainContainers:{
         position:'relative',
         width:'100%',
         backgroundColor:['white','rgb(17,17,17)'],
-        height:{"Mobile":'20%',"Pc":"15%"},
+        height:{"Mobile":'10%',"Pc":"15%"},
        // borderBottom:['dashed 1px black','dashed 1px white'],
         //boxShadow:"0px 6px 6px rgba(0,0,0,0.8)",
        /*  backgroundImage:{'Pc':
@@ -1748,7 +1748,7 @@ MainContainers:{
             position:'relative',
         display:'absolute',
         width:{'Mobile':{'Portrait':'30vw','Landscape':'30vh'},'Pc':'20%'},
-        height:'170%',
+        height:{'Pc':'170%',Mobile:'100%'},
         left:'50%',
         top:'50%',
         transform:'translate(-50%,-50%)',
