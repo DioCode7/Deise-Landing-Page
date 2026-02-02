@@ -35,7 +35,7 @@ let GeneralMoreAboutBluePrint = {
         width:'100%',
         backgroundColor:['white','black'],
         height:{"Mobile":'20%',"Pc":"15vh"},
-        borderBottom:['dashed 1px black','dashed 1px white'],
+       // borderBottom:['dashed 1px black','dashed 1px white'],
         //boxShadow:"0px 6px 6px rgba(0,0,0,0.8)",
        /*  backgroundImage:{'Pc':
       ["url('./Images/Decoration4MinimalistLight.gif')","url('./Images/Decoration4MinimalistDark.gif')"]
@@ -126,65 +126,8 @@ let GeneralMoreAboutBluePrint = {
         Text:'Neuropedagogia'
     },*/
 
-  HeaderButtonAbout:{
-   Id:'HeaderButtonAbout',
-   Type:'div',
-   Style:{
-   color:['black','white'],
-   fontSize:{'Mobile':'11px','Pc':'14px'},
-    fontFamily: "'Delius', cursive",
-            fontWeight: '400',
-            fontStyle: 'normal',
-            cursor:'default',
-            zIndex:'25',
-            top:{'Mobile':'86%','Pc':'78%'},
-            position:'absolute',
-            right:{'Mobile':'8%','Pc':'2%'},
-           // borderBottom:{'Mobile':['solid 1px black','solid 1px white'],'Pc':['solid 1px black','solid 1px white']}
-   },
-   Text:'Saiba Mais',
-   Listener:{
-    UmbraHover:{
-      Style:{
-        scale:'1.2'
-      }
-    },
-    UseFn:true,
-    Fn:()=>{document.getElementById('GeneralDescriptionContainer').scrollIntoView({
-       behavior: "smooth"
-    })}
-   },
-  },
 
-  HeaderButtonSpecs:{
-   Id:'HeaderButtonSpecs',
-   Type:'div',
-   Style:{
-   color:['black','white'],
-   fontSize:{'Mobile':'11px','Pc':'14px'},
-    fontFamily: "'Delius', cursive",
-            fontWeight: '400',
-            fontStyle: 'normal',
-            cursor:'default',
-            zIndex:'25',
-            top:{'Mobile':'86%','Pc':'78%'},
-            position:'absolute',
-            right:{'Mobile':'25%','Pc':'8.5%'},
-           // borderBottom://{'Mobile':['solid 1px black','solid 1px white'],'Pc':['solid 1px black','solid 1px white']}
-   },
-   Text:'Especializações',
-   Listener:{
-    UmbraHover:{
-      Style:{
-        scale:'1.2'
-      }
-    },
-     UseFn:true,
-    Fn:()=>{document.getElementById('SpecsContainer').scrollIntoView({
-       behavior: "smooth"
-    })}
-   },
-  },
+  
   HeaderButtonAboutMe:{
    Id:'HeaderButtonAboutMe',
    Type:'div',
@@ -201,49 +144,64 @@ let GeneralMoreAboutBluePrint = {
             right:{'Mobile':'49%','Pc':'17.5%'},
            // borderBottom://{'Mobile':['solid 1px black','solid 1px white'],'Pc':['solid 1px black','solid 1px white']}
    },
-   Text:'Sobre Mim',
-   Listener:{
-    UmbraHover:{
-      Style:{
-        scale:'1.2'
-      }
-    },
-     UseFn:true,
-    Fn:()=>{document.getElementById('AboutMeContainer').scrollIntoView({
-       behavior: "smooth"
-    })}
-   },
+   Text:'Voltar a tela principal',
+    Listener:{
+          UmbraHover:{
+            Style:{
+              scale:'1.1'
+            }
+          },
+           SceneTransition:{
+          OldScene:'GeneralMoreAboutScene',
+          NewScene:'LandingPageMinimalistMainScene',
+          TransitionAnimation:{
+            In:'ScenesTransitionsInAnimation',
+            Out:'ScenesTransitionsOutAnimation',
+            NewElement:{
+              Id:'TransitionAnimationsElement',
+              Type:'div',
+              Style:{
+                position:'fixed',
+                width:'10%',
+                top:'0%',
+                left:'0%',
+                pointerEvents:'none',
+                zIndex:'2000',
+                maxWidth:'100vw',
+                maxHeight:'100vh',
+                height:'10%',
+                scale:'0',
+                background:['radial-gradient(circle,rgba(240, 179, 255, 0.94),rgb(246, 246, 247),rgba(255, 255, 255, 0),rgba(2, 127, 211, 0))',
+                  'radial-gradient(circle,rgb(0, 0, 0),rgba(255, 255, 255, 0))'],
+              }
+            }
+          },
+          TransitionElement:{
+            Id:'LogoTransitionElement',
+            Type:'div',
+            Style:{
+               position:'fixed',
+      width:{'Mobile':'3%','Pc':'50%'},
+      height:{'Mobile':'1%','Pc':'50%'},
+      backgroundImage:"url('./Images/EspaçoRessignificarLogo1.png')",
+        backgroundRepeat:'no-repeat',
+        backgroundPosition:'center',
+        backgroundSize:'cover',
+        pointerEvents:'none',
+        transform:'translate(-60%,-50%)',
+        borderRadius:'100px',
+        zIndex:'50000',
+        opacity:'0',
+        top:'50%',
+        left:'50%',
+            },
+        InAnimation:'FadeInAnimation',
+        OutAnimation:'FadeOutAnimation',
+          }
+        }
+        }
   },
-  HeaderButtonContact:{
-   Id:'HeaderButtonContact',
-   Type:'div',
-   Style:{
-   color:['black','white'],
-   fontSize:{'Mobile':'11px','Pc':'14px'},
-    fontFamily: "'Delius', cursive",
-            fontWeight: '400',
-            fontStyle: 'normal',
-            cursor:'default',
-            zIndex:'25',
-            top:{'Mobile':'86%','Pc':'78%'},
-            position:'absolute',
-            right:{'Mobile':'66%','Pc':'24%'},
-            //borderBottom://{'Mobile':['solid 1px black','solid 1px white'],'Pc':['solid 1px black','solid 1px white']}
-   },
-   Text:'Agende Sua Consulta',
-   Listener:{
-    UmbraHover:{
-      Style:{
-        scale:'1.2'
-      }
-    },
-     UseFn:true,
-    Fn:()=>{document.getElementById('ContactContainer').scrollIntoView({
-       behavior: "smooth"
-    })}
-   },
-  },
-    
+ 
   },
     },
      StaticLogo:{
@@ -307,8 +265,9 @@ let GeneralMoreAboutBluePrint = {
         transform:'translate(0%,-50%)',
         top:'40%',
         left:'12%',
-         fontFamily: "'Imperial Script', cursive",
-            fontWeight: '400',
+          fontFamily: '"Google Sans Code", monospace',
+            fontOpticalSizing: 'auto',
+            fontWeight: '800',
             fontStyle: 'normal',
             cursor:'default',
         fontSize:{'Mobile':{'Portrait':'1rem','Lanscape':'1rem'},'Pc':'2.5rem'},
@@ -317,85 +276,8 @@ let GeneralMoreAboutBluePrint = {
       },
       Text:`Espaço Ressignificar`,
       },
-      BackToMainPageButton:{
-        Id:'BackToMainPageButton',
-        Text:'Voltar',
-        Type:'div',
-        Style:{
-          position:'absolute',
-          top:'10%',
-          left:'75%',
-          pointerEvents:'all',
-          zIndex:'2',
-          display:'inline-block',
-          width:{'Mobile':{'Portrait':'20%','Landscape':'20%'},'Pc':'7%'},
-          height:{'Mobile':{'Portrait':'20%','Landscape':'20%'},'Pc':'14%'},
-          textAlign:'center',
-          color:['black','white'],
-          fontFamily: "'Delius', cursive",
-          fontWeight: '400',
-          fontStyle: 'normal',
-          cursor:'pointer',
-        fontSize:{'Mobile':{'Portrait':'1rem','Lanscape':'1rem'},'Pc':'0.9rem'},
-        boxShadow:'rgba(0,0,0,0.8) 5px 5px 10px'
-
-        },
-        Listener:{
-          UmbraHover:{
-            Style:{
-              scale:'1.1'
-            }
-          },
-           SceneTransition:{
-          OldScene:'GeneralMoreAboutScene',
-          NewScene:'LandingPageMinimalistMainScene',
-          TransitionAnimation:{
-            In:'ScenesTransitionsInAnimation',
-            Out:'ScenesTransitionsOutAnimation',
-            NewElement:{
-              Id:'TransitionAnimationsElement',
-              Type:'div',
-              Style:{
-                position:'fixed',
-                width:'10%',
-                top:'0%',
-                left:'0%',
-                pointerEvents:'none',
-                zIndex:'2000',
-                maxWidth:'100vw',
-                maxHeight:'100vh',
-                height:'10%',
-                scale:'0',
-                background:['radial-gradient(circle,rgba(240, 179, 255, 0.94),rgb(246, 246, 247),rgba(255, 255, 255, 0),rgba(2, 127, 211, 0))',
-                  'radial-gradient(circle,rgb(0, 0, 0),rgba(255, 255, 255, 0))'],
-              }
-            }
-          },
-          TransitionElement:{
-            Id:'LogoTransitionElement',
-            Type:'div',
-            Style:{
-               position:'fixed',
-      width:{'Mobile':'3%','Pc':'50%'},
-      height:{'Mobile':'1%','Pc':'50%'},
-      backgroundImage:"url('./Images/EspaçoRessignificarLogo1.png')",
-        backgroundRepeat:'no-repeat',
-        backgroundPosition:'center',
-        backgroundSize:'cover',
-        pointerEvents:'none',
-        transform:'translate(-60%,-50%)',
-        borderRadius:'100px',
-        zIndex:'50000',
-        opacity:'0',
-        top:'50%',
-        left:'50%',
-            },
-        InAnimation:'FadeInAnimation',
-        OutAnimation:'FadeOutAnimation',
-          }
-        }
-        }
-      },
+     
+         
       DeiseCredits:{
         Id:'DeiseCredits',
         Type:'div',
@@ -460,9 +342,10 @@ let GeneralMoreAboutBluePrint = {
      // border:'solid 1px black',
         textAlign:'start',
         paddingLeft:'5%',
-        fontFamily: "'Delius', cursive",
-          fontWeight: '400',
-          fontStyle: 'normal',
+         fontFamily: '"Google Sans Code", monospace',
+            fontOpticalSizing: 'auto',
+            fontWeight: '700',
+            fontStyle: 'normal',
           cursor:'default',
         fontSize:{'Mobile':{'Portrait':'1rem','Lanscape':'1rem'},'Pc':'1.4rem'},
         },
@@ -500,7 +383,7 @@ let GeneralMoreAboutBluePrint = {
           top:{'Mobile':{'Portrait':'10%','Landscape':'10%'},'Pc':'10%'},
           left:{'Mobile':{'Portrait':'10%','Landscape':'10%'},'Pc':'5%'},
           fontFamily: "'Delius', cursive",
-          fontWeight: '400',
+          fontWeight: '600',
           fontStyle: 'normal',
           color:['black','white'],
           cursor:'default',
@@ -543,10 +426,12 @@ let GeneralMoreAboutBluePrint = {
       //border:'solid 1px black',
         textAlign:'center',
         paddingLeft:'5%',
-        fontFamily: "'Delius', cursive",
-          fontWeight: '400',
+        fontFamily: '"Google Sans Code", monospace',
+            fontOpticalSizing: 'auto',
+            fontWeight: '700',
+            fontStyle: 'normal',
           fontStyle: 'normal',
-        fontSize:{'Mobile':{'Portrait':'1rem','Lanscape':'1rem'},'Pc':'1.7rem'},
+        fontSize:{'Mobile':{'Portrait':'1rem','Lanscape':'1rem'},'Pc':'2rem'},
         },
         Childs:{
             Decoration3:{
@@ -556,6 +441,7 @@ let GeneralMoreAboutBluePrint = {
         position:'absolute',
         width:{'Mobile':{'Portrait':'25%','Landscape':'25%'},'Pc':'10%'},
         top:'-20%',
+        display:"none",
         transform:'translate(-50%,-50%)',
         height:{'Mobile':{'Portrait':'50%','Landscape':'50%'},'Pc':'200%'},
          zIndex:'10',
@@ -582,11 +468,12 @@ let GeneralMoreAboutBluePrint = {
             Style:{
               position:'absolute',
               top:'50%',
+              
               //borderBottom:['solid 1px black','solid 1px white'],
               width:'40%',
               left:'50%',
               opacity:'0',
-                 textShadow:'rgba(0,0,0,0.8) 5px 5px 5px',
+                // textShadow:'rgba(0,0,0,0.8) 5px 5px 5px',
              // boxShadow:'10px 10px 10px rgba(0,0,0,0.5)',
               transform:'translate(-50%,-50%)'
             },
@@ -613,7 +500,7 @@ let GeneralMoreAboutBluePrint = {
          zIndex:'10',
            backgroundImage:"url('./Images/DecorationNew2.png')",
            left:'-3%',
-           marginTop:'5%',
+           marginTop:'15%',
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
         backgroundSize:'cover',
@@ -661,7 +548,7 @@ let GeneralMoreAboutBluePrint = {
         Style:{
             position:'absolute',
           width:{'Mobile':{'Portrait':'100%','Landscape':'100%'},'Pc':'100%'},
-          height:{'Mobile':{'Portrait':'30%','Landscape':'30%'},'Pc':'70%'},
+          height:{'Mobile':{'Portrait':'30%','Landscape':'30%'},'Pc':'78%'},
           zIndex:'3',
            backgroundImage:["url('./Images/TeamBackgroundDeise.png')","url('./Images/TeamBackgroundDeise2.png')"],
            left:'0%',
@@ -692,10 +579,11 @@ let GeneralMoreAboutBluePrint = {
       //border:'solid 1px black',
         textAlign:'center',
         paddingLeft:'5%',
-        fontFamily: "'Imperial Script', cursive",
-          fontWeight: '400',
-          fontStyle: 'normal',
-        fontSize:{'Mobile':{'Portrait':'1rem','Lanscape':'1rem'},'Pc':'2.7rem'},
+      fontFamily: '"Google Sans Code", monospace',
+            fontOpticalSizing: 'auto',
+            fontWeight: '700',
+            fontStyle: 'normal',
+        fontSize:{'Mobile':{'Portrait':'1rem','Landscape':'1rem'},'Pc':'2rem'},
         },
         Childs:{
           FirstLetter:{
@@ -706,11 +594,11 @@ let GeneralMoreAboutBluePrint = {
               top:'0%',
               //color:'rgb(21, 0, 114)',
                  width:'50%',
-             borderBottom:['solid 1px black','solid 1px white'],
+             //borderBottom:['solid 1px black','solid 1px white'],
              paddingBottom:'0%',
-              left:'50%',
+              left:'15%',
               opacity:'0',
-                 textShadow:'rgba(0,0,0,0.8) 5px 5px 5px',
+                // textShadow:'rgba(0,0,0,0.8) 5px 5px 5px',
               transform:'translate(-50%,-50%)'
               
             },
@@ -739,9 +627,10 @@ let GeneralMoreAboutBluePrint = {
         paddingLeft:'5%',
       
         marginTop:'5%',
-        fontFamily: "'Delius', cursive",
-          fontWeight: '400',
-          fontStyle: 'normal',
+       fontFamily: '"Google Sans Code", monospace',
+            fontOpticalSizing: 'auto',
+            fontWeight: '600',
+            fontStyle: 'normal',
         fontSize:{'Mobile':{'Portrait':'1rem','Lanscape':'1rem'},'Pc':'1rem'},
         },
         Childs:{
@@ -752,9 +641,9 @@ let GeneralMoreAboutBluePrint = {
               position:'absolute',
               left:'30%',
               opacity:'0',
-              borderLeft:['solid 1px black','solid 1px white'],
-                borderRight:['solid 1px black','solid 1px white'],
+              fontSize:{'Mobile':{'Portrait':'1rem','Lanscape':'1rem'},'Pc':'1.1rem'},
               paddingLeft:'3%',
+              top:'-5%',
               paddingRight:'2%',
               
               
@@ -791,12 +680,14 @@ let GeneralMoreAboutBluePrint = {
              top:'10%',
             // color:'rgb(42, 96, 212)',
              fontSize:{'Mobile':'1.1rem','Pc':'1.5rem'},
-             left:'75%',
+             left:'85%',
+             width:'40%',
              transform:'translate(-50%,-50%)',
-             borderBottom:'solid 1px black',
+             //borderBottom:'solid 1px black',
              paddingBottom:'0%',
+             fontWeight:'800',
              opacity:'0',
-                textShadow:'rgba(0,0,0,0.8) 5px 5px 5px',
+                //textShadow:'rgba(0,0,0,0.8) 5px 5px 5px',
             },
             Text:'Horários De Atendimento',
              Listener:{
@@ -812,12 +703,15 @@ let GeneralMoreAboutBluePrint = {
             Type:'div',
             Style:{
                position:'absolute',
-             top:'22%',
-             textAlign:'center',
-             left:'75%',
+             top:'27%',
+             textAlign:'start',
+             left:'85%',
+             width:'40%',
              opacity:'0',
-             lineHeight:'1.5',
+             lineHeight:'2',
              transform:'translate(-50%,-50%)',
+              fontSize:{'Mobile':'1.1rem','Pc':'0.9rem'},
+
            
             },
             Text:`Turno Manhã:    Alguns Horários Dísponiveis.
@@ -837,6 +731,7 @@ let GeneralMoreAboutBluePrint = {
      
     }
   },
+  
    ThirdBodyContainer:{
     Id:'ThirdBodyContainer',
     Type:'div',
@@ -864,9 +759,10 @@ let GeneralMoreAboutBluePrint = {
       Style:{
         position:'absolute',
         width:{'Mobile':{'Portrait':'25%','Landscape':'25%'},'Pc':'25%'},
-        top:'-5%',
+        top:'20%',
         height:{'Mobile':{'Portrait':'50%','Landscape':'50%'},'Pc':'50%'},
          zIndex:'3',
+         display:'none',
            backgroundImage:"url('./Images/DecorationNew1.png')",
            left:'0%',
            opacity:'0',
@@ -922,10 +818,11 @@ let GeneralMoreAboutBluePrint = {
      // border:'solid 1px black',
         textAlign:'center',
         paddingLeft:'5%',
-        fontFamily: "'Imperial Script', cursive",
-          fontWeight: '400',
-          fontStyle: 'normal',
-        fontSize:{'Mobile':{'Portrait':'1rem','Lanscape':'1rem'},'Pc':'2.7rem'},
+       fontFamily: '"Google Sans Code", monospace',
+            fontOpticalSizing: 'auto',
+            fontWeight: '700',
+            fontStyle: 'normal',
+        fontSize:{'Mobile':{'Portrait':'1rem','Lanscape':'1rem'},'Pc':'2rem'},
         },
         Childs:{
           SecondLetter:{
@@ -934,12 +831,11 @@ let GeneralMoreAboutBluePrint = {
             Style:{
               position:'absolute',
               top:'50%',
-              left:'50%',
+              left:'75%',
              // color:'rgb(109, 37, 116)',
               width:'50%',
               opacity:'0',
-              textShadow:'rgba(0,0,0,0.8) 5px 5px 5px',
-              borderBottom:['solid 1px black','solid 1px white'],
+             
               
               transform:'translate(-50%,-50%)',
             },
@@ -969,9 +865,10 @@ let GeneralMoreAboutBluePrint = {
      // border:'solid 1px black',
         textAlign:'start',
         paddingLeft:'5%',
-        fontFamily: "'Delius', cursive",
-          fontWeight: '400',
-          fontStyle: 'normal',
+       fontFamily: '"Google Sans Code", monospace',
+            fontOpticalSizing: 'auto',
+            fontWeight: '600',
+            fontStyle: 'normal',
         fontSize:{'Mobile':{'Portrait':'1rem','Lanscape':'1rem'},'Pc':'1rem'},
         },
         Childs:{
@@ -980,10 +877,10 @@ let GeneralMoreAboutBluePrint = {
             Type:'div',
             Style:{
               position:'absolute',
-              left:'55%',
+              left:'40%',
               marginTop:'5%',
               opacity:'0',
-              borderLeft:['solid 1px black','solid 1px white'],
+              fontSize:{'Mobile':{'Portrait':'1rem','Lanscape':'1rem'},'Pc':'0.9rem'},
               paddingLeft:'2%',
               
 
@@ -1006,14 +903,14 @@ let GeneralMoreAboutBluePrint = {
             Type:'div',
             Style:{
              position:'absolute',
-             top:'24%',
+             top:'55%',
              // color:'rgb(42, 96, 212)',
                 fontSize:{'Mobile':'1.1rem','Pc':'1.5rem'},
-             left:'42%',
-                textShadow:'rgba(0,0,0,0.8) 5px 5px 5px',
+             left:'51%',
+              fontWeight:'700',
              transform:'translate(-50%,-50%)',
              opacity:'0',
-             borderBottom:['solid 1px black','solid 1px white']
+             
             },
             Text:'Horários De Atendimento',
              Listener:{
@@ -1029,10 +926,10 @@ let GeneralMoreAboutBluePrint = {
             Type:'div',
             Style:{
                position:'absolute',
-             top:'31%',
-             left:'42%',
+             top:'60%',
+             left:'51%',
              opacity:'0',
-             lineHeight:'1.5',
+             lineHeight:'2',
              transform:'translate(-50%,-50%)',
               
             },
