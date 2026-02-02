@@ -1731,7 +1731,7 @@ MainContainers:{
         position:'relative',
         width:'100%',
         backgroundColor:['white','rgb(17,17,17)'],
-        height:{"Mobile":{Portrait:'10%',Landscape:'35%'},"Pc":"15%"},
+        height:{"Mobile":{Portrait:'10%',Landscape:'25%'},"Pc":"15%"},
        // borderBottom:['dashed 1px black','dashed 1px white'],
         //boxShadow:"0px 6px 6px rgba(0,0,0,0.8)",
        /*  backgroundImage:{'Pc':
@@ -1748,8 +1748,8 @@ MainContainers:{
         Style:{
             position:'relative',
         display:{Mobile:'flex',Pc:'block'},
-        width:{'Mobile':{'Portrait':'30vw','Landscape':'30vh'},'Pc':'20%'},
-        height:{'Pc':'170%','Mobile':'100%'},
+        width:{'Mobile':{'Portrait':'30vw','Landscape':'30vw'},'Pc':'20%'},
+        height:{'Pc':'170%','Mobile':{'Portrait':'100%','Landscape':'150%'}},
         left:'50%',
         top:'50%',
         transform:'translate(-50%,-50%)',
@@ -1898,7 +1898,7 @@ MainContainers:{
             zIndex:'25',
             top:{'Mobile':'86%','Pc':'78%'},
             position:'absolute',
-            right:{'Mobile':'25%','Pc':'8.5%'},
+            right:{'Mobile':{'Portrait':'25%','Landscape':'15%'},'Pc':'8.5%'},
            // borderBottom://{'Mobile':['solid 1px black','solid 1px white'],'Pc':['solid 1px black','solid 1px white']}
    },
    Text:'Especializações',
