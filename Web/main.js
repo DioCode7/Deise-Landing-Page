@@ -1708,7 +1708,7 @@ MainContainers:{
     Type:'div',
     Style:{
       position:'fixed',
-      display:{'Pc':'flex','Mobile':{Portrait:'none',Landscape:'none'}},
+      display:{'Pc':'flex','Mobile':{Portrait:'flex',Landscape:'none'}},
       width:{'Mobile':'20%','Pc':'14%'},
       height:{'Mobile':'20%','Pc':'14%'},
       backgroundImage:"url('./Images/EspaçoRessignificarLogo1.png')",
