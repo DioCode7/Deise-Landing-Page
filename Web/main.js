@@ -1898,7 +1898,7 @@ MainContainers:{
             zIndex:'25',
             top:{'Mobile':'86%','Pc':'78%'},
             position:'absolute',
-            right:{'Mobile':{'Portrait':'25%','Landscape':'15%'},'Pc':'8.5%'},
+            right:{'Mobile':{'Portrait':'25%','Landscape':'17%'},'Pc':'8.5%'},
            // borderBottom://{'Mobile':['solid 1px black','solid 1px white'],'Pc':['solid 1px black','solid 1px white']}
    },
    Text:'Especializações',
@@ -1927,7 +1927,7 @@ MainContainers:{
             zIndex:'25',
            top:{'Mobile':'86%','Pc':'78%'},
             position:'absolute',
-            right:{'Mobile':'49%','Pc':'17.5%'},
+            right:{'Mobile':'49%','Pc':'24%'},
            // borderBottom://{'Mobile':['solid 1px black','solid 1px white'],'Pc':['solid 1px black','solid 1px white']}
    },
    Text:'Sobre Mim',
@@ -1956,7 +1956,7 @@ MainContainers:{
             zIndex:'25',
             top:{'Mobile':'86%','Pc':'78%'},
             position:'absolute',
-            right:{'Mobile':'66%','Pc':'24%'},
+            right:{'Mobile':'66%','Pc':'33%'},
             //borderBottom://{'Mobile':['solid 1px black','solid 1px white'],'Pc':['solid 1px black','solid 1px white']}
    },
    Text:'Agende Sua Consulta',
