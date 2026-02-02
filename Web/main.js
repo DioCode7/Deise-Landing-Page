@@ -1748,7 +1748,7 @@ MainContainers:{
             position:'relative',
         display:'absolute',
         width:{'Mobile':{'Portrait':'30vw','Landscape':'30vh'},'Pc':'20%'},
-        height:{'Pc':'170%',Mobile:'100%'},
+        height:{'Pc':'170%','Mobile':'40%'},
         left:'50%',
         top:'50%',
         transform:'translate(-50%,-50%)',
