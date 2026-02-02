@@ -1708,7 +1708,7 @@ MainContainers:{
     Type:'div',
     Style:{
       position:'fixed',
-      display:{'Pc':'flex','Mobile':{Portrait:'flex',Landscape:'none'}},
+      display:{'Pc':'flex','Mobile':{Portrait:'none',Landscape:'none'}},
       width:{'Mobile':'20%','Pc':'14%'},
       height:{'Mobile':'20%','Pc':'14%'},
       backgroundImage:"url('./Images/EspaçoRessignificarLogo1.png')",
@@ -1749,7 +1749,7 @@ MainContainers:{
             position:'relative',
         display:{Mobile:'flex',Pc:'block'},
         width:{'Mobile':{'Portrait':'30vw','Landscape':'30vh'},'Pc':'20%'},
-        height:{'Pc':'170%','Mobile':'40%'},
+        height:{'Pc':'170%','Mobile':'100%'},
         left:'50%',
         top:'50%',
         transform:'translate(-50%,-50%)',
