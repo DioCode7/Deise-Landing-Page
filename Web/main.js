@@ -1731,7 +1731,7 @@ MainContainers:{
         position:'relative',
         width:'100%',
         backgroundColor:['white','rgb(17,17,17)'],
-        height:{"Mobile":'10%',"Pc":"15%"},
+        height:{"Mobile":{Portrait:'10%',Landscape:'35%'},"Pc":"15%"},
        // borderBottom:['dashed 1px black','dashed 1px white'],
         //boxShadow:"0px 6px 6px rgba(0,0,0,0.8)",
        /*  backgroundImage:{'Pc':
