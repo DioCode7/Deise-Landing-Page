@@ -968,11 +968,12 @@ let GeneralMoreAboutBluePrint = {
         position:'absolute',
         width:{'Mobile':{'Portrait':'25%','Landscape':'25%'},'Pc':'10%'},
         top:'10%',
-        transform:'translate(-50%,-50%)',
+        
         height:{'Mobile':{'Portrait':'50%','Landscape':'50%'},'Pc':'70%'},
          zIndex:'10',
+         width:'100%',
            backgroundImage:"url('./Images/DecorationNew4.png')",
-           left:'79%',
+           left:'0%',
            marginTop:'5%',
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
@@ -993,6 +994,7 @@ let GeneralMoreAboutBluePrint = {
       Type:'div',
       Style:{
         position:'absolute',
+        display:'none',
         width:{'Mobile':{'Portrait':'25%','Landscape':'25%'},'Pc':'10%'},
         top:'24%',
         transform:'translate(-50%,-50%)',
@@ -1027,9 +1029,10 @@ let GeneralMoreAboutBluePrint = {
       height:'9%',
         textAlign:'center',
         paddingLeft:'5%',
-        fontFamily: "'Imperial Script', cursive",
-          fontWeight: '400',
-          fontStyle: 'normal',
+        fontFamily: '"Google Sans Code", monospace',
+            fontOpticalSizing: 'auto',
+            fontWeight: '700',
+            fontStyle: 'normal',
         fontSize:{'Mobile':{'Portrait':'1rem','Lanscape':'1rem'},'Pc':'3rem'},
         },
        Childs:{
@@ -1108,7 +1111,8 @@ let GeneralMoreAboutBluePrint = {
       display:'block',
       height:{'Mobile':{'Portrait':'20vh','Landscape':'20vw'},'Pc':'20vh'},
       borderTop:['solid 1px black','solid 1px white'],
-
+      backgroundColor:['white','black'],
+      zIndex:'30'
     },
 
     Childs:{
@@ -1704,8 +1708,8 @@ MainContainers:{
     Type:'div',
     Style:{
       position:'fixed',
-      width:{'Mobile':'3%','Pc':'14%'},
-      height:{'Mobile':'1%','Pc':'14%'},
+      width:{'Mobile':'20%','Pc':'14%'},
+      height:{'Mobile':'20%','Pc':'14%'},
       backgroundImage:"url('./Images/EspaçoRessignificarLogo1.png')",
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
@@ -1748,7 +1752,11 @@ MainContainers:{
         left:'50%',
         top:'50%',
         transform:'translate(-50%,-50%)',
-         backgroundImage:["url('./Images/EspaçoRessignificarLetter1.png')","url('./Images/EspaçoRessignificarLetter3.png')"],
+         backgroundImage:{Pc:["url('./Images/EspaçoRessignificarLetter1.png')","url('./Images/EspaçoRessignificarLetter3.png')"],
+          Mobile:{'Portrait':["url('./Images/EspaçoRessignificarLetterMobile.png')","url('./Images/EspaçoRessignificarLetter3.png')"],
+            'Landscape':["url('./Images/EspaçoRessignificarLetterMobile.png')","url('./Images/EspaçoRessignificarLetter3.png')"]
+          },
+        },
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
         backgroundSize:'cover',
