@@ -1708,6 +1708,7 @@ MainContainers:{
     Type:'div',
     Style:{
       position:'fixed',
+      display:{'Pc':'flex','Mobile':'none'},
       width:{'Mobile':'20%','Pc':'14%'},
       height:{'Mobile':'20%','Pc':'14%'},
       backgroundImage:"url('./Images/EspaçoRessignificarLogo1.png')",
@@ -1746,7 +1747,7 @@ MainContainers:{
         Type:'div',
         Style:{
             position:'relative',
-        display:'none',
+        display:{Mobile:'none',Pc:'block'},
         width:{'Mobile':{'Portrait':'30vw','Landscape':'30vh'},'Pc':'20%'},
         height:{'Pc':'170%','Mobile':'40%'},
         left:'50%',
