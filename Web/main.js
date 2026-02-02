@@ -1747,7 +1747,7 @@ MainContainers:{
         Type:'div',
         Style:{
             position:'relative',
-        display:{Mobile:'none',Pc:'block'},
+        display:{Mobile:'flex',Pc:'block'},
         width:{'Mobile':{'Portrait':'30vw','Landscape':'30vh'},'Pc':'20%'},
         height:{'Pc':'170%','Mobile':'40%'},
         left:'50%',
