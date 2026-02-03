@@ -2176,7 +2176,7 @@ MainContainers:{
     left:'0%',
     width:'100%',
    // borderTop:"solid 1px black",
-    height:{'Mobile':{'Portrait':'120%','Landscape':'300%'},'Pc':'120%'},
+    height:{'Mobile':{'Portrait':'120%','Landscape':'250%'},'Pc':'120%'},
     backgroundColor:['white','rgb(17,17,17)'],
    },
    Childs:{
@@ -2185,6 +2185,7 @@ MainContainers:{
      Type:'div',
      Style:{
       position:'absolute',
+            display:{'Pc':'flex','Mobile':'none'},
       left:{'Mobile':'26%','Pc':'34%'},
       top:{'Mobile':'-2%','Pc':'2%'},
       backgroundImage:"url('./Images/Decoration1.png')",
@@ -2211,6 +2212,7 @@ MainContainers:{
      Type:'div',
      Style:{
       position:'absolute',
+      display:{'Pc':'flex','Mobile':'none'},
       left:{'Mobile':'70%','Pc':'56%'},
       top:{'Mobile':'2%','Pc':'6%'},
       backgroundImage:"url('./Images/Decoration2.png')",
@@ -2522,7 +2524,7 @@ MainContainers:{
               transform:'translate(-50%,-50%)',
               textAlign:'center',
               color:['black','white'],
-                fontSize:{'Pc':'15px','Mobile':{'Portrait':'15px','Landscape':'31px'}},
+                fontSize:{'Pc':'15px','Mobile':{'Portrait':'15px','Landscape':'15px'}},
            fontFamily: '"Google Sans Code", monospace',
             fontOpticalSizing: 'auto',
             fontWeight: '600',
@@ -2543,7 +2545,7 @@ MainContainers:{
       left:{'Mobile':'13%','Pc':'5%'},
       fontSize:{'Mobile':'1rem','Pc':'22px'},
       color:['rgb(0, 0, 0)','rgb(240,240,240)'],
-      width:{'Mobile':'80%','Pc':'35%'},
+      width:{'Mobile':{'Portrait':'80%','Landscape':'40%'},'Pc':'35%'},
        fontFamily: '"Delius", cursive',
        fontOpticalSizing: 'auto',
       fontWeight: '700',
@@ -2551,9 +2553,6 @@ MainContainers:{
        opacity:'0',
             cursor:'default',
             zIndex:'25',
-            
-         
-      
     },
      Listener:{
     UmbraViewportLogic:{
@@ -2574,7 +2573,7 @@ MainContainers:{
       left:{'Mobile':'13%','Pc':'5%'},
       fontSize:{'Mobile':'1rem','Pc':'22px'},
       color:['rgb(0, 0, 0)','rgb(240,240,240)'],
-      width:{'Mobile':'80%','Pc':'30%'},
+     width:{'Mobile':{'Portrait':'80%','Landscape':'40%'},'Pc':'35%'},
         fontFamily: '"delius", cursive',
        fontOpticalSizing: 'auto',
       fontWeight: '700',
