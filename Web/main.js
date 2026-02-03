@@ -2024,11 +2024,11 @@ MainContainers:{
               'Portrait':'2%','Landscape':'44%'
             }},
             width:'100%',
-            top:'50%',
+            top:{'Pc':'50%','Mobile':{'Portrait':'18%','Landscape':'50%'}},
             textAlign:'start',
             color:['black','white'],
             //borderBottom:'solid 1px black',
-              fontSize:{'Pc':'40px','Mobile':{'Portrait':'25px','Landscape':'20px'}},
+              fontSize:{'Pc':'40px','Mobile':{'Portrait':'20px','Landscape':'20px'}},
            fontFamily: '"Google Sans Code", monospace',
             fontOpticalSizing: 'auto',
             fontWeight: '600',
