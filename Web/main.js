@@ -1927,7 +1927,7 @@ MainContainers:{
             zIndex:'25',
            top:{'Mobile':'86%','Pc':'78%'},
             position:'absolute',
-            right:{'Mobile':'49%','Pc':'24%'},
+            right:{'Mobile':{'Portrait':'49%','Landscape':'24%'},'Pc':'18%'},
            // borderBottom://{'Mobile':['solid 1px black','solid 1px white'],'Pc':['solid 1px black','solid 1px white']}
    },
    Text:'Sobre Mim',
@@ -1956,7 +1956,7 @@ MainContainers:{
             zIndex:'25',
             top:{'Mobile':'86%','Pc':'78%'},
             position:'absolute',
-            right:{'Mobile':'66%','Pc':'33%'},
+            right:{'Mobile':{'Portrait':'66%','Landscape':'33%'},'Pc':'25%'},
             //borderBottom://{'Mobile':['solid 1px black','solid 1px white'],'Pc':['solid 1px black','solid 1px white']}
    },
    Text:'Agende Sua Consulta',
@@ -2020,13 +2020,15 @@ MainContainers:{
             Type:'div',
             Style:{
             position:'absolute',
-            left:'44%',
+            left:{'Pc':'44%','Mobile':{
+              'Portrait':'2%','Landscape':'44%'
+            }},
             width:'100%',
             top:'50%',
             textAlign:'start',
             color:['black','white'],
             //borderBottom:'solid 1px black',
-              fontSize:{'Pc':'40px','Mobile':'31px'},
+              fontSize:{'Pc':'40px','Mobile':{'Portrait':'25px','Landscape':'20px'}},
            fontFamily: '"Google Sans Code", monospace',
             fontOpticalSizing: 'auto',
             fontWeight: '600',
