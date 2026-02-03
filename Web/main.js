@@ -2024,13 +2024,13 @@ MainContainers:{
               'Portrait':'2%','Landscape':'44%'
             }},
             width:{'Pc':'100%','Mobile':{
-              'Portrait':'85%','Landscape':'100%',
+              'Portrait':'90%','Landscape':'100%',
             }},
             top:{'Pc':'50%','Mobile':{'Portrait':'18%','Landscape':'50%'}},
             textAlign:'start',
             color:['black','white'],
             //borderBottom:'solid 1px black',
-              fontSize:{'Pc':'40px','Mobile':{'Portrait':'20px','Landscape':'20px'}},
+              fontSize:{'Pc':'40px','Mobile':{'Portrait':'18px','Landscape':'20px'}},
            fontFamily: '"Google Sans Code", monospace',
             fontOpticalSizing: 'auto',
             fontWeight: '600',
