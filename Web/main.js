@@ -2112,8 +2112,8 @@ MainContainers:{
                height:'25%',
                position:'absolute',
                opacity:'0',
-               top:'25%',
-               left:'70%',
+               top:{'Pc':'25%','Mobile':{'Portrait':'-30%','Landscape':'25%'}},
+               left:{'Pc':'70%','Mobile':{'Portrait':'62%','Landscape':'70%'}},
                transform:'translate(-50%,-50%)',
                background:'linear-gradient(to left, rgba(0,0,255,0.2),rgba(255, 37, 255, 0.2))',
                
