@@ -2174,7 +2174,7 @@ MainContainers:{
     left:'0%',
     width:'100%',
    // borderTop:"solid 1px black",
-    height:{'Mobile':{'Portrait':'120%%','Landscape':'90%'},'Pc':'120%'},
+    height:{'Mobile':{'Portrait':'120%','Landscape':'90%'},'Pc':'120%'},
     backgroundColor:['white','rgb(17,17,17)'],
    },
    Childs:{
