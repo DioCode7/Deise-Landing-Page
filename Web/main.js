@@ -2064,13 +2064,19 @@ MainContainers:{
             Text:'Atendimento em neuropedagogia, psicopedagogia e educação inclusiva para crianças, adolescentes e adultos.',
             Style:{
             position:'absolute',
-            left:'71%',
+            left:{'Pc':'71%','Mobile':{
+              'Portrait':'5%',
+              'Landscape':'71%',
+            }},
             textAlign:'start',
             width:'50%',
-            top:'55%',
+            top:{'Pc':'55%','Mobile':{
+              'Portrait':'35%','Landscape':'55%',
+            }},
+
             transform:'translate(-50%,-50%)',
             color:['black','white'],
-              fontSize:{'Pc':'20px','Mobile':'31px'},
+              fontSize:{'Pc':'20px','Mobile':{'Portrait':'15px','Landscape':'18px'}},
            fontFamily: '"Google Sans Code", monospace',
             fontOpticalSizing: 'auto',
             fontWeight: '600',
