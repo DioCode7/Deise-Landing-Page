@@ -2302,8 +2302,8 @@ MainContainers:{
     width:'100%',
      backgroundImage:{'Pc':
       ["url('./Images/Decoration5MinimalistLight.png')","url('./Images/Decoration5MinimalistLight.png')"],
-      'Mobile':{'Portrait':["url('./Images/Decoration5MinimalistMobLight.png')","url('./Images/Decoration5MinimalistMobDark.png')"],
-        'Landscape':["url('./Images/Decoration5MinimalistLight.png')","url('./Images/Decoration5MinimalistDark.png')"]}},
+      'Mobile':{'Portrait':["url('./Images/Decoration5MinimalistMobLight.png')","url('./Images/Decoration5MinimalistMobLight.png')"],
+        'Landscape':["url('./Images/Decoration5MinimalistLight.png')","url('./Images/Decoration5MinimalistLight.png')"]}},
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
         backgroundSize:{'Pc':'cover','Mobile':'cover'},
@@ -2337,7 +2337,7 @@ MainContainers:{
         Style:{
             position:'absolute',
             top:{'Mobile':'2%','Pc':'5%'},
-            left:'20%',
+            left:{'Pc':'20%','Mobile':{'Portrait':'50%','Landscape':'20%'}},
             transform:'translate(-50%,0%)',
             color:['black','white'],
             fontSize:{'Pc':'40px','Mobile':'31px'},
