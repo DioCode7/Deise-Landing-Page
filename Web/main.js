@@ -2023,16 +2023,16 @@ MainContainers:{
             Style:{
             position:'absolute',
             left:{'Pc':'44%','Mobile':{
-              'Portrait':'2%','Landscape':'44%'
+              'Portrait':'4%','Landscape':'44%'
             }},
             width:{'Pc':'100%','Mobile':{
               'Portrait':'90%','Landscape':'100%',
             }},
-            top:{'Pc':'50%','Mobile':{'Portrait':'18%','Landscape':'50%'}},
+            top:{'Pc':'50%','Mobile':{'Portrait':'25%','Landscape':'50%'}},
             textAlign:'start',
             color:['black','white'],
             //borderBottom:'solid 1px black',
-              fontSize:{'Pc':'40px','Mobile':{'Portrait':'18px','Landscape':'20px'}},
+              fontSize:{'Pc':'40px','Mobile':{'Portrait':'16px','Landscape':'20px'}},
            fontFamily: '"Google Sans Code", monospace',
             fontOpticalSizing: 'auto',
             fontWeight: '600',
@@ -2112,7 +2112,7 @@ MainContainers:{
                height:'25%',
                position:'absolute',
                opacity:'0',
-               top:{'Pc':'25%','Mobile':{'Portrait':'-30%','Landscape':'25%'}},
+               top:{'Pc':'25%','Mobile':{'Portrait':'0%','Landscape':'25%'}},
                left:{'Pc':'70%','Mobile':{'Portrait':'62%','Landscape':'70%'}},
                transform:'translate(-50%,-50%)',
                background:'linear-gradient(to left, rgba(0,0,255,0.2),rgba(255, 37, 255, 0.2))',
