@@ -2654,7 +2654,7 @@ MainContainers:{
       Style:{
          position:'absolute',
       left:{'Mobile':'0%','Pc':'29%'},
-      top:{'Mobile':{'Portrait':'-8%','Landscape':'0%'},'Pc':'2%'},
+      top:{'Mobile':{'Portrait':'-10%','Landscape':'0%'},'Pc':'2%'},
       backgroundImage:"url('./Images/FlowersAsset1.png')",
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
