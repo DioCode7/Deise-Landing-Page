@@ -2336,11 +2336,11 @@ MainContainers:{
         Type:'div',
         Style:{
             position:'absolute',
-            top:{'Mobile':{'Portrait':'43%','Landscape':'2%'},'Pc':'5%'},
+            top:{'Mobile':{'Portrait':'5%','Landscape':'2%'},'Pc':'5%'},
             left:{'Pc':'20%','Mobile':{'Portrait':'50%','Landscape':'20%'}},
             transform:'translate(-50%,0%)',
             color:['black','white'],
-            fontSize:{'Pc':'40px','Mobile':'29px'},
+            fontSize:{'Pc':'40px','Mobile':'27px'},
            fontFamily: '"Google Sans Code", monospace',
        fontOpticalSizing: 'auto',
       fontWeight: '700',
