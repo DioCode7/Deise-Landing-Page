@@ -2436,14 +2436,16 @@ MainContainers:{
       Style:{
       
                boxShadow:'rgba(0,0,0,0.2) 2px 10px 10px',
-               width:'20%',
+               width:{'Pc':'20%','Mobile':{'Portrait':'30%','Landscape':'20%'}},
                height:'4%',
                position:'absolute',
                opacity:'0',
-               top:'60%',
+               top:{'Pc':'60%','Mobile':{'Portrait':'45%','Landscape':'45%'}},
                left:'50%',
                transform:'translate(-50%,-50%)',
-               background:'linear-gradient(to left, rgba(0,0,255,0.2),rgba(255, 37, 255, 0.2))',
+               background:{'Pc':'linear-gradient(to left, rgba(0,0,255,0.2),rgba(255, 37, 255, 0.2))',
+                'Mobile':'linear-gradient(to left, rgb(0, 0, 255),rgb(255, 37, 255))'
+               },
       },
       Listener:{
         
@@ -2518,7 +2520,7 @@ MainContainers:{
               transform:'translate(-50%,-50%)',
               textAlign:'center',
               color:['black','white'],
-                fontSize:{'Pc':'15px','Mobile':'31px'},
+                fontSize:{'Pc':'15px','Mobile':{'Portrait':'15px','Landscape':'31px'}},
            fontFamily: '"Google Sans Code", monospace',
             fontOpticalSizing: 'auto',
             fontWeight: '600',
