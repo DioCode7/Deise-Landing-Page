@@ -1991,7 +1991,11 @@ MainContainers:{
          height:'100%',
          left:'0%',
          opacity:'0',
-          backgroundImage:["url('./Images/HeroBackground.png')","url('./Images/HeroBackground2.png')"],
+          backgroundImage:{'Pc':["url('./Images/HeroBackground.png')","url('./Images/HeroBackground2.png')"],
+            'Mobile':{'Portrait':["url('./Images/HeroBackgroundMobile.png')","url('./Images/HeroBackgroundMobile.png')"],
+              'Landscape':["url('./Images/HeroBackground.png')","url('./Images/HeroBackground2.png')"],
+            }
+          },
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
         backgroundSize:'cover',
