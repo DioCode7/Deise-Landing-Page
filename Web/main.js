@@ -2023,7 +2023,9 @@ MainContainers:{
             left:{'Pc':'44%','Mobile':{
               'Portrait':'2%','Landscape':'44%'
             }},
-            width:'100%',
+            width:{'Pc':'100%','Mobile':{
+              'Portrait':'85%','Landscape':'100%',
+            }},
             top:{'Pc':'50%','Mobile':{'Portrait':'18%','Landscape':'50%'}},
             textAlign:'start',
             color:['black','white'],
