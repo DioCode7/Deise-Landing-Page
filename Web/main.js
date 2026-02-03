@@ -2653,8 +2653,8 @@ MainContainers:{
       Type:'div',
       Style:{
          position:'absolute',
-      left:{'Mobile':'12%','Pc':'29%'},
-      top:{'Mobile':{'Portrait':'-40%','Landscape':'0%'},'Pc':'2%'},
+      left:{'Mobile':'5%','Pc':'29%'},
+      top:{'Mobile':{'Portrait':'-7%','Landscape':'0%'},'Pc':'2%'},
       backgroundImage:"url('./Images/FlowersAsset1.png')",
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
