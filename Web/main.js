@@ -1979,7 +1979,7 @@ MainContainers:{
     Type:'div',
     Style:{
       position:'relative',
-      height:'85%',
+      height:{'Pc':'85%','Mobile':{'Portrait':'85%','Landscape':'110%'}},
     },
     Childs:{
       HeroBackground:{
@@ -2023,7 +2023,7 @@ MainContainers:{
             Style:{
             position:'absolute',
             left:{'Pc':'44%','Mobile':{
-              'Portrait':'4%','Landscape':'44%'
+              'Portrait':'10%','Landscape':'44%'
             }},
             width:{'Pc':'100%','Mobile':{
               'Portrait':'90%','Landscape':'100%',
@@ -2032,7 +2032,7 @@ MainContainers:{
             textAlign:'start',
             color:['black','white'],
             //borderBottom:'solid 1px black',
-              fontSize:{'Pc':'40px','Mobile':{'Portrait':'16px','Landscape':'20px'}},
+              fontSize:{'Pc':'40px','Mobile':{'Portrait':'17px','Landscape':'20px'}},
            fontFamily: '"Google Sans Code", monospace',
             fontOpticalSizing: 'auto',
             fontWeight: '600',
