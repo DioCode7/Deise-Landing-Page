@@ -2174,7 +2174,7 @@ MainContainers:{
     left:'0%',
     width:'100%',
    // borderTop:"solid 1px black",
-    height:{'Mobile':'90%','Pc':'120%'},
+    height:{'Mobile':{'Portrait':'120%%','Landscape':'90%'},'Pc':'120%'},
     backgroundColor:['white','rgb(17,17,17)'],
    },
    Childs:{
@@ -2336,11 +2336,11 @@ MainContainers:{
         Type:'div',
         Style:{
             position:'absolute',
-            top:{'Mobile':'2%','Pc':'5%'},
+            top:{'Mobile':{'Portrait':'43%','Landscape':'2%'},'Pc':'5%'},
             left:{'Pc':'20%','Mobile':{'Portrait':'50%','Landscape':'20%'}},
             transform:'translate(-50%,0%)',
             color:['black','white'],
-            fontSize:{'Pc':'40px','Mobile':'31px'},
+            fontSize:{'Pc':'40px','Mobile':'29px'},
            fontFamily: '"Google Sans Code", monospace',
        fontOpticalSizing: 'auto',
       fontWeight: '700',
