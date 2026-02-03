@@ -2074,7 +2074,9 @@ MainContainers:{
               'Portrait':'35%','Landscape':'55%',
             }},
 
-            transform:'translate(-50%,-50%)',
+            transform:{'Pc':'translate(-50%,-50%)','Mobile':{
+              'Landscape':'translate(-50%,-50%)','Portrait':'translate(0%,0%)'
+            }},
             color:['black','white'],
               fontSize:{'Pc':'20px','Mobile':{'Portrait':'15px','Landscape':'18px'}},
            fontFamily: '"Google Sans Code", monospace',
