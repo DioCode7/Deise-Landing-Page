@@ -2010,7 +2010,9 @@ MainContainers:{
          position:'relative',
          //border:'solid 1px black',
          width:'100%',
-         height:'30%',
+         height:{'Pc':'30%','Mobile':{
+          'Portrait':'10%','Landscape':'30%',
+         }},
          display:'block',
 
         },
@@ -2104,7 +2106,9 @@ MainContainers:{
             Type:'div',
             Style:{
                boxShadow:'rgba(0,0,0,0.2) 2px 10px 10px',
-               width:'20%',
+               width:{'Pc':'20%','Mobile':{
+                'Portrait':'40%','Landscape':'20%',
+               }},
                height:'25%',
                position:'absolute',
                opacity:'0',
@@ -2144,7 +2148,7 @@ MainContainers:{
               color:['black','white'],
               transform:'translate(-50%,-50%)',
               textAlign:'center',
-                fontSize:{'Pc':'15px','Mobile':'31px'},
+                fontSize:{'Pc':'15px','Mobile':{'Portrait':'12px','Landscape':'15px'}},
            fontFamily: '"Google Sans Code", monospace',
             fontOpticalSizing: 'auto',
             fontWeight: '600',
