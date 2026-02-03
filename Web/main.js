@@ -2115,7 +2115,9 @@ MainContainers:{
                top:{'Pc':'25%','Mobile':{'Portrait':'40%','Landscape':'25%'}},
                left:{'Pc':'70%','Mobile':{'Portrait':'62%','Landscape':'70%'}},
                transform:'translate(-50%,-50%)',
-               background:'linear-gradient(to left, rgba(0,0,255,0.2),rgba(255, 37, 255, 0.2))',
+             background:{'Pc':'linear-gradient(to left, rgba(0,0,255,0.2),rgba(255, 37, 255, 0.2))',
+                'Mobile':'linear-gradient(to left, rgb(0, 0, 255),rgb(255, 37, 255))'
+               },
                
 
             },
@@ -2174,7 +2176,7 @@ MainContainers:{
     left:'0%',
     width:'100%',
    // borderTop:"solid 1px black",
-    height:{'Mobile':{'Portrait':'120%','Landscape':'90%'},'Pc':'120%'},
+    height:{'Mobile':{'Portrait':'120%','Landscape':'300%'},'Pc':'120%'},
     backgroundColor:['white','rgb(17,17,17)'],
    },
    Childs:{
@@ -2440,7 +2442,7 @@ MainContainers:{
                height:'4%',
                position:'absolute',
                opacity:'0',
-               top:{'Pc':'60%','Mobile':{'Portrait':'45%','Landscape':'45%'}},
+               top:{'Pc':'60%','Mobile':{'Portrait':'49%','Landscape':'45%'}},
                left:'50%',
                transform:'translate(-50%,-50%)',
                background:{'Pc':'linear-gradient(to left, rgba(0,0,255,0.2),rgba(255, 37, 255, 0.2))',
