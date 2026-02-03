@@ -1979,7 +1979,7 @@ MainContainers:{
     Type:'div',
     Style:{
       position:'relative',
-      height:{'Pc':'85%','Mobile':{'Portrait':'85%','Landscape':'110%'}},
+      height:{'Pc':'85%','Mobile':{'Portrait':'85%','Landscape':'160%'}},
     },
     Childs:{
       HeroBackground:{
