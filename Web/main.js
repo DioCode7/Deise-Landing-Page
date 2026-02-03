@@ -2071,9 +2071,9 @@ MainContainers:{
               'Landscape':'71%',
             }},
             textAlign:'start',
-            width:'50%',
+            width:{'Pc':'50%','Mobile':{'Portrait':'50%','Landscape':'35%'}},
             top:{'Pc':'55%','Mobile':{
-              'Portrait':'12%','Landscape':'55%',
+              'Portrait':'12%','Landscape':'25%',
             }},
 
             transform:{'Pc':'translate(-50%,-50%)','Mobile':{
