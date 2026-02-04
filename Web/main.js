@@ -2603,7 +2603,7 @@ MainContainers:{
     left:'0%',
      marginTop:'-18.5%',
     //top:{'Mobile':'81%','Pc':'116%'},
-    height:{'Mobile':'210%','Pc':'210%'},
+    height:{'Mobile':{'Portrait':'210%','Landscape':'500%'},'Pc':'210%'},
     //borderTop:"1px solid red",
     width:'100%',
     zIndex:'10',
