@@ -2785,7 +2785,7 @@ MainContainers:{
       Type:'div',
       Style:{
         boxShadow:'rgba(0,0,0,0.2) 2px 10px 10px',
-               width:{'Pc':'14%','Mobile':{'Portrait':'17%','Landscape':'14%'}},,
+               width:{'Pc':'14%','Mobile':{'Portrait':'17%','Landscape':'14%'}},
                height:'2%',
                position:'absolute',
                opacity:'0',
