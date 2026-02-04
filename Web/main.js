@@ -4102,7 +4102,7 @@ MainContainers:{
         position:'absolute',
         width:{'Mobile':{'Portrait':'100%','Landscape':'100%'},Pc:'100%'},
         height:{'Mobile':{'Portrait':'16%','Landscape':'16%'},Pc:'35%'},
-        top:{'Mobile':{'Portrait':'23%','Landscape':'23%'},Pc:'53%'},
+        top:{'Mobile':{'Portrait':'37%','Landscape':'23%'},Pc:'53%'},
         left:{'Mobile':{'Portrait':'0%','Landscape':'0%'},Pc:'0%'},
          opacity:'0',
          zIndex:'-1',
