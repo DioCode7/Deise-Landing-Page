@@ -3228,8 +3228,8 @@ MainContainers:{
       Type:'div',
       Style:{
          position:'absolute',
-      left:{'Mobile':{'Portrait':'12%','Landscape':'11%'},'Pc':'20%'},
-      top:{'Mobile':{'Portrait':'21.6%','Landscape':'16.6%'},'Pc':'30%'},
+      left:{'Mobile':{'Portrait':'12%','Landscape':'14%'},'Pc':'20%'},
+      top:{'Mobile':{'Portrait':'21.6%','Landscape':'16%'},'Pc':'30%'},
       backgroundImage:"url('./Images/AutismIcon.png')",
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
