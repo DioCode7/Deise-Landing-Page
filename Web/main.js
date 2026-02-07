@@ -3059,8 +3059,8 @@ MainContainers:{
       Type:'div',
       Style:{
          position:'absolute',
-      left:{'Mobile':{'Portrait':'10%','Landscape':'16%'},'Pc':'19%'},
-      top:{'Mobile':{'Portrait':'3.4%','Landscape':'3%'},'Pc':'-3%'},
+      left:{'Mobile':{'Portrait':'10%','Landscape':'7%'},'Pc':'19%'},
+      top:{'Mobile':{'Portrait':'3.4%','Landscape':'0%'},'Pc':'-3%'},
       backgroundImage:"url('./Images/EducationIcon.png')",
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
