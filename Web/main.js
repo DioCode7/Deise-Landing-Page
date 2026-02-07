@@ -1927,7 +1927,7 @@ MainContainers:{
             zIndex:'25',
            top:{'Mobile':'86%','Pc':'78%'},
             position:'absolute',
-            right:{'Mobile':{'Portrait':'49%','Landscape':'24%'},'Pc':'18%'},
+            right:{'Mobile':{'Portrait':'49%','Landscape':'26%'},'Pc':'18%'},
            // borderBottom://{'Mobile':['solid 1px black','solid 1px white'],'Pc':['solid 1px black','solid 1px white']}
    },
    Text:'Sobre Mim',
@@ -1956,7 +1956,7 @@ MainContainers:{
             zIndex:'25',
             top:{'Mobile':'86%','Pc':'78%'},
             position:'absolute',
-            right:{'Mobile':{'Portrait':'66%','Landscape':'33%'},'Pc':'25%'},
+            right:{'Mobile':{'Portrait':'66%','Landscape':'36%'},'Pc':'25%'},
             //borderBottom://{'Mobile':['solid 1px black','solid 1px white'],'Pc':['solid 1px black','solid 1px white']}
    },
    Text:'Agende Sua Consulta',
@@ -3763,7 +3763,7 @@ MainContainers:{
       Text:'Orientação Parental',
       Style:{
       color:['black','white'],
-      fontSize:{'Mobile':'0.7rem','Pc':'25px'},
+      fontSize:{'Mobile':'1rem','Pc':'25px'},
        fontFamily: "'Delius', cursive",
             fontWeight: '400',
              opacity:'0',
@@ -3790,7 +3790,7 @@ MainContainers:{
       Style:{
          position:'absolute',
       left:{'Mobile':{'Portrait':'12%','Landscape':'12%'},'Pc':'19%'},
-      top:{'Mobile':{'Portrait':'3.5%','Landscape':'21%'},'Pc':'-1%'},
+      top:{'Mobile':{'Portrait':'3.5%','Landscape':'2%'},'Pc':'-1%'},
        opacity:'0',
       backgroundImage:"url('./Images/ParentIcon.png')",
         backgroundRepeat:'no-repeat',
@@ -3841,7 +3841,7 @@ MainContainers:{
       top:{'Mobile':'7%','Pc':'9%'},
       borderLeft:['solid 1px black','solid 1px white'],
       left:{'Mobile':'13%','Pc':'30%'},
-      fontSize:{'Mobile':'0.7rem','Pc':'21px'},
+      fontSize:{'Mobile':{'Portrait':'0.7rem','Landscape':'1.2rem'},'Pc':'21px'},
       color:['rgb(0, 0, 0)','rgb(240,240,240)'],
       width:{'Mobile':'30%','Pc':'25%'},
       padding:'1%',
