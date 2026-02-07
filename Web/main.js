@@ -3374,10 +3374,10 @@ MainContainers:{
    Style:{
     position:'relative',
     left:'0%',
-    marginTop:{'Pc':'-25%','Mobile':{'Portrait':'-270%','Landscape':'-25%'}},
+    marginTop:{'Pc':'-25%','Mobile':{'Portrait':'-270%','Landscape':'-189%'}},
      backgroundColor:['white','rgb(17,17,17)'],
    // top:{'Mobile':{'Portrait':'233%','Landscape':'170%'},'Pc':'454%'},
-    height:{'Mobile':{'Portrait':'210%','Landscape':'210%'},'Pc':'210%'},
+    height:{'Mobile':{'Portrait':'210%','Landscape':'900%'},'Pc':'210%'},
     width:'100%',
     zIndex:'11',
    // backgroundImage:{Pc:["url('./Images/GradientMinimalistLight.png')","url('./Images/GradientMinimalistDark.png')"],
