@@ -2654,7 +2654,7 @@ MainContainers:{
       Style:{
          position:'absolute',
       left:{'Mobile':{'Portrait':'0%','Landscape':'22%'},'Pc':'29%'},
-      top:{'Mobile':{'Portrait':'-10%','Landscape':'-5%'},'Pc':'2%'},
+      top:{'Mobile':{'Portrait':'-10%','Landscape':'-6%'},'Pc':'2%'},
       backgroundImage:"url('./Images/FlowersAsset1.png')",
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
@@ -2704,7 +2704,7 @@ MainContainers:{
       Type:'div',
       Style:{
          position:'absolute',
-      left:{'Mobile':{'Portrait':'16%','Landscape':'10%'},'Pc':'19%'},
+      left:{'Mobile':{'Portrait':'16%','Landscape':'13%'},'Pc':'19%'},
       top:{'Mobile':'3%','Pc':'11%'},
       backgroundImage:"url('./Images/NeuroPedagogyAsset1.png')",
         backgroundRepeat:'no-repeat',
@@ -2756,7 +2756,7 @@ MainContainers:{
       top:{'Mobile':'6%','Pc':'25%'},
       borderLeft:['solid 1px black','solid 1px white'],
       left:{'Mobile':'13%','Pc':'30%'},
-      fontSize:{'Mobile':'0.7rem','Pc':'21px'},
+      fontSize:{'Mobile':{'Portrait':'0.7rem','Landscape':'1.2rem'},'Pc':'21px'},
       color:['rgb(0, 0, 0)','rgb(240,240,240)'],
       width:{'Mobile':'40%','Pc':'30%'},
       opacity:'0',
@@ -2785,12 +2785,12 @@ MainContainers:{
       Type:'div',
       Style:{
         boxShadow:'rgba(0,0,0,0.2) 2px 10px 10px',
-               width:{'Pc':'14%','Mobile':{'Portrait':'17%','Landscape':'14%'}},
+               width:{'Pc':'14%','Mobile':{'Portrait':'17%','Landscape':'18%'}},
                height:'2%',
                position:'absolute',
                opacity:'0',
-               top:{'Pc':'40%','Mobile':{'Portrait':'14%','Landscape':'40%'}},
-               left:{'Pc':'40%','Mobile':{'Portrait':'18%','Landscape':'40%'}},
+               top:{'Pc':'40%','Mobile':{'Portrait':'14%','Landscape':'20%'}},
+               left:{'Pc':'40%','Mobile':{'Portrait':'18%','Landscape':'27%'}},
                transform:'translate(-50%,-50%)',
               
       },
