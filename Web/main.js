@@ -3424,8 +3424,8 @@ MainContainers:{
       Type:'div',
       Style:{
          position:'absolute',
-      left:{'Mobile':{'Portrait':'7%','Landscape':'10%'},'Pc':'19%'},
-      top:{'Mobile':{'Portrait':'3%','Landscape':'3.4%'},'Pc':'-1%'},
+      left:{'Mobile':{'Portrait':'7%','Landscape':'11%'},'Pc':'19%'},
+      top:{'Mobile':{'Portrait':'3%','Landscape':'2.5%'},'Pc':'-1%'},
       backgroundImage:"url('./Images/ABAIcon.png')",
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
@@ -3592,15 +3592,15 @@ MainContainers:{
       Type:'div',
       Style:{
          position:'absolute',
-      left:{'Mobile':{'Portrait':'10%','Landscape':'9%'},'Pc':'20%'},
-      top:{'Mobile':{'Portrait':'21%','Landscape':'21%'},'Pc':'30.9%'},
+      left:{'Mobile':{'Portrait':'10%','Landscape':'11%'},'Pc':'20%'},
+      top:{'Mobile':{'Portrait':'21%','Landscape':'22%'},'Pc':'30.9%'},
       backgroundImage:"url('./Images/TerapyIcon.png')",
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
          opacity:'0',
         backgroundSize:'cover',
         width:{'Mobile':{'Portrait':'8%','Landscape':'8%'},'Pc':'5%'},
-        height:{'Mobile':{'Portrait':'2%','Landscape':'2%'},'Pc':'5%'},
+        height:{'Mobile':{'Portrait':'2%','Landscape':'3%'},'Pc':'5%'},
         zIndex:'10',
        
 
@@ -3646,7 +3646,7 @@ MainContainers:{
       borderLeft:['solid 1px black','solid 1px white'],
       left:{'Mobile':{'Portrait':'57%','Landscape':'57%'},'Pc':'58%'},
        opacity:'0',
-      fontSize:{'Mobile':'0.6rem','Pc':'21px'},
+      fontSize:{'Mobile':{'Portrait':'0.6rem','Landscape':'1.2rem'},'Pc':'21px'},
       color:['rgb(0, 0, 0)','rgb(240,240,240)'],
       width:{'Mobile':'40%','Pc':'30%'},
      
@@ -3676,12 +3676,12 @@ MainContainers:{
       Style:{
         position:'absolute',
         color:['black','white'],
-        top:{'Mobile':{'Portrait':'30%','Landscape':'27%'},'Pc':'52%'},
+        top:{'Mobile':{'Portrait':'30%','Landscape':'30%'},'Pc':'52%'},
         left:{'Mobile':{'Portrait':'65%','Landscape':'65%'},'Pc':'65%'},
        // border:['solid 1px black','solid 1px white'],
          opacity:'0',
         width:{'Mobile':{'Portrait':'17%','Landscape':'18%'},'Pc':'14%'},
-        height:{'Mobile':{'Portrait':'2%','Landscape':'1%'},'Pc':'2%'},
+        height:{'Mobile':{'Portrait':'2%','Landscape':'2%'},'Pc':'2%'},
         boxShadow:'rgba(0,0,0,0.6) 5px 5px 5px',
          fontSize:{'Pc':'15px','Mobile':'0.7rem'},
              fontFamily: "'Delius', cursive",
