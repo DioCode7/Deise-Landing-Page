@@ -3010,7 +3010,7 @@ MainContainers:{
     position:'relative',
     left:'0%',
    // top:{'Mobile':{'Portrait':'152%','Landscape':'291%'},'Pc':'306%'},
-    height:{'Mobile':{'Portrait':'210%','Landscape':'210%'},'Pc':'210%'},
+    height:{'Mobile':{'Portrait':'210%','Landscape':'900%'},'Pc':'210%'},
     width:'100%',
      backgroundColor:['white','rgb(17,17,17)'],
     marginTop:{'Pc':'-7%','Mobile':{'Portrait':'-270%','Landscape':'-340%'}},
