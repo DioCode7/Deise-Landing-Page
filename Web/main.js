@@ -3059,8 +3059,8 @@ MainContainers:{
       Type:'div',
       Style:{
          position:'absolute',
-      left:{'Mobile':{'Portrait':'10%','Landscape':'7%'},'Pc':'19%'},
-      top:{'Mobile':{'Portrait':'3.4%','Landscape':'-0.5%'},'Pc':'-3%'},
+      left:{'Mobile':{'Portrait':'10%','Landscape':'9%'},'Pc':'19%'},
+      top:{'Mobile':{'Portrait':'3.4%','Landscape':'-0.7%'},'Pc':'-3%'},
       backgroundImage:"url('./Images/EducationIcon.png')",
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
@@ -3108,7 +3108,7 @@ MainContainers:{
     Type:'div',
     Style:{
       position:'absolute',
-      top:{'Mobile':{'Portrait':'8%','Landscape':'0.5%'},'Pc':'9%'},
+      top:{'Mobile':{'Portrait':'8%','Landscape':'1.5%'},'Pc':'9%'},
       borderLeft:['solid 1px black','solid 1px white'],
       left:{'Mobile':{'Portrait':'13%','Landscape':'13%'},'Pc':'30%'},
       fontSize:{'Mobile':{'Portrait':'0.6rem','Landscape':'1.2rem'},'Pc':'21px'},
@@ -3209,7 +3209,7 @@ MainContainers:{
           //  textShadow:'2px 4px 10px rgba(0, 0, 0, 0.9)',
             position:'absolute',
              opacity:'0',
-            top:{'Mobile':{'Portrait':'22%','Landscape':'18%'},'Pc':'32%'},
+            top:{'Mobile':{'Portrait':'22%','Landscape':'17%'},'Pc':'32%'},
             left:{'Mobile':{'Portrait':'20%','Landscape':'20%'},'Pc':'25%'},
              borderBottom:['solid 1px black','solid 1px white'],
              width:{'Mobile':'40%','Pc':'60%'},
