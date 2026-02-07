@@ -3374,7 +3374,7 @@ MainContainers:{
    Style:{
     position:'relative',
     left:'0%',
-    marginTop:{'Pc':'-25%','Mobile':{'Portrait':'-270%','Landscape':'-189%'}},
+    marginTop:{'Pc':'-25%','Mobile':{'Portrait':'-270%','Landscape':'-200%'}},
      backgroundColor:['white','rgb(17,17,17)'],
    // top:{'Mobile':{'Portrait':'233%','Landscape':'170%'},'Pc':'454%'},
     height:{'Mobile':{'Portrait':'210%','Landscape':'900%'},'Pc':'210%'},
