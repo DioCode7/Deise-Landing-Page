@@ -3013,7 +3013,7 @@ MainContainers:{
     height:{'Mobile':{'Portrait':'210%','Landscape':'210%'},'Pc':'210%'},
     width:'100%',
      backgroundColor:['white','rgb(17,17,17)'],
-    marginTop:{'Pc':'-7%','Mobile':{'Portrait':'-270%','Landscape':'-7%'}},
+    marginTop:{'Pc':'-7%','Mobile':{'Portrait':'-270%','Landscape':'-340%'}},
     zIndex:'11',
     // backgroundImage:{Pc:["url('./Images/GradientMinimalistLight.png')","url('./Images/GradientMinimalistDark.png')"],
     //  Mobile:{'Portrait':["url('./Images/GradientMinimalistLightMobile.png')","url('./Images/GradientMinimalistDarkMobile.png')"],'Landscape':["url('./Images/GradientMinimalistLightMobile.png')","url('./Images/GradientMinimalistDarkMobile.png')"]}
