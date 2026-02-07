@@ -3228,8 +3228,8 @@ MainContainers:{
       Type:'div',
       Style:{
          position:'absolute',
-      left:{'Mobile':{'Portrait':'12%','Landscape':'9%'},'Pc':'20%'},
-      top:{'Mobile':{'Portrait':'21.6%','Landscape':'19%'},'Pc':'30%'},
+      left:{'Mobile':{'Portrait':'12%','Landscape':'11%'},'Pc':'20%'},
+      top:{'Mobile':{'Portrait':'21.6%','Landscape':'12%'},'Pc':'30%'},
       backgroundImage:"url('./Images/AutismIcon.png')",
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
@@ -3278,7 +3278,7 @@ MainContainers:{
     Type:'div',
     Style:{
       position:'absolute',
-      top:{'Mobile':{'Portrait':'24%','Landscape':'18%'},'Pc':'39%'},
+      top:{'Mobile':{'Portrait':'24%','Landscape':'21%'},'Pc':'39%'},
       borderLeft:['solid 1px black','solid 1px white'],
       left:{'Mobile':{'Portrait':'57%','Landscape':'57%'},'Pc':'58%'},
       fontSize:{'Mobile':{'Portrait':'0.7rem','Landscape':'1.2rem'},'Pc':'21px'},
@@ -3312,7 +3312,7 @@ MainContainers:{
         position:'absolute',
         color:['black','white'],
         opacity:'0',
-        top:{'Mobile':{'Portrait':'30%','Landscape':'24%'},'Pc':'52%'},
+        top:{'Mobile':{'Portrait':'30%','Landscape':'27%'},'Pc':'52%'},
         left:{'Mobile':{'Portrait':'65%','Landscape':'65%'},'Pc':'65%'},
       //  border:['solid 1px black','solid 1px white'],
         width:{'Mobile':{'Portrait':'17%','Landscape':'18%'},'Pc':'14%'},
