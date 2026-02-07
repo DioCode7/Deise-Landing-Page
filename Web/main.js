@@ -1927,7 +1927,7 @@ MainContainers:{
             zIndex:'25',
            top:{'Mobile':'86%','Pc':'78%'},
             position:'absolute',
-            right:{'Mobile':{'Portrait':'49%','Landscape':'26%'},'Pc':'18%'},
+            right:{'Mobile':{'Portrait':'49%','Landscape':'28%'},'Pc':'18%'},
            // borderBottom://{'Mobile':['solid 1px black','solid 1px white'],'Pc':['solid 1px black','solid 1px white']}
    },
    Text:'Sobre Mim',
@@ -1956,7 +1956,7 @@ MainContainers:{
             zIndex:'25',
             top:{'Mobile':'86%','Pc':'78%'},
             position:'absolute',
-            right:{'Mobile':{'Portrait':'66%','Landscape':'36%'},'Pc':'25%'},
+            right:{'Mobile':{'Portrait':'66%','Landscape':'37%'},'Pc':'25%'},
             //borderBottom://{'Mobile':['solid 1px black','solid 1px white'],'Pc':['solid 1px black','solid 1px white']}
    },
    Text:'Agende Sua Consulta',
@@ -3790,7 +3790,7 @@ MainContainers:{
       Style:{
          position:'absolute',
       left:{'Mobile':{'Portrait':'12%','Landscape':'12%'},'Pc':'19%'},
-      top:{'Mobile':{'Portrait':'3.5%','Landscape':'2%'},'Pc':'-1%'},
+      top:{'Mobile':{'Portrait':'3.5%','Landscape':'3.5%'},'Pc':'-1%'},
        opacity:'0',
       backgroundImage:"url('./Images/ParentIcon.png')",
         backgroundRepeat:'no-repeat',
@@ -3876,7 +3876,7 @@ MainContainers:{
        // border:['solid 1px black','solid 1px white'],
          opacity:'0',
         width:{'Mobile':{'Portrait':'17%','Landscape':'18%'},'Pc':'14%'},
-        height:{'Mobile':{'Portrait':'2%','Landscape':'1%'},'Pc':'2%'},
+        height:{'Mobile':{'Portrait':'2%','Landscape':'2%'},'Pc':'2%'},
         boxShadow:'rgba(0,0,0,0.6) 5px 5px 5px',
          fontSize:{'Pc':'15px','Mobile':'0.7rem'},
              fontFamily: "'Delius', cursive",
@@ -3957,8 +3957,8 @@ MainContainers:{
       Type:'div',
       Style:{
          position:'absolute',
-      left:{'Mobile':{'Portrait':'10%','Landscape':'18%'},'Pc':'17%'},
-      top:{'Mobile':{'Portrait':'21%','Landscape':'21%'},'Pc':'27%'},
+      left:{'Mobile':{'Portrait':'10%','Landscape':'13%'},'Pc':'17%'},
+      top:{'Mobile':{'Portrait':'21%','Landscape':'19%'},'Pc':'27%'},
       backgroundImage:"url('./Images/TDAHIcon.png')",
         backgroundRepeat:'no-repeat',
          opacity:'0',
