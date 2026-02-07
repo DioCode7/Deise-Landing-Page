@@ -2654,7 +2654,7 @@ MainContainers:{
       Style:{
          position:'absolute',
       left:{'Mobile':{'Portrait':'0%','Landscape':'22%'},'Pc':'29%'},
-      top:{'Mobile':{'Portrait':'-10%','Landscape':'-5.5%'},'Pc':'2%'},
+      top:{'Mobile':{'Portrait':'-10%','Landscape':'-5%'},'Pc':'2%'},
       backgroundImage:"url('./Images/FlowersAsset1.png')",
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
@@ -2678,7 +2678,7 @@ MainContainers:{
       Text:'Neuropedagogia',
       Style:{
       color:['black','white'],
-      fontSize:{'Mobile':'12px','Pc':'25px'},
+      fontSize:{'Mobile':{'Portrait':'12px','Landscape':'18px'},'Pc':'25px'},
        fontFamily: "'Delius', cursive",
             fontWeight: '400',
             fontStyle: 'normal',
@@ -2704,7 +2704,7 @@ MainContainers:{
       Type:'div',
       Style:{
          position:'absolute',
-      left:{'Mobile':'16%','Pc':'19%'},
+      left:{'Mobile':{'Portrait':'16%','Landscape':'10%'},'Pc':'19%'},
       top:{'Mobile':'3%','Pc':'11%'},
       backgroundImage:"url('./Images/NeuroPedagogyAsset1.png')",
         backgroundRepeat:'no-repeat',
