@@ -3957,7 +3957,7 @@ MainContainers:{
       Type:'div',
       Style:{
          position:'absolute',
-      left:{'Mobile':{'Portrait':'10%','Landscape':'11%'},'Pc':'17%'},
+      left:{'Mobile':{'Portrait':'10%','Landscape':'8%'},'Pc':'17%'},
       top:{'Mobile':{'Portrait':'21%','Landscape':'20%'},'Pc':'27%'},
       backgroundImage:"url('./Images/TDAHIcon.png')",
         backgroundRepeat:'no-repeat',
