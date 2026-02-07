@@ -2122,13 +2122,13 @@ MainContainers:{
 
             },
              Listener:{
-      UmbraHover:{
-        Style:{
-        color:'orange',
-        scale:'1.12',
-         fontSize:{'Mobile':'11px','Pc':'17px'},
-        }
-      },
+      //UmbraHover:{
+      //  Style:{
+        //color:'orange',
+      //  scale:'1.12',
+      //   fontSize:{'Mobile':'11px','Pc':'17px'},
+     //   }
+    //  },
       UseFn:true,
       Fn:()=>{window.open("https://wa.me/5554991841827", "_blank");},
        
@@ -3013,7 +3013,7 @@ MainContainers:{
     height:{'Mobile':{'Portrait':'210%','Landscape':'900%'},'Pc':'210%'},
     width:'100%',
      backgroundColor:['white','rgb(17,17,17)'],
-    marginTop:{'Pc':'-7%','Mobile':{'Portrait':'-270%','Landscape':'-80%'}},
+    marginTop:{'Pc':'-7%','Mobile':{'Portrait':'-270%','Landscape':'-150%'}},
     zIndex:'11',
     // backgroundImage:{Pc:["url('./Images/GradientMinimalistLight.png')","url('./Images/GradientMinimalistDark.png')"],
     //  Mobile:{'Portrait':["url('./Images/GradientMinimalistLightMobile.png')","url('./Images/GradientMinimalistDarkMobile.png')"],'Landscape':["url('./Images/GradientMinimalistLightMobile.png')","url('./Images/GradientMinimalistDarkMobile.png')"]}
