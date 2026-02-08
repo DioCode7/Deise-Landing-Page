@@ -395,7 +395,7 @@ let GeneralMoreAboutBluePrint = {
           fontStyle: 'normal',
           color:['black','white'],
           cursor:'default',
-          width:{'Mobile':{'Portrait':'10%','Landscape':'10%'},'Pc':'50%'},
+          width:{'Mobile':{'Portrait':'10%','Landscape':'10%'},'Pc':'45%'},
           borderLeft:['solid 1px black','solid 1px white'],
           padding:'3%',
         fontSize:{'Mobile':{'Portrait':'1rem','Lanscape':'1rem'},'Pc':'1.2rem'},
