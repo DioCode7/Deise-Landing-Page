@@ -788,10 +788,11 @@ function UmbraEaseOutPlusCurve(t){
 
 function UmbraUpdateActiveDOM(){
 let AllElements = UmbraGetAllChilds('Body');
-for(let i = 0;i<AllElements.length;i++){
-    UmbraCoreBrute.UmbraDOM.UiModule.UmbraApplyStyle(AllElements[i],null,'Declared',true);
-}
-
+//for(let i = 0;i<AllElements.length;i++){
+  //  UmbraCoreBrute.UmbraDOM.UiModule.UmbraApplyStyle(AllElements[i],null,'Declared',true);
+//}
+UmbraScenesBrute.TurnOff('LandingPageMinimalistMainScene');
+UmbraScenesBrute.Active('LandingPageMinimalistMainScene');
 
 
 }
