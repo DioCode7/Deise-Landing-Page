@@ -20,7 +20,8 @@
       
      }
     },
-    ClientPlataform:()=>{const isMobile = window.innerWidth <= 768;
+    ClientPlataform:()=>{const isMobile = window.innerWidth <= 768 ||  /Mobi|Android/i.test(navigator.userAgent) ||
+  window.matchMedia("(pointer: coarse)").matches;;
 
 return isMobile ? "Mobile" : "Pc";},
     ClientLanguage:()=>{
@@ -149,7 +150,7 @@ function UpdateUmbraConfig(Path,Value){
   }
 
   }else{
-  UmbraCoreBrute[Path] = {... UmbraCoreBrute[Path],...Value};;
+  UmbraCoreBrute[Path] = {... UmbraCoreBrute[Path],...Value};
   }
 
 }
