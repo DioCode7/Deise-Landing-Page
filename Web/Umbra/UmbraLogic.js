@@ -107,8 +107,9 @@ if(ListenerBluePrint.SceneTransition){
     let NewScene = ListenerBluePrint.SceneTransition.NewScene;
     let TransitionAnimation = ListenerBluePrint.SceneTransition.TransitionAnimation;
     let TransitionElement = ListenerBluePrint.SceneTransition.TransitionElement;
+    let TransitionEntryAnimations = ListenerBluePrint.SceneTransition.OnEntryAnimations;
 
-    UmbraCoreBrute.UmbraDOM.UiModule.UmbraScenes.Transition(OldScene,NewScene,TransitionAnimation,TransitionElement);
+    UmbraCoreBrute.UmbraDOM.UiModule.UmbraScenes.Transition(OldScene,NewScene,TransitionAnimation,TransitionElement,null,TransitionEntryAnimations);
 }
 }
 

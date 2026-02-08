@@ -154,6 +154,14 @@ let GeneralMoreAboutBluePrint = {
            SceneTransition:{
           OldScene:'GeneralMoreAboutScene',
           NewScene:'LandingPageMinimalistMainScene',
+          OnEntryAnimations:{
+            AnimationGroup:{
+               Animation:'SlideForRightAnimation',
+               Elements:InicialAnimationsElements,
+            }
+            
+
+          },
           TransitionAnimation:{
             In:'ScenesTransitionsInAnimation',
             Out:'ScenesTransitionsOutAnimation',
@@ -1764,7 +1772,7 @@ MainContainers:{
         pointerEvents:'none',
         },
       },
-      ConceptThemeSwitchButton:{
+      /*ConceptThemeSwitchButton:{
      Id:'ConceptThemeSwitchButton',
      Type:'div',
      Style:{
@@ -1792,7 +1800,7 @@ MainContainers:{
      Text:()=>ActualConceptTheme,
 
       },
-      
+      */
   /*HeaderInstagramIcon:{
     Id:"HeaderInstagramIcon",
     Type:'div',
@@ -5007,10 +5015,7 @@ let SlideForLeftAnimationBluePrint = {
 UmbraAnimations.New('SlideForRightAnimation',SlideForRightAnimationBluePrint);
 UmbraAnimations.New('SlideForLeftAnimation',SlideForLeftAnimationBluePrint);
 
-
-for(let i = 0;i<InicialAnimationsElements.length;i++){
-  UmbraAnimations.Active('SlideForRightAnimation',InicialAnimationsElements[i]);
-}
+UmbraAnimations.GroupActive('SlideForRightAnimation',InicialAnimationsElements);
 
 let ScenesTransitionsInAnimation = {
   Id:'ScenesTransitionsInAnimation',
@@ -5027,7 +5032,7 @@ let ScenesTransitionsInAnimation = {
     
 },
    Repeat:0,
-   Time:9000,
+   Time:200,
    FrameRate:60,
    Curve:'Ease-Out-Smooth'
    
@@ -5125,4 +5130,5 @@ UmbraScenes.Active("LandingPageMinimalistMainScene",{
 
 }
 }
+
 
