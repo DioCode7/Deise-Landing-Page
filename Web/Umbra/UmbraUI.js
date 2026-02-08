@@ -31,6 +31,7 @@ export let UmbraDOM = {
   Delete:UmbraDeleteComponenent,
   ClearChilds:UmbraClearChilds,
   GetChilds:UmbraGetChilds,
+  GetAllChilds:UmbraGetAllChilds,
   ClearOverrides:UmbraClearOverrides,
   UpdateActiveDOM:UmbraUpdateActiveDOM,
 
@@ -45,10 +46,41 @@ function UmbraClearChilds(Id){
     }
 }
 
+function UmbraGetAllChilds(ParentId){
+     let ActualTree = UmbraCoreBrute.UmbraDOM.UmbraTree;
+  let ParentTree = UmbraCoreBrute.UmbraDOM.DeclaredStyles[ParentId].ParentTree;
+  let DirectChilds = [];
+  function LoopChilds(ParentId,ParentTree,ActualTree){
+  for(let i = 0;i<ParentTree.length;i++){
+    if(ParentTree[i] == ParentId){
+    if(ActualTree[ParentId]){
+        DirectChilds = [...DirectChilds,...Object.keys(ActualTree[ParentId])];
+        if(Object.keys(ActualTree[ParentId]).length > 0){
+        for(let i = 0;i<Object.keys(ActualTree[ParentId]).length;i++){
+         LoopChilds(Object.keys(ActualTree[ParentId])[i],
+         UmbraCoreBrute.UmbraDOM.DeclaredStyles[Object.keys(ActualTree[ParentId])[i]].ParentTree,
+        UmbraCoreBrute.UmbraDOM.UmbraTree);
+        };
+    }
+    }
+    }else{
+     if(ActualTree[ParentTree[i]]){
+        ActualTree = ActualTree[ParentTree[i]];
+     }
+    }
+  }
+}
+LoopChilds(ParentId,ParentTree,ActualTree);
+  console.error('All Childs',DirectChilds);
+    console.error('UmbraTree',UmbraCoreBrute.UmbraDOM.UmbraTree);
+      console.error('ParentTree', UmbraCoreBrute.UmbraDOM.DeclaredStyles['Body']);
+  return DirectChilds;
+}
+
 function UmbraGetChilds(ParentId){
   let ActualTree = UmbraCoreBrute.UmbraDOM.UmbraTree;
   console.error("oiii",UmbraCoreBrute.UmbraDOM.DeclaredStyles[ParentId].ParentTree);
-  let ParentTree = UmbraCoreBrute.UmbraDOM.DeclaredStyles[ParentId].ParentTree;
+  let ParentTree =  UmbraCoreBrute.UmbraDOM.DeclaredStyles[ParentId].ParentTree;
   let DirectChilds = null;
   for(let i = 0;i<ParentTree.length;i++){
     if(ParentTree[i] == ParentId){
@@ -755,8 +787,10 @@ function UmbraEaseOutPlusCurve(t){
 
 
 function UmbraUpdateActiveDOM(){
-
-alert('oi');
+let AllElements = UmbraGetAllChilds('Body');
+for(let i = 0;i<AllElements.length;i++){
+    UmbraCoreBrute.UmbraDOM.UiModule.UmbraApplyStyle(AllElements[i],null,'Declared',true);
+}
 
 
 

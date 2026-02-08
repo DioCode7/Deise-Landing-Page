@@ -20,9 +20,7 @@
       
      }
     },
-    ClientPlataform:()=>{const isMobile =
-  /Mobi|Android/i.test(navigator.userAgent) ||
-  window.matchMedia("(pointer: coarse)").matches;
+    ClientPlataform:()=>{const isMobile = window.innerWidth <= 768;
 
 return isMobile ? "Mobile" : "Pc";},
     ClientLanguage:()=>{
@@ -48,7 +46,9 @@ return isMobile ? "Mobile" : "Pc";},
     },
     UmbraDOM:{
 
-      DeclaredStyles:{},
+      DeclaredStyles:{'Body':{
+        Style:{},ParentTree:['Body'],
+      }},
       ComputedStyles:{},
       AbsoluteStyles:{},
       OverridesStyles:{},
