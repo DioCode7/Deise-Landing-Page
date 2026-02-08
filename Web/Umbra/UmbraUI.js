@@ -787,14 +787,16 @@ function UmbraEaseOutPlusCurve(t){
 
 
 function UmbraUpdateActiveDOM(){
+    
 let AllElements = UmbraGetAllChilds('Body');
 //for(let i = 0;i<AllElements.length;i++){
   //  UmbraCoreBrute.UmbraDOM.UiModule.UmbraApplyStyle(AllElements[i],null,'Declared',true);
 //}
+setTimeout(()=>{
 UmbraScenesBrute.TurnOff('LandingPageMinimalistMainScene');
 UmbraScenesBrute.Active('LandingPageMinimalistMainScene');
-
+},100)
 
 }
 
-screen.orientation.addEventListener('change',UmbraDOM.UpdateActiveDOM)
+screen.orientation.addEventListener('change',UmbraDOM.UpdateActiveDOM);
