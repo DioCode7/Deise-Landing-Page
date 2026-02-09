@@ -50,7 +50,7 @@ let GeneralMoreAboutBluePrint = {
         Type:'div',
         Style:{
             position:'relative',
-        display:'absolute',
+        display:'flex',
         width:{'Mobile':{'Portrait':'30vw','Landscape':'30vh'},'Pc':'20%'},
         height:{'Pc':'170%',Mobile:{'Portrait':'100%','Landscape':'150%'}},
         left:'50%',
@@ -350,7 +350,7 @@ let GeneralMoreAboutBluePrint = {
         position:'relative',
         display:'inline-block',
       color:['black','white'],
-      width:'100%',
+      width:{'Pc':'100%','Mobile':{'Portrait':'50%','Landscape':'100%'}},
       height:'5%',
      // border:'solid 1px black',
         textAlign:'start',
@@ -360,7 +360,7 @@ let GeneralMoreAboutBluePrint = {
             fontWeight: '700',
             fontStyle: 'normal',
           cursor:'default',
-        fontSize:{'Mobile':{'Portrait':'1rem','Lanscape':'1rem'},'Pc':'1.4rem'},
+        fontSize:{'Mobile':{'Portrait':'1.3rem','Lanscape':'1rem'},'Pc':'1.4rem'},
         },
         Text:'Do que se trata a Espaço Ressignificar?',
          Listener:{
