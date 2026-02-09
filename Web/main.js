@@ -4967,20 +4967,20 @@ UmbraScenes.Active("LandingPageMinimalistMainScene");
 let SlideForRightAnimationBluePrint = {
   Id:'SlideForRightAnimation',
     Properties:{
-    //left:{
-      //  StartIn:-100,
+    left:{
+        StartIn:-100,
         EndIn:'Actual',
-        //Metric:'%'
-    //},  
+        Metric:'%'
+    },  
       opacity:{
       StartIn:0,
       EndIn:1,
       
     },
-    //scale:{
-      //StartIn:0,
-      //EndIn:1,
-    //}
+    scale:{
+      StartIn:0,
+      EndIn:1,
+    }
     
 },
    Repeat:0,
