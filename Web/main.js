@@ -52,7 +52,7 @@ let GeneralMoreAboutBluePrint = {
             position:'relative',
         display:'absolute',
         width:{'Mobile':{'Portrait':'30vw','Landscape':'30vh'},'Pc':'20%'},
-        height:'170%',
+        height:{'Pc':'170%',Mobile:{'Portrait':'100%','Landscape':'150%'}},
         left:'50%',
         top:'50%',
         transform:'translate(-50%,-50%)',
