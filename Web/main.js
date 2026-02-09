@@ -3048,7 +3048,7 @@ MainContainers:{
             fontStyle: 'normal',
            // textShadow:'2px 4px 10px rgba(0, 0, 0, 0.9)',
             position:'absolute',
-            top:{'Mobile':{'Portrait':'4.5%','Landscape':'4.5%'},'Pc':'1%'},
+            top:{'Mobile':{'Portrait':'4.5%','Landscape':'0%'},'Pc':'1%'},
             left:{'Mobile':{'Portrait':'20%','Landscape':'20%'},'Pc':'25%'},
              borderBottom:['solid 1px black','solid 1px white'],
              width:{'Mobile':'60%','Pc':'60%'},
