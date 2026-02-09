@@ -686,7 +686,8 @@ function UmbraAnimationRender(AnimationConfig,Element,Id){
             ActualValue = AnimationConfig.RealStartIn;
              
         }else{
-            ActualValue = EndValue;
+            //ActualValue = EndValue;
+          
             UmbraCoreBrute.UmbraDOM.AnimationsNexus[Id].State = 'Off';
             if(UmbraCoreBrute.UmbraDOM.AnimationsNexus[Id].AwaitFlag){
                 
@@ -704,7 +705,38 @@ function UmbraAnimationRender(AnimationConfig,Element,Id){
   UmbraCoreBrute.UmbraDOM.DeclaredStyles[Element]['Style'][AnimationConfig.PropertieName] = String(ActualValue);
 
     }else{
+        if(typeof UmbraCoreBrute.UmbraDOM.DeclaredStyles[Element]['Style'][AnimationConfig.PropertieName] == 'object' && 
+            !Array.isArray(UmbraCoreBrute.UmbraDOM.DeclaredStyles[Element]['Style'][AnimationConfig.PropertieName])){
+          if(UmbraCoreBrute.ClientPlataform() == 'Mobile'){
+            if(typeof UmbraCoreBrute.UmbraDOM.DeclaredStyles[Element]['Style'][AnimationConfig.PropertieName]['Mobile'] == 'object' &&
+                   !Array.isArray(UmbraCoreBrute.UmbraDOM.DeclaredStyles[Element]['Style'][AnimationConfig.PropertieName]['Mobile'])
+            ){
+              
+             let ClientOrientation = UmbraCoreBrute.WindowOrientantion();
+             if(Array.isArray(UmbraCoreBrute.UmbraDOM.DeclaredStyles[Element]['Style'][AnimationConfig.PropertieName]['Mobile'][ClientOrientation])){
+          let ClientTheme = UmbraCoreBrute.ClientTheme() == 'Dark'? 1:0;
+             UmbraCoreBrute.UmbraDOM.DeclaredStyles[Element]['Style'][AnimationConfig.PropertieName]['Mobile'][ClientOrientation][ClientTheme] = ActualValue + Metric;
+             }else{
+             UmbraCoreBrute.UmbraDOM.DeclaredStyles[Element]['Style'][AnimationConfig.PropertieName]['Mobile'][ClientOrientation] = ActualValue + Metric;
+             }
+            }else if(Array.isArray(UmbraCoreBrute.UmbraDOM.DeclaredStyles[Element]['Style'][AnimationConfig.PropertieName]['Mobile'])){
+            let ClientTheme = UmbraCoreBrute.ClientTheme() == 'Dark'? 1:0;
+             UmbraCoreBrute.UmbraDOM.DeclaredStyles[Element]['Style'][AnimationConfig.PropertieName]['Mobile'][ClientTheme] = ActualValue + Metric;
+            }else if(typeof UmbraCoreBrute.UmbraDOM.DeclaredStyles[Element]['Style'][AnimationConfig.PropertieName]['Mobile'] == 'string'){
+              UmbraCoreBrute.UmbraDOM.DeclaredStyles[Element]['Style'][AnimationConfig.PropertieName]['Mobile'] = ActualValue + Metric;  
+            }
+          }else if(UmbraCoreBrute.ClientPlataform() == 'Pc'){
+               if(Array.isArray(UmbraCoreBrute.UmbraDOM.DeclaredStyles[Element]['Style'][AnimationConfig.PropertieName]['Pc'])){
+             let ClientTheme = UmbraCoreBrute.ClientTheme() == 'Dark'? 1:0;
+             UmbraCoreBrute.UmbraDOM.DeclaredStyles[Element]['Style'][AnimationConfig.PropertieName]['Pc'][ClientTheme] = ActualValue + Metric;
+               }else{
+                 UmbraCoreBrute.UmbraDOM.DeclaredStyles[Element]['Style'][AnimationConfig.PropertieName]['Pc'] = ActualValue + Metric;
+               }
+          }
+        }else if(typeof UmbraCoreBrute.UmbraDOM.DeclaredStyles[Element]['Style'][AnimationConfig.PropertieName] == 'string' && 
+            !Array.isArray(UmbraCoreBrute.UmbraDOM.DeclaredStyles[Element]['Style'][AnimationConfig.PropertieName])){
     UmbraCoreBrute.UmbraDOM.DeclaredStyles[Element]['Style'][AnimationConfig.PropertieName] = ActualValue + Metric;
+        }
     }
     UmbraUI.UmbraApplyStyle(Element,{backgroundColor:'red'},'Declared',true);
 
