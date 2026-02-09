@@ -34,7 +34,7 @@ let GeneralMoreAboutBluePrint = {
         display:'inline-block',
         width:'100%',
         backgroundColor:['white','black'],
-        height:{"Mobile":'20%',"Pc":"15vh"},
+        height:{"Mobile":{'Portrait':'25vh','Landscape':''},"Pc":"15vh"},
        // borderBottom:['dashed 1px black','dashed 1px white'],
         //boxShadow:"0px 6px 6px rgba(0,0,0,0.8)",
        /*  backgroundImage:{'Pc':
@@ -217,6 +217,7 @@ let GeneralMoreAboutBluePrint = {
     Type:'div',
     Style:{
       position:'fixed',
+      display:{'Pc':'flex','Mobile':'none'},
       width:{'Mobile':'12%','Pc':'14%'},
       height:{'Mobile':'12%','Pc':'16%'},
       backgroundImage:"url('./Images/EspaçoRessignificarLogo1.png')",
