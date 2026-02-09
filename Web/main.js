@@ -179,7 +179,7 @@ let GeneralMoreAboutBluePrint = {
                 maxHeight:'100vh',
                 height:'10%',
                 scale:'0',
-                background:['radial-gradient(circle,rgba(240, 179, 255, 0.94),rgb(246, 246, 247),rgba(255, 255, 255, 0),rgba(2, 127, 211, 0))',
+                background:['radial-gradient(circle,rgba(251, 235, 255, 0.94),rgb(246, 246, 247),rgba(255, 255, 255, 0),rgba(2, 127, 211, 0))',
                   'radial-gradient(circle,rgb(0, 0, 0),rgba(255, 255, 255, 0))'],
               }
             }
@@ -528,13 +528,13 @@ let GeneralMoreAboutBluePrint = {
       Type:'div',
       Style:{
         position:'absolute',
-        width:{'Mobile':{'Portrait':'25%','Landscape':'25%'},'Pc':'5%'},
-        top:'14%',
+        width:{'Mobile':{'Portrait':'25%','Landscape':'25%'},'Pc':'20%'},
+        top:'2%',
         transform:'translate(-50%,-50%)',
-        height:{'Mobile':{'Portrait':'50%','Landscape':'50%'},'Pc':'7%'},
+        height:{'Mobile':{'Portrait':'50%','Landscape':'50%'},'Pc':'18%'},
          zIndex:'10',
-           backgroundImage:"url('./Images/Decoration1.png')",
-           left:'43%',
+           backgroundImage:"url('./Images/LineDecoration1.png')",
+           left:'61%',
            marginTop:'5%',
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
@@ -601,8 +601,8 @@ let GeneralMoreAboutBluePrint = {
               position:'absolute',
               top:'0%',
               //color:'rgb(21, 0, 114)',
-                 width:'50%',
-             //borderBottom:['solid 1px black','solid 1px white'],
+                 width:'100%',
+             borderBottom:['solid 1px black','solid 1px white'],
              paddingBottom:'0%',
               left:'15%',
               opacity:'0',
@@ -642,6 +642,26 @@ let GeneralMoreAboutBluePrint = {
         fontSize:{'Mobile':{'Portrait':'1rem','Lanscape':'1rem'},'Pc':'1rem'},
         },
         Childs:{
+           SecondTextTitle:{
+            Id:'SecondTextTitle',
+            Type:'div',
+            Text:'Especializações',
+            Style:{
+              position:'absolute',
+              opacity:'0',
+                   fontWeight: '800',
+                fontSize:{'Mobile':{'Portrait':'1rem','Lanscape':'1rem'},'Pc':'1.5rem'},
+                top:{'Mobile':{'Portrait':'2%','Lanscape':'2%'},'Pc':'-15%'},
+                  left:'35%',
+            },
+               Listener:{
+    UmbraViewportLogic:{
+      Action:UmbraAnimations.Active,
+      Params:['SlideForRightAnimation','SecondTextTitle'],
+
+    }
+   },
+          },
           SecondText:{
             Id:'SecondText',
             Type:'div',
@@ -833,6 +853,7 @@ let GeneralMoreAboutBluePrint = {
         fontSize:{'Mobile':{'Portrait':'1rem','Lanscape':'1rem'},'Pc':'2rem'},
         },
         Childs:{
+          
           SecondLetter:{
             Id:'SecondLetter',
             Type:'div',
@@ -841,8 +862,9 @@ let GeneralMoreAboutBluePrint = {
               top:'50%',
               left:'75%',
              // color:'rgb(109, 37, 116)',
-              width:'50%',
+              width:'100%',
               opacity:'0',
+              borderBottom:['solid 1px black','solid 1px white'],
              
               
               transform:'translate(-50%,-50%)',
@@ -880,6 +902,26 @@ let GeneralMoreAboutBluePrint = {
         fontSize:{'Mobile':{'Portrait':'1rem','Lanscape':'1rem'},'Pc':'1rem'},
         },
         Childs:{
+          ThirdTextTitle:{
+            Id:'ThirdTextTitle',
+            Type:'div',
+            Text:'Especializações',
+            Style:{
+              position:'absolute',
+              opacity:'0',
+                   fontWeight: '800',
+                fontSize:{'Mobile':{'Portrait':'1rem','Lanscape':'1rem'},'Pc':'1.5rem'},
+                top:{'Mobile':{'Portrait':'2%','Lanscape':'2%'},'Pc':'3%'},
+                  left:'40%',
+            },
+               Listener:{
+    UmbraViewportLogic:{
+      Action:UmbraAnimations.Active,
+      Params:['SlideForRightAnimation','ThirdTextTitle'],
+
+    }
+   },
+          },
           ThirdText:{
             Id:'ThirdText',
             Type:'div',
@@ -1004,13 +1046,13 @@ let GeneralMoreAboutBluePrint = {
         position:'absolute',
         display:'none',
         width:{'Mobile':{'Portrait':'25%','Landscape':'25%'},'Pc':'10%'},
-        top:'24%',
+        top:'-2000%',
         transform:'translate(-50%,-50%)',
         height:{'Mobile':{'Portrait':'50%','Landscape':'50%'},'Pc':'70%'},
          zIndex:'10',
            backgroundImage:"url('./Images/DecorationNew4.png')",
            left:'18%',
-           scale:'-1 1',
+           
            marginTop:'5%',
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
@@ -2492,7 +2534,7 @@ MainContainers:{
                 maxHeight:'100vh',
                 height:'10%',
                 scale:'0',
-                background:['radial-gradient(circle,rgba(240, 179, 255, 0.94),rgb(246, 246, 247),rgba(255, 255, 255, 0),rgba(2, 127, 211, 0))',
+                background:['radial-gradient(circle,rgba(234, 221, 238, 0.94),rgb(246, 246, 247),rgba(255, 255, 255, 0),rgba(2, 127, 211, 0))',
                   'radial-gradient(circle,rgb(0, 0, 0),rgba(255, 255, 255, 0))'],
               }
             }
