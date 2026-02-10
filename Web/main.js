@@ -571,7 +571,7 @@ let GeneralMoreAboutBluePrint = {
             }
            },
            left:'0%',
-           marginTop:{'Pc':'5%','Mobile':{'Portrait':'0%','Landscape':'5%'}},
+           marginTop:{'Pc':'5%','Mobile':{'Portrait':'-5%','Landscape':'5%'}},
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
         backgroundSize:'cover',
@@ -644,8 +644,8 @@ let GeneralMoreAboutBluePrint = {
       //border:'solid 1px black',
         textAlign:'start',
         paddingLeft:'5%',
-      
-        marginTop:{'Pc':'5%','Mobile':{'Portrait':'30%','Landscape':'5%'}},
+       zIndex:'20',
+        marginTop:{'Pc':'5%','Mobile':{'Portrait':'50%','Landscape':'5%'}},
        fontFamily: '"Google Sans Code", monospace',
             fontOpticalSizing: 'auto',
             fontWeight: '600',
