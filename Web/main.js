@@ -571,7 +571,7 @@ let GeneralMoreAboutBluePrint = {
             }
            },
            left:'0%',
-           marginTop:{'Pc':'5%','Mobile':{'Portrait':'-5%','Landscape':'5%'}},
+           marginTop:{'Pc':'5%','Mobile':{'Portrait':'-8%','Landscape':'5%'}},
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
         backgroundSize:'cover',
@@ -615,7 +615,7 @@ let GeneralMoreAboutBluePrint = {
                  width:'100%',
              borderBottom:['solid 1px black','solid 1px white'],
              paddingBottom:'0%',
-              left:'25%',
+              left:{'Pc':'15%','Mobile':{'Portrait':'50%','Landscape':'20%'}},
               opacity:'0',
                 // textShadow:'rgba(0,0,0,0.8) 5px 5px 5px',
               transform:'translate(-50%,-50%)'
@@ -645,7 +645,7 @@ let GeneralMoreAboutBluePrint = {
         textAlign:'start',
         paddingLeft:'5%',
        zIndex:'20',
-        marginTop:{'Pc':'5%','Mobile':{'Portrait':'50%','Landscape':'5%'}},
+        marginTop:{'Pc':'5%','Mobile':{'Portrait':'65%','Landscape':'5%'}},
        fontFamily: '"Google Sans Code", monospace',
             fontOpticalSizing: 'auto',
             fontWeight: '600',
@@ -680,9 +680,9 @@ let GeneralMoreAboutBluePrint = {
               position:'absolute',
               left:{'Pc':'30%','Mobile':{'Portrait':'4%','Landscape':'50%'}},
               opacity:'0',
-              fontSize:{'Mobile':{'Portrait':'1.1rem','Lanscape':'1rem'},'Pc':'1.1rem'},
+              fontSize:{'Mobile':{'Portrait':'0.7rem','Lanscape':'1rem'},'Pc':'1.1rem'},
               paddingLeft:'3%',
-              top:'-5%',
+              top:{'Pc':'-5%','Mobile':{'Portrait':'5%','Landscape':'5%'}},
               paddingRight:'2%',
               
               
@@ -716,10 +716,10 @@ let GeneralMoreAboutBluePrint = {
             Type:'div',
             Style:{
              position:'absolute',
-             top:'10%',
+             top:{'Pc':'10%','Mobile':{'Portrait':'35%','Landscape':'10%'}},,
             // color:'rgb(42, 96, 212)',
              fontSize:{'Mobile':'1.1rem','Pc':'1.5rem'},
-             left:'85%',
+             left:{'Pc':'85%','Mobile':{'Portrait':'3%','Landscape':'85%'}},
              width:'40%',
              transform:'translate(-50%,-50%)',
              //borderBottom:'solid 1px black',
