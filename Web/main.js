@@ -536,7 +536,7 @@ let GeneralMoreAboutBluePrint = {
       Style:{
         position:'absolute',
         width:{'Mobile':{'Portrait':'44%','Landscape':'25%'},'Pc':'20%'},
-        top:{'Mobile':{'Portrait':'6%','Landscape':'2%'},'Pc':'2%'},
+        top:{'Mobile':{'Portrait':'7%','Landscape':'2%'},'Pc':'2%'},
         transform:'translate(-50%,-50%)',
         height:{'Mobile':{'Portrait':'7%','Landscape':'50%'},'Pc':'18%'},
          zIndex:'10',
@@ -565,7 +565,11 @@ let GeneralMoreAboutBluePrint = {
           width:{'Mobile':{'Portrait':'100%','Landscape':'100%'},'Pc':'100%'},
           height:{'Mobile':{'Portrait':'30%','Landscape':'30%'},'Pc':'78%'},
           zIndex:'3',
-           backgroundImage:["url('./Images/TeamBackgroundDeise.png')","url('./Images/TeamBackgroundDeise2.png')"],
+           backgroundImage:{'Pc':["url('./Images/TeamBackgroundDeise.png')","url('./Images/TeamBackgroundDeise2.png')"],
+            'Mobile':{'Portrait':["url('./Images/TeamBackgroundDeiseMobile.png')","url('./Images/TeamBackgroundDeise2Mobile.png')"],
+              'Landscape':["url('./Images/TeamBackgroundDeise.png')","url('./Images/TeamBackgroundDeise2.png')"]
+            }
+           },
            left:'0%',
            marginTop:'5%',
         backgroundRepeat:'no-repeat',
@@ -598,7 +602,7 @@ let GeneralMoreAboutBluePrint = {
             fontOpticalSizing: 'auto',
             fontWeight: '700',
             fontStyle: 'normal',
-        fontSize:{'Mobile':{'Portrait':'1rem','Landscape':'1rem'},'Pc':'2rem'},
+        fontSize:{'Mobile':{'Portrait':'1.4rem','Landscape':'1rem'},'Pc':'2rem'},
         },
         Childs:{
           FirstLetter:{
@@ -611,7 +615,7 @@ let GeneralMoreAboutBluePrint = {
                  width:'100%',
              borderBottom:['solid 1px black','solid 1px white'],
              paddingBottom:'0%',
-              left:'15%',
+              left:'25%',
               opacity:'0',
                 // textShadow:'rgba(0,0,0,0.8) 5px 5px 5px',
               transform:'translate(-50%,-50%)'
