@@ -383,7 +383,7 @@ let GeneralMoreAboutBluePrint = {
           height:{'Mobile':{'Portrait':'50%','Landscape':'26%'},'Pc':'100%'},
           zIndex:'3',
            backgroundImage:{'Pc':"url('./Images/LogoBackground.png')",'Mobile':{'Portrait':"url('./Images/LogoBackgroundMobile.png')",'Landscape':"url('./Images/LogoBackground.png')"}},
-           marginTop:{'Pc':'-5%','Mobile'{'Portrait':'-8%','Landscape':'-5%'}},
+           marginTop:{'Pc':'-5%','Mobile':{'Portrait':'-8%','Landscape':'-5%'}},
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
         backgroundSize:'cover',
