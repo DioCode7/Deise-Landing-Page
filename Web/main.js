@@ -485,7 +485,7 @@ let GeneralMoreAboutBluePrint = {
               top:'50%',
               
               //borderBottom:['solid 1px black','solid 1px white'],
-              width:{'Pc':'40%','Mobile':'50%'},
+              width:{'Pc':'40%','Mobile':'60%'},
               left:'50%',
               opacity:'0',
                 // textShadow:'rgba(0,0,0,0.8) 5px 5px 5px',
@@ -535,8 +535,8 @@ let GeneralMoreAboutBluePrint = {
       Type:'div',
       Style:{
         position:'absolute',
-        width:{'Mobile':{'Portrait':'34%','Landscape':'25%'},'Pc':'20%'},
-        top:{'Mobile':{'Portrait':'9%','Landscape':'2%'},'Pc':'2%'},
+        width:{'Mobile':{'Portrait':'39%','Landscape':'25%'},'Pc':'20%'},
+        top:{'Mobile':{'Portrait':'7%','Landscape':'2%'},'Pc':'2%'},
         transform:'translate(-50%,-50%)',
         height:{'Mobile':{'Portrait':'7%','Landscape':'50%'},'Pc':'18%'},
          zIndex:'10',
