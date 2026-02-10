@@ -422,7 +422,7 @@ let GeneralMoreAboutBluePrint = {
     Style:{
        position:'relative',
       display:'block',
-      marginTop:{'Pc':'0%','Mobile':{'Portrait':'-95%','Landscape':'0%'}},
+      marginTop:{'Pc':'0%','Mobile':{'Portrait':'-140%','Landscape':'0%'}},
       //border:'solid 1px black',
       height:{'Mobile':{'Portrait':'200vh','Landscape':'200vw'},'Pc':'110vh'},
     },
@@ -485,7 +485,7 @@ let GeneralMoreAboutBluePrint = {
               top:'50%',
               
               //borderBottom:['solid 1px black','solid 1px white'],
-              width:'40%',
+              width:{'Pc':'40%','Mobile':'50%'},
               left:'50%',
               opacity:'0',
                 // textShadow:'rgba(0,0,0,0.8) 5px 5px 5px',
@@ -535,10 +535,10 @@ let GeneralMoreAboutBluePrint = {
       Type:'div',
       Style:{
         position:'absolute',
-        width:{'Mobile':{'Portrait':'25%','Landscape':'25%'},'Pc':'20%'},
+        width:{'Mobile':{'Portrait':'50%','Landscape':'25%'},'Pc':'20%'},
         top:'2%',
         transform:'translate(-50%,-50%)',
-        height:{'Mobile':{'Portrait':'50%','Landscape':'50%'},'Pc':'18%'},
+        height:{'Mobile':{'Portrait':'17%','Landscape':'50%'},'Pc':'18%'},
          zIndex:'10',
            backgroundImage:"url('./Images/LineDecoration1.png')",
            left:'61%',
