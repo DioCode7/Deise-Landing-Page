@@ -422,7 +422,7 @@ let GeneralMoreAboutBluePrint = {
     Style:{
        position:'relative',
       display:'block',
-      
+      marginTop:{'Pc':'0%','Mobile':{'Portrait':'-40%','Landscape':'0%'}},
       //border:'solid 1px black',
       height:{'Mobile':{'Portrait':'200vh','Landscape':'200vw'},'Pc':'110vh'},
     },
