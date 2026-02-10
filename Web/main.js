@@ -34,7 +34,7 @@ let GeneralMoreAboutBluePrint = {
         display:'inline-block',
         width:'100%',
         backgroundColor:['white','black'],
-        height:{"Mobile":{'Portrait':'15vh','Landscape':'25%'},"Pc":"15vh"},
+        height:{"Mobile":{'Portrait':'10vh','Landscape':'25%'},"Pc":"15vh"},
        // borderBottom:['dashed 1px black','dashed 1px white'],
         //boxShadow:"0px 6px 6px rgba(0,0,0,0.8)",
        /*  backgroundImage:{'Pc':
@@ -51,8 +51,8 @@ let GeneralMoreAboutBluePrint = {
         Style:{
             position:'relative',
         display:'flex',
-        width:{'Mobile':{'Portrait':'30vw','Landscape':'30vh'},'Pc':'20%'},
-        height:{'Pc':'170%',Mobile:{'Portrait':'100%','Landscape':'150%'}},
+        width:{'Mobile':{'Portrait':'30%','Landscape':'30vh'},'Pc':'20%'},
+        height:{'Pc':'140%',Mobile:{'Portrait':'100%','Landscape':'150%'}},
         left:'50%',
         top:'50%',
         transform:'translate(-50%,-50%)',
