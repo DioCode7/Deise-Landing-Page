@@ -510,10 +510,11 @@ let GeneralMoreAboutBluePrint = {
       Style:{
         position:'absolute',
         width:{'Mobile':{'Portrait':'50%','Landscape':'25%'},'Pc':'25%'},
-        top:{'Pc':'70%','Mobile':{'Portrait':'50%','Landscape':'70%'}},
+        top:{'Pc':'70%','Mobile':{'Portrait':'55%','Landscape':'70%'}},
         height:{'Mobile':{'Portrait':'10%','Landscape':'50%'},'Pc':'50%'},
          zIndex:'10',
-           backgroundImage:"url('./Images/DecorationNew2.png')",
+         
+           backgroundImage:{'Pc':"url('./Images/DecorationNew2.png')",'Mobile':{'Portrait':"url('./Images/DecorationNew2Mobile.png')",'Landscape':"url('./Images/DecorationNew2.png')"},
            left:{'Pc':'-3%','Mobile':{'Portrait':'65%','Landscape':'-3%'}},
            marginTop:'15%',
         backgroundRepeat:'no-repeat',
@@ -568,7 +569,7 @@ let GeneralMoreAboutBluePrint = {
            backgroundImage:{'Pc':["url('./Images/TeamBackgroundDeise.png')","url('./Images/TeamBackgroundDeise2.png')"],
             'Mobile':{'Portrait':["url('./Images/TeamBackgroundDeiseMobile.png')","url('./Images/TeamBackgroundDeise2Mobile.png')"],
               'Landscape':["url('./Images/TeamBackgroundDeise.png')","url('./Images/TeamBackgroundDeise2.png')"]
-            }
+            }}
            },
            left:'0%',
            marginTop:{'Pc':'5%','Mobile':{'Portrait':'-8%','Landscape':'5%'}},
@@ -826,7 +827,7 @@ let GeneralMoreAboutBluePrint = {
         Style:{
             position:'absolute',
           width:{'Mobile':{'Portrait':'100%','Landscape':'100%'},'Pc':'100%'},
-          height:{'Mobile':{'Portrait':'30%','Landscape':'30%'},'Pc':'70%'},
+          height:{'Mobile':{'Portrait':'60%','Landscape':'30%'},'Pc':'70%'},
           zIndex:'3',
            backgroundImage:{'Pc':["url('./Images/TeamBackgroundTais.png')","url('./Images/TeamBackgroundTais2.png')"],
             'Mobile':{'Portrait':["url('./Images/TeamBackgroundTaisMobile.png')","url('./Images/TeamBackgroundTais2Mobile.png')"],
@@ -914,7 +915,7 @@ let GeneralMoreAboutBluePrint = {
             fontOpticalSizing: 'auto',
             fontWeight: '600',
             fontStyle: 'normal',
-        fontSize:{'Mobile':{'Portrait':'1rem','Lanscape':'1rem'},'Pc':'1rem'},
+        fontSize:{'Mobile':{'Portrait':'0.7rem','Lanscape':'1rem'},'Pc':'1rem'},
         },
         Childs:{
           ThirdTextTitle:{
