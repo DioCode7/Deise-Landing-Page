@@ -535,8 +535,8 @@ let GeneralMoreAboutBluePrint = {
       Type:'div',
       Style:{
         position:'absolute',
-        width:{'Mobile':{'Portrait':'30%','Landscape':'25%'},'Pc':'20%'},
-        top:'2%',
+        width:{'Mobile':{'Portrait':'34%','Landscape':'25%'},'Pc':'20%'},
+        top:{'Mobile':{'Portrait':'9%','Landscape':'2%'},'Pc':'2%'},
         transform:'translate(-50%,-50%)',
         height:{'Mobile':{'Portrait':'7%','Landscape':'50%'},'Pc':'18%'},
          zIndex:'10',
