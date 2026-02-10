@@ -535,7 +535,7 @@ let GeneralMoreAboutBluePrint = {
       Type:'div',
       Style:{
         position:'absolute',
-        width:{'Mobile':{'Portrait':'47%','Landscape':'25%'},'Pc':'20%'},
+        width:{'Mobile':{'Portrait':'52%','Landscape':'25%'},'Pc':'20%'},
         top:{'Mobile':{'Portrait':'7%','Landscape':'2%'},'Pc':'2%'},
         transform:'translate(-50%,-50%)',
         height:{'Mobile':{'Portrait':'7%','Landscape':'50%'},'Pc':'18%'},
@@ -571,7 +571,7 @@ let GeneralMoreAboutBluePrint = {
             }
            },
            left:'0%',
-           marginTop:'5%',
+           marginTop:{'Pc':'5%','Mobile':{'Portrait':'0%','Landscape':'5%'}},
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
         backgroundSize:'cover',
@@ -645,7 +645,7 @@ let GeneralMoreAboutBluePrint = {
         textAlign:'start',
         paddingLeft:'5%',
       
-        marginTop:'5%',
+        marginTop:{'Pc':'5%','Mobile':{'Portrait':'30%','Landscape':'5%'}},
        fontFamily: '"Google Sans Code", monospace',
             fontOpticalSizing: 'auto',
             fontWeight: '600',
@@ -678,9 +678,9 @@ let GeneralMoreAboutBluePrint = {
             Type:'div',
             Style:{
               position:'absolute',
-              left:'30%',
+              left:{'Pc':'30%','Mobile':{'Portrait':'4%','Landscape':'50%'}},
               opacity:'0',
-              fontSize:{'Mobile':{'Portrait':'1rem','Lanscape':'1rem'},'Pc':'1.1rem'},
+              fontSize:{'Mobile':{'Portrait':'1.1rem','Lanscape':'1rem'},'Pc':'1.1rem'},
               paddingLeft:'3%',
               top:'-5%',
               paddingRight:'2%',
