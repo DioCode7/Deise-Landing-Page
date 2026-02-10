@@ -259,7 +259,8 @@ let GeneralMoreAboutBluePrint = {
         display:'inline-block',
         width:{'Mobile':{'Portrait':'42vw','Landscape':'30vh'},'Pc':'20%'},
         height:{'Mobile':{'Portrait':'130%','Landscape':'130%'},'Pc':'100%'},
-        marginLeft:'-5%',
+        marginLeft:{'Mobile':{'Portrait':'-4%','Landscape':'-4%'},'Pc':'-5%'},
+          marginTop:{'Mobile':{'Portrait':'-6%','Landscape':'-6%'},'Pc':'0%'},
          backgroundImage:"url('./Images/EspaçoRessignificarLogo1.png')",
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
@@ -393,7 +394,7 @@ let GeneralMoreAboutBluePrint = {
         Type:'div',
         Style:{
           position:'absolute',
-          top:{'Mobile':{'Portrait':'5%','Landscape':'10%'},'Pc':'10%'},
+          top:{'Mobile':{'Portrait':'7%','Landscape':'10%'},'Pc':'10%'},
           left:{'Mobile':{'Portrait':'10%','Landscape':'10%'},'Pc':'5%'},
           fontFamily: "'Delius', cursive",
           fontWeight: '600',
