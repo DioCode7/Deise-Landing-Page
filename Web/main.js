@@ -514,7 +514,7 @@ let GeneralMoreAboutBluePrint = {
         height:{'Mobile':{'Portrait':'10%','Landscape':'50%'},'Pc':'50%'},
          zIndex:'10',
          
-           backgroundImage:{'Pc':"url('./Images/DecorationNew2.png')",'Mobile':{'Portrait':"url('./Images/DecorationNew2Mobile.png')",'Landscape':"url('./Images/DecorationNew2.png')"},
+           backgroundImage:{'Pc':"url('./Images/DecorationNew2.png')",'Mobile':{'Portrait':"url('./Images/DecorationNew2Mobile.png')",'Landscape':"url('./Images/DecorationNew2.png')"}},
            left:{'Pc':'-3%','Mobile':{'Portrait':'65%','Landscape':'-3%'}},
            marginTop:'15%',
         backgroundRepeat:'no-repeat',
@@ -529,7 +529,7 @@ let GeneralMoreAboutBluePrint = {
       Params:['SlideForRightAnimation','Decoration2'],
 
     }
-   },
+   
       },
        Decoration4:{
       Id:'Decoration4',
