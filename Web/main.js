@@ -716,7 +716,7 @@ let GeneralMoreAboutBluePrint = {
             Type:'div',
             Style:{
              position:'absolute',
-             top:{'Pc':'10%','Mobile':{'Portrait':'35%','Landscape':'10%'}},,
+             top:{'Pc':'10%','Mobile':{'Portrait':'35%','Landscape':'10%'}},
             // color:'rgb(42, 96, 212)',
              fontSize:{'Mobile':'1.1rem','Pc':'1.5rem'},
              left:{'Pc':'85%','Mobile':{'Portrait':'3%','Landscape':'85%'}},
