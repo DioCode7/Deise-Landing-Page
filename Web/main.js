@@ -51,7 +51,7 @@ let GeneralMoreAboutBluePrint = {
         Style:{
             position:'relative',
         display:'flex',
-        width:{'Mobile':{'Portrait':'30%','Landscape':'31%'},'Pc':'20%'},
+        width:{'Mobile':{'Portrait':'30%','Landscape':'13%'},'Pc':'20%'},
         height:{'Pc':'140%',Mobile:{'Portrait':'100%','Landscape':'150%'}},
         left:'50%',
         top:'50%',
@@ -257,7 +257,7 @@ let GeneralMoreAboutBluePrint = {
       Style:{
         position:'relative',
         display:'inline-block',
-        width:{'Mobile':{'Portrait':'42vw','Landscape':'32vh'},'Pc':'20%'},
+        width:{'Mobile':{'Portrait':'42vw','Landscape':'32vw'},'Pc':'20%'},
         height:{'Mobile':{'Portrait':'130%','Landscape':'260%'},'Pc':'100%'},
         marginLeft:{'Mobile':{'Portrait':'-4%','Landscape':'2%'},'Pc':'-5%'},
           marginTop:{'Mobile':{'Portrait':'-14%','Landscape':'0%'},'Pc':'0%'},
@@ -379,10 +379,10 @@ let GeneralMoreAboutBluePrint = {
         Style:{
           position:'relative',
           display:'inline-block',
-          width:{'Mobile':{'Portrait':'100%','Landscape':'92%'},'Pc':'100%'},
+          width:{'Mobile':{'Portrait':'100%','Landscape':'95%'},'Pc':'100%'},
           height:{'Mobile':{'Portrait':'30%','Landscape':'25%'},'Pc':'100%'},
           zIndex:'3',
-           backgroundImage:"url('./Images/LogoBackground.png')",
+           backgroundImage:{'Pc':"url('./Images/LogoBackground.png')",'Mobile':{'Portrait':"url('./Images/LogoBackgroundMobile.png')",'Landscape':"url('./Images/LogoBackground.png')"}},
            marginTop:'-5%',
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
