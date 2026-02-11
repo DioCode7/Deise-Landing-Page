@@ -827,7 +827,7 @@ let GeneralMoreAboutBluePrint = {
         Style:{
             position:'absolute',
           width:{'Mobile':{'Portrait':'100%','Landscape':'100%'},'Pc':'100%'},
-          height:{'Mobile':{'Portrait':'50%','Landscape':'30%'},'Pc':'70%'},
+          height:{'Mobile':{'Portrait':'90%','Landscape':'30%'},'Pc':'70%'},
           zIndex:'3',
            backgroundImage:{'Pc':["url('./Images/TeamBackgroundTais.png')","url('./Images/TeamBackgroundTais2.png')"],
             'Mobile':{'Portrait':["url('./Images/TeamBackgroundTaisMobile.png')","url('./Images/TeamBackgroundTais2Mobile.png')"],
@@ -930,7 +930,7 @@ let GeneralMoreAboutBluePrint = {
                    fontWeight: '800',
                 fontSize:{'Mobile':{'Portrait':'1rem','Lanscape':'1rem'},'Pc':'1.5rem'},
                 top:{'Mobile':{'Portrait':'2%','Lanscape':'2%'},'Pc':'3%'},
-                  left:'40%',
+                  left:{'Pc':'40%','Mobile':{'Portrait':'15%','Landscape':'40%'}},
             },
                Listener:{
     UmbraViewportLogic:{
@@ -972,7 +972,7 @@ let GeneralMoreAboutBluePrint = {
             Type:'div',
             Style:{
              position:'absolute',
-             top:{'Pc':'55%','Mobile':{'Portrait':'30%','Landscape':'55%'}},
+             top:{'Pc':'55%','Mobile':{'Portrait':'45%','Landscape':'55%'}},
              // color:'rgb(42, 96, 212)',
                 fontSize:{'Mobile':'1.1rem','Pc':'1.5rem'},
              left:{'Pc':'51%','Mobile':{'Portrait':'32%','Landscape':'51%'}},
@@ -995,7 +995,7 @@ let GeneralMoreAboutBluePrint = {
             Type:'div',
             Style:{
                position:'absolute',
-             top:{'Pc':'60%','Mobile':{'Portrait':'35%','Landscape':'60%'}},
+             top:{'Pc':'60%','Mobile':{'Portrait':'50%','Landscape':'60%'}},
              left:{'Pc':'51%','Mobile':{'Portrait':'25%','Landscape':'51%'}},
              opacity:'0',
              lineHeight:'2',
