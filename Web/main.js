@@ -422,7 +422,7 @@ let GeneralMoreAboutBluePrint = {
     Style:{
        position:'relative',
       display:'block',
-      marginTop:{'Pc':'0%','Mobile':{'Portrait':'-190%','Landscape':'-100%'}},
+      marginTop:{'Pc':'0%','Mobile':{'Portrait':'-190%','Landscape':'-130%'}},
       //border:'solid 1px black',
       height:{'Mobile':{'Portrait':'200vh','Landscape':'200vw'},'Pc':'110vh'},
     },
@@ -536,10 +536,10 @@ let GeneralMoreAboutBluePrint = {
       Type:'div',
       Style:{
         position:'absolute',
-        width:{'Mobile':{'Portrait':'52%','Landscape':'10%'},'Pc':'20%'},
+        width:{'Mobile':{'Portrait':'52%','Landscape':'13%'},'Pc':'20%'},
         top:{'Mobile':{'Portrait':'7%','Landscape':'2%'},'Pc':'2%'},
         transform:'translate(-50%,-50%)',
-        height:{'Mobile':{'Portrait':'7%','Landscape':'20%'},'Pc':'18%'},
+        height:{'Mobile':{'Portrait':'7%','Landscape':'15%'},'Pc':'18%'},
          zIndex:'10',
            backgroundImage:"url('./Images/LineDecoration1.png')",
            left:{'Pc':'61%','Mobile':{'Portrait':'65%','Landscape':'61%'}},
@@ -564,7 +564,7 @@ let GeneralMoreAboutBluePrint = {
         Style:{
             position:'absolute',
           width:{'Mobile':{'Portrait':'100%','Landscape':'100%'},'Pc':'100%'},
-          height:{'Mobile':{'Portrait':'60%','Landscape':'30%'},'Pc':'78%'},
+          height:{'Mobile':{'Portrait':'60%','Landscape':'20%'},'Pc':'78%'},
           zIndex:'3',
            backgroundImage:{'Pc':["url('./Images/TeamBackgroundDeise.png')","url('./Images/TeamBackgroundDeise2.png')"],
             'Mobile':{'Portrait':["url('./Images/TeamBackgroundDeiseMobile.png')","url('./Images/TeamBackgroundDeise2Mobile.png')"],
@@ -663,7 +663,7 @@ let GeneralMoreAboutBluePrint = {
               opacity:'0',
                    fontWeight: '800',
                 fontSize:{'Mobile':{'Portrait':'1rem','Lanscape':'1rem'},'Pc':'1.5rem'},
-                top:{'Mobile':{'Portrait':'2%','Lanscape':'2%'},'Pc':'-15%'},
+                top:{'Mobile':{'Portrait':'2%','Lanscape':'-15%'},'Pc':'-15%'},
                   left:'35%',
             },
                Listener:{
@@ -683,7 +683,7 @@ let GeneralMoreAboutBluePrint = {
               opacity:'0',
               fontSize:{'Mobile':{'Portrait':'0.7rem','Lanscape':'1rem'},'Pc':'1.1rem'},
               paddingLeft:'3%',
-              top:{'Pc':'-5%','Mobile':{'Portrait':'5%','Landscape':'5%'}},
+              top:{'Pc':'-5%','Mobile':{'Portrait':'5%','Landscape':'-10%'}},
               paddingRight:'2%',
               
               
