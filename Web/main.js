@@ -780,7 +780,7 @@ let GeneralMoreAboutBluePrint = {
       display:'block',
       marginTop:{'Pc':'10%','Mobile':{'Portrait':'-100%','Landscape':'10%'}},
       //border:'solid 1px black',
-      height:{'Mobile':{'Portrait':'120vh','Landscape':'200vw'},'Pc':'110vh'},
+      height:{'Mobile':{'Portrait':'90vh','Landscape':'200vw'},'Pc':'110vh'},
     },
     Childs:{
       BackgroundDecoration:{
