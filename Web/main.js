@@ -1036,7 +1036,7 @@ let GeneralMoreAboutBluePrint = {
       Style:{
         position:'absolute',
         top:'10%',
-        height:{'Mobile':{'Portrait':'70%','Landscape':'50%'},'Pc':'70%'},
+        height:{'Mobile':{'Portrait':'85%','Landscape':'50%'},'Pc':'70%'},
          zIndex:'10',
          width:'100%',
          backgroundImage:{'Pc':"url('./Images/DecorationNew4.png')",'Mobile':{'Portrait':"url('./Images/DecorationNew4Mobile.png')",'Landscape':"url('./Images/DecorationNew4.png')"}},
