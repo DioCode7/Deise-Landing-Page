@@ -1065,7 +1065,7 @@ let GeneralMoreAboutBluePrint = {
         position:'absolute',
         display:'none',
         width:{'Mobile':{'Portrait':'100%','Landscape':'25%'},'Pc':'10%'},
-        top:'-2000%',
+        top:{'Pc':'-2000%','Mobile':{'Portrait':'0%','Landscape':'-2000%'}},
         transform:'translate(-50%,-50%)',
         height:{'Mobile':{'Portrait':'70%','Landscape':'50%'},'Pc':'70%'},
          zIndex:'10',
