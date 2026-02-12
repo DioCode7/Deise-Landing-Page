@@ -4388,7 +4388,7 @@ MainContainers:{
        opacity:'0',
       fontStyle: 'normal',
       left:{'Mobile':{'Portrait':'33%','Landscape':'30%'},'Pc':'15%'},
-      top:{'Mobile':{'Portrait':'56%','Landscape':'60%'},'Pc':'46%'},
+      top:{'Mobile':{'Portrait':'56%','Landscape':'56%'},'Pc':'46%'},
       },
       Text:`Minha Biografia!`,
       Listener:{
@@ -4445,9 +4445,9 @@ MainContainers:{
       fontWeight: '600',
       fontStyle: 'normal',
        opacity:'0',
-      left:{'Mobile':{'Portrait':'5%','Landscape':'10%'},'Pc':'10%'},
+      left:{'Mobile':{'Portrait':'5%','Landscape':'5%'},'Pc':'10%'},
       width:{'Pc':'60%','Mobile':{'Portrait':'95%','Landscape':'95%'}},
-      top:{'Mobile':{'Portrait':'60%','Landscape':'65%'},'Pc':'53%'},
+      top:{'Mobile':{'Portrait':'60%','Landscape':'61%'},'Pc':'53%'},
 
     },
     Listener:{
