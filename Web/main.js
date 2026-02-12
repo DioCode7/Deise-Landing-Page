@@ -510,8 +510,8 @@ let GeneralMoreAboutBluePrint = {
       Style:{
         position:'absolute',
         width:{'Mobile':{'Portrait':'50%','Landscape':'25%'},'Pc':'25%'},
-        top:{'Pc':'70%','Mobile':{'Portrait':'55%','Landscape':'70%'}},
-        height:{'Mobile':{'Portrait':'10%','Landscape':'50%'},'Pc':'50%'},
+        top:{'Pc':'70%','Mobile':{'Portrait':'55%','Landscape':'25%'}},
+        height:{'Mobile':{'Portrait':'10%','Landscape':'10%'},'Pc':'50%'},
          zIndex:'10',
            backgroundImage:{'Pc':"url('./Images/DecorationNew2.png')",'Mobile':{'Portrait':"url('./Images/DecorationNew2Mobile.png')",'Landscape':"url('./Images/DecorationNew2.png')"}},
            left:{'Pc':'-3%','Mobile':{'Portrait':'65%','Landscape':'-3%'}},
@@ -536,8 +536,8 @@ let GeneralMoreAboutBluePrint = {
       Type:'div',
       Style:{
         position:'absolute',
-        width:{'Mobile':{'Portrait':'52%','Landscape':'24%'},'Pc':'20%'},
-        top:{'Mobile':{'Portrait':'7%','Landscape':'8%'},'Pc':'2%'},
+        width:{'Mobile':{'Portrait':'52%','Landscape':'29%'},'Pc':'20%'},
+        top:{'Mobile':{'Portrait':'7%','Landscape':'6%'},'Pc':'2%'},
         transform:'translate(-50%,-50%)',
         height:{'Mobile':{'Portrait':'7%','Landscape':'10%'},'Pc':'18%'},
          zIndex:'10',
@@ -743,7 +743,7 @@ let GeneralMoreAboutBluePrint = {
             Type:'div',
             Style:{
                position:'absolute',
-             top:{'Pc':'27%','Mobile':{'Portrait':'46%','Landscape':'-16%'}},
+             top:{'Pc':'27%','Mobile':{'Portrait':'46%','Landscape':'-5%'}},
              textAlign:'start',
              left:{'Pc':'85%','Mobile':{'Portrait':'42%','Landscape':'80%'}},
              width:{'Pc':'40%','Mobile':{'Portrait':'55%','Landscape':'40%'}},
@@ -778,9 +778,9 @@ let GeneralMoreAboutBluePrint = {
     Style:{
        position:'relative',
       display:'block',
-      marginTop:{'Pc':'10%','Mobile':{'Portrait':'-100%','Landscape':'10%'}},
-      //border:'solid 1px black',
-      height:{'Mobile':{'Portrait':'90vh','Landscape':'200vw'},'Pc':'110vh'},
+      marginTop:{'Pc':'10%','Mobile':{'Portrait':'-100%','Landscape':'-100%'}},
+      border:'solid 1px black',
+      height:{'Mobile':{'Portrait':'90vh','Landscape':'90vh'},'Pc':'110vh'},
     },
     Childs:{
       BackgroundDecoration:{
