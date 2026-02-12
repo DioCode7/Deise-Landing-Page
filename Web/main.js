@@ -446,7 +446,7 @@ let GeneralMoreAboutBluePrint = {
             fontWeight: '700',
             fontStyle: 'normal',
           fontStyle: 'normal',
-        fontSize:{'Mobile':{'Portrait':'1.3rem','Lanscape':'1rem'},'Pc':'2rem'},
+        fontSize:{'Mobile':{'Portrait':'1.3rem','Lanscape':'1.3rem'},'Pc':'2rem'},
         },
         Childs:{
             Decoration3:{
@@ -539,7 +539,7 @@ let GeneralMoreAboutBluePrint = {
         width:{'Mobile':{'Portrait':'52%','Landscape':'20%'},'Pc':'20%'},
         top:{'Mobile':{'Portrait':'7%','Landscape':'2%'},'Pc':'2%'},
         transform:'translate(-50%,-50%)',
-        height:{'Mobile':{'Portrait':'7%','Landscape':'15%'},'Pc':'18%'},
+        height:{'Mobile':{'Portrait':'7%','Landscape':'11%'},'Pc':'18%'},
          zIndex:'10',
            backgroundImage:"url('./Images/LineDecoration1.png')",
            left:{'Pc':'61%','Mobile':{'Portrait':'65%','Landscape':'61%'}},
@@ -679,9 +679,9 @@ let GeneralMoreAboutBluePrint = {
             Type:'div',
             Style:{
               position:'absolute',
-              left:{'Pc':'30%','Mobile':{'Portrait':'4%','Landscape':'25%'}},
+              left:{'Pc':'30%','Mobile':{'Portrait':'4%','Landscape':'30%'}},
               opacity:'0',
-              fontSize:{'Mobile':{'Portrait':'0.7rem','Lanscape':'1rem'},'Pc':'1.1rem'},
+              fontSize:{'Mobile':{'Portrait':'0.7rem','Lanscape':'0.7rem'},'Pc':'1.1rem'},
               paddingLeft:'3%',
               top:{'Pc':'-5%','Mobile':{'Portrait':'5%','Landscape':'-10%'}},
               paddingRight:'2%',
@@ -743,9 +743,9 @@ let GeneralMoreAboutBluePrint = {
             Type:'div',
             Style:{
                position:'absolute',
-             top:{'Pc':'27%','Mobile':{'Portrait':'46%','Landscape':'27%'}},
+             top:{'Pc':'27%','Mobile':{'Portrait':'46%','Landscape':'16%'}},
              textAlign:'start',
-             left:{'Pc':'85%','Mobile':{'Portrait':'42%','Landscape':'85%'}},
+             left:{'Pc':'85%','Mobile':{'Portrait':'42%','Landscape':'80%'}},
              width:{'Pc':'40%','Mobile':{'Portrait':'55%','Landscape':'40%'}},
              opacity:'0',
              lineHeight:'2',
