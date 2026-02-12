@@ -4256,7 +4256,7 @@ MainContainers:{
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
         backgroundSize:'cover',
-       width:{'Mobile':{'Portrait':'15%','Landscape':'10%'},'Pc':'5%'},
+       width:{'Mobile':{'Portrait':'15%','Landscape':'7%'},'Pc':'5%'},
         height:{'Mobile':{'Portrait':'3.1%','Landscape':'7%'},'Pc':'5%'},
          opacity:'0',
         zIndex:'10',
@@ -4306,7 +4306,7 @@ MainContainers:{
       Type:`div`,
       Style:{
          whiteSpace:'pre-line',
-            fontSize:{'Mobile':{'Portrait':'0.9rem','Landscape':'1.2rem'},'Pc':'1.3rem'},
+            fontSize:{'Mobile':{'Portrait':'0.9rem','Landscape':'0.8rem'},'Pc':'1.3rem'},
             lineHeight:{'Mobile':'1.1','Pc':'1.1'},
           fontFamily: '"Google Sans Code", monospace',
        fontOpticalSizing: 'auto',
@@ -4388,7 +4388,7 @@ MainContainers:{
        opacity:'0',
       fontStyle: 'normal',
       left:{'Mobile':{'Portrait':'33%','Landscape':'30%'},'Pc':'15%'},
-      top:{'Mobile':{'Portrait':'56%','Landscape':'65%'},'Pc':'46%'},
+      top:{'Mobile':{'Portrait':'56%','Landscape':'60%'},'Pc':'46%'},
       },
       Text:`Minha Biografia!`,
       Listener:{
@@ -4446,8 +4446,8 @@ MainContainers:{
       fontStyle: 'normal',
        opacity:'0',
       left:{'Mobile':{'Portrait':'5%','Landscape':'10%'},'Pc':'10%'},
-      width:{'Pc':'60%','Mobile':{'Portrait':'95%','Landscape':'55%'}},
-      top:{'Mobile':{'Portrait':'60%','Landscape':'70%'},'Pc':'53%'},
+      width:{'Pc':'60%','Mobile':{'Portrait':'95%','Landscape':'95%'}},
+      top:{'Mobile':{'Portrait':'60%','Landscape':'65%'},'Pc':'53%'},
 
     },
     Listener:{
