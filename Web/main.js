@@ -510,8 +510,8 @@ let GeneralMoreAboutBluePrint = {
       Style:{
         position:'absolute',
         width:{'Mobile':{'Portrait':'50%','Landscape':'25%'},'Pc':'25%'},
-        top:{'Pc':'70%','Mobile':{'Portrait':'55%','Landscape':'31%'}},
-        height:{'Mobile':{'Portrait':'10%','Landscape':'30%'},'Pc':'50%'},
+        top:{'Pc':'70%','Mobile':{'Portrait':'55%','Landscape':'70%'}},
+        height:{'Mobile':{'Portrait':'10%','Landscape':'40%'},'Pc':'50%'},
          zIndex:'10',
            backgroundImage:{'Pc':"url('./Images/DecorationNew2.png')",'Mobile':{'Portrait':"url('./Images/DecorationNew2Mobile.png')",'Landscape':"url('./Images/DecorationNew2.png')"}},
            left:{'Pc':'-3%','Mobile':{'Portrait':'65%','Landscape':'-3%'}},
@@ -681,7 +681,7 @@ let GeneralMoreAboutBluePrint = {
               position:'absolute',
               left:{'Pc':'30%','Mobile':{'Portrait':'4%','Landscape':'30%'}},
               opacity:'0',
-              fontSize:{'Mobile':{'Portrait':'0.7rem','Landscape':'0.4rem'},'Pc':'1.1rem'},
+              fontSize:{'Mobile':{'Portrait':'0.7rem','Landscape':'0.6rem'},'Pc':'1.1rem'},
               paddingLeft:'3%',
               top:{'Pc':'-5%','Mobile':{'Portrait':'5%','Landscape':'0%'}},
               paddingRight:'2%',
@@ -743,7 +743,7 @@ let GeneralMoreAboutBluePrint = {
             Type:'div',
             Style:{
                position:'absolute',
-             top:{'Pc':'27%','Mobile':{'Portrait':'46%','Landscape':'3%'}},
+             top:{'Pc':'27%','Mobile':{'Portrait':'46%','Landscape':'8%'}},
              textAlign:'start',
              left:{'Pc':'85%','Mobile':{'Portrait':'42%','Landscape':'75%'}},
              width:{'Pc':'40%','Mobile':{'Portrait':'55%','Landscape':'30%'}},
@@ -1025,7 +1025,7 @@ let GeneralMoreAboutBluePrint = {
     Style:{
  position:'relative',
       display:'block',
-      height:{'Mobile':{'Portrait':'20vh','Landscape':'20vw'},'Pc':'30vh'},
+      height:{'Mobile':{'Portrait':'20vh','Landscape':'45vh'},'Pc':'30vh'},
      
 
     },
