@@ -340,8 +340,8 @@ let GeneralMoreAboutBluePrint = {
     Style:{
       position:'relative',
       display:'block',
-      //border:'solid 1px black',
-      height:{'Mobile':{'Portrait':'200vh','Landscape':'200vw'},'Pc':'80vh'},
+      border:'solid 1px black',
+      height:{'Mobile':{'Portrait':'200vh','Landscape':'80vh'},'Pc':'80vh'},
      
     },
     Childs:{
@@ -422,7 +422,7 @@ let GeneralMoreAboutBluePrint = {
     Style:{
        position:'relative',
       display:'block',
-      marginTop:{'Pc':'0%','Mobile':{'Portrait':'-190%','Landscape':'-150%'}},
+      marginTop:{'Pc':'0%','Mobile':{'Portrait':'-190%','Landscape':'-0%'}},
      // border:'solid 1px black',
       height:{'Mobile':{'Portrait':'200vh','Landscape':'150vh'},'Pc':'110vh'},
     },
@@ -510,7 +510,7 @@ let GeneralMoreAboutBluePrint = {
       Style:{
         position:'absolute',
         width:{'Mobile':{'Portrait':'50%','Landscape':'25%'},'Pc':'25%'},
-        top:{'Pc':'70%','Mobile':{'Portrait':'55%','Landscape':'70%'}},
+        top:{'Pc':'70%','Mobile':{'Portrait':'55%','Landscape':'57%'}},
         height:{'Mobile':{'Portrait':'10%','Landscape':'40%'},'Pc':'50%'},
          zIndex:'10',
            backgroundImage:{'Pc':"url('./Images/DecorationNew2.png')",'Mobile':{'Portrait':"url('./Images/DecorationNew2Mobile.png')",'Landscape':"url('./Images/DecorationNew2.png')"}},
@@ -539,7 +539,7 @@ let GeneralMoreAboutBluePrint = {
         width:{'Mobile':{'Portrait':'52%','Landscape':'20%'},'Pc':'20%'},
         top:{'Mobile':{'Portrait':'7%','Landscape':'3%'},'Pc':'2%'},
         transform:'translate(-50%,-50%)',
-        height:{'Mobile':{'Portrait':'7%','Landscape':'5%'},'Pc':'18%'},
+        height:{'Mobile':{'Portrait':'7%','Landscape':'8%'},'Pc':'18%'},
          zIndex:'10',
            backgroundImage:"url('./Images/LineDecoration1.png')",
            left:{'Pc':'61%','Mobile':{'Portrait':'65%','Landscape':'61%'}},
@@ -1036,7 +1036,7 @@ let GeneralMoreAboutBluePrint = {
       Style:{
         position:'absolute',
         top:'10%',
-        height:{'Mobile':{'Portrait':'85%','Landscape':'60%'},'Pc':'70%'},
+        height:{'Mobile':{'Portrait':'85%','Landscape':'66%'},'Pc':'70%'},
          zIndex:'10',
          width:'100%',
          backgroundImage:{'Pc':"url('./Images/DecorationNew4.png')",'Mobile':{'Portrait':"url('./Images/DecorationNew4Mobile.png')",'Landscape':"url('./Images/DecorationNew4.png')"}},
