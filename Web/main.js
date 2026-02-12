@@ -340,7 +340,7 @@ let GeneralMoreAboutBluePrint = {
     Style:{
       position:'relative',
       display:'block',
-      border:'solid 1px black',
+     // border:'solid 1px black',
       height:{'Mobile':{'Portrait':'200vh','Landscape':'130vh'},'Pc':'80vh'},
      
     },
@@ -395,7 +395,7 @@ let GeneralMoreAboutBluePrint = {
         Type:'div',
         Style:{
           position:'absolute',
-          top:{'Mobile':{'Portrait':'7%','Landscape':'4%'},'Pc':'10%'},
+          top:{'Mobile':{'Portrait':'7%','Landscape':'10%'},'Pc':'10%'},
           left:{'Mobile':{'Portrait':'10%','Landscape':'10%'},'Pc':'5%'},
           fontFamily: "'Delius', cursive",
           fontWeight: '600',
@@ -1094,6 +1094,7 @@ let GeneralMoreAboutBluePrint = {
       color:['black','white'],
       width:'100%',
       height:'9%',
+      marginTop:{'Pc':'0%','Mobile':{'Portrait':'0%','Landscape':'5%'}},
         textAlign:'center',
         paddingLeft:'5%',
         fontFamily: '"Google Sans Code", monospace',
