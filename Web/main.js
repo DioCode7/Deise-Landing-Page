@@ -341,7 +341,7 @@ let GeneralMoreAboutBluePrint = {
       position:'relative',
       display:'block',
       border:'solid 1px black',
-      height:{'Mobile':{'Portrait':'200vh','Landscape':'105vh'},'Pc':'80vh'},
+      height:{'Mobile':{'Portrait':'200vh','Landscape':'130vh'},'Pc':'80vh'},
      
     },
     Childs:{
@@ -1109,7 +1109,7 @@ let GeneralMoreAboutBluePrint = {
           STyle:{
             position:'absolute',
             left:'-35%',
-            top:{'Pc':'0%','Mobile':{'Portrait':'0%','Landscape':'170%'}},
+            top:{'Pc':'0%','Mobile':{'Portrait':'0%','Landscape':'400%'}},
             opacity:'0'
           
           },
