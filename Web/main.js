@@ -4275,7 +4275,7 @@ MainContainers:{
       Style:{
         position:'relative',
         width:{'Mobile':{'Portrait':'100%','Landscape':'100%'},Pc:'100%'},
-        height:{'Mobile':{'Portrait':'20%','Landscape':'30%'},Pc:'33%'},
+        height:{'Mobile':{'Portrait':'30%','Landscape':'30%'},Pc:'33%'},
         top:{'Mobile':'0%',Pc:'10%'},
         left:{'Mobile':'0%',Pc:'0%'},
         backgroundColor:['white','rgb(17,17,17)'],
@@ -4315,7 +4315,7 @@ MainContainers:{
           position:'absolute',
           fontStyle: 'normal',
           color:['black','white'],
-          left:{'Mobile':'45%','Pc':'20%'},
+          left:{'Mobile':{'Portrait':'15%','Landscape':'55%'},'Pc':'20%'},
           top:{'Mobile':'20%','Pc':'18%'},
            opacity:'0',
       },
