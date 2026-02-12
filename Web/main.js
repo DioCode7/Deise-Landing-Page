@@ -4197,13 +4197,14 @@ MainContainers:{
        marginTop:'-18%',
     left:'0%',
    //top:{'Mobile':'154%','Pc':'760%'},
-    height:{'Mobile':'210%','Pc':'260%'},
+    height:{'Mobile':'210%','Pc':{'Portrait':'100vh','Landscape':'150vh'}},
     width:'100%',
     zIndex:'13',
     backgroundColor:[`white`,'rgb(17,17,17)'],
-   
+    border:'solid 1px black',
+    
     //boxShadow:['rgba(0,0,0,0.4) 10px -10px 10px','rgba(0, 0, 0, 0.8) 10px -10px 10px'],
-    display:{'Mobile':'none','Pc':'flex'},
+    display:{'Mobile':'flex','Pc':'flex'},
     // backgroundImage:["url('./Images/GradientMinimalistLight.png')","url('./Images/GradientMinimalistDark.png')"],
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
