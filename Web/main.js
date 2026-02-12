@@ -4194,10 +4194,10 @@ MainContainers:{
     Type:'div',
     Style:{
        position:'relative',
-       marginTop:{'Pc':'-18%','Mobile':{'Portrait':'-150%','Landscape':'-16%'}},
+       marginTop:{'Pc':'-18%','Mobile':{'Portrait':'-150%','Landscape':'-150%'}},
     left:'0%',
    //top:{'Mobile':'154%','Pc':'760%'},
-    height:{'Mobile':{'Portrait':'210%','Landscape':'150vh'},'Pc':'260%'},
+    height:{'Mobile':{'Portrait':'210%','Landscape':'210vh'},'Pc':'260%'},
     width:'100%',
     zIndex:'13',
     backgroundColor:[`white`,'rgb(17,17,17)'],
