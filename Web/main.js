@@ -542,7 +542,7 @@ let GeneralMoreAboutBluePrint = {
         height:{'Mobile':{'Portrait':'7%','Landscape':'5%'},'Pc':'18%'},
          zIndex:'10',
            backgroundImage:"url('./Images/LineDecoration1.png')",
-           left:{'Pc':'61%','Mobile':{'Portrait':'65%','Landscape':'56%'}},
+           left:{'Pc':'61%','Mobile':{'Portrait':'65%','Landscape':'61%'}},
            marginTop:'5%',
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
@@ -779,7 +779,7 @@ let GeneralMoreAboutBluePrint = {
        position:'relative',
       display:'block',
       marginTop:{'Pc':'10%','Mobile':{'Portrait':'-100%','Landscape':'-110%'}},
-      border:'solid 1px black',
+     // border:'solid 1px black',
       height:{'Mobile':{'Portrait':'90vh','Landscape':'90vh'},'Pc':'110vh'},
     },
     Childs:{
@@ -1036,7 +1036,7 @@ let GeneralMoreAboutBluePrint = {
       Style:{
         position:'absolute',
         top:'10%',
-        height:{'Mobile':{'Portrait':'85%','Landscape':'50%'},'Pc':'70%'},
+        height:{'Mobile':{'Portrait':'85%','Landscape':'70%'},'Pc':'70%'},
          zIndex:'10',
          width:'100%',
          backgroundImage:{'Pc':"url('./Images/DecorationNew4.png')",'Mobile':{'Portrait':"url('./Images/DecorationNew4Mobile.png')",'Landscape':"url('./Images/DecorationNew4.png')"}},
@@ -1109,7 +1109,7 @@ let GeneralMoreAboutBluePrint = {
           STyle:{
             position:'absolute',
             left:'-35%',
-            top:'0%',
+            top:{'Pc':'0%','Mobile':{'Portrait':'0%','Landscape':'7%'}},
             opacity:'0'
           
           },
@@ -1140,7 +1140,7 @@ let GeneralMoreAboutBluePrint = {
         fontFamily: "'Tangerine', cursive",
           fontWeight: '400',
           fontStyle: 'normal',
-        fontSize:{'Mobile':{'Portrait':'1rem','Lanscape':'1rem'},'Pc':'2rem'},
+        fontSize:{'Mobile':{'Portrait':'1rem','Landscape':'1rem'},'Pc':'2rem'},
         },
         Type:'div',
         Childs:{
@@ -1176,7 +1176,7 @@ let GeneralMoreAboutBluePrint = {
     Style:{
       position:'relative',
       display:'block',
-      height:{'Mobile':{'Portrait':'8vh','Landscape':'20vw'},'Pc':'20vh'},
+      height:{'Mobile':{'Portrait':'8vh','Landscape':'10vh'},'Pc':'20vh'},
       borderTop:['solid 1px black','solid 1px white'],
       backgroundColor:['white','black'],
       zIndex:'30'
