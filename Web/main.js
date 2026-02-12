@@ -4275,7 +4275,7 @@ MainContainers:{
       Style:{
         position:'relative',
         width:{'Mobile':{'Portrait':'100%','Landscape':'100%'},Pc:'100%'},
-        height:{'Mobile':{'Portrait':'30%','Landscape':'30%'},Pc:'33%'},
+        height:{'Mobile':{'Portrait':'36%','Landscape':'30%'},Pc:'33%'},
         top:{'Mobile':'0%',Pc:'10%'},
         left:{'Mobile':'0%',Pc:'0%'},
         backgroundColor:['white','rgb(17,17,17)'],
@@ -4316,7 +4316,7 @@ MainContainers:{
           fontStyle: 'normal',
           color:['black','white'],
           left:{'Mobile':{'Portrait':'15%','Landscape':'55%'},'Pc':'20%'},
-          top:{'Mobile':'20%','Pc':'18%'},
+          top:{'Mobile':{'Portrait':'32%','Landscape':'20%'},'Pc':'18%'},
            opacity:'0',
       },
         Text:
@@ -4343,33 +4343,7 @@ MainContainers:{
     }
    },
     },
-    SpikesDecoration:{
-      Id:'SpikesDecoration',
-      Type:'div',
-      Style:{
-        display:'none',
-        backgroundImage:["url('./Images/Spikes1.png')","url('./Images/Spikes1Light.png')"],
-        backgroundRepeat:'no-repeat',
-        backgroundPosition:'center',
-        backgroundSize:'cover',
-        position:'absolute',
-        
-         opacity:'0',
-         left:'0%',
-        width:{'Mobile':'100%','Pc':'100%'},
-        height:{'Mobile':'17%','Pc':'17%'},
-        top:{'Mobile':'35%','Pc':'35%'},
-        
-      
-      },
-      Listener:{
-    UmbraViewportLogic:{
-      Action:UmbraAnimations.Active,
-      Params:['SlideForRightAnimation','SpikesDecoration'],
-
-    }
-   },
-    },
+   
     NameLetter:{
       Id:'NameLetter',
       Type:'div',
@@ -4404,7 +4378,7 @@ MainContainers:{
       Type:'div',
       Style:{
       position:'absolute',
-      fontSize:{'Mobile':'1rem','Pc':'2.5rem'},
+      fontSize:{'Mobile':'1.4rem','Pc':'2.5rem'},
       color:['black','white'],
      whiteSpace: 'pre-wrap',
         fontFamily: '"Google Sans Code", monospace',
@@ -4413,8 +4387,8 @@ MainContainers:{
       fontStyle: 'normal',
        opacity:'0',
       fontStyle: 'normal',
-      left:{'Mobile':'55%','Pc':'15%'},
-      top:{'Mobile':'34%','Pc':'46%'},
+      left:{'Mobile':{'Portrait':'33%','Landscape':'55%'},'Pc':'15%'},
+      top:{'Mobile':{'Portrait':'47%','Landscape':'55%'},'Pc':'46%'},
       },
       Text:`Minha Biografia!`,
       Listener:{
@@ -4464,16 +4438,16 @@ MainContainers:{
        Style:{
       position:'absolute',
       color:['black','white'],
-      fontSize:{'Mobile':'1rem','Pc':'1.2'},
+      fontSize:{'Mobile':'0.7rem','Pc':'1.2'},
        whiteSpace: 'pre-wrap',
-      lineHeight:{'Mobile':'2','Pc':'1.5'},
+      lineHeight:{'Mobile':'1.5','Pc':'1.5'},
       fontFamily: "'Delius', cursive",
       fontWeight: '600',
       fontStyle: 'normal',
        opacity:'0',
-      left:{'Mobile':'55%','Pc':'10%'},
+      left:{'Mobile':{'Portrait':'5%','Landscape':'55%'},'Pc':'10%'},
       width:'60%',
-      top:{'Mobile':'34%','Pc':'53%'},
+      top:{'Mobile':{'Portrait':'51%','Landscape':'55%'},'Pc':'53%'},
 
     },
     Listener:{
