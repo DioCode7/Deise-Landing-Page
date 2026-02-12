@@ -4194,7 +4194,7 @@ MainContainers:{
     Type:'div',
     Style:{
        position:'relative',
-       marginTop:{'Pc':'-18%','Mobile':{'Portrait':'-130%','Landscape':'-16%'}},
+       marginTop:{'Pc':'-18%','Mobile':{'Portrait':'-150%','Landscape':'-16%'}},
     left:'0%',
    //top:{'Mobile':'154%','Pc':'760%'},
     height:{'Mobile':{'Portrait':'210%','Landscape':'150vh'},'Pc':'260%'},
@@ -4306,7 +4306,7 @@ MainContainers:{
       Type:`div`,
       Style:{
          whiteSpace:'pre-line',
-            fontSize:{'Mobile':{'Portrait':'0.7rem','Landscape':'1.2rem'},'Pc':'1.3rem'},
+            fontSize:{'Mobile':{'Portrait':'0.9rem','Landscape':'1.2rem'},'Pc':'1.3rem'},
             lineHeight:{'Mobile':'1.1','Pc':'1.1'},
           fontFamily: '"Google Sans Code", monospace',
        fontOpticalSizing: 'auto',
