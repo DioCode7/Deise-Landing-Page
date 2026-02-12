@@ -4306,7 +4306,7 @@ MainContainers:{
       Type:`div`,
       Style:{
          whiteSpace:'pre-line',
-            fontSize:{'Mobile':{'Portrait':'1.2rem','Landscape':'1.2rem'},'Pc':'1.3rem'},
+            fontSize:{'Mobile':{'Portrait':'0.8rem','Landscape':'1.2rem'},'Pc':'1.3rem'},
             lineHeight:{'Mobile':'2','Pc':'1.1'},
           fontFamily: '"Google Sans Code", monospace',
        fontOpticalSizing: 'auto',
@@ -4316,7 +4316,7 @@ MainContainers:{
           fontStyle: 'normal',
           color:['black','white'],
           left:{'Mobile':{'Portrait':'15%','Landscape':'55%'},'Pc':'20%'},
-          top:{'Mobile':{'Portrait':'35%','Landscape':'20%'},'Pc':'18%'},
+          top:{'Mobile':{'Portrait':'36%','Landscape':'20%'},'Pc':'18%'},
            opacity:'0',
       },
         Text:
