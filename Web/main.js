@@ -4387,7 +4387,7 @@ MainContainers:{
       fontStyle: 'normal',
        opacity:'0',
       fontStyle: 'normal',
-      left:{'Mobile':{'Portrait':'33%','Landscape':'30%'},'Pc':'15%'},
+      left:{'Mobile':{'Portrait':'5%','Landscape':'30%'},'Pc':'15%'},
       top:{'Mobile':{'Portrait':'56%','Landscape':'56%'},'Pc':'46%'},
       },
       Text:`Minha Biografia!`,
