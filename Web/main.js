@@ -4630,7 +4630,7 @@ Centro - (em frente ao ginâsio Nenão)
       height:{Mobile:{'Portrait':'15%','Landscape':'20%'},Pc:'29%'},
       border:[`solid 3px black`,`solid 1px white`],
       },
-      Src:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.5846256170535!2d-52.81804822522044!3d-28.461935275758293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94fd4930d1aa4cb7%3A0xec4a7325745ef3cd!2sR.%20Pedro%20Augustin%20-%20N%C3%A3o-Me-Toque%2C%20RS%2C%2099470-000!5e0!3m2!1spt-BR!2sbr!4v1769355775168!5m2!1spt-BR!2sbr",
+      Src:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.625192007345!2d-52.81937202577039!3d-28.46071287575896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94fd493a75b28651%3A0xf8999cf2fbab63ed!2sR.%20Padre%20Valentim%20Rumpel%2C%20272%20-%20Centro%2C%20N%C3%A3o-Me-Toque%20-%20RS%2C%2099470-000!5e0!3m2!1spt-BR!2sbr!4v1771033514004!5m2!1spt-BR!2sbr",
       Listener:{
     UmbraViewportLogic:{
       Action:UmbraAnimations.Active,
