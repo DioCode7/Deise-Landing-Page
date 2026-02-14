@@ -2562,8 +2562,8 @@ MainContainers:{
             Type:'div',
             Style:{
                position:'fixed',
-      width:{'Mobile':'3%','Pc':'50%'},
-      height:{'Mobile':'1%','Pc':'50%'},
+      width:{'Mobile':'50%','Pc':'50%'},
+      height:{'Mobile':'50%','Pc':'50%'},
       backgroundImage:"url('./Images/EspaçoRessignificarLogo1.png')",
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
@@ -4574,7 +4574,7 @@ MainContainers:{
      opacity:'0',
         fontFamily: '"Google Sans Code", monospace',
        fontOpticalSizing: 'auto',
-      fontWeight: '600',
+      fontWeight: '800',
       fontStyle: 'normal',
       transform:'translate(-50%,0%)',
       fontStyle: 'normal',
@@ -4603,8 +4603,9 @@ Centro - (em frente ao ginâsio Nenão)
        whiteSpace: 'pre-wrap',
        opacity:'0',
       lineHeight:{'Mobile':'2','Pc':'1.5'},
-      fontFamily: "'Delius', cursive",
-      fontWeight: '500',
+        fontFamily: '"Google Sans Code", monospace',
+       fontOpticalSizing: 'auto',
+      fontWeight: {'Pc':'600','Mobile':{'Portrait':'600','Landscape':'800'}},
       fontStyle: 'normal',
       left:{'Mobile':{'Portrait':'5%','Landscape':'5%'},'Pc':'47%'},
       top:{'Mobile':{'Portrait':'10%','Landscape':'15%'},'Pc':'14.7%'},
@@ -4656,7 +4657,7 @@ Centro - (em frente ao ginâsio Nenão)
       fontStyle: 'normal',
       transform:'translate(-50%,0%)',
       left:{'Mobile':{'Portrait':'25%','Landscape':'70%'},'Pc':'72%'},
-      top:{'Mobile':{'Portrait':'42%','Landscape':'37%'},'Pc':'26%'},
+      top:{'Mobile':{'Portrait':'42%','Landscape':'41%'},'Pc':'26%'},
       },
       Listener:{
     UmbraViewportLogic:{
@@ -4683,7 +4684,7 @@ position:'absolute',
       fontWeight: '800',
       fontStyle: 'normal',
       left:{'Mobile':{'Portrait':'12%','Landscape':'70%'},'Pc':'64%'},
-      top:{'Mobile':{'Portrait':'48%','Landscape':'47%'},'Pc':'30%'},
+      top:{'Mobile':{'Portrait':'48%','Landscape':'51%'},'Pc':'30%'},
       cursor:'pointer'
       
      
@@ -4724,7 +4725,7 @@ position:'absolute',
       opacity:'0',
       fontStyle: 'normal',
       left:{'Mobile':{'Portrait':'12%','Landscape':'70%'},'Pc':'64%'},
-      top:{'Mobile':{'Portrait':'56%','Landscape':'54%'},'Pc':'42.5%'},
+      top:{'Mobile':{'Portrait':'56%','Landscape':'58%'},'Pc':'42.5%'},
       cursor:'default'
       
      
@@ -4758,7 +4759,7 @@ position:'absolute',
       cursor:'pointer',
       fontStyle: 'normal',
       left:{'Mobile':{'Portrait':'12%','Landscape':'70%'},'Pc':'64%'},
-      top:{'Mobile':{'Portrait':'66%','Landscape':'61%'},'Pc':'36.4%'},
+      top:{'Mobile':{'Portrait':'66%','Landscape':'67%'},'Pc':'36.4%'},
       
      
 },
@@ -4886,27 +4887,25 @@ position:'absolute',
    },
   },
   FooterContainer:{
-    Id:"FooterContainer",
+    Id:'FooterContainer',
     Type:'div',
     Style:{
-    position:'relative',
-    width:'100%',
-    height:{'Mobile':'10%','Pc':'20%'},
-    backgroundColor:['rgb(255, 255, 255)','rgb(20,20,20)'],
-     boxShadow:['rgba(0,0,0,0.4) 10px -10px 10px','rgba(0, 0, 0, 0.8) 10px -10px 10px'],
-   // top:'1230%',
-    zIndex:'10000',
-    left:'0%',
-
+      position:'relative',
+      display:'block',
+      height:{'Mobile':{'Portrait':'8vh','Landscape':'20vh'},'Pc':'20vh'},
+      borderTop:['solid 1px black','solid 1px white'],
+      backgroundColor:['white','black'],
+      zIndex:'30'
     },
+
     Childs:{
-  FooterLogo:{
+       FooterLogo:{
     Id:'FooterLogo',
     Type:'div',
     Style:{
       position:'absolute',
-      width:{'Mobile':'3%','Pc':'15%'},
-      height:{'Mobile':'1%','Pc':'80%'},
+      width:{'Mobile':{'Portrait':'25%','Landscape':'15%'},'Pc':'15%'},
+      height:{'Mobile':{'Portrait':'80%','Landscape':'80%'},'Pc':'80%'},
       backgroundImage:"url('./Images/EspaçoRessignificarLogo1.png')",
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
@@ -4949,9 +4948,8 @@ CreditsFooter:{
       Fn:()=>{window.open("https://www.instagram.com/diomhwl/", "_blank")}
     }
 }
-
-},
-  },
+    }
+  }
   
 },
 

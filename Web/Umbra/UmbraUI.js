@@ -821,11 +821,11 @@ function UmbraEaseOutPlusCurve(t){
 function UmbraUpdateActiveDOM(){
     
 let AllElements = UmbraGetAllChilds('Body');
-setTimeout(()=>{
+
 for(let i = 0;i<AllElements.length;i++){
     UmbraCoreBrute.UmbraDOM.UiModule.UmbraApplyStyle(AllElements[i],null,'Declared',true);
 }
-},10)
+
 /*setTimeout(()=>{
 UmbraScenesBrute.TurnOff('LandingPageMinimalistMainScene');
 UmbraScenesBrute.Active('LandingPageMinimalistMainScene');
