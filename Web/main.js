@@ -2562,8 +2562,8 @@ MainContainers:{
             Type:'div',
             Style:{
                position:'fixed',
-      width:{'Mobile':'50%','Pc':'50%'},
-      height:{'Mobile':'50%','Pc':'50%'},
+      width:{'Mobile':{'Portrait':'100%','Landscape':'50%'},'Pc':'50%'},
+      height:{'Mobile':{'Portrait':'50%','Landscape':'100%'},'Pc':'50%'},
       backgroundImage:"url('./Images/EspaçoRessignificarLogo1.png')",
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
@@ -4657,7 +4657,7 @@ Centro - (em frente ao ginâsio Nenão)
       fontStyle: 'normal',
       transform:'translate(-50%,0%)',
       left:{'Mobile':{'Portrait':'25%','Landscape':'70%'},'Pc':'72%'},
-      top:{'Mobile':{'Portrait':'42%','Landscape':'41%'},'Pc':'26%'},
+      top:{'Mobile':{'Portrait':'42%','Landscape':'45%'},'Pc':'26%'},
       },
       Listener:{
     UmbraViewportLogic:{
@@ -4684,7 +4684,7 @@ position:'absolute',
       fontWeight: '800',
       fontStyle: 'normal',
       left:{'Mobile':{'Portrait':'12%','Landscape':'70%'},'Pc':'64%'},
-      top:{'Mobile':{'Portrait':'48%','Landscape':'51%'},'Pc':'30%'},
+      top:{'Mobile':{'Portrait':'48%','Landscape':'55%'},'Pc':'30%'},
       cursor:'pointer'
       
      
@@ -4725,7 +4725,7 @@ position:'absolute',
       opacity:'0',
       fontStyle: 'normal',
       left:{'Mobile':{'Portrait':'12%','Landscape':'70%'},'Pc':'64%'},
-      top:{'Mobile':{'Portrait':'56%','Landscape':'58%'},'Pc':'42.5%'},
+      top:{'Mobile':{'Portrait':'56%','Landscape':'65%'},'Pc':'42.5%'},
       cursor:'default'
       
      
@@ -4759,7 +4759,7 @@ position:'absolute',
       cursor:'pointer',
       fontStyle: 'normal',
       left:{'Mobile':{'Portrait':'12%','Landscape':'70%'},'Pc':'64%'},
-      top:{'Mobile':{'Portrait':'66%','Landscape':'67%'},'Pc':'36.4%'},
+      top:{'Mobile':{'Portrait':'66%','Landscape':'75%'},'Pc':'36.4%'},
       
      
 },
@@ -4787,8 +4787,8 @@ position:'absolute',
       Type:'div',
       Style:{
          position:'absolute',
-    left:{'Pc':'60%','Mobile':{'Portrait':'5%','Landscape':'5%'}},
-    top:{'Pc':'32%','Mobile':{'Portrait':'47%','Landscape':'45%'}},
+    left:{'Pc':'60%','Mobile':{'Portrait':'5%','Landscape':'60%'}},
+    top:{'Pc':'32%','Mobile':{'Portrait':'47%','Landscape':'55%'}},
     width:{'Pc':'2%','Mobile':{'Portrait':'5%','Landscape':'5%'}},
     opacity:'0',
     height:{'Pc':'2%','Mobile':{'Portrait':'5%','Landscape':'5%'}},
@@ -4811,8 +4811,8 @@ position:'absolute',
       Type:'div',
       Style:{
          position:'absolute',
-    left:{'Pc':'58.9%','Mobile':{'Portrait':'2%','Landscape':'5%'}},
-    top:{'Pc':'38%','Mobile':{'Portrait':'62%','Landscape':'66%'}},
+    left:{'Pc':'58.9%','Mobile':{'Portrait':'2%','Landscape':'60%'}},
+    top:{'Pc':'38%','Mobile':{'Portrait':'62%','Landscape':'75%'}},
     width:{'Pc':'5%','Mobile':{'Portrait':'10%','Landscape':'10%'}},
     height:{'Pc':'3%','Mobile':{'Portrait':'10%','Landscape':'10%'}},
     opacity:'0',
@@ -4836,8 +4836,8 @@ position:'absolute',
       Type:'div',
       Style:{
          position:'absolute',
-    left:{'Pc':'59%','Mobile':{'Portrait':'2%','Landscape':'5%'}},
-    top:{'Pc':'44%','Mobile':{'Portrait':'53%','Landscape':'56%'}},
+    left:{'Pc':'59%','Mobile':{'Portrait':'2%','Landscape':'60%'}},
+    top:{'Pc':'44%','Mobile':{'Portrait':'53%','Landscape':'65%'}},
     width:{'Pc':'5%','Mobile':{'Portrait':'10%','Landscape':'10%'}},
     height:{'Pc':'3%','Mobile':{'Portrait':'10%','Landscape':'10%'}},
     opacity:'0',
