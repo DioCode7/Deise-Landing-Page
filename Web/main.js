@@ -4578,7 +4578,7 @@ MainContainers:{
       fontStyle: 'normal',
       transform:'translate(-50%,0%)',
       fontStyle: 'normal',
-      left:{'Mobile':{'Portrait':'15%','Landscape':'15%'},'Pc':'58%'},
+      left:{'Mobile':{'Portrait':'21%','Landscape':'15%'},'Pc':'58%'},
       top:{'Mobile':{'Portrait':'7%','Landscape':'7%'},'Pc':'12%'},
       },
       Listener:{
@@ -4623,7 +4623,7 @@ MainContainers:{
       Type:"iframe",
       Style:{
       position:`absolute`,
-      top:{Mobile:{'Portrait':'22%','Landscape':'20%'},Pc:"50%"},
+      top:{Mobile:{'Portrait':'24%','Landscape':'20%'},Pc:"50%"},
       left:{Mobile:"15%",Pc:'28%'},
       opacity:'0',
       width:{Mobile:{'Portrait':'70%','Landscape':'60%'},Pc:"60%"},
@@ -4646,7 +4646,7 @@ MainContainers:{
       Style:{
          position:'absolute',
          opacity:'0',
-      fontSize:{'Mobile':'1rem','Pc':'2rem'},
+      fontSize:{'Mobile':'1.1rem','Pc':'2rem'},
       color:['black','white'],
      whiteSpace: 'pre-wrap',
       lineHeight:{'Mobile':'2','Pc':'0.8'},
@@ -4655,8 +4655,8 @@ MainContainers:{
       fontWeight: '600',
       fontStyle: 'normal',
       transform:'translate(-50%,0%)',
-      left:{'Mobile':'55%','Pc':'72%'},
-      top:{'Mobile':'34%','Pc':'26%'},
+      left:{'Mobile':{'Portrait':'25%','Landscape':'25%'},'Pc':'72%'},
+      top:{'Mobile':{'Portrait':'42%','Landscape':'34%'},'Pc':'26%'},
       },
       Listener:{
     UmbraViewportLogic:{
@@ -4682,8 +4682,8 @@ position:'absolute',
        fontOpticalSizing: 'auto',
       fontWeight: '800',
       fontStyle: 'normal',
-      left:{'Mobile':'55%','Pc':'64%'},
-      top:{'Mobile':'34%','Pc':'30%'},
+      left:{'Mobile':{'Portrait':'7%','Landscape':'7%'},'Pc':'64%'},
+      top:{'Mobile':{'Portrait':'45%','Landscape':'45%'},'Pc':'30%'},
       cursor:'pointer'
       
      
