@@ -4512,8 +4512,9 @@ MainContainers:{
         position:'absolute',
         width:{'Mobile':{'Portrait':'100%','Landscape':'100%'},Pc:'100%'},
         height:{'Mobile':{'Portrait':'14%','Landscape':'16%'},Pc:'35%'},
-        top:{'Mobile':{'Portrait':'0%','Landscape':'23%'},Pc:'-22%'},
+        top:{'Mobile':{'Portrait':'-12%','Landscape':'23%'},Pc:'-22%'},
         left:{'Mobile':{'Portrait':'0%','Landscape':'0%'},Pc:'0%'},
+        display:{'Pc':'flex','Mobile':{'Portrait':'flex','Landscape':'none'}},
          opacity:'0',
          zIndex:'-1',
          backgroundImage:["url('./Images/TransitionDecoration.png')","url('./Images/TransitionDecoration2.png')"],
@@ -4546,7 +4547,7 @@ MainContainers:{
       transform:'translate(-50%,0%)',
       fontStyle: 'normal',
       left:{'Mobile':'55%','Pc':'65%'},
-      top:{'Mobile':'34%','Pc':'5%'},
+      top:{'Mobile':{'Portrait':'2%','Landscape':'5%'},'Pc':'5%'},
       },
       Text:'Agende Sua Consulta!',
       Listener:{
@@ -4558,31 +4559,7 @@ MainContainers:{
    },
 
     },
-     ContactDecoration1:{
-      Id:'ContactDecoration1',
-      Type:'div',
-      Style:{
-         backgroundImage:["url('./Images/ContactDecoration.png')","url('./Images/ContactDecoration.png')"],
-        backgroundRepeat:'no-repeat',
-        backgroundPosition:'center',
-        backgroundSize:'cover',
-        position:'absolute',
-        opacity:'0',
-        display:'none',
-        width:{'Mobile':'100%','Pc':'5%'},
-        height:{'Mobile':'17%','Pc':'3%'},
-        top:{'Mobile':'35%','Pc':'4%'},
-        transform:'rotate(10deg)',
-        left:{'Mobile':'35%','Pc':'42%'},
-      },
-      Listener:{
-    UmbraViewportLogic:{
-      Action:UmbraAnimations.Active,
-      Params:['SlideForRightAnimation','ContactDecoration1'],
-
-    }
-   },
-    },
+     
     LocalLetter:{
       Id:'LocalLetter',
       Type:'div',
@@ -4600,7 +4577,7 @@ MainContainers:{
       transform:'translate(-50%,0%)',
       fontStyle: 'normal',
       left:{'Mobile':'55%','Pc':'58%'},
-      top:{'Mobile':'34%','Pc':'12%'},
+      top:{'Mobile':{'Portrait':'7%','Landscape':'7%'},'Pc':'12%'},
       },
       Listener:{
     UmbraViewportLogic:{
