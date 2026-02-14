@@ -4579,7 +4579,7 @@ MainContainers:{
       transform:'translate(-50%,0%)',
       fontStyle: 'normal',
       left:{'Mobile':{'Portrait':'31%','Landscape':'15%'},'Pc':'58%'},
-      top:{'Mobile':{'Portrait':'7%','Landscape':'7%'},'Pc':'12%'},
+      top:{'Mobile':{'Portrait':'7%','Landscape':'12%'},'Pc':'12%'},
       },
       Listener:{
     UmbraViewportLogic:{
@@ -4607,7 +4607,7 @@ Centro - (em frente ao ginâsio Nenão)
       fontWeight: '500',
       fontStyle: 'normal',
       left:{'Mobile':{'Portrait':'5%','Landscape':'5%'},'Pc':'47%'},
-      top:{'Mobile':{'Portrait':'9%','Landscape':'9%'},'Pc':'14.7%'},
+      top:{'Mobile':{'Portrait':'10%','Landscape':'15%'},'Pc':'14.7%'},
      
     },
     Listener:{
@@ -4623,11 +4623,11 @@ Centro - (em frente ao ginâsio Nenão)
       Type:"iframe",
       Style:{
       position:`absolute`,
-      top:{Mobile:{'Portrait':'24%','Landscape':'20%'},Pc:"50%"},
-      left:{Mobile:"15%",Pc:'28%'},
+      top:{Mobile:{'Portrait':'24%','Landscape':'18%'},Pc:"50%"},
+      left:{Mobile:{'Portrait':"15%",'Landscape':'50%'},Pc:'28%'},
       opacity:'0',
-      width:{Mobile:{'Portrait':'70%','Landscape':'60%'},Pc:"60%"},
-      height:{Mobile:{'Portrait':'15%','Landscape':'20%'},Pc:'29%'},
+      width:{Mobile:{'Portrait':'70%','Landscape':'40%'},Pc:"60%"},
+      height:{Mobile:{'Portrait':'15%','Landscape':'23%'},Pc:'29%'},
       border:[`solid 3px black`,`solid 1px white`],
       },
       Src:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.625192007345!2d-52.81937202577039!3d-28.46071287575896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94fd493a75b28651%3A0xf8999cf2fbab63ed!2sR.%20Padre%20Valentim%20Rumpel%2C%20272%20-%20Centro%2C%20N%C3%A3o-Me-Toque%20-%20RS%2C%2099470-000!5e0!3m2!1spt-BR!2sbr!4v1771033514004!5m2!1spt-BR!2sbr",
@@ -4655,8 +4655,8 @@ Centro - (em frente ao ginâsio Nenão)
       fontWeight: '600',
       fontStyle: 'normal',
       transform:'translate(-50%,0%)',
-      left:{'Mobile':{'Portrait':'25%','Landscape':'25%'},'Pc':'72%'},
-      top:{'Mobile':{'Portrait':'42%','Landscape':'34%'},'Pc':'26%'},
+      left:{'Mobile':{'Portrait':'25%','Landscape':'70%'},'Pc':'72%'},
+      top:{'Mobile':{'Portrait':'42%','Landscape':'37%'},'Pc':'26%'},
       },
       Listener:{
     UmbraViewportLogic:{
@@ -4682,8 +4682,8 @@ position:'absolute',
        fontOpticalSizing: 'auto',
       fontWeight: '800',
       fontStyle: 'normal',
-      left:{'Mobile':{'Portrait':'12%','Landscape':'7%'},'Pc':'64%'},
-      top:{'Mobile':{'Portrait':'48%','Landscape':'45%'},'Pc':'30%'},
+      left:{'Mobile':{'Portrait':'12%','Landscape':'70%'},'Pc':'64%'},
+      top:{'Mobile':{'Portrait':'48%','Landscape':'47%'},'Pc':'30%'},
       cursor:'pointer'
       
      
@@ -4723,8 +4723,8 @@ position:'absolute',
       fontStyle: 'normal',
       opacity:'0',
       fontStyle: 'normal',
-      left:{'Mobile':{'Portrait':'12%','Landscape':'12%'},'Pc':'64%'},
-      top:{'Mobile':{'Portrait':'56%','Landscape':'52%'},'Pc':'42.5%'},
+      left:{'Mobile':{'Portrait':'12%','Landscape':'70%'},'Pc':'64%'},
+      top:{'Mobile':{'Portrait':'56%','Landscape':'54%'},'Pc':'42.5%'},
       cursor:'default'
       
      
@@ -4757,8 +4757,8 @@ position:'absolute',
       opacity:'0',
       cursor:'pointer',
       fontStyle: 'normal',
-      left:{'Mobile':{'Portrait':'12%','Landscape':'12%'},'Pc':'64%'},
-      top:{'Mobile':{'Portrait':'66%','Landscape':'56%'},'Pc':'36.4%'},
+      left:{'Mobile':{'Portrait':'12%','Landscape':'70%'},'Pc':'64%'},
+      top:{'Mobile':{'Portrait':'66%','Landscape':'61%'},'Pc':'36.4%'},
       
      
 },
