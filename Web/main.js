@@ -4724,7 +4724,7 @@ position:'absolute',
       opacity:'0',
       fontStyle: 'normal',
       left:{'Mobile':{'Portrait':'7%','Landscape':'7%'},'Pc':'64%'},
-      top:{'Mobile':{'Portrait':'52%','Landscape':'52%'},'Pc':'42.5%'},
+      top:{'Mobile':{'Portrait':'58%','Landscape':'52%'},'Pc':'42.5%'},
       cursor:'default'
       
      
@@ -4758,7 +4758,7 @@ position:'absolute',
       cursor:'pointer',
       fontStyle: 'normal',
       left:{'Mobile':{'Portrait':'7%','Landscape':'7%'},'Pc':'64%'},
-      top:{'Mobile':{'Portrait':'56%','Landscape':'56%'},'Pc':'36.4%'},
+      top:{'Mobile':{'Portrait':'66%','Landscape':'56%'},'Pc':'36.4%'},
       
      
 },
@@ -4786,11 +4786,11 @@ position:'absolute',
       Type:'div',
       Style:{
          position:'absolute',
-    left:{'Pc':'60%','Mobile':'60%'},
-    top:{'Pc':'32%','Mobile':'32%'},
-    width:{'Pc':'2%','Mobile':'4%'},
+    left:{'Pc':{'Portrait':'0%','Landscape':'5%'},'Mobile':'60%'},
+    top:{'Pc':'32%','Mobile':{'Portrait':'47%','Landscape':'45%'}},
+    width:{'Pc':'2%','Mobile':{'Portrait':'5%','Landscape':'5%'}},
     opacity:'0',
-    height:{'Pc':'2%','Mobile':'0.4%'},
+    height:{'Pc':'2%','Mobile':{'Portrait':'5%','Landscape':'5%'}},
       backgroundImage:"url('./Images/InstagramIcon.png')",
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
