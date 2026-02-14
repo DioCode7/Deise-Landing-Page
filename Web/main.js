@@ -4593,9 +4593,9 @@ MainContainers:{
     Id:'ClinicAdressText',
     Type:'div',
     Text:`Não-Me-Toque/RS
-........
-........
-........`,
+Rua Padre Valentim Rumpel, 272 - Sala 102
+Centro - (em frente ao ginâsio Nenão)
+`,
      Style:{
        position:'absolute',
       color:['black','white'],
@@ -4811,7 +4811,7 @@ position:'absolute',
       Style:{
          position:'absolute',
     left:{'Pc':'58.9%','Mobile':{'Portrait':'2%','Landscape':'5%'}},
-    top:{'Pc':'38%','Mobile':{'Portrait':'62%','Landscape':'66%'}},
+    top:{'Pc':'38%','Mobile':{'Portrait':'61%','Landscape':'66%'}},
     width:{'Pc':'5%','Mobile':{'Portrait':'10%','Landscape':'10%'}},
     height:{'Pc':'3%','Mobile':{'Portrait':'10%','Landscape':'10%'}},
     opacity:'0',
@@ -4836,7 +4836,7 @@ position:'absolute',
       Style:{
          position:'absolute',
     left:{'Pc':'59%','Mobile':{'Portrait':'2%','Landscape':'5%'}},
-    top:{'Pc':'44%','Mobile':{'Portrait':'49%','Landscape':'56%'}},
+    top:{'Pc':'44%','Mobile':{'Portrait':'52%','Landscape':'56%'}},
     width:{'Pc':'5%','Mobile':{'Portrait':'10%','Landscape':'10%'}},
     height:{'Pc':'3%','Mobile':{'Portrait':'10%','Landscape':'10%'}},
     opacity:'0',
