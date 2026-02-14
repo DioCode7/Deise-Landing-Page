@@ -4578,7 +4578,7 @@ MainContainers:{
       fontStyle: 'normal',
       transform:'translate(-50%,0%)',
       fontStyle: 'normal',
-      left:{'Mobile':{'Portrait':'21%','Landscape':'15%'},'Pc':'58%'},
+      left:{'Mobile':{'Portrait':'26%','Landscape':'15%'},'Pc':'58%'},
       top:{'Mobile':{'Portrait':'7%','Landscape':'7%'},'Pc':'12%'},
       },
       Listener:{
@@ -4683,7 +4683,7 @@ position:'absolute',
       fontWeight: '800',
       fontStyle: 'normal',
       left:{'Mobile':{'Portrait':'7%','Landscape':'7%'},'Pc':'64%'},
-      top:{'Mobile':{'Portrait':'45%','Landscape':'45%'},'Pc':'30%'},
+      top:{'Mobile':{'Portrait':'48%','Landscape':'45%'},'Pc':'30%'},
       cursor:'pointer'
       
      
@@ -4723,8 +4723,8 @@ position:'absolute',
       fontStyle: 'normal',
       opacity:'0',
       fontStyle: 'normal',
-      left:{'Mobile':'55%','Pc':'64%'},
-      top:{'Mobile':'34%','Pc':'42.5%'},
+      left:{'Mobile':{'Portrait':'7%','Landscape':'7%'},'Pc':'64%'},
+      top:{'Mobile':{'Portrait':'52%','Landscape':'52%'},'Pc':'42.5%'},
       cursor:'default'
       
      
@@ -4757,8 +4757,8 @@ position:'absolute',
       opacity:'0',
       cursor:'pointer',
       fontStyle: 'normal',
-      left:{'Mobile':'55%','Pc':'64%'},
-      top:{'Mobile':'34%','Pc':'36.4%'},
+      left:{'Mobile':{'Portrait':'7%','Landscape':'7%'},'Pc':'64%'},
+      top:{'Mobile':{'Portrait':'56%','Landscape':'56%'},'Pc':'36.4%'},
       
      
 },
