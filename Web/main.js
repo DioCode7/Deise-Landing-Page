@@ -415,7 +415,7 @@ Cada atendimento é individualizado, respeitando as necessidades e o ritmo de de
       Style:{
         position:'relative',
         display:'block',
-        marginTop:{'Mobile':{'Portrait':'210%','Landscape':''},'Pc':'0%'},
+        marginTop:{'Mobile':{'Portrait':'160%','Landscape':''},'Pc':'0%'},
         width:'100%',
          backgroundColor:'rgba(0,0,0,0)',
         height:{'Pc':'20%','Mobile':{'Portrait':'','Landscape':''}},
@@ -490,7 +490,7 @@ Mais do que melhorar o desempenho escolar, a neuropedagogia busca desenvolver co
         position:'relative',
         display:'block',
         width:'100%',
-        marginTop:{'Pc':'0%','Mobile':{'Portrait':'20%','Landscape':''}},
+        marginTop:{'Pc':'0%','Mobile':{'Portrait':'0%','Landscape':''}},
          backgroundColor:'rgba(0,0,0,0)',
         height:{'Pc':'20%','Mobile':{'Portrait':'5%','Landscape':''}},
       //  border:'solid 1px black',
