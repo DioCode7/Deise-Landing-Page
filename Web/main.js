@@ -1,8 +1,5 @@
 //Imports
-
-
 import { UmbraAnimations, UmbraDOMControl, UmbraRender, UmbraScenes } from "./Umbra/Umbra.js";
-
 //Variáveis 
 
 let InicialAnimationsElements=[
@@ -21,6 +18,648 @@ let InicialAnimationsElements=[
 
 let ActualConceptTheme = 'Tema Minimalista';
 
+let NeuroPedagogyPageDiagram = {
+  MainParent:'NeuroPedagogyPageContainer',
+  MainContainers:{
+ RealHeader:{
+    Id:'LandingPageMainHeader',
+    Type:'div',
+    Style:{
+        zIndex:'10',
+        position:'relative',
+        display:'inline-block',
+        width:'100%',
+           backgroundColor:['white','rgb(17,17,17)'],
+        height:{"Mobile":{'Portrait':'10vh','Landscape':'15vh'},"Pc":"15vh"},
+      
+    },
+    Childs:{
+     MainLogo:{
+        Id:'MainLogo',
+        Type:'div',
+        Style:{
+            position:'relative',
+        display:'flex',
+        width:{'Mobile':{'Portrait':'30%','Landscape':'14%'},'Pc':'20%'},
+        height:{'Pc':'140%',Mobile:{'Portrait':'100%','Landscape':'150%'}},
+        left:'50%',
+        top:'50%',
+        transform:'translate(-50%,-50%)',
+        backgroundImage:{Pc:["url('./Images/EspaçoRessignificarLetter1.png')","url('./Images/EspaçoRessignificarLetter3.png')"],
+          Mobile:{'Portrait':["url('./Images/EspaçoRessignificarLetterMobile.png')","url('./Images/EspaçoRessignificarLetter3.png')"],
+            'Landscape':["url('./Images/EspaçoRessignificarLetterMobile.png')","url('./Images/EspaçoRessignificarLetter3.png')"]
+          },
+        },
+        backgroundRepeat:'no-repeat',
+        backgroundPosition:'center',
+        backgroundSize:'cover',
+        pointerEvents:'none',
+        },
+      },
+  
+  HeaderButtonAboutMe:{
+   Id:'HeaderButtonAboutMe',
+   Type:'div',
+   Style:{
+   color:['black','white'],
+   fontSize:{'Mobile':'11px','Pc':'14px'},
+    fontFamily: "'Delius', cursive",
+            fontWeight: '400',
+            fontStyle: 'normal',
+            cursor:'default',
+            zIndex:'25',
+           top:{'Mobile':'86%','Pc':'78%'},
+            position:'absolute',
+            right:{'Mobile':{'Portrait':'14%','Landscape':'7%'},'Pc':'17.5%'},
+           // borderBottom://{'Mobile':['solid 1px black','solid 1px white'],'Pc':['solid 1px black','solid 1px white']}
+   },
+   Text:'Voltar a tela principal',
+    Listener:{
+          UmbraHover:{
+            Style:{
+              scale:'1.1'
+            }
+          },
+           SceneTransition:{
+          OldScene:'NeuroPedagogyPage',
+          NewScene:'LandingPageMinimalistMainScene',
+          OnEntryAnimations:{
+            AnimationGroup:{
+               Animation:'SlideForRightAnimation',
+               Elements:InicialAnimationsElements,
+            }
+            
+
+          },
+          TransitionAnimation:{
+            In:'ScenesTransitionsInAnimation',
+            Out:'ScenesTransitionsOutAnimation',
+            NewElement:{
+              Id:'TransitionAnimationsElement',
+              Type:'div',
+              Style:{
+                position:'fixed',
+                width:'10%',
+                top:'0%',
+                left:'0%',
+                pointerEvents:'none',
+                zIndex:'2000',
+                maxWidth:'100vw',
+                maxHeight:'100vh',
+                height:'10%',
+                scale:'0',
+                background:['radial-gradient(circle,rgba(251, 235, 255, 0.94),rgb(246, 246, 247),rgba(255, 255, 255, 0),rgba(2, 127, 211, 0))',
+                  'radial-gradient(circle,rgb(0, 0, 0),rgba(255, 255, 255, 0))'],
+              }
+            }
+          },
+          TransitionElement:{
+            Id:'LogoTransitionElement',
+            Type:'div',
+            Style:{
+               position:'fixed',
+      width:{'Mobile':'3%','Pc':'50%'},
+      height:{'Mobile':'1%','Pc':'50%'},
+      backgroundImage:"url('./Images/EspaçoRessignificarLogo1.png')",
+        backgroundRepeat:'no-repeat',
+        backgroundPosition:'center',
+        backgroundSize:'cover',
+        pointerEvents:'none',
+        transform:'translate(-60%,-50%)',
+        borderRadius:'100px',
+        zIndex:'50000',
+        opacity:'0',
+        top:'50%',
+        left:'50%',
+            },
+        InAnimation:'FadeInAnimation',
+        OutAnimation:'FadeOutAnimation',
+          }
+        }
+        }
+  },
+ 
+  },
+    },
+     StaticLogo:{
+    Id:'StaticLogo',
+    Type:'div',
+    Style:{
+      position:'fixed',
+      display:{'Pc':'flex','Mobile':'none'},
+      width:{'Mobile':'12%','Pc':'14%'},
+      height:{'Mobile':'12%','Pc':'16%'},
+      backgroundImage:"url('./Images/EspaçoRessignificarLogo1.png')",
+        backgroundRepeat:'no-repeat',
+        backgroundPosition:'center',
+        backgroundSize:'cover',
+        pointerEvents:'none',
+        zIndex:'500',
+        top:{'Mobile':'1.5%','Pc':'80vh'},
+        left:{'Mobile':'0%','Pc':'85vw'},
+
+    }
+  },
+  BodyContainer:{
+   Id:'BodyContainer',
+   Type:'div',
+   Style:{
+     position:'relative',
+        display:'block',
+        width:'100%',
+        backgroundColor:['white','rgba(17,17,17,1)'],
+        height:{'Pc':'300%','Mobile':{'Portrait':'','Landscape':''}},
+        //border:'solid 1px black',
+   },
+   Childs:{
+    FirstImage:{
+    Id:'FirstImage',
+    Type:'div',
+    Style:{
+      position:'absolute',
+      width:{'Pc':'50%','Mobile':{'Portrait':'','Landscape':''}},
+      height:{'Pc':'30%','Mobile':{'Portrait':'','Landscape':''}},
+      left:{'Pc':'47%','Mobile':{'Portrait':'','Landscape':''}},
+      top:{'Pc':'7%','Mobile':{'Portrait':'','Landscape':''}},
+      backgroundImage:{Pc:["url('./Images/NeuroPedagogyImage2Light.png')","url('./Images/NeuroPedagogyImage2Dark.png')"],
+          Mobile:{'Portrait':["url('./Images/NeuroPedagogyImage2LightMobile.png')","url('./Images/NeuroPedagogyImage2DarkMobile.png')"],
+            'Landscape':["url('./Images/NeuroPedagogyImage2Light.png')","url('./Images/NeuroPedagogyImage2Dark.png')"]
+          },
+        },
+        backgroundRepeat:'no-repeat',
+        backgroundPosition:'center',
+        backgroundSize:{Pc:'cover',Mobile:'cover'},
+        pointerEvents:'none',
+    }
+    },
+    SecondImage:{
+    Id:'SecondImage',
+    Type:'div',
+    Style:{
+      position:'absolute',
+      width:{'Pc':'50%','Mobile':{'Portrait':'','Landscape':''}},
+      height:{'Pc':'30%','Mobile':{'Portrait':'','Landscape':''}},
+      left:{'Pc':'1%','Mobile':{'Portrait':'','Landscape':''}},
+      top:{'Pc':'40%','Mobile':{'Portrait':'','Landscape':''}},
+      backgroundImage:{Pc:["url('./Images/NeuroPedagogyImage3Light.png')","url('./Images/NeuroPedagogyImage3Dark.png')"],
+          Mobile:{'Portrait':["url('./Images/NeuroPedagogyImag3LightMobile.png')","url('./Images/NeuroPedagogyImage3DarkMobile.png')"],
+            'Landscape':["url('./Images/NeuroPedagogyImage3Light.png')","url('./Images/NeuroPedagogyImage3Dark.png')"]
+          },
+        },
+        backgroundRepeat:'no-repeat',
+        backgroundPosition:'center',
+        backgroundSize:{Pc:'cover',Mobile:'cover'},
+        pointerEvents:'none',
+    }
+    },
+
+    TopicOneContainer:{
+      Id:'TopicOneContainer',
+      Type:'div',
+      Style:{
+        position:'relative',
+        display:'block',
+        width:'100%',
+         backgroundColor:'rgba(0,0,0,0)',
+        height:{'Pc':'20%','Mobile':{'Portrait':'','Landscape':''}},
+       // border:'solid 1px black',
+      },
+      Childs:{
+        TopicOneTitle:{
+          Id:'TopicOneTitle',
+          Type:'div',
+          Style:{
+            position:'relative',
+            width:"100%",
+            display:"block",
+            marginTop:{'Pc':'5%','Mobile':{'Portrait':'','Landscape':''}},
+              textAlign:'center',
+              color:['black','white'],
+                fontSize:{'Pc':'1.3rem','Mobile':'12px'},
+           fontFamily: '"Google Sans Code", monospace',
+            fontOpticalSizing: 'auto',
+            fontWeight: '800',
+            fontStyle: 'normal',
+            
+
+          },
+          Text:'O Que é Neuropedagogia?',
+        },
+        TopicOneText:{
+          Id:'TopicOneText',
+          Type:'div',
+          Style:{
+         position:'relative',
+            width:{'Pc':'35%','Mobile':{'Portrait':'','Landscape':''}},
+            display:"block",
+            marginTop:{'Pc':'2%','Mobile':{'Portrait':'','Landscape':''}},
+              textAlign:'start',
+              color:['black','white'],
+              paddingLeft:{'Pc':"5%","Mobile":{'Portrait':'','Landscape':""}},
+                fontSize:{'Pc':'1rem','Mobile':'12px'},
+           fontFamily: '"Google Sans Code", monospace',
+            fontOpticalSizing: 'auto',
+            fontWeight: '600',
+            fontStyle: 'normal',
+          },
+          Text:`A neuropedagogia é uma área interdisciplinar que integra conhecimentos da educação, neurociência e psicologia para compreender como o cérebro aprende e se desenvolve.
+
+Seu foco é identificar como cada pessoa processa informações, desenvolve habilidades cognitivas e enfrenta desafios no processo de aprendizagem, considerando aspectos emocionais, comportamentais e neurológicos.`,
+        }
+      }
+    },
+     TopicTwoContainer:{
+      Id:'TopicTwoContainer',
+      Type:'div',
+      Style:{
+        position:'relative',
+        display:'block',
+        width:'100%',
+         backgroundColor:'rgba(0,0,0,0)',
+        height:{'Pc':'20%','Mobile':{'Portrait':'','Landscape':''}},
+       // border:'solid 1px black',
+      },
+      Childs:{
+        TopicTwoTitle:{
+          Id:'TopicTwoTitle',
+          Type:'div',
+          Style:{
+            position:'relative',
+            width:"100%",
+            display:"block",
+            marginTop:{'Pc':'0%','Mobile':{'Portrait':'','Landscape':''}},
+              textAlign:'Start',
+               paddingLeft:{'Pc':"8%","Mobile":{'Portrait':'','Landscape':""}},
+              color:['black','white'],
+                fontSize:{'Pc':'1.3rem','Mobile':'12px'},
+           fontFamily: '"Google Sans Code", monospace',
+            fontOpticalSizing: 'auto',
+            fontWeight: '800',
+            fontStyle: 'normal',
+            
+
+          },
+          Text:'Para quem é indicada?',
+        },
+        TopicTwoText:{
+          Id:'TopicTwoText',
+          Type:'div',
+          Style:{
+         position:'relative',
+            width:{'Pc':'35%','Mobile':{'Portrait':'','Landscape':''}},
+            display:"block",
+            marginTop:{'Pc':'2%','Mobile':{'Portrait':'','Landscape':''}},
+              textAlign:'start',
+              color:['black','white'],
+              paddingLeft:{'Pc':"5%","Mobile":{'Portrait':'','Landscape':""}},
+               paddingBottom:{'Pc':"5%","Mobile":{'Portrait':'','Landscape':""}},
+                fontSize:{'Pc':'0.9rem','Mobile':'12px'},
+           fontFamily: '"Google Sans Code", monospace',
+            fontOpticalSizing: 'auto',
+            fontWeight: '600',
+            fontStyle: 'normal',
+          },
+          Text:`Crianças com dificuldades de aprendizagem
+
+Suspeita ou diagnóstico de TDAH
+
+Dislexia, discalculia e outras dificuldades específicas
+
+Atrasos no desenvolvimento
+
+Pessoas no espectro autista
+
+Dificuldades de atenção, memória e organização
+
+Baixo rendimento escolar sem causa aparente`,
+        }
+      }
+    },
+     TopicThreeContainer:{
+      Id:'TopicThreeContainer',
+      Type:'div',
+      Style:{
+        position:'relative',
+        display:'block',
+        width:'100%',
+         backgroundColor:'rgba(0,0,0,0)',
+        height:{'Pc':'20%','Mobile':{'Portrait':'','Landscape':''}},
+       // border:'solid 1px black',
+      },
+      Childs:{
+        TopicThreeTitle:{
+          Id:'TopicThreeTitle',
+          Type:'div',
+          Style:{
+            position:'relative',
+            width:"100%",
+            display:"block",
+            marginTop:{'Pc':'0%','Mobile':{'Portrait':'','Landscape':''}},
+              textAlign:'Start',
+               paddingLeft:{'Pc':"60%","Mobile":{'Portrait':'','Landscape':""}},
+              color:['black','white'],
+                fontSize:{'Pc':'1.3rem','Mobile':'12px'},
+           fontFamily: '"Google Sans Code", monospace',
+            fontOpticalSizing: 'auto',
+           
+            fontWeight: '800',
+            fontStyle: 'normal',
+            
+
+          },
+          Listener:{
+             UmbraViewportLogic:{
+      Action:UmbraAnimations.Active,
+      Params:['SlideForRightAnimation','TopicThreeText'],
+
+          },
+          },
+          Text:'Como funciona o atendimento?',
+        },
+        TopicThreeText:{
+          Id:'TopicThreeText',
+          Type:'div',
+          Style:{
+         position:'relative',
+            width:{'Pc':'35%','Mobile':{'Portrait':'','Landscape':''}},
+            display:"block",
+            marginTop:{'Pc':'2%','Mobile':{'Portrait':'','Landscape':''}},
+              textAlign:'start',
+              color:['black','white'],
+              paddingLeft:{'Pc':"55%","Mobile":{'Portrait':'','Landscape':""}},
+               paddingBottom:{'Pc':"5%","Mobile":{'Portrait':'','Landscape':""}},
+                fontSize:{'Pc':'1rem','Mobile':'12px'},
+           fontFamily: '"Google Sans Code", monospace',
+            fontOpticalSizing: 'auto',
+           
+            fontWeight: '600',
+            fontStyle: 'normal',
+          },
+          
+          Text:`O processo geralmente envolve:
+
+✔ Avaliação do perfil cognitivo e de aprendizagem
+✔ Identificação de dificuldades e potencialidades
+✔ Plano de intervenção personalizado
+✔ Estratégias práticas para escola e família
+✔ Acompanhamento contínuo da evolução
+
+Cada atendimento é individualizado, respeitando as necessidades e o ritmo de desenvolvimento de cada pessoa.`,
+        }
+      }
+    },
+     TopicFourContainer:{
+      Id:'TopicFourContainer',
+      Type:'div',
+      Style:{
+        position:'relative',
+        display:'block',
+        width:'100%',
+         backgroundColor:'rgba(0,0,0,0)',
+        height:{'Pc':'20%','Mobile':{'Portrait':'','Landscape':''}},
+       // border:'solid 1px black',
+      },
+      Childs:{
+        TopicFourTitle:{
+          Id:'TopicFourTitle',
+          Type:'div',
+          Style:{
+            position:'relative',
+            width:"100%",
+            display:"block",
+            marginTop:{'Pc':'0%','Mobile':{'Portrait':'','Landscape':''}},
+              textAlign:'Start',
+               paddingLeft:{'Pc':"60%","Mobile":{'Portrait':'','Landscape':""}},
+              color:['black','white'],
+                fontSize:{'Pc':'1.3rem','Mobile':'12px'},
+           fontFamily: '"Google Sans Code", monospace',
+            fontOpticalSizing: 'auto',
+            opacity:'0',
+            fontWeight: '800',
+            fontStyle: 'normal',
+            
+
+          },
+          Listener:{
+             UmbraViewportLogic:{
+      Action:UmbraAnimations.Active,
+      Params:['SlideForRightAnimation','TopicFourTitle'],
+
+          },
+          },
+          Text:'Qual o objetivo da Neuropedagogia?',
+        },
+        TopicFourText:{
+          Id:'TopicFourText',
+          Type:'div',
+          Style:{
+         position:'relative',
+            width:{'Pc':'35%','Mobile':{'Portrait':'','Landscape':''}},
+            display:"block",
+            marginTop:{'Pc':'2%','Mobile':{'Portrait':'','Landscape':''}},
+              textAlign:'start',
+              color:['black','white'],
+              opacity:'0',
+              paddingLeft:{'Pc':"55%","Mobile":{'Portrait':'','Landscape':""}},
+               paddingBottom:{'Pc':"5%","Mobile":{'Portrait':'','Landscape':""}},
+                fontSize:{'Pc':'1rem','Mobile':'12px'},
+           fontFamily: '"Google Sans Code", monospace',
+            fontOpticalSizing: 'auto',
+            fontWeight: '600',
+            fontStyle: 'normal',
+          },
+          Listener:{
+             UmbraViewportLogic:{
+      Action:UmbraAnimations.Active,
+      Params:['SlideForRightAnimation','TopicFourText'],
+
+          }
+          },
+          Text:`O principal objetivo é promover autonomia, segurança e qualidade no processo de aprendizagem, fortalecendo habilidades cognitivas e emocionais.
+
+Mais do que melhorar o desempenho escolar, a neuropedagogia busca desenvolver confiança, autoestima e estratégias que acompanhem o indivíduo ao longo da vida.`,
+        }
+      }
+    },
+    TopicFiveContainer:{
+      Id:'TopicFourContainer',
+      Type:'div',
+      Style:{
+        position:'relative',
+        display:'block',
+        width:'100%',
+         backgroundColor:'rgba(0,0,0,0)',
+        height:{'Pc':'20%','Mobile':{'Portrait':'','Landscape':''}},
+      //  border:'solid 1px black',
+      },
+      Childs:{
+        CTAButton:{
+          Id:'CTAButton',
+          Type:'div',
+          Style:{
+            position:'relative',
+            width:"35%",
+            display:"block",
+            opacity:'0',
+            marginTop:{'Pc':'20%','Mobile':{'Portrait':'','Landscape':''}},
+              textAlign:'center',
+              transform:'translate(-50%,-50%)',
+              border:'solid 1px black',
+              marginLeft:{'Pc':'50%','Mobile':{'Portrait':'','Landscape':''}},
+              backgroundColor:['rgb(255, 255, 255)','rgba(0, 0, 0, 0)'],
+              height:{'Pc':'20%','Mobile':{'Portrait':'','Landscape':''}},
+              color:['black','white'],
+                fontSize:{'Pc':'1.4rem','Mobile':'12px'},
+           fontFamily: '"Google Sans Code", monospace',
+            fontOpticalSizing: 'auto',
+            fontWeight: '800',
+            boxShadow:'rgba(0,0,0,0.8) 10px 10px 10px',
+            fontStyle: 'normal',
+
+            
+
+          },
+          Listener:{
+  UmbraHover:{
+        Style:{
+        color:'orange',
+        scale:'1.05',
+         fontSize:{'Mobile':'11px','Pc':'1.6rem'},
+        }
+      },
+      UseFn:true,
+      Fn:()=>{window.open("https://wa.me/5554991841827", "_blank");},
+       
+    UmbraViewportLogic:{
+      Action:UmbraAnimations.Active,
+      Params:['SlideForRightAnimation','CTAButton'],
+
+    
+   },
+          },
+         
+          Childs:{
+            CTAText:{
+              Id:'CTAText',
+              Type:'div',
+              Style:{
+                position:'absolute',
+                top:'50%',
+                transform:'translate(-50%,-50%)',
+                left:'50%',
+                pointerEvents:'none',
+              },
+               Text:'Agende Já Sua Consulta!',
+            }
+          }
+        },
+         TopicFiveText:{
+          Id:'TopicFiveText',
+          Type:'div',
+          Style:{
+         position:'relative',
+            width:{'Pc':'35%','Mobile':{'Portrait':'','Landscape':''}},
+            display:"block",
+            marginTop:{'Pc':'-1%','Mobile':{'Portrait':'','Landscape':''}},
+              textAlign:'start',
+              color:['black','white'],
+              marginLeft:'30%',
+              paddingLeft:{'Pc':"0%","Mobile":{'Portrait':'','Landscape':""}},
+               paddingBottom:{'Pc':"5%","Mobile":{'Portrait':'','Landscape':""}},
+                fontSize:{'Pc':'0.7rem','Mobile':'12px'},
+           fontFamily: '"Google Sans Code", monospace',
+            fontOpticalSizing: 'auto',
+            fontWeight: '600',
+            opacity:'0',
+            fontStyle: 'normal',
+          },
+          Text:`-> Clique nesse botão para ir direto ao nosso Whatsapp!`,
+          Listener:{
+             UmbraViewportLogic:{
+      Action:UmbraAnimations.Active,
+      Params:['SlideForRightAnimation','TopicFiveText'],
+
+          }
+        }
+      }
+       
+      }
+    },
+    
+    
+  }
+  
+  },
+
+  FooterContainer:{
+     Id:'FooterContainer',
+    Type:'div',
+    Style:{
+      position:'relative',
+      display:'block',
+      height:{'Mobile':{'Portrait':'8vh','Landscape':'20vh'},'Pc':'20vh'},
+      borderTop:['solid 1px black','solid 1px black'],
+       backgroundColor:['white','rgb(17,17,17)'],
+      zIndex:'30'
+    },
+
+    Childs:{
+       FooterLogo:{
+    Id:'FooterLogo',
+    Type:'div',
+    Style:{
+      position:'absolute',
+      width:{'Mobile':{'Portrait':'25%','Landscape':'15%'},'Pc':'15%'},
+      height:{'Mobile':{'Portrait':'80%','Landscape':'80%'},'Pc':'80%'},
+      backgroundImage:"url('./Images/EspaçoRessignificarLogo1.png')",
+        backgroundRepeat:'no-repeat',
+        backgroundPosition:'center',
+        backgroundSize:'cover',
+        pointerEvents:'none',
+        borderRadius:'100px',
+        zIndex:'500',
+        top:'50%',
+        left:'50%',
+        transform:'translate(-50%,-50%)'
+  },
+},
+CreditsFooter:{
+  Id:'CreditsFooter',
+  Type:'div',
+  Style:{
+    position:'absolute',
+    color:['rgb(10, 10, 10)','rgb(174,174,174)'],
+    fontSize:{'Mobile':'11px','Pc':'11px'},
+    top:'90%',
+    left:'1%',
+    transform:'translate(0%,-50%)',
+    whiteSpace: 'pre-wrap',
+      lineHeight:{'Mobile':'2','Pc':'1.5'},
+      fontFamily: "'Delius', cursive",
+      fontWeight: '400',
+      fontStyle: 'normal',
+      cursor:'pointer'
+
+  },
+  Text:'DioMhwl',
+   Listener:{
+      UmbraHover:{
+        Style:{
+        color:'blue',
+         fontSize:{'Mobile':'11px','Pc':'17px'},
+        }
+      },
+      UseFn:true,
+      Fn:()=>{window.open("https://www.instagram.com/diomhwl/", "_blank")}
+    }
+}
+    }
+  }
+  },
+
+
+}
+
 let GeneralMoreAboutBluePrint = {
   MainParent:'GeneralMoreAboutSceneContainer',
   MainContainers:{
@@ -33,16 +672,8 @@ let GeneralMoreAboutBluePrint = {
         
         display:'inline-block',
         width:'100%',
-        backgroundColor:['white','black'],
+        backgroundColor:['white','rgb(17,17,17)'],
         height:{"Mobile":{'Portrait':'10vh','Landscape':'15vh'},"Pc":"15vh"},
-       // borderBottom:['dashed 1px black','dashed 1px white'],
-        //boxShadow:"0px 6px 6px rgba(0,0,0,0.8)",
-       /*  backgroundImage:{'Pc':
-      ["url('./Images/Decoration4MinimalistLight.gif')","url('./Images/Decoration4MinimalistDark.gif')"]
-      ,'Mobile':["url('./Images/Decoration4MinimalistLight.gif')","url('./Images/Decoration4MinimalistDark.gif')"]},
-        backgroundRepeat:'no-repeat',
-        backgroundPosition:'center',
-        backgroundSize:'cover',*/
     },
     Childs:{
      MainLogo:{
@@ -68,69 +699,7 @@ let GeneralMoreAboutBluePrint = {
         },
       },
      
-  /*HeaderInstagramIcon:{
-    Id:"HeaderInstagramIcon",
-    Type:'div',
-    Style:{
-    position:'absolute',
-    left:{'Pc':'41%','Mobile':'38%'},
-    top:{'Pc':'3%','Mobile':'4%'},
-    width:{'Pc':'10%','Mobile':'6%'},
-    height:{'Pc':'10%','Mobile':'6%'},
-      backgroundImage:"url('./Images/InstagramIcon.png')",
-        backgroundRepeat:'no-repeat',
-        backgroundPosition:'center',
-        backgroundSize:'contain',
-    },
-  },
-  HeaderInstagramReference:{
-    Id:"HeaderInstagramReference",
-    Type:'div',
-    Style:{
-        position:'absolute',
-        top:'7%',
-        left:'50%',
-        color:['black','white'],
-        fontSize:{'Mobile':'9px','Pc':'15px'},
-         cursor:'default',
-         transform:'translate(-50%,-50%)',
-
-    },
-    Text:'@dheisedill',
-    Listener:{
-      UmbraHover:{
-        Style:{
-        color:'blue',
-         fontSize:{'Mobile':'11px','Pc':'17px'},
-        }
-      },
-      UseFn:true,
-      Fn:()=>{window.open("https://www.instagram.com/dheisedill/", "_blank")}
-    }
-  },*/
-
-  /*WorkLetter:{
-        Id:'WorkLetter',
-        Type:'div',
-        Style:{
-            position:'absolute',
-            top:{'Mobile':'60%','Pc':'80%'},
-            left:'50%',
-            transform:'translate(-50%,0%)',
-            color:['black','white'],
-            fontSize:{'Pc':'30px','Mobile':'19px'},
-             fontFamily: "'Imperial Script', cursive",
-            fontWeight: '400',
-            fontStyle: 'normal',
-            textShadow:'2px 4px 10px rgba(0, 0, 0, 0.9)',
-            zIndex:'20',
-            cursor:'default'
-
-        },
-        Text:'Neuropedagogia'
-    },*/
-
-
+ 
   
   HeaderButtonAboutMe:{
    Id:'HeaderButtonAboutMe',
@@ -1179,7 +1748,7 @@ let GeneralMoreAboutBluePrint = {
       display:'block',
       height:{'Mobile':{'Portrait':'8vh','Landscape':'20vh'},'Pc':'20vh'},
       borderTop:['solid 1px black','solid 1px white'],
-      backgroundColor:['white','black'],
+       backgroundColor:['white','rgb(17,17,17)'],
       zIndex:'30'
     },
 
@@ -2885,19 +3454,68 @@ MainContainers:{
        },
       },
       Listener:{
-        UmbraHover:{
-          Style:{
-            scale:'1.2',
-          }
-        },
         
     UmbraViewportLogic:{
       Action:UmbraAnimations.Active,
       Params:['SlideForRightAnimation','NeuroPedagogyMoreAboutButton'],
 
-    
-   },
-      }
+    },
+   
+        UmbraHover:{
+          Style:{
+            scale:'1.2',
+          }
+        },
+        SceneTransition:{
+          OldScene:'LandingPageMinimalistMainScene',
+          NewScene:'NeuroPedagogyPage',
+          TransitionAnimation:{
+            In:'ScenesTransitionsInAnimation',
+            Out:'ScenesTransitionsOutAnimation',
+            NewElement:{
+              Id:'TransitionAnimationsElement',
+              Type:'div',
+              Style:{
+                position:'fixed',
+                width:'10%',
+                top:'0%',
+                left:'0%',
+                pointerEvents:'none',
+                zIndex:'2000',
+                maxWidth:'100vw',
+                maxHeight:'100vh',
+                height:'10%',
+                scale:'0',
+                background:['radial-gradient(circle,rgba(234, 221, 238, 0.94),rgb(246, 246, 247),rgba(255, 255, 255, 0),rgba(2, 127, 211, 0))',
+                  'radial-gradient(circle,rgb(0, 0, 0),rgba(255, 255, 255, 0))'],
+              }
+            }
+          },
+          TransitionElement:{
+            Id:'LogoTransitionElement',
+            Type:'div',
+            Style:{
+               position:'fixed',
+      width:{'Mobile':{'Portrait':'100%','Landscape':'50vw'},'Pc':'50%'},
+      height:{'Mobile':{'Portrait':'44%','Landscape':'100vh'},'Pc':'50%'},
+      backgroundImage:"url('./Images/EspaçoRessignificarLogo1.png')",
+        backgroundRepeat:'no-repeat',
+        backgroundPosition:'center',
+        backgroundSize:'cover',
+        pointerEvents:'none',
+        transform:{'Pc':'translate(-60%,-50%)','Mobile':{'Portrait':'translate(-70%,-50%)','Landscape':'translate(-70%,-90%)'}},
+        borderRadius:'100px',
+        zIndex:'50000',
+        opacity:'0',
+        top:'50%',
+        left:'50vw',
+            },
+        InAnimation:'FadeInAnimation',
+        OutAnimation:'FadeOutAnimation',
+          }
+        }
+      },
+  
     },
      ClinicPsicLetter:{
       Id:'ClinicPsicLetter',
@@ -4894,7 +5512,7 @@ position:'absolute',
       display:'block',
       height:{'Mobile':{'Portrait':'8vh','Landscape':'20vh'},'Pc':'20vh'},
       borderTop:['solid 1px black','solid 1px white'],
-      backgroundColor:['white','black'],
+         backgroundColor:['white','rgb(17,17,17)'],
       zIndex:'30'
     },
 
@@ -4963,7 +5581,7 @@ UmbraScenes.New("LandingPageMainScene");
 UmbraScenes.New("GeneralMoreAboutScene",GeneralMoreAboutBluePrint,{
   position:'relative',
   width:'100%',
-    backgroundColor:['white','rgb(20, 20, 20)'],
+    backgroundColor:['white','rgb(17, 17, 17)'],
         //background:['linear-gradient(to left,rgba(106, 146, 255, 0.59),rgb(255, 255, 255),rgb(255, 255, 255),rgb(255, 255, 255),rgb(255, 255, 255),rgb(255, 255, 255),rgb(255, 255, 255),rgb(255, 255, 255))',
        //   'linear-gradient(to left,rgba(106, 146, 255, 0.59),rgb(0, 0, 0),rgb(0, 0, 0),rgb(0, 0, 0),rgb(0, 0, 0),rgb(rgb(0, 0, 0)55, 255, 255),rgb(0, 0, 0))'
        // ],
@@ -4980,6 +5598,14 @@ UmbraScenes.New("LandingPageMinimalistMainScene",LandingPageMinimalistBluePrint,
         backgroundColor:['rgb(255, 255, 255)','rgb(17, 17, 17)']});
 UmbraScenes.Active("LandingPageMinimalistMainScene");
 
+UmbraScenes.New("NeuroPedagogyPage",NeuroPedagogyPageDiagram,{
+  position:"absolute",
+    width:'100%',
+    height:'100%',
+    left:'0px',
+    top:'0px',
+    backgroundColor:['rgb(255, 255, 255)','rgb(17, 17, 17)']
+});
 
 
 let SlideForRightAnimationBluePrint = {
@@ -5054,7 +5680,9 @@ let ScenesTransitionsInAnimation = {
    FrameRate:60,
    Curve:'Ease-Out-Smooth'
    
-}
+};
+
+
 
 let ScenesTransitionsOutAnimation = {
 Id:'ScenesTransitionsOutAnimation',
@@ -5111,6 +5739,7 @@ UmbraAnimations.New('ScenesTransitionsOutAnimation',ScenesTransitionsOutAnimatio
 UmbraAnimations.New('ScenesTransitionsInAnimation',ScenesTransitionsInAnimation);
 UmbraAnimations.New('FadeInAnimation',FadeInAnimation);
 UmbraAnimations.New('FadeOutAnimation',FadeOutAnimation);
+
 
 if('scrollRestoration' in history){
   history.scrollRestoration = 'manual';
