@@ -177,7 +177,7 @@ let NeuroPedagogyPageDiagram = {
     Type:'div',
     Style:{
       position:'absolute',
-      width:{'Pc':'50%','Mobile':{'Portrait':'90%','Landscape':''}},
+      width:{'Pc':'50%','Mobile':{'Portrait':'100%','Landscape':''}},
       height:{'Pc':'30%','Mobile':{'Portrait':'30%','Landscape':''}},
       left:{'Pc':'47%','Mobile':{'Portrait':'10%','Landscape':''}},
       top:{'Pc':'7%','Mobile':{'Portrait':'30%','Landscape':''}},
@@ -415,7 +415,7 @@ Cada atendimento é individualizado, respeitando as necessidades e o ritmo de de
       Style:{
         position:'relative',
         display:'block',
-        marginTop:{'Mobile':{'Portrait':'140%','Landscape':''},'Pc':'0%'},
+        marginTop:{'Mobile':{'Portrait':'210%','Landscape':''},'Pc':'0%'},
         width:'100%',
          backgroundColor:'rgba(0,0,0,0)',
         height:{'Pc':'20%','Mobile':{'Portrait':'','Landscape':''}},
