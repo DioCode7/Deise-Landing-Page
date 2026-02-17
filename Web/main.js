@@ -510,7 +510,7 @@ Mais do que melhorar o desempenho escolar, a neuropedagogia busca desenvolver co
               border:'solid 1px black',
               marginLeft:{'Pc':'50%','Mobile':{'Portrait':'50%','Landscape':'50%'}},
               backgroundColor:['rgb(255, 255, 255)','rgba(0, 0, 0, 0)'],
-              height:{'Pc':'20%','Mobile':{'Portrait':'40%','Landscape':'20%'}},
+              height:{'Pc':'20%','Mobile':{'Portrait':'40%','Landscape':'70%'}},
               color:['black','white'],
                 fontSize:{'Pc':'1.4rem','Mobile':'0.9rem'},
            fontFamily: '"Google Sans Code", monospace',
