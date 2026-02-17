@@ -2231,7 +2231,7 @@ Cada indivíduo no espectro é único, apresentando diferentes características,
             display:"block",
             marginTop:{'Pc':'0%','Mobile':{'Portrait':'5%','Landscape':'4%'}},
               textAlign:'Start',
-               paddingLeft:{'Pc':"8%","Mobile":{'Portrait':'9%','Landscape':"6%"}},
+               paddingLeft:{'Pc':"8%","Mobile":{'Portrait':'9%','Landscape':"3%"}},
               color:['black','white'],
                 fontSize:{'Pc':'1.3rem','Mobile':'1.1rem'},
            fontFamily: '"Google Sans Code", monospace',
@@ -2286,7 +2286,7 @@ Famílias que precisam de orientação e suporte`,
         position:'relative',
         display:'block',
         width:'100%',
-        marginTop:{'Mobile':{'Portrait':'90%','Landscape':'-10%'},'Pc':'0%'},
+        marginTop:{'Mobile':{'Portrait':'90%','Landscape':'-12%'},'Pc':'0%'},
          backgroundColor:'rgba(0,0,0,0)',
         height:{'Pc':'20%','Mobile':{'Portrait':'','Landscape':''}},
        // border:'solid 1px black',
@@ -2424,6 +2424,656 @@ As intervenções são estruturadas de forma individualizada, respeitando as nec
           Text:`O principal objetivo é promover desenvolvimento global, inclusão e autonomia, fortalecendo habilidades sociais, comunicativas, cognitivas e emocionais.
 
 Mais do que trabalhar dificuldades, o foco está em valorizar potencialidades e oferecer suporte adequado para que a pessoa no espectro alcance seu máximo desenvolvimento.`,
+        }
+      }
+    },
+    TopicFiveContainer:{
+      Id:'TopicFiveContainer',
+      Type:'div',
+      Style:{
+        position:'relative',
+        display:'block',
+        width:'100%',
+        marginTop:{'Pc':'0%','Mobile':{'Portrait':'10%','Landscape':'0%'}},
+         backgroundColor:'rgba(0,0,0,0)',
+        height:{'Pc':'20%','Mobile':{'Portrait':'5%','Landscape':'5%'}},
+      //  border:'solid 1px black',
+      },
+      Childs:{
+        CTAButton:{
+          Id:'CTAButton',
+          Type:'div',
+          Style:{
+            position:'relative',
+            width:{'Pc':'35%','Mobile':{'Portrait':'70%','Landscape':'35%'}},
+            display:"block",
+            opacity:'0',
+            marginTop:{'Pc':'5%','Mobile':{'Portrait':'5%','Landscape':'5%'}},
+              textAlign:'center',
+              transform:'translate(-50%,-50%)',
+              border:'solid 1px black',
+              marginLeft:{'Pc':'50%','Mobile':{'Portrait':'50%','Landscape':'50%'}},
+              backgroundColor:['rgb(255, 255, 255)','rgba(0, 0, 0, 0)'],
+              height:{'Pc':'20%','Mobile':{'Portrait':'40%','Landscape':'70%'}},
+              color:['black','white'],
+                fontSize:{'Pc':'1.4rem','Mobile':'0.9rem'},
+           fontFamily: '"Google Sans Code", monospace',
+            fontOpticalSizing: 'auto',
+            fontWeight: '800',
+            boxShadow:'rgba(0,0,0,0.8) 10px 10px 10px',
+            fontStyle: 'normal',
+
+            
+
+          },
+          Listener:{
+  UmbraHover:{
+        Style:{
+        color:'orange',
+        scale:'1.05',
+         fontSize:{'Mobile':'11px','Pc':'1.6rem'},
+        }
+      },
+      UseFn:true,
+      Fn:()=>{window.open("https://wa.me/5554991841827", "_blank");},
+       
+    UmbraViewportLogic:{
+      Action:UmbraAnimations.Active,
+      Params:['SlideForRightAnimation','CTAButton'],
+
+    
+   },
+          },
+         
+          Childs:{
+            CTAText:{
+              Id:'CTAText',
+              Type:'div',
+              Style:{
+                position:'absolute',
+                top:'50%',
+                transform:'translate(-50%,-50%)',
+                left:'50%',
+                pointerEvents:'none',
+              },
+               Text:'Agende Já Sua Consulta!',
+            }
+          }
+        },
+         TopicFiveText:{
+          Id:'TopicFiveText',
+          Type:'div',
+          Style:{
+         position:'relative',
+            width:{'Pc':'35%','Mobile':{'Portrait':'','Landscape':'35%'}},
+            display:"block",
+            marginTop:{'Pc':'-1%','Mobile':{'Portrait':'','Landscape':'-1%'}},
+              textAlign:'start',
+              color:['black','white'],
+              marginLeft:'30%',
+              paddingLeft:{'Pc':"0%","Mobile":{'Portrait':'','Landscape':"0%"}},
+               paddingBottom:{'Pc':"5%","Mobile":{'Portrait':'','Landscape':"5%"}},
+                fontSize:{'Pc':'0.7rem','Mobile':'12px'},
+           fontFamily: '"Google Sans Code", monospace',
+            fontOpticalSizing: 'auto',
+            fontWeight: '600',
+            opacity:'0',
+            fontStyle: 'normal',
+          },
+          Text:`-> Clique nesse botão para ir direto ao nosso Whatsapp!`,
+          Listener:{
+             UmbraViewportLogic:{
+      Action:UmbraAnimations.Active,
+      Params:['SlideForRightAnimation','TopicFiveText'],
+
+          }
+        }
+      }
+       
+      }
+    },
+    
+    
+  }
+  
+  },
+
+  FooterContainer:{
+     Id:'FooterContainer',
+    Type:'div',
+    Style:{
+      position:'relative',
+      display:'block',
+      height:{'Mobile':{'Portrait':'8vh','Landscape':'20vh'},'Pc':'20vh'},
+      borderTop:['solid 1px black','solid 1px black'],
+       backgroundColor:['white','rgb(17,17,17)'],
+      zIndex:'30'
+    },
+
+    Childs:{
+       FooterLogo:{
+    Id:'FooterLogo',
+    Type:'div',
+    Style:{
+      position:'absolute',
+      width:{'Mobile':{'Portrait':'25%','Landscape':'15%'},'Pc':'15%'},
+      height:{'Mobile':{'Portrait':'80%','Landscape':'80%'},'Pc':'80%'},
+      backgroundImage:"url('./Images/EspaçoRessignificarLogo1.png')",
+        backgroundRepeat:'no-repeat',
+        backgroundPosition:'center',
+        backgroundSize:'cover',
+        pointerEvents:'none',
+        borderRadius:'100px',
+        zIndex:'500',
+        top:'50%',
+        left:'50%',
+        transform:'translate(-50%,-50%)'
+  },
+},
+CreditsFooter:{
+  Id:'CreditsFooter',
+  Type:'div',
+  Style:{
+    position:'absolute',
+    color:['rgb(10, 10, 10)','rgb(174,174,174)'],
+    fontSize:{'Mobile':'11px','Pc':'11px'},
+    top:'90%',
+    left:'1%',
+    transform:'translate(0%,-50%)',
+    whiteSpace: 'pre-wrap',
+      lineHeight:{'Mobile':'2','Pc':'1.5'},
+      fontFamily: "'Delius', cursive",
+      fontWeight: '400',
+      fontStyle: 'normal',
+      cursor:'pointer'
+
+  },
+  Text:'DioMhwl',
+   Listener:{
+      UmbraHover:{
+        Style:{
+        color:'blue',
+         fontSize:{'Mobile':'11px','Pc':'17px'},
+        }
+      },
+      UseFn:true,
+      Fn:()=>{window.open("https://www.instagram.com/diomhwl/", "_blank")}
+    }
+}
+    }
+  }
+  },
+
+
+}
+
+let ABAPageDiagram = {
+  MainParent:'ABAPageContainer',
+  MainContainers:{
+ RealHeader:{
+    Id:'LandingPageMainHeader',
+    Type:'div',
+    Style:{
+        zIndex:'10',
+        position:'relative',
+        display:'inline-block',
+        width:'100%',
+           backgroundColor:['white','rgb(17,17,17)'],
+        height:{"Mobile":{'Portrait':'10vh','Landscape':'15vh'},"Pc":"15vh"},
+      
+    },
+    Childs:{
+     MainLogo:{
+        Id:'MainLogo',
+        Type:'div',
+        Style:{
+            position:'relative',
+        display:'flex',
+        width:{'Mobile':{'Portrait':'30%','Landscape':'14%'},'Pc':'20%'},
+        height:{'Pc':'140%',Mobile:{'Portrait':'100%','Landscape':'150%'}},
+        left:'50%',
+        top:'50%',
+        transform:'translate(-50%,-50%)',
+        backgroundImage:{Pc:["url('./Images/EspaçoRessignificarLetter1.png')","url('./Images/EspaçoRessignificarLetter3.png')"],
+          Mobile:{'Portrait':["url('./Images/EspaçoRessignificarLetterMobile.png')","url('./Images/EspaçoRessignificarLetter3.png')"],
+            'Landscape':["url('./Images/EspaçoRessignificarLetterMobile.png')","url('./Images/EspaçoRessignificarLetter3.png')"]
+          },
+        },
+        backgroundRepeat:'no-repeat',
+        backgroundPosition:'center',
+        backgroundSize:'cover',
+        pointerEvents:'none',
+        },
+      },
+  
+  HeaderButtonAboutMe:{
+   Id:'HeaderButtonAboutMe',
+   Type:'div',
+   Style:{
+   color:['black','white'],
+   fontSize:{'Mobile':'11px','Pc':'14px'},
+    fontFamily: "'Delius', cursive",
+            fontWeight: '400',
+            fontStyle: 'normal',
+            cursor:'default',
+            zIndex:'25',
+           top:{'Mobile':'86%','Pc':'78%'},
+            position:'absolute',
+            right:{'Mobile':{'Portrait':'14%','Landscape':'7%'},'Pc':'17.5%'},
+           // borderBottom://{'Mobile':['solid 1px black','solid 1px white'],'Pc':['solid 1px black','solid 1px white']}
+   },
+   Text:'Voltar a tela principal',
+    Listener:{
+          UmbraHover:{
+            Style:{
+              scale:'1.1'
+            }
+          },
+           SceneTransition:{
+          OldScene:'ABAPage',
+          NewScene:'LandingPageMinimalistMainScene',
+          OnEntryAnimations:{
+            AnimationGroup:{
+               Animation:'SlideForRightAnimation',
+               Elements:InicialAnimationsElements,
+            }
+            
+
+          },
+          TransitionAnimation:{
+            In:'ScenesTransitionsInAnimation',
+            Out:'ScenesTransitionsOutAnimation',
+            NewElement:{
+              Id:'TransitionAnimationsElement',
+              Type:'div',
+              Style:{
+                position:'fixed',
+                width:'10%',
+                top:'0%',
+                left:'0%',
+                pointerEvents:'none',
+                zIndex:'2000',
+                maxWidth:'100vw',
+                maxHeight:'100vh',
+                height:'10%',
+                scale:'0',
+                background:['radial-gradient(circle,rgba(251, 235, 255, 0.94),rgb(246, 246, 247),rgba(255, 255, 255, 0),rgba(2, 127, 211, 0))',
+                  'radial-gradient(circle,rgb(0, 0, 0),rgba(255, 255, 255, 0))'],
+              }
+            }
+          },
+          TransitionElement:{
+            Id:'LogoTransitionElement',
+            Type:'div',
+            Style:{
+               position:'fixed',
+      width:{'Mobile':{'Portrait':'100%','Landscape':'50vw'},'Pc':'50%'},
+      height:{'Mobile':{'Portrait':'44%','Landscape':'100vh'},'Pc':'50%'},
+      backgroundImage:"url('./Images/EspaçoRessignificarLogo1.png')",
+        backgroundRepeat:'no-repeat',
+        backgroundPosition:'center',
+        backgroundSize:'cover',
+        pointerEvents:'none',
+        transform:{'Pc':'translate(-60%,-50%)','Mobile':{'Portrait':'translate(-70%,-50%)','Landscape':'translate(-70%,-50%)'}},
+        borderRadius:'100px',
+        zIndex:'50000',
+        opacity:'0',
+        top:'50vh',
+        left:'50vw',
+            },
+        InAnimation:'FadeInAnimation',
+        OutAnimation:'FadeOutAnimation',
+          }
+        }
+        }
+  },
+ 
+  },
+    },
+     StaticLogo:{
+    Id:'StaticLogo',
+    Type:'div',
+    Style:{
+      position:'fixed',
+      display:{'Pc':'flex','Mobile':'none'},
+      width:{'Mobile':'12%','Pc':'14%'},
+      height:{'Mobile':'12%','Pc':'16%'},
+      backgroundImage:"url('./Images/EspaçoRessignificarLogo1.png')",
+        backgroundRepeat:'no-repeat',
+        backgroundPosition:'center',
+        backgroundSize:'cover',
+        pointerEvents:'none',
+        zIndex:'500',
+        top:{'Mobile':'1.5%','Pc':'80vh'},
+        left:{'Mobile':'0%','Pc':'85vw'},
+
+    }
+  },
+  BodyContainer:{
+   Id:'BodyContainer',
+   Type:'div',
+   Style:{
+     position:'relative',
+        display:'block',
+        width:'100%',
+        backgroundColor:['white','rgba(17,17,17,1)'],
+        height:{'Pc':'300%','Mobile':{'Portrait':'200%','Landscape':'400%'}},
+        //border:'solid 1px black',
+   },
+   Childs:{
+    FirstImage:{
+    Id:'FirstImage',
+    Type:'div',
+    Style:{
+      position:'absolute',
+      width:{'Pc':'50%','Mobile':{'Portrait':'100%','Landscape':'50%'}},
+      height:{'Pc':'30%','Mobile':{'Portrait':'30%','Landscape':'30%'}},
+      left:{'Pc':'47%','Mobile':{'Portrait':'4%','Landscape':'48%'}},
+      top:{'Pc':'7%','Mobile':{'Portrait':'30%','Landscape':'7%'}},
+      backgroundImage:{Pc:["url('./Images/ABAImage2Light.png')","url('./Images/ABAImage2Dark.png')"],
+          Mobile:{'Portrait':["url('./Images/ABAImage2LightMobile.png')","url('./Images/ABAImage2DarkMobile.png')"],
+            'Landscape':["url('./Images/ABAImage2Light.png')","url('./Images/ABAImage2Dark.png')"]
+          },
+        },
+        backgroundRepeat:'no-repeat',
+        backgroundPosition:'center',
+        backgroundSize:{Pc:'cover',Mobile:'cover'},
+        pointerEvents:'none',
+    }
+    },
+    SecondImage:{
+    Id:'SecondImage',
+    Type:'div',
+    Style:{
+      position:'absolute',
+      width:{'Pc':'50%','Mobile':{'Portrait':'70%','Landscape':'50%'}},
+      height:{'Pc':'30%','Mobile':{'Portrait':'20%','Landscape':'30%'}},
+      left:{'Pc':'1%','Mobile':{'Portrait':'30%','Landscape':'1%'}},
+      top:{'Pc':'40%','Mobile':{'Portrait':'65%','Landscape':'42%'}},
+      backgroundImage:{Pc:["url('./Images/ABAImage3Light.png')","url('./Images/ABAImage3Dark.png')"],
+          Mobile:{'Portrait':["url('./Images/ABAImage3LightMobile.png')","url('./Images/ABAImage3DarkMobile.png')"],
+            'Landscape':["url('./Images/ABAImage3Light.png')","url('./Images/ABAImage3Dark.png')"]
+          },
+        },
+        backgroundRepeat:'no-repeat',
+        backgroundPosition:'center',
+        backgroundSize:{Pc:'cover',Mobile:'cover'},
+        pointerEvents:'none',
+    }
+    },
+
+    TopicOneContainer:{
+      Id:'TopicOneContainer',
+      Type:'div',
+      Style:{
+        position:'relative',
+        display:'block',
+        width:'100%',
+         backgroundColor:'rgba(0,0,0,0)',
+        height:{'Pc':'20%','Mobile':{'Portrait':'','Landscape':''}},
+       // border:'solid 1px black',
+      },
+      Childs:{
+        TopicOneTitle:{
+          Id:'TopicOneTitle',
+          Type:'div',
+          Style:{
+            position:'relative',
+            width:"100%",
+            display:"block",
+            marginTop:{'Pc':'5%','Mobile':{'Portrait':'5%','Landscape':'5%'}},
+              textAlign:'center',
+              color:['black','white'],
+                fontSize:{'Pc':'1.3rem','Mobile':'1.2rem'},
+           fontFamily: '"Google Sans Code", monospace',
+            fontOpticalSizing: 'auto',
+            fontWeight: '800',
+            fontStyle: 'normal',
+            
+
+          },
+          Text:'O que é ABA / AT?',
+        },
+        TopicOneText:{
+          Id:'TopicOneText',
+          Type:'div',
+          Style:{
+         position:'relative',
+            width:{'Pc':'35%','Mobile':{'Portrait':'80%','Landscape':'40%'}},
+            display:"block",
+            marginTop:{'Pc':'2%','Mobile':{'Portrait':'3%','Landscape':'3%'}},
+              textAlign:'start',
+              color:['black','white'],
+              paddingLeft:{'Pc':"5%","Mobile":{'Portrait':'5%','Landscape':"4%"}},
+                fontSize:{'Pc':'0.9rem','Mobile':'0.55rem'},
+           fontFamily: '"Google Sans Code", monospace',
+            fontOpticalSizing: 'auto',
+            fontWeight: '600',
+            fontStyle: 'normal',
+          },
+          Text:`A Análise do Comportamento Aplicada (ABA) é uma abordagem baseada em evidências científicas que utiliza princípios da ciência do comportamento para desenvolver habilidades e promover mudanças positivas.
+
+O Acompanhamento Terapêutico (AT) complementa esse processo, oferecendo suporte individualizado em diferentes contextos, como escola, casa ou ambientes sociais, auxiliando na generalização das habilidades aprendidas.
+
+Essa abordagem é amplamente utilizada no atendimento a pessoas com Transtorno do Espectro Autista (TEA) e outras condições do neurodesenvolvimento.`,
+        }
+      }
+    },
+     TopicTwoContainer:{
+      Id:'TopicTwoContainer',
+      Type:'div',
+      Style:{
+        position:'relative',
+        display:'block',
+        width:'100%',
+         backgroundColor:'rgba(0,0,0,0)',
+        height:{'Pc':'20%','Mobile':{'Portrait':'','Landscape':''}},
+       // border:'solid 1px black',
+      },
+      Childs:{
+        TopicTwoTitle:{
+          Id:'TopicTwoTitle',
+          Type:'div',
+          Style:{
+            position:'relative',
+            width:"100%",
+            display:"block",
+            marginTop:{'Pc':'0%','Mobile':{'Portrait':'5%','Landscape':'4%'}},
+              textAlign:'Start',
+               paddingLeft:{'Pc':"8%","Mobile":{'Portrait':'9%','Landscape':"8%"}},
+              color:['black','white'],
+                fontSize:{'Pc':'1.3rem','Mobile':'1.2rem'},
+           fontFamily: '"Google Sans Code", monospace',
+            fontOpticalSizing: 'auto',
+            fontWeight: '800',
+            fontStyle: 'normal',
+            
+
+          },
+          Text:'Para quem é indicada?',
+        },
+        TopicTwoText:{
+          Id:'TopicTwoText',
+          Type:'div',
+          Style:{
+         position:'relative',
+            width:{'Pc':'35%','Mobile':{'Portrait':'','Landscape':'40%'}},
+            display:"block",
+            marginTop:{'Pc':'2%','Mobile':{'Portrait':'5%','Landscape':'4%'}},
+              textAlign:'start',
+              color:['black','white'],
+              paddingLeft:{'Pc':"5%","Mobile":{'Portrait':'5%','Landscape':"5%"}},
+               paddingBottom:{'Pc':"5%","Mobile":{'Portrait':'','Landscape':"5%"}},
+                fontSize:{'Pc':'0.9rem','Mobile':'0.6rem'},
+           fontFamily: '"Google Sans Code", monospace',
+            fontOpticalSizing: 'auto',
+            fontWeight: '600',
+            fontStyle: 'normal',
+          },
+          Text:`A ABA / AT é indicada para:
+
+Crianças e adolescentes no espectro autista (TEA)
+
+Atrasos no desenvolvimento
+
+Dificuldades de comunicação
+
+Comportamentos desafiadores
+
+Dificuldades de interação social
+
+Necessidade de apoio em ambiente escolar
+
+Desenvolvimento de autonomia e habilidades adaptativas`,
+        }
+      }
+    },
+     TopicThreeContainer:{
+      Id:'TopicThreeContainer',
+      Type:'div',
+      Style:{
+        position:'relative',
+        display:'block',
+        width:'100%',
+        marginTop:{'Mobile':{'Portrait':'100%','Landscape':''},'Pc':'0%'},
+         backgroundColor:'rgba(0,0,0,0)',
+        height:{'Pc':'20%','Mobile':{'Portrait':'','Landscape':''}},
+       // border:'solid 1px black',
+      },
+      Childs:{
+        TopicThreeTitle:{
+          Id:'TopicThreeTitle',
+          Type:'div',
+          Style:{
+            position:'relative',
+            width:"100%",
+            display:"block",
+            marginTop:{'Pc':'0%','Mobile':{'Portrait':'','Landscape':'0%'}},
+              textAlign:'Start',
+               paddingLeft:{'Pc':"60%","Mobile":{'Portrait':'5%','Landscape':"60%"}},
+              color:['black','white'],
+                fontSize:{'Pc':'1.3rem','Mobile':'1.2rem'},
+           fontFamily: '"Google Sans Code", monospace',
+            fontOpticalSizing: 'auto',
+           
+            fontWeight: '800',
+            fontStyle: 'normal',
+            
+
+          },
+          Listener:{
+             UmbraViewportLogic:{
+      Action:UmbraAnimations.Active,
+      Params:['SlideForRightAnimation','TopicThreeText'],
+
+          },
+          },
+          Text:'Como funciona o atendimento?',
+        },
+        TopicThreeText:{
+          Id:'TopicThreeText',
+          Type:'div',
+          Style:{
+         position:'relative',
+            width:{'Pc':'35%','Mobile':{'Portrait':'90%','Landscape':'35%'}},
+            display:"block",
+            marginTop:{'Pc':'2%','Mobile':{'Portrait':'3%','Landscape':'2%'}},
+              textAlign:'start',
+              color:['black','white'],
+              paddingLeft:{'Pc':"55%","Mobile":{'Portrait':'4%','Landscape':"60%"}},
+               paddingBottom:{'Pc':"5%","Mobile":{'Portrait':'','Landscape':"5%"}},
+                fontSize:{'Pc':'1rem','Mobile':'0.7rem'},
+           fontFamily: '"Google Sans Code", monospace',
+            fontOpticalSizing: 'auto',
+           
+            fontWeight: '600',
+            fontStyle: 'normal',
+          },
+          
+          Text:`O processo geralmente envolve:
+
+✔ Avaliação comportamental individualizada
+✔ Definição de metas claras e mensuráveis
+✔ Intervenções estruturadas e baseadas em evidências
+✔ Ensino de habilidades sociais, comunicativas e acadêmicas
+✔ Acompanhamento em diferentes ambientes (quando necessário)
+✔ Orientação contínua à família
+
+As estratégias são personalizadas, respeitando o perfil, as necessidades e o ritmo de cada indivíduo.`,
+        }
+      }
+    },
+     TopicFourContainer:{
+      Id:'TopicFourContainer',
+      Type:'div',
+      Style:{
+        position:'relative',
+        display:'block',
+        marginTop:{'Mobile':{'Portrait':'55%','Landscape':''},'Pc':'0%'},
+        width:'100%',
+         backgroundColor:'rgba(0,0,0,0)',
+        height:{'Pc':'20%','Mobile':{'Portrait':'','Landscape':''}},
+       // border:'solid 1px black',
+      },
+      Childs:{
+        TopicFourTitle:{
+          Id:'TopicFourTitle',
+          Type:'div',
+          Style:{
+            position:'relative',
+            width:"100%",
+            display:"block",
+            marginTop:{'Pc':'2%','Mobile':{'Portrait':'4%','Landscape':'2%'}},
+              textAlign:'Start',
+               paddingLeft:{'Pc':"60%","Mobile":{'Portrait':'5%','Landscape':"55%"}},
+              color:['black','white'],
+                fontSize:{'Pc':'1.3rem','Mobile':'1.1rem'},
+           fontFamily: '"Google Sans Code", monospace',
+            fontOpticalSizing: 'auto',
+            opacity:'0',
+            fontWeight: '800',
+            fontStyle: 'normal',
+            
+
+          },
+          Listener:{
+             UmbraViewportLogic:{
+      Action:UmbraAnimations.Active,
+      Params:['SlideForRightAnimation','TopicFourTitle'],
+
+          },
+          },
+          Text:'Qual o objetivo da ABA / AT?',
+        },
+        TopicFourText:{
+          Id:'TopicFourText',
+          Type:'div',
+          Style:{
+         position:'relative',
+            width:{'Pc':'35%','Mobile':{'Portrait':'70%','Landscape':'35%'}},
+            display:"block",
+            marginTop:{'Pc':'2%','Mobile':{'Portrait':'3%','Landscape':'2%'}},
+              textAlign:'start',
+              color:['black','white'],
+              opacity:'0',
+              paddingLeft:{'Pc':"55%","Mobile":{'Portrait':'7%','Landscape':"55%"}},
+               paddingBottom:{'Pc':"5%","Mobile":{'Portrait':'','Landscape':"5%"}},
+                fontSize:{'Pc':'1rem','Mobile':'0.7rem'},
+           fontFamily: '"Google Sans Code", monospace',
+            fontOpticalSizing: 'auto',
+            fontWeight: '600',
+            fontStyle: 'normal',
+          },
+          Listener:{
+             UmbraViewportLogic:{
+      Action:UmbraAnimations.Active,
+      Params:['SlideForRightAnimation','TopicFourText'],
+
+          }
+          },
+          Text:`O principal objetivo é desenvolver habilidades funcionais, promover autonomia e melhorar a qualidade de vida.
+
+A ABA busca fortalecer comportamentos positivos, ampliar repertórios de comunicação e interação social, além de reduzir comportamentos que dificultam o desenvolvimento e a inclusão.`,
         }
       }
     },
@@ -5811,6 +6461,54 @@ MainContainers:{
 
     
    },
+    SceneTransition:{
+          OldScene:'LandingPageMinimalistMainScene',
+          NewScene:'ABAPage',
+          TransitionAnimation:{
+            In:'ScenesTransitionsInAnimation',
+            Out:'ScenesTransitionsOutAnimation',
+            NewElement:{
+              Id:'TransitionAnimationsElement',
+              Type:'div',
+              Style:{
+                position:'fixed',
+                width:'10%',
+                top:'0%',
+                left:'0%',
+                pointerEvents:'none',
+                zIndex:'2000',
+                maxWidth:'100vw',
+                maxHeight:'100vh',
+                height:'10%',
+                scale:'0',
+                background:['radial-gradient(circle,rgba(234, 221, 238, 0.94),rgb(246, 246, 247),rgba(255, 255, 255, 0),rgba(2, 127, 211, 0))',
+                  'radial-gradient(circle,rgb(0, 0, 0),rgba(255, 255, 255, 0))'],
+              }
+            }
+          },
+          TransitionElement:{
+            Id:'LogoTransitionElement',
+            Type:'div',
+            Style:{
+               position:'fixed',
+      width:{'Mobile':{'Portrait':'100%','Landscape':'50vw'},'Pc':'50%'},
+      height:{'Mobile':{'Portrait':'44%','Landscape':'100vh'},'Pc':'50%'},
+      backgroundImage:"url('./Images/EspaçoRessignificarLogo1.png')",
+        backgroundRepeat:'no-repeat',
+        backgroundPosition:'center',
+        backgroundSize:'cover',
+        pointerEvents:'none',
+        transform:{'Pc':'translate(-60%,-50%)','Mobile':{'Portrait':'translate(-70%,-50%)','Landscape':'translate(-70%,-50%)'}},
+        borderRadius:'100px',
+        zIndex:'50000',
+        opacity:'0',
+        top:'50vh',
+        left:'50vw',
+            },
+        InAnimation:'FadeInAnimation',
+        OutAnimation:'FadeOutAnimation',
+          }
+        }
       }
     },
      TerapyLetter:{
@@ -7201,6 +7899,16 @@ UmbraScenes.New("SpecialEducationPage",SpecialEducationPageDiagram,{
 });
 
 UmbraScenes.New("TEAPage",TEAPageDiagram,{
+  position:"absolute",
+    width:'100%',
+    height:'100%',
+    overflowX:'hidden',
+    left:'0px',
+    top:'0px',
+    backgroundColor:['rgb(255, 255, 255)','rgb(17, 17, 17)']
+});
+
+UmbraScenes.New("ABAPage",ABAPageDiagram,{
   position:"absolute",
     width:'100%',
     height:'100%',
