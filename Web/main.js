@@ -168,7 +168,7 @@ let NeuroPedagogyPageDiagram = {
         display:'block',
         width:'100%',
         backgroundColor:['white','rgba(17,17,17,1)'],
-        height:{'Pc':'300%','Mobile':{'Portrait':'200%','Landscape':'360%'}},
+        height:{'Pc':'300%','Mobile':{'Portrait':'200%','Landscape':'380%'}},
         //border:'solid 1px black',
    },
    Childs:{
