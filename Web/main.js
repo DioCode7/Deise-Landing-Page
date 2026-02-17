@@ -663,6 +663,654 @@ CreditsFooter:{
 
 }
 
+
+let PsicClinicPageDiagram = {
+  MainParent:'PsicClinicPageContainer',
+  MainContainers:{
+ RealHeader:{
+    Id:'LandingPageMainHeader',
+    Type:'div',
+    Style:{
+        zIndex:'10',
+        position:'relative',
+        display:'inline-block',
+        width:'100%',
+           backgroundColor:['white','rgb(17,17,17)'],
+        height:{"Mobile":{'Portrait':'10vh','Landscape':'15vh'},"Pc":"15vh"},
+      
+    },
+    Childs:{
+     MainLogo:{
+        Id:'MainLogo',
+        Type:'div',
+        Style:{
+            position:'relative',
+        display:'flex',
+        width:{'Mobile':{'Portrait':'30%','Landscape':'14%'},'Pc':'20%'},
+        height:{'Pc':'140%',Mobile:{'Portrait':'100%','Landscape':'150%'}},
+        left:'50%',
+        top:'50%',
+        transform:'translate(-50%,-50%)',
+        backgroundImage:{Pc:["url('./Images/EspaçoRessignificarLetter1.png')","url('./Images/EspaçoRessignificarLetter3.png')"],
+          Mobile:{'Portrait':["url('./Images/EspaçoRessignificarLetterMobile.png')","url('./Images/EspaçoRessignificarLetter3.png')"],
+            'Landscape':["url('./Images/EspaçoRessignificarLetterMobile.png')","url('./Images/EspaçoRessignificarLetter3.png')"]
+          },
+        },
+        backgroundRepeat:'no-repeat',
+        backgroundPosition:'center',
+        backgroundSize:'cover',
+        pointerEvents:'none',
+        },
+      },
+  
+  HeaderButtonAboutMe:{
+   Id:'HeaderButtonAboutMe',
+   Type:'div',
+   Style:{
+   color:['black','white'],
+   fontSize:{'Mobile':'11px','Pc':'14px'},
+    fontFamily: "'Delius', cursive",
+            fontWeight: '400',
+            fontStyle: 'normal',
+            cursor:'default',
+            zIndex:'25',
+           top:{'Mobile':'86%','Pc':'78%'},
+            position:'absolute',
+            right:{'Mobile':{'Portrait':'14%','Landscape':'7%'},'Pc':'17.5%'},
+           // borderBottom://{'Mobile':['solid 1px black','solid 1px white'],'Pc':['solid 1px black','solid 1px white']}
+   },
+   Text:'Voltar a tela principal',
+    Listener:{
+          UmbraHover:{
+            Style:{
+              scale:'1.1'
+            }
+          },
+           SceneTransition:{
+          OldScene:'PsicClinicPage',
+          NewScene:'LandingPageMinimalistMainScene',
+          OnEntryAnimations:{
+            AnimationGroup:{
+               Animation:'SlideForRightAnimation',
+               Elements:InicialAnimationsElements,
+            }
+            
+
+          },
+          TransitionAnimation:{
+            In:'ScenesTransitionsInAnimation',
+            Out:'ScenesTransitionsOutAnimation',
+            NewElement:{
+              Id:'TransitionAnimationsElement',
+              Type:'div',
+              Style:{
+                position:'fixed',
+                width:'10%',
+                top:'0%',
+                left:'0%',
+                pointerEvents:'none',
+                zIndex:'2000',
+                maxWidth:'100vw',
+                maxHeight:'100vh',
+                height:'10%',
+                scale:'0',
+                background:['radial-gradient(circle,rgba(251, 235, 255, 0.94),rgb(246, 246, 247),rgba(255, 255, 255, 0),rgba(2, 127, 211, 0))',
+                  'radial-gradient(circle,rgb(0, 0, 0),rgba(255, 255, 255, 0))'],
+              }
+            }
+          },
+          TransitionElement:{
+            Id:'LogoTransitionElement',
+            Type:'div',
+            Style:{
+               position:'fixed',
+      width:{'Mobile':'3%','Pc':'50%'},
+      height:{'Mobile':'1%','Pc':'50%'},
+      backgroundImage:"url('./Images/EspaçoRessignificarLogo1.png')",
+        backgroundRepeat:'no-repeat',
+        backgroundPosition:'center',
+        backgroundSize:'cover',
+        pointerEvents:'none',
+        transform:'translate(-60%,-50%)',
+        borderRadius:'100px',
+        zIndex:'50000',
+        opacity:'0',
+        top:'50%',
+        left:'50%',
+            },
+        InAnimation:'FadeInAnimation',
+        OutAnimation:'FadeOutAnimation',
+          }
+        }
+        }
+  },
+ 
+  },
+    },
+     StaticLogo:{
+    Id:'StaticLogo',
+    Type:'div',
+    Style:{
+      position:'fixed',
+      display:{'Pc':'flex','Mobile':'none'},
+      width:{'Mobile':'12%','Pc':'14%'},
+      height:{'Mobile':'12%','Pc':'16%'},
+      backgroundImage:"url('./Images/EspaçoRessignificarLogo1.png')",
+        backgroundRepeat:'no-repeat',
+        backgroundPosition:'center',
+        backgroundSize:'cover',
+        pointerEvents:'none',
+        zIndex:'500',
+        top:{'Mobile':'1.5%','Pc':'80vh'},
+        left:{'Mobile':'0%','Pc':'85vw'},
+
+    }
+  },
+  BodyContainer:{
+   Id:'BodyContainer',
+   Type:'div',
+   Style:{
+     position:'relative',
+        display:'block',
+        width:'100%',
+        backgroundColor:['white','rgba(17,17,17,1)'],
+        height:{'Pc':'300%','Mobile':{'Portrait':'200%','Landscape':'400%'}},
+        //border:'solid 1px black',
+   },
+   Childs:{
+    FirstImage:{
+    Id:'FirstImage',
+    Type:'div',
+    Style:{
+      position:'absolute',
+      width:{'Pc':'50%','Mobile':{'Portrait':'100%','Landscape':'50%'}},
+      height:{'Pc':'30%','Mobile':{'Portrait':'30%','Landscape':'30%'}},
+      left:{'Pc':'47%','Mobile':{'Portrait':'4%','Landscape':'48%'}},
+      top:{'Pc':'7%','Mobile':{'Portrait':'30%','Landscape':'7%'}},
+      backgroundImage:{Pc:["url('./Images/PiscClinicImage2Light.png')","url('./Images/PiscClinicImage2Dark.png')"],
+          Mobile:{'Portrait':["url('./Images/PiscClinicImage2LightMobile.png')","url('./Images/PiscClinicImage2DarkMobile.png')"],
+            'Landscape':["url('./Images/PiscClinicImage2Light.png')","url('./Images/PiscClinicImage2Dark.png')"]
+          },
+        },
+        backgroundRepeat:'no-repeat',
+        backgroundPosition:'center',
+        backgroundSize:{Pc:'cover',Mobile:'cover'},
+        pointerEvents:'none',
+    }
+    },
+    SecondImage:{
+    Id:'SecondImage',
+    Type:'div',
+    Style:{
+      position:'absolute',
+      width:{'Pc':'50%','Mobile':{'Portrait':'70%','Landscape':'50%'}},
+      height:{'Pc':'30%','Mobile':{'Portrait':'20%','Landscape':'30%'}},
+      left:{'Pc':'1%','Mobile':{'Portrait':'30%','Landscape':'1%'}},
+      top:{'Pc':'40%','Mobile':{'Portrait':'65%','Landscape':'42%'}},
+      backgroundImage:{Pc:["url('./Images/PiscClinicImage3Light.png')","url('./Images/PiscClinicImage3Dark.png')"],
+          Mobile:{'Portrait':["url('./Images/PiscClinicImage3LightMobile.png')","url('./Images/PiscClinicImage3DarkMobile.png')"],
+            'Landscape':["url('./Images/PiscClinicImage3Light.png')","url('./Images/PiscClinicImage3Dark.png')"]
+          },
+        },
+        backgroundRepeat:'no-repeat',
+        backgroundPosition:'center',
+        backgroundSize:{Pc:'cover',Mobile:'cover'},
+        pointerEvents:'none',
+    }
+    },
+
+    TopicOneContainer:{
+      Id:'TopicOneContainer',
+      Type:'div',
+      Style:{
+        position:'relative',
+        display:'block',
+        width:'100%',
+         backgroundColor:'rgba(0,0,0,0)',
+        height:{'Pc':'20%','Mobile':{'Portrait':'','Landscape':''}},
+       // border:'solid 1px black',
+      },
+      Childs:{
+        TopicOneTitle:{
+          Id:'TopicOneTitle',
+          Type:'div',
+          Style:{
+            position:'relative',
+            width:"100%",
+            display:"block",
+            marginTop:{'Pc':'5%','Mobile':{'Portrait':'5%','Landscape':'5%'}},
+              textAlign:'center',
+              color:['black','white'],
+                fontSize:{'Pc':'1.3rem','Mobile':'1.2rem'},
+           fontFamily: '"Google Sans Code", monospace',
+            fontOpticalSizing: 'auto',
+            fontWeight: '800',
+            fontStyle: 'normal',
+            
+
+          },
+          Text:'O que é Psicanálise Clínica?',
+        },
+        TopicOneText:{
+          Id:'TopicOneText',
+          Type:'div',
+          Style:{
+         position:'relative',
+            width:{'Pc':'35%','Mobile':{'Portrait':'80%','Landscape':'40%'}},
+            display:"block",
+            marginTop:{'Pc':'2%','Mobile':{'Portrait':'3%','Landscape':'3%'}},
+              textAlign:'start',
+              color:['black','white'],
+              paddingLeft:{'Pc':"5%","Mobile":{'Portrait':'5%','Landscape':"4%"}},
+                fontSize:{'Pc':'1rem','Mobile':'0.7rem'},
+           fontFamily: '"Google Sans Code", monospace',
+            fontOpticalSizing: 'auto',
+            fontWeight: '600',
+            fontStyle: 'normal',
+          },
+          Text:`A psicanálise clínica é uma abordagem terapêutica que busca compreender os aspectos conscientes e inconscientes que influenciam pensamentos, emoções e comportamentos.
+
+Por meio da escuta qualificada e do diálogo, o processo terapêutico permite que a pessoa compreenda conflitos internos, padrões repetitivos e experiências que impactam sua vida emocional e seus relacionamentos.`,
+        }
+      }
+    },
+     TopicTwoContainer:{
+      Id:'TopicTwoContainer',
+      Type:'div',
+      Style:{
+        position:'relative',
+        display:'block',
+        width:'100%',
+         backgroundColor:'rgba(0,0,0,0)',
+        height:{'Pc':'20%','Mobile':{'Portrait':'','Landscape':''}},
+       // border:'solid 1px black',
+      },
+      Childs:{
+        TopicTwoTitle:{
+          Id:'TopicTwoTitle',
+          Type:'div',
+          Style:{
+            position:'relative',
+            width:"100%",
+            display:"block",
+            marginTop:{'Pc':'0%','Mobile':{'Portrait':'5%','Landscape':'4%'}},
+              textAlign:'Start',
+               paddingLeft:{'Pc':"8%","Mobile":{'Portrait':'9%','Landscape':"8%"}},
+              color:['black','white'],
+                fontSize:{'Pc':'1.3rem','Mobile':'1.2rem'},
+           fontFamily: '"Google Sans Code", monospace',
+            fontOpticalSizing: 'auto',
+            fontWeight: '800',
+            fontStyle: 'normal',
+            
+
+          },
+          Text:'Para quem é indicada?',
+        },
+        TopicTwoText:{
+          Id:'TopicTwoText',
+          Type:'div',
+          Style:{
+         position:'relative',
+            width:{'Pc':'35%','Mobile':{'Portrait':'','Landscape':'40%'}},
+            display:"block",
+            marginTop:{'Pc':'2%','Mobile':{'Portrait':'5%','Landscape':'4%'}},
+              textAlign:'start',
+              color:['black','white'],
+              paddingLeft:{'Pc':"5%","Mobile":{'Portrait':'5%','Landscape':"5%"}},
+               paddingBottom:{'Pc':"5%","Mobile":{'Portrait':'','Landscape':"5%"}},
+                fontSize:{'Pc':'0.9rem','Mobile':'0.7rem'},
+           fontFamily: '"Google Sans Code", monospace',
+            fontOpticalSizing: 'auto',
+            fontWeight: '600',
+            fontStyle: 'normal',
+          },
+          Text:`A psicanálise clínica é indicada para:
+
+Pessoas que enfrentam ansiedade, angústia ou tristeza persistente
+
+Dificuldades nos relacionamentos
+
+Conflitos familiares ou conjugais
+
+Baixa autoestima ou insegurança
+
+Processos de luto ou mudanças importantes
+
+Dificuldades emocionais que afetam o desempenho escolar ou profissional
+
+Quem busca autoconhecimento e desenvolvimento pessoal`,
+        }
+      }
+    },
+     TopicThreeContainer:{
+      Id:'TopicThreeContainer',
+      Type:'div',
+      Style:{
+        position:'relative',
+        display:'block',
+        width:'100%',
+        marginTop:{'Mobile':{'Portrait':'100%','Landscape':''},'Pc':'0%'},
+         backgroundColor:'rgba(0,0,0,0)',
+        height:{'Pc':'20%','Mobile':{'Portrait':'','Landscape':''}},
+       // border:'solid 1px black',
+      },
+      Childs:{
+        TopicThreeTitle:{
+          Id:'TopicThreeTitle',
+          Type:'div',
+          Style:{
+            position:'relative',
+            width:"100%",
+            display:"block",
+            marginTop:{'Pc':'0%','Mobile':{'Portrait':'','Landscape':'0%'}},
+              textAlign:'Start',
+               paddingLeft:{'Pc':"60%","Mobile":{'Portrait':'5%','Landscape':"60%"}},
+              color:['black','white'],
+                fontSize:{'Pc':'1.3rem','Mobile':'1.2rem'},
+           fontFamily: '"Google Sans Code", monospace',
+            fontOpticalSizing: 'auto',
+           
+            fontWeight: '800',
+            fontStyle: 'normal',
+            
+
+          },
+          Listener:{
+             UmbraViewportLogic:{
+      Action:UmbraAnimations.Active,
+      Params:['SlideForRightAnimation','TopicThreeText'],
+
+          },
+          },
+          Text:'Como funciona o atendimento?',
+        },
+        TopicThreeText:{
+          Id:'TopicThreeText',
+          Type:'div',
+          Style:{
+         position:'relative',
+            width:{'Pc':'35%','Mobile':{'Portrait':'90%','Landscape':'35%'}},
+            display:"block",
+            marginTop:{'Pc':'2%','Mobile':{'Portrait':'3%','Landscape':'2%'}},
+              textAlign:'start',
+              color:['black','white'],
+              paddingLeft:{'Pc':"55%","Mobile":{'Portrait':'4%','Landscape':"60%"}},
+               paddingBottom:{'Pc':"5%","Mobile":{'Portrait':'','Landscape':"5%"}},
+                fontSize:{'Pc':'1rem','Mobile':'0.7rem'},
+           fontFamily: '"Google Sans Code", monospace',
+            fontOpticalSizing: 'auto',
+           
+            fontWeight: '600',
+            fontStyle: 'normal',
+          },
+          
+          Text:`O processo geralmente envolve:
+
+✔ Sessões individuais em ambiente acolhedor e sigiloso
+✔ Espaço de escuta livre e sem julgamentos
+✔ Reflexão sobre experiências, emoções e padrões de comportamento
+✔ Construção gradual de compreensão e ressignificação
+✔ Acompanhamento contínuo conforme a necessidade de cada pessoa
+
+O ritmo do processo respeita a singularidade de cada indivíduo.`,
+        }
+      }
+    },
+     TopicFourContainer:{
+      Id:'TopicFourContainer',
+      Type:'div',
+      Style:{
+        position:'relative',
+        display:'block',
+        marginTop:{'Mobile':{'Portrait':'55%','Landscape':''},'Pc':'0%'},
+        width:'100%',
+         backgroundColor:'rgba(0,0,0,0)',
+        height:{'Pc':'20%','Mobile':{'Portrait':'','Landscape':''}},
+       // border:'solid 1px black',
+      },
+      Childs:{
+        TopicFourTitle:{
+          Id:'TopicFourTitle',
+          Type:'div',
+          Style:{
+            position:'relative',
+            width:"100%",
+            display:"block",
+            marginTop:{'Pc':'0%','Mobile':{'Portrait':'4%','Landscape':'0%'}},
+              textAlign:'Start',
+               paddingLeft:{'Pc':"60%","Mobile":{'Portrait':'5%','Landscape':"55%"}},
+              color:['black','white'],
+                fontSize:{'Pc':'1.3rem','Mobile':'1.1rem'},
+           fontFamily: '"Google Sans Code", monospace',
+            fontOpticalSizing: 'auto',
+            opacity:'0',
+            fontWeight: '800',
+            fontStyle: 'normal',
+            
+
+          },
+          Listener:{
+             UmbraViewportLogic:{
+      Action:UmbraAnimations.Active,
+      Params:['SlideForRightAnimation','TopicFourTitle'],
+
+          },
+          },
+          Text:'Qual o objetivo da Psicanálise?',
+        },
+        TopicFourText:{
+          Id:'TopicFourText',
+          Type:'div',
+          Style:{
+         position:'relative',
+            width:{'Pc':'35%','Mobile':{'Portrait':'70%','Landscape':'35%'}},
+            display:"block",
+            marginTop:{'Pc':'2%','Mobile':{'Portrait':'3%','Landscape':'2%'}},
+              textAlign:'start',
+              color:['black','white'],
+              opacity:'0',
+              paddingLeft:{'Pc':"55%","Mobile":{'Portrait':'7%','Landscape':"55%"}},
+               paddingBottom:{'Pc':"5%","Mobile":{'Portrait':'','Landscape':"5%"}},
+                fontSize:{'Pc':'1rem','Mobile':'0.7rem'},
+           fontFamily: '"Google Sans Code", monospace',
+            fontOpticalSizing: 'auto',
+            fontWeight: '600',
+            fontStyle: 'normal',
+          },
+          Listener:{
+             UmbraViewportLogic:{
+      Action:UmbraAnimations.Active,
+      Params:['SlideForRightAnimation','TopicFourText'],
+
+          }
+          },
+          Text:`O principal objetivo é promover autoconhecimento, equilíbrio emocional e maior consciência sobre si mesmo.
+
+A psicanálise possibilita que a pessoa compreenda suas emoções, fortaleça sua identidade e desenvolva formas mais saudáveis de lidar com seus conflitos e relações.`,
+        }
+      }
+    },
+    TopicFiveContainer:{
+      Id:'TopicFiveContainer',
+      Type:'div',
+      Style:{
+        position:'relative',
+        display:'block',
+        width:'100%',
+        marginTop:{'Pc':'0%','Mobile':{'Portrait':'10%','Landscape':'0%'}},
+         backgroundColor:'rgba(0,0,0,0)',
+        height:{'Pc':'20%','Mobile':{'Portrait':'5%','Landscape':'5%'}},
+      //  border:'solid 1px black',
+      },
+      Childs:{
+        CTAButton:{
+          Id:'CTAButton',
+          Type:'div',
+          Style:{
+            position:'relative',
+            width:{'Pc':'35%','Mobile':{'Portrait':'70%','Landscape':'35%'}},
+            display:"block",
+            opacity:'0',
+            marginTop:{'Pc':'5%','Mobile':{'Portrait':'5%','Landscape':'5%'}},
+              textAlign:'center',
+              transform:'translate(-50%,-50%)',
+              border:'solid 1px black',
+              marginLeft:{'Pc':'50%','Mobile':{'Portrait':'50%','Landscape':'50%'}},
+              backgroundColor:['rgb(255, 255, 255)','rgba(0, 0, 0, 0)'],
+              height:{'Pc':'20%','Mobile':{'Portrait':'40%','Landscape':'70%'}},
+              color:['black','white'],
+                fontSize:{'Pc':'1.4rem','Mobile':'0.9rem'},
+           fontFamily: '"Google Sans Code", monospace',
+            fontOpticalSizing: 'auto',
+            fontWeight: '800',
+            boxShadow:'rgba(0,0,0,0.8) 10px 10px 10px',
+            fontStyle: 'normal',
+
+            
+
+          },
+          Listener:{
+  UmbraHover:{
+        Style:{
+        color:'orange',
+        scale:'1.05',
+         fontSize:{'Mobile':'11px','Pc':'1.6rem'},
+        }
+      },
+      UseFn:true,
+      Fn:()=>{window.open("https://wa.me/5554991841827", "_blank");},
+       
+    UmbraViewportLogic:{
+      Action:UmbraAnimations.Active,
+      Params:['SlideForRightAnimation','CTAButton'],
+
+    
+   },
+          },
+         
+          Childs:{
+            CTAText:{
+              Id:'CTAText',
+              Type:'div',
+              Style:{
+                position:'absolute',
+                top:'50%',
+                transform:'translate(-50%,-50%)',
+                left:'50%',
+                pointerEvents:'none',
+              },
+               Text:'Agende Já Sua Consulta!',
+            }
+          }
+        },
+         TopicFiveText:{
+          Id:'TopicFiveText',
+          Type:'div',
+          Style:{
+         position:'relative',
+            width:{'Pc':'35%','Mobile':{'Portrait':'','Landscape':'35%'}},
+            display:"block",
+            marginTop:{'Pc':'-1%','Mobile':{'Portrait':'','Landscape':'-1%'}},
+              textAlign:'start',
+              color:['black','white'],
+              marginLeft:'30%',
+              paddingLeft:{'Pc':"0%","Mobile":{'Portrait':'','Landscape':"0%"}},
+               paddingBottom:{'Pc':"5%","Mobile":{'Portrait':'','Landscape':"5%"}},
+                fontSize:{'Pc':'0.7rem','Mobile':'12px'},
+           fontFamily: '"Google Sans Code", monospace',
+            fontOpticalSizing: 'auto',
+            fontWeight: '600',
+            opacity:'0',
+            fontStyle: 'normal',
+          },
+          Text:`-> Clique nesse botão para ir direto ao nosso Whatsapp!`,
+          Listener:{
+             UmbraViewportLogic:{
+      Action:UmbraAnimations.Active,
+      Params:['SlideForRightAnimation','TopicFiveText'],
+
+          }
+        }
+      }
+       
+      }
+    },
+    
+    
+  }
+  
+  },
+
+  FooterContainer:{
+     Id:'FooterContainer',
+    Type:'div',
+    Style:{
+      position:'relative',
+      display:'block',
+      height:{'Mobile':{'Portrait':'8vh','Landscape':'20vh'},'Pc':'20vh'},
+      borderTop:['solid 1px black','solid 1px black'],
+       backgroundColor:['white','rgb(17,17,17)'],
+      zIndex:'30'
+    },
+
+    Childs:{
+       FooterLogo:{
+    Id:'FooterLogo',
+    Type:'div',
+    Style:{
+      position:'absolute',
+      width:{'Mobile':{'Portrait':'25%','Landscape':'15%'},'Pc':'15%'},
+      height:{'Mobile':{'Portrait':'80%','Landscape':'80%'},'Pc':'80%'},
+      backgroundImage:"url('./Images/EspaçoRessignificarLogo1.png')",
+        backgroundRepeat:'no-repeat',
+        backgroundPosition:'center',
+        backgroundSize:'cover',
+        pointerEvents:'none',
+        borderRadius:'100px',
+        zIndex:'500',
+        top:'50%',
+        left:'50%',
+        transform:'translate(-50%,-50%)'
+  },
+},
+CreditsFooter:{
+  Id:'CreditsFooter',
+  Type:'div',
+  Style:{
+    position:'absolute',
+    color:['rgb(10, 10, 10)','rgb(174,174,174)'],
+    fontSize:{'Mobile':'11px','Pc':'11px'},
+    top:'90%',
+    left:'1%',
+    transform:'translate(0%,-50%)',
+    whiteSpace: 'pre-wrap',
+      lineHeight:{'Mobile':'2','Pc':'1.5'},
+      fontFamily: "'Delius', cursive",
+      fontWeight: '400',
+      fontStyle: 'normal',
+      cursor:'pointer'
+
+  },
+  Text:'DioMhwl',
+   Listener:{
+      UmbraHover:{
+        Style:{
+        color:'blue',
+         fontSize:{'Mobile':'11px','Pc':'17px'},
+        }
+      },
+      UseFn:true,
+      Fn:()=>{window.open("https://www.instagram.com/diomhwl/", "_blank")}
+    }
+}
+    }
+  }
+  },
+
+
+}
+
 let GeneralMoreAboutBluePrint = {
   MainParent:'GeneralMoreAboutSceneContainer',
   MainContainers:{
@@ -1809,537 +2457,7 @@ CreditsFooter:{
   }
   }
 }
-let LandingPageBluePrint = {
-MainParent:"LandingPageMainSceneContainer",
-MainContainers:{
-  StaticLogo:{
-    Id:'StaticLogo',
-    Type:'div',
-    Style:{
-      position:'fixed',
-      width:{'Mobile':'12%','Pc':'14%'},
-      height:{'Mobile':'12%','Pc':'14%'},
-      backgroundImage:"url('./Images/EspaçoRessignificarLogo1.png')",
-        backgroundRepeat:'no-repeat',
-        backgroundPosition:'center',
-        backgroundSize:'cover',
-        pointerEvents:'none',
-        zIndex:'500',
-        top:{'Mobile':'1.5%','Pc':'3%'},
-        left:{'Mobile':'0%','Pc':'-4%'}
 
-    }
-  },
-  MainHeader:{
-    Id:'LandingPageMainHeader',
-    Type:'div',
-    Style:{
-        zIndex:'10',
-        position:'absolute',
-        width:'100%',
-        background:[
-            'linear-gradient(to right,rgb(170, 111, 57),rgb(92, 61, 61),white)',
-            'rgb(112, 69, 69)'],
-        height:{"Mobile":'20%',"Pc":"34%"},
-        boxShadow:"0px 6px 6px rgba(0,0,0,0.8)",
-         backgroundImage:{'Pc':"url('./Images/Decoration4.gif')",'Mobile':"url('./Images/Decoration4Mob.gif')"},
-        backgroundRepeat:'no-repeat',
-        backgroundPosition:'center',
-        backgroundSize:'cover',
-
-    },
-    Childs:{
-      ConceptThemeSwitchButton:{
-     Id:'ConceptThemeSwitchButton',
-     Type:'div',
-     Style:{
-     fontSize:{'Mobile':'11px','Pc':'15px'},
-     color:'white',
-     position:'absolute',
-     top:{'Mobile':'4%','Pc':'10%'},
-     left:{'Mobile':'4%','Pc':'10%'},
-     border:'solid 1px black',
-     backgroundColor:'black',
-     zIndex:'20',
-     cursor:'pointer', 
-     },
-     Listener:{
-      UseFn:true,
-      Fn:ConceptThemeSwitchs,
-      FnParams:()=>[['Minimalista']],
-      UmbraHover:{
-        Style:{
-          scale:'1.2',
-          
-        }
-      }
-     },
-     Text:()=>ActualConceptTheme,
-
-      },
-         HeaderMainLetter:{
-    Id:'LandingPageHeaderMainLetter',
-    Type:'div',
-    Style:{
-        position:'absolute',
-        width:'100%',
-        height:'100%',
-        opacity:'0',
-        backgroundImage:"url('./Images/EspaçoRessignificarLetter.png')",
-        backgroundRepeat:'no-repeat',
-        backgroundPosition:'center',
-        backgroundSize:'contain',
-        pointerEvents:'none',
-    },
-
-  },
-  HeaderInstagramIcon:{
-    Id:"HeaderInstagramIcon",
-    Type:'div',
-    Style:{
-    position:'absolute',
-    left:{'Pc':'41%','Mobile':'38%'},
-    top:{'Pc':'3%','Mobile':'4%'},
-    width:{'Pc':'10%','Mobile':'6%'},
-    height:{'Pc':'10%','Mobile':'6%'},
-      backgroundImage:"url('./Images/InstagramIcon.png')",
-        backgroundRepeat:'no-repeat',
-        backgroundPosition:'center',
-        backgroundSize:'contain',
-    },
-
-  },
-  HeaderInstagramReference:{
-    Id:"HeaderInstagramReference",
-    Type:'div',
-    Style:{
-        position:'absolute',
-        top:'7%',
-        left:'50%',
-        color:['white','black'],
-        fontSize:{'Mobile':'9px','Pc':'15px'},
-         cursor:'default',
-         transform:'translate(-50%,-50%)',
-
-    },
-    Text:'@dheisedill',
-     Listener:{
-      UmbraHover:{
-        Style:{
-        color:'blue',
-         fontSize:{'Mobile':'11px','Pc':'17px'},
-        }
-      },
-      UseFn:true,
-      Fn:()=>{window.open("https://www.instagram.com/dheisedill/", "_blank")}
-    }
-  },
-  
-  HeaderButtonAbout:{
-   Id:'HeaderButtonAbout',
-   Type:'div',
-   Style:{
-   color:'white',
-   
-   fontSize:{'Mobile':'11px','Pc':'14px'},
-    fontFamily: "'Delius', cursive",
-            fontWeight: '400',
-            fontStyle: 'normal',
-            cursor:'default',
-             display:{'Mobile':'none','Pc':'flex'},
-            zIndex:'25',
-            top:{'Mobile':'80%','Pc':'5%'},
-            position:'absolute',
-            left:{'Mobile':'23%','Pc':'10%'},
-            //borderBottom:{'Mobile':['solid 1px black','solid 1px white'],'Pc':['solid 1px black','solid 1px white']}
-   },
-   Text:'Saiba Mais',
-   Listener:{
-    UmbraHover:{
-      Style:{
-        scale:'1.2'
-      }
-    }
-   },
-  },
-
-  HeaderButtonSpecs:{
-   Id:'HeaderButtonSpecs',
-   Type:'div',
-   Style:{
-   color:'white',
-   fontSize:{'Mobile':'11px','Pc':'14px'},
-    fontFamily: "'Delius', cursive",
-            fontWeight: '400',
-            fontStyle: 'normal',
-            cursor:'default',
-            display:{'Mobile':'none','Pc':'flex'},
-            zIndex:'25',
-            top:{'Mobile':'80%','Pc':'5%'},
-            position:'absolute',
-            left:{'Mobile':'38%','Pc':'16.5%'},
-            //borderBottom:{'Mobile':['solid 1px black','solid 1px white'],'Pc':['solid 1px black','solid 1px white']}
-   },
-   Text:'Especializações',
-   Listener:{
-    UmbraHover:{
-      Style:{
-        scale:'1.2'
-      }
-    }
-   },
-  },
-  HeaderButtonAboutMe:{
-   Id:'HeaderButtonAboutMe',
-   Type:'div',
-   Style:{
-   color:'white',
-   fontSize:{'Mobile':'11px','Pc':'14px'},
-    fontFamily: "'Delius', cursive",
-            fontWeight: '400',
-            fontStyle: 'normal',
-            cursor:'default',
-             display:{'Mobile':'none','Pc':'flex'},
-            zIndex:'25',
-            top:{'Mobile':'80%','Pc':'5%'},
-            position:'absolute',
-            left:{'Mobile':'59%','Pc':'25.5%'},
-            //borderBottom:{'Mobile':['solid 1px black','solid 1px white'],'Pc':['solid 1px black','solid 1px white']}
-   },
-   Text:'Sobre Mim',
-   Listener:{
-    UmbraHover:{
-      Style:{
-        scale:'1.2'
-      }
-    }
-   },
-  },
-  HeaderButtonContact:{
-   Id:'HeaderButtonContact',
-   Type:'div',
-   Style:{
-   color:'white',
-   fontSize:{'Mobile':'11px','Pc':'14px'},
-    fontFamily: "'Delius', cursive",
-            fontWeight: '400',
-            fontStyle: 'normal',
-             display:{'Mobile':'none','Pc':'flex'},
-            cursor:'default',
-            zIndex:'25',
-            top:{'Mobile':'80%','Pc':'5%'},
-            position:'absolute',
-            left:{'Mobile':'74%','Pc':'32%'},
-            //borderBottom:{'Mobile':['solid 1px black','solid 1px white'],'Pc':['solid 1px black','solid 1px white']}
-   },
-   Text:'Agende Sua Consulta',
-   Listener:{
-    UmbraHover:{
-      Style:{
-        scale:'1.2'
-      }
-    }
-   },
-  },
-     WorkLetter:{
-        Id:'WorkLetter',
-        Type:'div',
-        Style:{
-            position:'absolute',
-            top:{'Mobile':'60%','Pc':'69%'},
-            left:'50%',
-            transform:'translate(-50%,0%)',
-            color:['white','white'],
-            fontSize:{'Pc':'21px','Mobile':'19px'},
-             fontFamily: "'Imperial Script', cursive",
-            fontWeight: '400',
-            fontStyle: 'normal',
-            textShadow:'2px 4px 10px rgba(0, 0, 0, 0.9)',
-            zIndex:'20',
-            cursor:'default'
-
-        },
-        Text:'Neuropedagogia'
-    },
-
-    }
-  },
-  GeneralDescriptionContainer:{
-   Id:'GeneralDescriptionContainer',
-   Type:'div',
-   Style:{
-    position:'absolute',
-    top:{"Mobile":'20%',"Pc":"34%"},
-    left:'0%',
-    width:'100%',
-    border:['solid 1px black','solid 1px white'],
-    height:{'Mobile':'90%','Pc':'120%'},
-   },
-   Childs:{
-    GeneralDescriptionContainerDecoration1:{
-     Id:'GeneralDescriptionContainerDecoration1',
-     Type:'div',
-     Style:{
-      position:'absolute',
-      left:{'Mobile':'26%','Pc':'34%'},
-      top:{'Mobile':'-2%','Pc':'2%'},
-      backgroundImage:"url('./Images/Decoration1.png')",
-        backgroundRepeat:'no-repeat',
-        backgroundPosition:'center',
-        backgroundSize:'contain',
-        width:{'Mobile':'10%','Pc':'10%'},
-        height:{'Mobile':'10%','Pc':'10%'},
-        zIndex:'10',
-        
-
-     },
-    },
-     GeneralDescriptionContainerDecoration2:{
-     Id:'GeneralDescriptionContainerDecoration2',
-     Type:'div',
-     Style:{
-      position:'absolute',
-      left:{'Mobile':'70%','Pc':'56%'},
-      top:{'Mobile':'2%','Pc':'6%'},
-      backgroundImage:"url('./Images/Decoration2.png')",
-        backgroundRepeat:'no-repeat',
-        backgroundPosition:'center',
-        backgroundSize:'contain',
-        width:{'Mobile':'10%','Pc':'10%'},
-        height:{'Mobile':'10%','Pc':'10%'},
-        zIndex:'10',
-        transform:'scale(-1,1) rotate(-40deg)',
-        
-        
-
-     },
-    },
-      GeneralDescriptionContainerDecoration3:{
-     Id:'GeneralDescriptionContainerDecoration3',
-     Type:'div',
-     Style:{
-      position:'absolute',
-      left:{'Mobile':'46%','Pc':'50%'},
-      top:{'Mobile':'7%','Pc':'13%'},
-      backgroundImage:"url('./Images/Decoration3.png')",
-        backgroundRepeat:'no-repeat',
-        backgroundPosition:'center',
-        backgroundSize:'contain',
-        width:{'Mobile':'30%','Pc':'30%'},
-        height:{'Mobile':'30%','Pc':'30%'},
-        zIndex:'10',
-        transform:'translate(-50%,-50%)',
-        
-        
-
-     },
-    },
-      GeneralDescriptionContainerDecoration6:{
-     Id:'GeneralDescriptionContainerDecoration6',
-     Type:'div',
-     Style:{
-      position:'absolute',
-      left:{'Mobile':'70%','Pc':'75%'},
-      top:{'Mobile':'57%','Pc':'51%'},
-      backgroundImage:{'Mobile':'','Pc':"url('./Images/Decoration6.gif')"},
-        backgroundRepeat:'no-repeat',
-        backgroundPosition:'center',
-        backgroundSize:'contain',
-        width:{'Mobile':'45%','Pc':'40%'},
-        height:{'Mobile':'45%','Pc':'40%'},
-        zIndex:'5',
-        transform:'translate(-50%,-50%)',
-        pointerEvents:'none',
-        
-
-     },
-    },
-    GeneralDescriptionContainerDeco:{
-    Id:"GeneralDescriptionContainerDeco",
-    Type:'div',
-    Style:{
-     position:'absolute',
-    top:"0%",
-    left:'0%',
-    background:[
-        'linear-gradient(to bottom, rgb(78, 63, 63),rgba(68, 47, 47, 0.95))',
-         'linear-gradient(to bottom, rgb(78, 63, 63),rgba(68, 47, 47, 0.95))'
-    ],
-    width:'100%',
-     backgroundImage:{'Pc':"url('./Images/Decoration5.gif')",'Mobile':"url('./Images/Decoration5Mob.gif')"},
-        backgroundRepeat:'no-repeat',
-        backgroundPosition:'center',
-        backgroundSize:'cover',
-    height:{'Mobile':'70%','Pc':'69%'},
-    },
-    },
-    GeneralDescriptionContainerDecoRight:{
-    Id:"GeneralDescriptionContainerDecoRight",
-    Type:'div',
-    Style:{
-     position:'absolute',
-    top:"0%",
-    left:'0%',
-    background:[
-        'linear-gradient(to right, rgba(78, 63, 63, 0),rgba(78, 63, 63, 0),rgba(78, 63, 63, 0),rgba(78, 63, 63, 0),rgb(255, 255, 255))',
-        'linear-gradient(to right, rgba(78, 63, 63, 0),rgba(78, 63, 63, 0),rgba(78, 63, 63, 0),rgba(78, 63, 63, 0),rgb(255, 255, 255))'
-    ],
-    width:'100%',
-    height:{'Mobile':'70%','Pc':'70%'},
-    },
-    },
-     WhoWeAreLetter:{
-        Id:' WhoWeAreLetter',
-        Type:'div',
-        Style:{
-            position:'absolute',
-            top:{'Mobile':'7%','Pc':'16%'},
-            left:'50%',
-            transform:'translate(-50%,0%)',
-            color:'white',
-            fontSize:{'Pc':'19px','Mobile':'11px'},
-             fontFamily: "'Delius', cursive",
-            fontWeight: '400',
-            fontStyle: 'normal',
-            textShadow:'2px 4px 10px rgba(0, 0, 0, 0.9)',
-            zIndex:'20',
-            cursor:'default',
-            borderBottom:['solid 1px white','solid 1px white'],
-
-        },
-        Text:'Quem Somos?'
-    },
-    WelcomeLetter:{
-        Id:'WelcomeLetter',
-        Type:'div',
-        Style:{
-            position:'absolute',
-            top:{'Mobile':'2%','Pc':'5%'},
-            left:'50%',
-            transform:'translate(-50%,0%)',
-            color:['white','white'],
-            fontSize:{'Pc':'50px','Mobile':'31px'},
-             fontFamily: "'Imperial Script', cursive",
-            fontWeight: '400',
-            fontStyle: 'normal',
-            textShadow:'2px 4px 10px rgba(0, 0, 0, 0.9)',
-            zIndex:'20',
-            cursor:'default'
-
-        },
-        Text:'Seja Bem Vindo!'
-    },
-    MainDescImage:{
-      Id:'MainDescImage',
-      Type:'div',
-      Style:{
-        position:'absolute',
-        border:['solid 3px black','solid 1px white'],
-        width:{'Mobile':'30%','Pc':'18%'},
-        height:{'Mobile':'20%','Pc':'30%'},
-        zIndex:40,
-        display:'flex',
-        top:{'Mobile':'42%','Pc':'19%'},
-        left:{'Mobile':'70%','Pc':'75%'},
-         backgroundImage:"url('./Images/DescImage.jpeg')",
-        backgroundRepeat:'no-repeat',
-        backgroundPosition:'center',
-        backgroundSize:'cover',
-        boxShadow:'10px 10px 40px rgba(0, 0, 0, 0.8)',
-        transform:{'Mobile':'translate(-50%,0%)','Pc':''},
-      },
-      Listener:{
-        UmbraHover:{
-          Style:{
-            scale:'1.2',
-            border:'none',
-             cursor:'pointer'
-          }
-        }
-      }
-    },
-    MainDescText:{
-    Id:'MainDescText',
-    Type:'div',
-    Style:{
-      position:'absolute',
-      top:{'Mobile':'9%','Pc':'20%'},
-      left:{'Mobile':'13%','Pc':'35%'},
-      fontSize:{'Mobile':'12px','Pc':'17px'},
-      color:['rgb(255, 255, 255)','rgb(240,240,240)'],
-      width:{'Mobile':'60%','Pc':'30%'},
-       fontFamily: "'Delius', cursive",
-            fontWeight: '400',
-            fontStyle: 'normal',
-            cursor:'default',
-            zIndex:'25',
-            
-         
-      
-    },
-    Text:"Somos uma clínica de neuropedagogia especializada psicologia, pedagogia, autismo e educação especial, localizada em Não-Me-Toque/RS.",
-    },
-    MainDescText2:{
-    Id:'MainDescText2',
-    Type:'div',
-    Style:{
-      position:'absolute',
-      top:{'Mobile':'9%','Pc':'33%'},
-      left:{'Mobile':'13%','Pc':'35%'},
-      fontSize:{'Mobile':'12px','Pc':'17px'},
-      color:['rgb(255, 255, 255)','rgb(240,240,240)'],
-      width:{'Mobile':'60%','Pc':'30%'},
-       fontFamily: "'Delius', cursive",
-            fontWeight: '400',
-            fontStyle: 'normal',
-            cursor:'default',
-            zIndex:'25',
-            
-         
-      
-    },
-    Text:"Atuamos com avaliações e intervenções personalizadas, integrando educação, neurociência e psicologia para atender às necessidades individuais de cada pessoa.Nosso trabalho é voltado à promoção do desenvolvimento cognitivo, emocional e acadêmico, em um ambiente acolhedor, ético e fundamentado cientificamente.",
-    },
-     MoreAboutButton:{
-      Id:'MoreAboutButton',
-      Type:'div',
-      Style:{
-        position:'absolute',
-        color:['black','white'],
-        top:{'Mobile':{'Portrait':'50%','Landscape':'50%'},'Pc':'62%'},
-        left:{'Mobile':{'Portrait':'75%','Landscape':'75%'},'Pc':'53%'},
-        border:['solid 1px black','solid 1px white'],
-        width:{'Mobile':{'Portrait':'18%','Landscape':'18%'},'Pc':'14%'},
-        height:{'Mobile':{'Portrait':'4%','Landscape':'4%'},'Pc':'3%'},
-        boxShadow:'rgba(0,0,0,0.6) 5px 5px 5px',
-         fontSize:{'Pc':'15px','Mobile':'0.7rem'},
-             fontFamily: "'Delius', cursive",
-            fontWeight: '400',
-            fontStyle: 'normal',
-            textShadow:'2px 4px 10px rgba(0, 0, 0, 0.9)',
-            textAlign:'center',
-            cursor:'pointer',
-             backgroundImage:"url('./Images/MoreAboutButton.png')",
-        backgroundRepeat:'no-repeat',
-        backgroundPosition:'center',
-        backgroundSize:'cover',
-           
-
-      },
-      Listener:{
-        UmbraHover:{
-          Style:{
-            scale:'1.2',
-          }
-        }
-      }
-    },
-   }
-  },
- 
-},
-
-}
 
 let LandingPageMinimalistBluePrint = {
 MainParent:"LandingPageMinimalistMainSceneContainer",
@@ -3693,6 +3811,54 @@ MainContainers:{
 
     
    },
+     SceneTransition:{
+          OldScene:'LandingPageMinimalistMainScene',
+          NewScene:'PsicClinicPage',
+          TransitionAnimation:{
+            In:'ScenesTransitionsInAnimation',
+            Out:'ScenesTransitionsOutAnimation',
+            NewElement:{
+              Id:'TransitionAnimationsElement',
+              Type:'div',
+              Style:{
+                position:'fixed',
+                width:'10%',
+                top:'0%',
+                left:'0%',
+                pointerEvents:'none',
+                zIndex:'2000',
+                maxWidth:'100vw',
+                maxHeight:'100vh',
+                height:'10%',
+                scale:'0',
+                background:['radial-gradient(circle,rgba(234, 221, 238, 0.94),rgb(246, 246, 247),rgba(255, 255, 255, 0),rgba(2, 127, 211, 0))',
+                  'radial-gradient(circle,rgb(0, 0, 0),rgba(255, 255, 255, 0))'],
+              }
+            }
+          },
+          TransitionElement:{
+            Id:'LogoTransitionElement',
+            Type:'div',
+            Style:{
+               position:'fixed',
+      width:{'Mobile':{'Portrait':'100%','Landscape':'50vw'},'Pc':'50%'},
+      height:{'Mobile':{'Portrait':'44%','Landscape':'100vh'},'Pc':'50%'},
+      backgroundImage:"url('./Images/EspaçoRessignificarLogo1.png')",
+        backgroundRepeat:'no-repeat',
+        backgroundPosition:'center',
+        backgroundSize:'cover',
+        pointerEvents:'none',
+        transform:{'Pc':'translate(-60%,-50%)','Mobile':{'Portrait':'translate(-70%,-50%)','Landscape':'translate(-70%,-90%)'}},
+        borderRadius:'100px',
+        zIndex:'50000',
+        opacity:'0',
+        top:'50%',
+        left:'50vw',
+            },
+        InAnimation:'FadeInAnimation',
+        OutAnimation:'FadeOutAnimation',
+          }
+        }
       }
     },
    
@@ -5590,6 +5756,7 @@ UmbraScenes.New("LandingPageMainScene");
 UmbraScenes.New("GeneralMoreAboutScene",GeneralMoreAboutBluePrint,{
   position:'relative',
   width:'100%',
+  overflowX:'hidden',
     backgroundColor:['white','rgb(17, 17, 17)'],
         //background:['linear-gradient(to left,rgba(106, 146, 255, 0.59),rgb(255, 255, 255),rgb(255, 255, 255),rgb(255, 255, 255),rgb(255, 255, 255),rgb(255, 255, 255),rgb(255, 255, 255),rgb(255, 255, 255))',
        //   'linear-gradient(to left,rgba(106, 146, 255, 0.59),rgb(0, 0, 0),rgb(0, 0, 0),rgb(0, 0, 0),rgb(0, 0, 0),rgb(rgb(0, 0, 0)55, 255, 255),rgb(0, 0, 0))'
@@ -5604,6 +5771,7 @@ UmbraScenes.New("LandingPageMinimalistMainScene",LandingPageMinimalistBluePrint,
         height:'100%',
         left:'0px',
         top:'0px',
+        overflowX:'hidden',
         backgroundColor:['rgb(255, 255, 255)','rgb(17, 17, 17)']});
 UmbraScenes.Active("LandingPageMinimalistMainScene");
 
@@ -5611,6 +5779,18 @@ UmbraScenes.New("NeuroPedagogyPage",NeuroPedagogyPageDiagram,{
   position:"absolute",
     width:'100%',
     height:'100%',
+    overflowX:'hidden',
+    left:'0px',
+    top:'0px',
+    backgroundColor:['rgb(255, 255, 255)','rgb(17, 17, 17)']
+});
+
+
+UmbraScenes.New("PsicClinicPage",PsicClinicPageDiagram,{
+  position:"absolute",
+    width:'100%',
+    height:'100%',
+    overflowX:'hidden',
     left:'0px',
     top:'0px',
     backgroundColor:['rgb(255, 255, 255)','rgb(17, 17, 17)']
@@ -5757,34 +5937,5 @@ if('scrollRestoration' in history){
 
 });
 
-function ConceptThemeSwitchs(NewTheme){
-if(NewTheme == 'Ludico'){
-  ActualConceptTheme = 'Tema Lúdico';
-
-UmbraScenes.TurnOff('LandingPageMinimalistMainScene');
-UmbraScenes.New("LandingPageMainScene");
-UmbraScenes.Active("LandingPageMainScene",{ 
-   position:'absolute',
-        width:'100%',
-        height:'100%',
-        left:'0px',
-        top:'0px',
-        backgroundColor:['rgb(255, 255, 255)','rgb(0,0,0)'],});
-UmbraRender(LandingPageBluePrint);
-} 
-if(NewTheme == 'Minimalista'){
-   ActualConceptTheme = 'Tema Minimalista'
-UmbraDOMControl.Delete('LandingPageMainSceneContainer');
-UmbraScenes.Delete('LandingPageMainScene');
-UmbraScenes.Active("LandingPageMinimalistMainScene",{ 
-   position:'absolute',
-        width:'100%',
-        height:'100%',
-        left:'0px',
-        top:'0px',
-        backgroundColor:['rgb(255, 255, 255)','rgb(0,0,0)'],});
-
-}
-}
 
 
