@@ -959,7 +959,7 @@ Por meio da escuta qualificada e do diálogo, o processo terapêutico permite qu
               color:['black','white'],
               paddingLeft:{'Pc':"5%","Mobile":{'Portrait':'5%','Landscape':"5%"}},
                paddingBottom:{'Pc':"5%","Mobile":{'Portrait':'','Landscape':"5%"}},
-                fontSize:{'Pc':'0.9rem','Mobile':'0.7rem'},
+                fontSize:{'Pc':'0.9rem','Mobile':'0.5rem'},
            fontFamily: '"Google Sans Code", monospace',
             fontOpticalSizing: 'auto',
             fontWeight: '600',
