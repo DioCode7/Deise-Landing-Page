@@ -168,7 +168,7 @@ let NeuroPedagogyPageDiagram = {
         display:'block',
         width:'100%',
         backgroundColor:['white','rgba(17,17,17,1)'],
-        height:{'Pc':'300%','Mobile':{'Portrait':'200%','Landscape':'380%'}},
+        height:{'Pc':'300%','Mobile':{'Portrait':'200%','Landscape':'400%'}},
         //border:'solid 1px black',
    },
    Childs:{
@@ -492,7 +492,7 @@ Mais do que melhorar o desempenho escolar, a neuropedagogia busca desenvolver co
         width:'100%',
         marginTop:{'Pc':'0%','Mobile':{'Portrait':'10%','Landscape':'0%'}},
          backgroundColor:'rgba(0,0,0,0)',
-        height:{'Pc':'20%','Mobile':{'Portrait':'5%','Landscape':'20%'}},
+        height:{'Pc':'20%','Mobile':{'Portrait':'5%','Landscape':'5%'}},
       //  border:'solid 1px black',
       },
       Childs:{
