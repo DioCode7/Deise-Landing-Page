@@ -3265,7 +3265,7 @@ MainContainers:{
         backgroundPosition:'center',
         backgroundSize:'cover',
         pointerEvents:'none',
-        transform:{'Pc':'translate(-60%,-50%)','Mobile':{'Portrait':'translate(-70%,-50%)','Landscape':'translate(-70%,-50%)'}},
+        transform:{'Pc':'translate(-60%,-50%)','Mobile':{'Portrait':'translate(-70%,-50%)','Landscape':'translate(-70%,-0%)'}},
         borderRadius:'100px',
         zIndex:'50000',
         opacity:'0',
