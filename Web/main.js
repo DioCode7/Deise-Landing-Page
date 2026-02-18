@@ -4952,7 +4952,7 @@ O acompanhamento é individualizado, respeitando as necessidades e o contexto de
       Style:{
         position:'relative',
         display:'block',
-        marginTop:{'Mobile':{'Portrait':'55%','Landscape':''},'Pc':'0%'},
+        marginTop:{'Mobile':{'Portrait':'55%','Landscape':'2%'},'Pc':'3%'},
         width:'100%',
          backgroundColor:'rgba(0,0,0,0)',
         height:{'Pc':'20%','Mobile':{'Portrait':'','Landscape':''}},
