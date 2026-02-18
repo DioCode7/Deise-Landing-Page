@@ -4089,7 +4089,7 @@ let ParentalPageDiagram = {
       width:{'Pc':'50%','Mobile':{'Portrait':'70%','Landscape':'50%'}},
       height:{'Pc':'30%','Mobile':{'Portrait':'20%','Landscape':'30%'}},
       left:{'Pc':'1%','Mobile':{'Portrait':'30%','Landscape':'1%'}},
-      top:{'Pc':'40%','Mobile':{'Portrait':'65%','Landscape':'42%'}},
+      top:{'Pc':'40%','Mobile':{'Portrait':'62%','Landscape':'42%'}},
       backgroundImage:{Pc:["url('./Images/ParentalImage3Light.png')","url('./Images/ParentalImage3Dark.png')"],
           Mobile:{'Portrait':["url('./Images/ParentalImage3LightMobile.png')","url('./Images/ParentalImage3DarkMobile.png')"],
             'Landscape':["url('./Images/ParentalImage3Light.png')","url('./Images/ParentalImage3Dark.png')"]
@@ -4716,9 +4716,9 @@ let TDAHPageDiagram = {
       height:{'Pc':'30%','Mobile':{'Portrait':'30%','Landscape':'30%'}},
       left:{'Pc':'47%','Mobile':{'Portrait':'4%','Landscape':'48%'}},
       top:{'Pc':'7%','Mobile':{'Portrait':'30%','Landscape':'7%'}},
-      backgroundImage:{Pc:["url('./Images/NeuroPedagogyImage2Light.png')","url('./Images/NeuroPedagogyImage2Dark.png')"],
-          Mobile:{'Portrait':["url('./Images/NeuroPedagogyImage2LightMobile.png')","url('./Images/NeuroPedagogyImage2DarkMobile.png')"],
-            'Landscape':["url('./Images/NeuroPedagogyImage2Light.png')","url('./Images/NeuroPedagogyImage2Dark.png')"]
+      backgroundImage:{Pc:["url('./Images/TDAHImage2Light.png')","url('./Images/TDAHImage2Dark.png')"],
+          Mobile:{'Portrait':["url('./Images/TDAHImage2LightMobile.png')","url('./Images/TDAHImage2DarkMobile.png')"],
+            'Landscape':["url('./Images/TDAHImage2Light.png')","url('./Images/TDAHImage2Dark.png')"]
           },
         },
         backgroundRepeat:'no-repeat',
@@ -4736,9 +4736,9 @@ let TDAHPageDiagram = {
       height:{'Pc':'30%','Mobile':{'Portrait':'20%','Landscape':'30%'}},
       left:{'Pc':'1%','Mobile':{'Portrait':'30%','Landscape':'1%'}},
       top:{'Pc':'40%','Mobile':{'Portrait':'65%','Landscape':'42%'}},
-      backgroundImage:{Pc:["url('./Images/NeuroPedagogyImage3Light.png')","url('./Images/NeuroPedagogyImage3Dark.png')"],
-          Mobile:{'Portrait':["url('./Images/NeuroPedagogyImage3LightMobile.png')","url('./Images/NeuroPedagogyImage3DarkMobile.png')"],
-            'Landscape':["url('./Images/NeuroPedagogyImage3Light.png')","url('./Images/NeuroPedagogyImage3Dark.png')"]
+      backgroundImage:{Pc:["url('./Images/TDAHImage3Light.png')","url('./Images/TDAHImage3Dark.png')"],
+          Mobile:{'Portrait':["url('./Images/TDAHImage3LightMobile.png')","url('./Images/TDAHImage3DarkMobile.png')"],
+            'Landscape':["url('./Images/TDAHImage3Light.png')","url('./Images/TDAHImage3Dark.png')"]
           },
         },
         backgroundRepeat:'no-repeat',
@@ -4778,7 +4778,7 @@ let TDAHPageDiagram = {
             
 
           },
-          Text:'O Que é Neuropedagogia?',
+          Text:'O que é TDAH?',
         },
         TopicOneText:{
           Id:'TopicOneText',
@@ -4797,9 +4797,9 @@ let TDAHPageDiagram = {
             fontWeight: '600',
             fontStyle: 'normal',
           },
-          Text:`A neuropedagogia é uma área interdisciplinar que integra conhecimentos da educação, neurociência e psicologia para compreender como o cérebro aprende e se desenvolve.
+          Text:`O Transtorno do Déficit de Atenção e Hiperatividade (TDAH) é uma condição do neurodesenvolvimento caracterizada por dificuldades persistentes de atenção, impulsividade e, em alguns casos, hiperatividade.
 
-Seu foco é identificar como cada pessoa processa informações, desenvolve habilidades cognitivas e enfrenta desafios no processo de aprendizagem, considerando aspectos emocionais, comportamentais e neurológicos.`,
+Essas características podem impactar o desempenho escolar, profissional, social e emocional, tornando importante a identificação e o acompanhamento adequados.`,
         }
       }
     },
@@ -4824,9 +4824,9 @@ Seu foco é identificar como cada pessoa processa informações, desenvolve habi
             display:"block",
             marginTop:{'Pc':'0%','Mobile':{'Portrait':'5%','Landscape':'4%'}},
               textAlign:'Start',
-               paddingLeft:{'Pc':"8%","Mobile":{'Portrait':'9%','Landscape':"8%"}},
+               paddingLeft:{'Pc':"5%","Mobile":{'Portrait':'7%','Landscape':"2%"}},
               color:['black','white'],
-                fontSize:{'Pc':'1.3rem','Mobile':'1.2rem'},
+                fontSize:{'Pc':'1.2rem','Mobile':'1.0rem'},
            fontFamily: '"Google Sans Code", monospace',
             fontOpticalSizing: 'auto',
             fontWeight: '800',
@@ -4834,7 +4834,7 @@ Seu foco é identificar como cada pessoa processa informações, desenvolve habi
             
 
           },
-          Text:'Para quem é indicada?',
+          Text:'Para quem é indicado o acompanhamento?',
         },
         TopicTwoText:{
           Id:'TopicTwoText',
@@ -4848,25 +4848,27 @@ Seu foco é identificar como cada pessoa processa informações, desenvolve habi
               color:['black','white'],
               paddingLeft:{'Pc':"5%","Mobile":{'Portrait':'5%','Landscape':"5%"}},
                paddingBottom:{'Pc':"5%","Mobile":{'Portrait':'','Landscape':"5%"}},
-                fontSize:{'Pc':'0.9rem','Mobile':'0.7rem'},
+                fontSize:{'Pc':'0.9rem','Mobile':'0.6rem'},
            fontFamily: '"Google Sans Code", monospace',
             fontOpticalSizing: 'auto',
             fontWeight: '600',
             fontStyle: 'normal',
           },
-          Text:`Crianças com dificuldades de aprendizagem
+          Text:`O acompanhamento é indicado para:
 
-Suspeita ou diagnóstico de TDAH
+Crianças com dificuldade de concentração
 
-Dislexia, discalculia e outras dificuldades específicas
+Esquecimento frequente de tarefas e compromissos
 
-Atrasos no desenvolvimento
+Impulsividade e dificuldade em esperar a vez
 
-Pessoas no espectro autista
+Agitação excessiva ou inquietação constante
 
-Dificuldades de atenção, memória e organização
+Dificuldades de organização e planejamento
 
-Baixo rendimento escolar sem causa aparente`,
+Baixo rendimento escolar sem causa aparente
+
+Adolescentes e adultos com dificuldades de foco e produtividade`,
         }
       }
     },
@@ -4934,13 +4936,13 @@ Baixo rendimento escolar sem causa aparente`,
           
           Text:`O processo geralmente envolve:
 
-✔ Avaliação do perfil cognitivo e de aprendizagem
+✔ Avaliação do perfil atencional e comportamental
 ✔ Identificação de dificuldades e potencialidades
 ✔ Plano de intervenção personalizado
-✔ Estratégias práticas para escola e família
-✔ Acompanhamento contínuo da evolução
+✔ Desenvolvimento de estratégias de organização e foco
+✔ Orientação à família e, quando necessário, parceria com a escola
 
-Cada atendimento é individualizado, respeitando as necessidades e o ritmo de desenvolvimento de cada pessoa.`,
+O acompanhamento é individualizado, respeitando as necessidades e o contexto de cada pessoa.`,
         }
       }
     },
@@ -4966,9 +4968,9 @@ Cada atendimento é individualizado, respeitando as necessidades e o ritmo de de
             display:"block",
             marginTop:{'Pc':'0%','Mobile':{'Portrait':'4%','Landscape':'0%'}},
               textAlign:'Start',
-               paddingLeft:{'Pc':"60%","Mobile":{'Portrait':'5%','Landscape':"55%"}},
+               paddingLeft:{'Pc':"53%","Mobile":{'Portrait':'5%','Landscape':"49%"}},
               color:['black','white'],
-                fontSize:{'Pc':'1.3rem','Mobile':'1.1rem'},
+                fontSize:{'Pc':'1.3rem','Mobile':'1rem'},
            fontFamily: '"Google Sans Code", monospace',
             fontOpticalSizing: 'auto',
             opacity:'0',
@@ -4984,7 +4986,7 @@ Cada atendimento é individualizado, respeitando as necessidades e o ritmo de de
 
           },
           },
-          Text:'Qual o objetivo da Neuropedagogia?',
+          Text:'Qual o objetivo do acompanhamento no TDAH?',
         },
         TopicFourText:{
           Id:'TopicFourText',
@@ -5012,9 +5014,9 @@ Cada atendimento é individualizado, respeitando as necessidades e o ritmo de de
 
           }
           },
-          Text:`O principal objetivo é promover autonomia, segurança e qualidade no processo de aprendizagem, fortalecendo habilidades cognitivas e emocionais.
+          Text:`O principal objetivo é promover autonomia, organização e melhor desempenho nas atividades diárias.
 
-Mais do que melhorar o desempenho escolar, a neuropedagogia busca desenvolver confiança, autoestima e estratégias que acompanhem o indivíduo ao longo da vida.`,
+Mais do que reduzir dificuldades, o foco está em fortalecer habilidades, autoestima e estratégias que auxiliem no desenvolvimento acadêmico, profissional e social.`,
         }
       }
     },
