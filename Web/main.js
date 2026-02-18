@@ -4715,7 +4715,7 @@ let TDAHPageDiagram = {
       width:{'Pc':'50%','Mobile':{'Portrait':'100%','Landscape':'50%'}},
       height:{'Pc':'30%','Mobile':{'Portrait':'30%','Landscape':'30%'}},
       left:{'Pc':'47%','Mobile':{'Portrait':'4%','Landscape':'48%'}},
-      top:{'Pc':'7%','Mobile':{'Portrait':'25%','Landscape':'7%'}},
+      top:{'Pc':'7%','Mobile':{'Portrait':'26%','Landscape':'7%'}},
       backgroundImage:{Pc:["url('./Images/TDAHImage2Light.png')","url('./Images/TDAHImage2Dark.png')"],
           Mobile:{'Portrait':["url('./Images/TDAHImage2LightMobile.png')","url('./Images/TDAHImage2DarkMobile.png')"],
             'Landscape':["url('./Images/TDAHImage2Light.png')","url('./Images/TDAHImage2Dark.png')"]
@@ -4735,7 +4735,7 @@ let TDAHPageDiagram = {
       width:{'Pc':'50%','Mobile':{'Portrait':'70%','Landscape':'50%'}},
       height:{'Pc':'30%','Mobile':{'Portrait':'20%','Landscape':'30%'}},
       left:{'Pc':'1%','Mobile':{'Portrait':'30%','Landscape':'1%'}},
-      top:{'Pc':'40%','Mobile':{'Portrait':'56%','Landscape':'42%'}},
+      top:{'Pc':'40%','Mobile':{'Portrait':'60%','Landscape':'42%'}},
       backgroundImage:{Pc:["url('./Images/TDAHImage3Light.png')","url('./Images/TDAHImage3Dark.png')"],
           Mobile:{'Portrait':["url('./Images/TDAHImage3LightMobile.png')","url('./Images/TDAHImage3DarkMobile.png')"],
             'Landscape':["url('./Images/TDAHImage3Light.png')","url('./Images/TDAHImage3Dark.png')"]
