@@ -6647,7 +6647,7 @@ MainContainers:{
          left:'0%',
          opacity:'0',
           backgroundImage:{'Pc':["url('./Images/HeroBackground.png')","url('./Images/HeroBackground2.png')"],
-            'Mobile':{'Portrait':["url('./Images/HeroBackgroundMobile.png')","url('./Images/HeroBackgroundMobile.png')"],
+            'Mobile':{'Portrait':["url('./Images/HeroBackgroundMobile.png')","url('./Images/HeroBackgroundMobile2.png')"],
               'Landscape':["url('./Images/HeroBackground.png')","url('./Images/HeroBackground2.png')"],
             }
           },
@@ -10044,6 +10044,7 @@ UmbraScenes.New("TDAHPage",TDAHPageDiagram,{
 
 let SlideForRightAnimationBluePrint = {
   Id:'SlideForRightAnimation',
+  Pc:{
     Properties:{
     left:{
         StartIn:-100,
@@ -10059,13 +10060,33 @@ let SlideForRightAnimationBluePrint = {
       StartIn:0,
       EndIn:1,
     }
+  },
     
-},
+
    Repeat:0,
    Time:1000,
    FrameRate:60,
    Curve:'Ease-Out-Smooth',
+  },
+  Mobile:{
+ Properties:{
+      opacity:{
+      StartIn:0,
+      EndIn:1,
+      
+    },
+    scale:{
+      StartIn:0,
+      EndIn:1,
+    }
+  },
+    
 
+   Repeat:0,
+   Time:1000,
+   FrameRate:60,
+   Curve:'Ease-Out-Smooth',
+  }
 
 };
 

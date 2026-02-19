@@ -2,6 +2,8 @@
 
 
 //Variáveis
+
+ 
  
   export let UmbraCoreBrute = {
     ResponsivePath:"",
@@ -38,6 +40,9 @@ return isMobile ? "Mobile" : "Pc";},
       let IsDark = window.matchMedia('(prefers-color-scheme : dark)').matches;
       return IsDark? 'Dark' : 'Light';
     },
+    LastClientTheme:()=>{
+     return LastClientTheme;
+    },
     WindowOrientantion:()=>{
     const isLandscape = window.matchMedia("(orientation: landscape)").matches;
     return isLandscape ? "Landscape" : "Portrait";
@@ -67,6 +72,8 @@ return isMobile ? "Mobile" : "Pc";},
 
     }
   }
+
+  let LastClientTheme = UmbraCoreBrute.ClientTheme();
 
   
 let LanguagesObj = {

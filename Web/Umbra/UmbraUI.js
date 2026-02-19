@@ -6,6 +6,7 @@ import { AwaitFlag } from "./UmbraLogic.js";
 
 let UmbraUI = UmbraCoreBrute.UmbraDOM.UiModule;
 
+
 //Funções
 
 export let UmbraAnimationsCore = {
@@ -36,6 +37,8 @@ export let UmbraDOM = {
   UpdateActiveDOM:UmbraUpdateActiveDOM,
 
 };
+
+
 
 function UmbraClearChilds(Id){
     let ComponentChilds = UmbraDOM.GetChilds(Id);
@@ -458,7 +461,12 @@ function UmbraClearOverrides(ElementId){
 
 function UmbraNewAnimation(Id,AnimationConfig){
     AnimationConfig.Id = Id;
-     UmbraCoreBrute.UmbraDOM.AnimationsNexus[Id] = AnimationConfig;
+    if(AnimationConfig.Pc && UmbraCoreBrute.ClientPlataform() == 'Pc'){
+   AnimationConfig = {Id:AnimationConfig.Id,...AnimationConfig.Pc};
+    }else if(AnimationConfig.Mobile && UmbraCoreBrute.ClientPlataform() == 'Mobile'){
+  AnimationConfig = {Id:AnimationConfig.Id,...AnimationConfig.Mobile};
+    }
+    UmbraCoreBrute.UmbraDOM.AnimationsNexus[Id] = AnimationConfig;
 }
 
 
@@ -833,4 +841,19 @@ UmbraScenesBrute.Active('LandingPageMinimalistMainScene');
 */
 }
 
+
+function VisibilityChangeControl(){
+if(UmbraCoreBrute.ClientPlataform() == 'Mobile'){
+    UmbraDOM.UpdateActiveDOM();
+}
+if(UmbraCoreBrute.ClientPlataform() == 'Pc'){
+  if(UmbraCoreBrute.LastClientTheme() != UmbraCoreBrute.ClientTheme()){
+    UmbraDOM.UpdateActiveDOM();
+    let NewTheme = UmbraCoreBrute.ClientTheme();
+    UmbraCoreBrute.LastClientTheme = ()=>{NewTheme};
+  }
+}
+};
+
 screen.orientation.addEventListener('change',UmbraDOM.UpdateActiveDOM);
+document.addEventListener('visibilitychange',VisibilityChangeControl);
