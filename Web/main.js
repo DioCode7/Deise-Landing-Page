@@ -7224,7 +7224,7 @@ MainContainers:{
     Style:{
       position:'absolute',
       opacity:'0',
-      top:{'Mobile':'23.5%','Pc':'34%'},
+      top:{'Mobile':'26%','Pc':'34%'},
       left:{'Mobile':'13%','Pc':'5%'},
       fontSize:{'Mobile':'1rem','Pc':'22px'},
       color:['rgb(0, 0, 0)','rgb(240,240,240)'],
