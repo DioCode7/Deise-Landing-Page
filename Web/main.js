@@ -6382,14 +6382,7 @@ MainContainers:{
         width:'100%',
         backgroundColor:['white','rgb(17,17,17)'],
         height:{"Mobile":{Portrait:'10%',Landscape:'25%'},"Pc":"15%"},
-       // borderBottom:['dashed 1px black','dashed 1px white'],
-        //boxShadow:"0px 6px 6px rgba(0,0,0,0.8)",
-       /*  backgroundImage:{'Pc':
-      ["url('./Images/Decoration4MinimalistLight.gif')","url('./Images/Decoration4MinimalistDark.gif')"]
-      ,'Mobile':["url('./Images/Decoration4MinimalistLight.gif')","url('./Images/Decoration4MinimalistDark.gif')"]},
-        backgroundRepeat:'no-repeat',
-        backgroundPosition:'center',
-        backgroundSize:'cover',*/
+
     },
     Childs:{
      MainLogo:{
@@ -6415,96 +6408,7 @@ MainContainers:{
         pointerEvents:'none',
         },
       },
-      /*ConceptThemeSwitchButton:{
-     Id:'ConceptThemeSwitchButton',
-     Type:'div',
-     Style:{
-     fontSize:{'Mobile':'11px','Pc':'15px'},
-     color:'black',
-     position:'absolute',
-     top:{'Mobile':'4%','Pc':'10%'},
-     left:{'Mobile':'4%','Pc':'10%'},
-     border:'solid 1px black',
-     backgroundColor:'white',
-     zIndex:'20',
-     cursor:'pointer',
-     },
-     Listener:{
-      UseFn:true,
-       Fn:ConceptThemeSwitchs,
-      FnParams:()=>[['Ludico']],
-      UmbraHover:{
-        Style:{
-          scale:'1.2',
-          
-        }
-      }
-     },
-     Text:()=>ActualConceptTheme,
-
-      },
-      */
-  /*HeaderInstagramIcon:{
-    Id:"HeaderInstagramIcon",
-    Type:'div',
-    Style:{
-    position:'absolute',
-    left:{'Pc':'41%','Mobile':'38%'},
-    top:{'Pc':'3%','Mobile':'4%'},
-    width:{'Pc':'10%','Mobile':'6%'},
-    height:{'Pc':'10%','Mobile':'6%'},
-      backgroundImage:"url('./Images/InstagramIcon.png')",
-        backgroundRepeat:'no-repeat',
-        backgroundPosition:'center',
-        backgroundSize:'contain',
-    },
-  },
-  HeaderInstagramReference:{
-    Id:"HeaderInstagramReference",
-    Type:'div',
-    Style:{
-        position:'absolute',
-        top:'7%',
-        left:'50%',
-        color:['black','white'],
-        fontSize:{'Mobile':'9px','Pc':'15px'},
-         cursor:'default',
-         transform:'translate(-50%,-50%)',
-
-    },
-    Text:'@dheisedill',
-    Listener:{
-      UmbraHover:{
-        Style:{
-        color:'blue',
-         fontSize:{'Mobile':'11px','Pc':'17px'},
-        }
-      },
-      UseFn:true,
-      Fn:()=>{window.open("https://www.instagram.com/dheisedill/", "_blank")}
-    }
-  },*/
-
-  /*WorkLetter:{
-        Id:'WorkLetter',
-        Type:'div',
-        Style:{
-            position:'absolute',
-            top:{'Mobile':'60%','Pc':'80%'},
-            left:'50%',
-            transform:'translate(-50%,0%)',
-            color:['black','white'],
-            fontSize:{'Pc':'30px','Mobile':'19px'},
-             fontFamily: "'Imperial Script', cursive",
-            fontWeight: '400',
-            fontStyle: 'normal',
-            textShadow:'2px 4px 10px rgba(0, 0, 0, 0.9)',
-            zIndex:'20',
-            cursor:'default'
-
-        },
-        Text:'Neuropedagogia'
-    },*/
+    
 
   HeaderButtonAbout:{
    Id:'HeaderButtonAbout',
@@ -6831,7 +6735,7 @@ MainContainers:{
     left:'0%',
     width:'100%',
    // borderTop:"solid 1px black",
-    height:{'Mobile':{'Portrait':'120%','Landscape':'250%'},'Pc':'120%'},
+    minHeight:{'Mobile':{'Portrait':'120%','Landscape':'250%'},'Pc':'120%'},
     backgroundColor:['white','rgb(17,17,17)'],
    },
    Childs:{
@@ -6841,7 +6745,7 @@ MainContainers:{
      Style:{
       position:'absolute',
             display:{'Pc':'flex','Mobile':'none'},
-      left:{'Mobile':'26%','Pc':'34%'},
+      left:{'Mobile':'26%','Pc':'28%'},
       top:{'Mobile':'-2%','Pc':'2%'},
       backgroundImage:"url('./Images/Decoration1.png')",
         backgroundRepeat:'no-repeat',
@@ -6994,10 +6898,10 @@ MainContainers:{
         Id:'WelcomeLetter',
         Type:'div',
         Style:{
-            position:'absolute',
-            top:{'Mobile':{'Portrait':'5%','Landscape':'2%'},'Pc':'5%'},
-            left:{'Pc':'20%','Mobile':{'Portrait':'50%','Landscape':'20%'}},
-            transform:'translate(-50%,0%)',
+            position:'relative',
+            display:'block',
+            textAlign:'center',
+            marginTop:{'Mobile':{'Portrait':'5%','Landscape':'2%'},'Pc':'5%'},
             color:['black','white'],
             fontSize:{'Pc':'40px','Mobile':'21px'},
            fontFamily: '"Google Sans Code", monospace',
@@ -7020,36 +6924,7 @@ MainContainers:{
     }
    },
     },
-    WhoWeAreLetter:{
-        Id:' WhoWeAreLetter',
-        Type:'div',
-        Style:{
-            position:'absolute',
-            top:{'Mobile':'7%','Pc':'15%'},
-            left:'50%',
-            transform:'translate(-50%,0%)',
-            opacity:'0',
-            display:`none`,
-            color:['black','white'],
-            fontSize:{'Pc':'22px','Mobile':'11px'},
-             fontFamily: "'Delius', cursive",
-            fontWeight: '400',
-            fontStyle: 'normal',
-           // textShadow:'2px 4px 10px rgba(0, 0, 0, 0.9)',
-            zIndex:'20',
-            cursor:'default',
-            borderBottom:['solid 1px black','solid 1px black'],
-
-        },
-        Text:'Quem Somos?',
-         Listener:{
-    UmbraViewportLogic:{
-      Action:UmbraAnimations.Active,
-      Params:['SlideForRightAnimation','WhoWeAreLetter'],
-
-    }
-   },
-    },
+   
     MainDescImage:{
       Id:'MainDescImage',
       Type:'div',
@@ -7088,6 +6963,64 @@ MainContainers:{
       }
     },
 
+    
+    MainDescText:{
+    Id:'MainDescText',
+    Type:'div',
+    Style:{
+      position:'relative',
+      fontSize:{'Mobile':'1rem','Pc':'22px'},
+      color:['rgb(0, 0, 0)','rgb(240,240,240)'],
+      width:{'Mobile':{'Portrait':'80%','Landscape':'40%'},'Pc':'35%'},
+       fontFamily: '"Delius", cursive',
+        marginTop:'5%',
+      marginLeft:{'Pc':'7%','Mobile':{'Portrait':'5%','Landscape':'7%'}},
+       fontOpticalSizing: 'auto',
+      fontWeight: '700',
+      fontStyle: 'normal',
+       opacity:'0',
+            cursor:'default',
+            zIndex:'25',
+    },
+     Listener:{
+    UmbraViewportLogic:{
+      Action:UmbraAnimations.Active,
+      Params:['SlideForRightAnimation','MainDescText'],
+
+    }
+   },
+    Text:"Somos uma clínica de neuropedagogia especializada psicologia, pedagogia, autismo e educação especial, localizada em Não-Me-Toque/RS.",
+    },
+    MainDescText2:{
+    Id:'MainDescText2',
+    Type:'div',
+    Style:{
+      position:'relative',
+      opacity:'0',
+      marginTop:'0%',
+      marginLeft:{'Pc':'7%','Mobile':{'Portrait':'5%','Landscape':'7%'}},
+      fontSize:{'Mobile':'1rem','Pc':'22px'},
+      color:['rgb(0, 0, 0)','rgb(240,240,240)'],
+     width:{'Mobile':{'Portrait':'80%','Landscape':'40%'},'Pc':'35%'},
+        fontFamily: '"delius", cursive',
+       fontOpticalSizing: 'auto',
+      fontWeight: '700',
+      fontStyle: 'normal',
+            cursor:'default',
+            zIndex:'25',
+            
+         
+      
+    },
+     Listener:{
+    UmbraViewportLogic:{
+      Action:UmbraAnimations.Active,
+      Params:['SlideForRightAnimation','MainDescText2'],
+
+    }
+   },
+    Text:"Atuamos com avaliações e intervenções personalizadas, integrando educação, neurociência e psicologia para atender às necessidades individuais de cada pessoa.Nosso trabalho é voltado à promoção do desenvolvimento cognitivo, emocional e acadêmico, em um ambiente acolhedor, ético e fundamentado cientificamente.",
+    },
     MoreAboutButton:{
       Id:'MoreAboutButton',
       Type:'div',
@@ -7096,9 +7029,12 @@ MainContainers:{
       
                boxShadow:'rgba(0,0,0,0.2) 2px 10px 10px',
                width:{'Pc':'20%','Mobile':{'Portrait':'30%','Landscape':'20%'}},
-               height:'4%',
-               position:'absolute',
+               height:{'Pc':'13vh','Mobile':{'Portrait':'3vh','Landscape':'13vh'}},
+               position:'relative',
+               display:'block',
                opacity:'0',
+                marginTop:'0%',
+           marginLeft:{'Pc':'5%','Mobile':{'Portrait':'35%','Landscape':'7%'}},
                top:{'Pc':'60%','Mobile':{'Portrait':'49%','Landscape':'46%'}},
                left:{'Pc':'50%','Mobile':{'Portrait':'50%','Landscape':'60%'}},
                transform:'translate(-50%,-50%)',
@@ -7176,7 +7112,7 @@ MainContainers:{
            position:'absolute',
               left:'50%',
               top:'50%',
-              transform:'translate(-50%,-50%)',
+              transform:'translate(-50%,-170%)',
               textAlign:'center',
               color:['black','white'],
                 fontSize:{'Pc':'15px','Mobile':{'Portrait':'15px','Landscape':'15px'}},
@@ -7191,63 +7127,6 @@ MainContainers:{
         }
       }
     },
-    MainDescText:{
-    Id:'MainDescText',
-    Type:'div',
-    Style:{
-      position:'absolute',
-      top:{'Mobile':{'Portrait':'15%','Landscape':'11%'},'Pc':'18%'},
-      left:{'Mobile':'13%','Pc':'5%'},
-      fontSize:{'Mobile':'1rem','Pc':'22px'},
-      color:['rgb(0, 0, 0)','rgb(240,240,240)'],
-      width:{'Mobile':{'Portrait':'80%','Landscape':'40%'},'Pc':'35%'},
-       fontFamily: '"Delius", cursive',
-       fontOpticalSizing: 'auto',
-      fontWeight: '700',
-      fontStyle: 'normal',
-       opacity:'0',
-            cursor:'default',
-            zIndex:'25',
-    },
-     Listener:{
-    UmbraViewportLogic:{
-      Action:UmbraAnimations.Active,
-      Params:['SlideForRightAnimation','MainDescText'],
-
-    }
-   },
-    Text:"Somos uma clínica de neuropedagogia especializada psicologia, pedagogia, autismo e educação especial, localizada em Não-Me-Toque/RS.",
-    },
-    MainDescText2:{
-    Id:'MainDescText2',
-    Type:'div',
-    Style:{
-      position:'absolute',
-      opacity:'0',
-      top:{'Mobile':'26%','Pc':'34%'},
-      left:{'Mobile':'13%','Pc':'5%'},
-      fontSize:{'Mobile':'1rem','Pc':'22px'},
-      color:['rgb(0, 0, 0)','rgb(240,240,240)'],
-     width:{'Mobile':{'Portrait':'80%','Landscape':'40%'},'Pc':'35%'},
-        fontFamily: '"delius", cursive',
-       fontOpticalSizing: 'auto',
-      fontWeight: '700',
-      fontStyle: 'normal',
-            cursor:'default',
-            zIndex:'25',
-            
-         
-      
-    },
-     Listener:{
-    UmbraViewportLogic:{
-      Action:UmbraAnimations.Active,
-      Params:['SlideForRightAnimation','MainDescText2'],
-
-    }
-   },
-    Text:"Atuamos com avaliações e intervenções personalizadas, integrando educação, neurociência e psicologia para atender às necessidades individuais de cada pessoa.Nosso trabalho é voltado à promoção do desenvolvimento cognitivo, emocional e acadêmico, em um ambiente acolhedor, ético e fundamentado cientificamente.",
-    }
    }
   },
   SpecsContainer:{
