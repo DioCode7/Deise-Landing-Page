@@ -7035,7 +7035,7 @@ MainContainers:{
                display:'inline-block',
                opacity:'0',
                 marginTop:{'Pc':'0%','Mobile':{'Portrait':'25%','Landscape':'0%'}},
-           marginLeft:{'Pc':'50%','Mobile':{'Portrait':'40%','Landscape':'51%'}},
+           marginLeft:{'Pc':'50%','Mobile':{'Portrait':'50%','Landscape':'51%'}},
                transform:'translate(-50%,-50%)',
                background:{'Pc':'linear-gradient(to left, rgba(0,0,255,0.2),rgba(255, 37, 255, 0.2))',
                 'Mobile':'linear-gradient(to left, rgb(0, 0, 255),rgb(255, 37, 255))'
@@ -7212,7 +7212,7 @@ MainContainers:{
       Type:'div',
       Style:{
         marginBottom: '0 auto',
-     minHeight:{'Pc':'50vh','Mobile':{'Portrait':'100vh','Landscape':'300vh'}},
+     minHeight:{'Pc':'50vh','Mobile':{'Portrait':'70vh','Landscape':'230vh'}},
       },
      Childs:{
     NeuroPedagogyLetter:{
@@ -7310,8 +7310,8 @@ MainContainers:{
         position:'relative',
         display:'block',
         width:{'Mobile':'65%',Pc:'40%'},
-        height:{'Mobile':'32vh',Pc:'80vh'},
-        marginTop:{'Mobile':'-6%',Pc:'-10%'},
+        height:{'Mobile':{'Portrait':'32vh','Landscape':'100vh'},Pc:'80vh'},
+        marginTop:{'Mobile':'-20%',Pc:'-10%'},
         marginLeft:{'Mobile':'35%',Pc:'55%'},
          backgroundImage:"url('./Images/NeuroPedagogyImage.png')",
         backgroundRepeat:'no-repeat',
