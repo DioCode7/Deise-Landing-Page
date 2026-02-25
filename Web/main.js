@@ -7030,12 +7030,12 @@ MainContainers:{
       
                boxShadow:'rgba(0,0,0,0.2) 2px 10px 10px',
                width:{'Pc':'20%','Mobile':{'Portrait':'30%','Landscape':'20%'}},
-               height:{'Pc':'13vh','Mobile':{'Portrait':'5vh','Landscape':'13vh'}},
+               height:{'Pc':'7vh','Mobile':{'Portrait':'5vh','Landscape':'13vh'}},
                position:'relative',
                display:'inline-block',
                opacity:'0',
                 marginTop:{'Pc':'0%','Mobile':{'Portrait':'25%','Landscape':'0%'}},
-           marginLeft:{'Pc':'55%','Mobile':{'Portrait':'31%','Landscape':'51%'}},
+           marginLeft:{'Pc':'50%','Mobile':{'Portrait':'31%','Landscape':'51%'}},
                transform:'translate(-50%,-50%)',
                background:{'Pc':'linear-gradient(to left, rgba(0,0,255,0.2),rgba(255, 37, 255, 0.2))',
                 'Mobile':'linear-gradient(to left, rgb(0, 0, 255),rgb(255, 37, 255))'
@@ -7111,7 +7111,7 @@ MainContainers:{
            position:'absolute',
               left:'50%',
               top:'50%',
-              transform:{'Pc':'translate(-50%,-170%)','Mobile':'translate(-50%,-50%)'},
+              transform:{'Pc':'translate(-50%,-50%)','Mobile':'translate(-50%,-50%)'},
               textAlign:'center',
               color:['black','white'],
                 fontSize:{'Pc':'15px','Mobile':{'Portrait':'15px','Landscape':'15px'}},
@@ -7136,7 +7136,7 @@ MainContainers:{
     left:'0%',
      marginTop:'-18.5%',
     //top:{'Mobile':'81%','Pc':'116%'},
-    height:{'Mobile':{'Portrait':'210%','Landscape':'900%'},'Pc':'210%'},
+   
     //borderTop:"1px solid red",
     width:'100%',
     zIndex:'10',
@@ -7158,10 +7158,11 @@ MainContainers:{
       Type:'div',
       Text:'Especialidades',
       Style:{
-         position:'absolute',
-            top:{'Mobile':'0%','Pc':'5%'},
-            left:'50%',
-            transform:'translate(-50%,0%)',
+         position:'relative',
+            marginTop:{'Mobile':'0%','Pc':'5%'},
+            marginBottom:{'Mobile':'0%','Pc':'10%'},
+            display:'block',
+             textAlign:'center',
             color:['black','white'],
             fontSize:{'Pc':'40px','Mobile':'31px'},
             fontFamily: '"Google Sans Code", monospace',
@@ -7186,14 +7187,15 @@ MainContainers:{
       Type:'div',
       Style:{
          position:'absolute',
-      left:{'Mobile':{'Portrait':'0%','Landscape':'22%'},'Pc':'29%'},
+         display:'inline-block',
+      marginLeft:{'Mobile':{'Portrait':'0%','Landscape':'22%'},'Pc':'29%'},
       top:{'Mobile':{'Portrait':'-10%','Landscape':'-6%'},'Pc':'2%'},
       backgroundImage:"url('./Images/FlowersAsset1.png')",
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
         backgroundSize:{'Mobile':'contain','Pc':'contain'},
-        width:{'Mobile':{'Portrait':'21%','Landscape':'13%'},'Pc':'10%'},
-        height:{'Mobile':{'Portrait':'21%','Landscape':'13%'},'Pc':'10%'},
+        width:{'Mobile':{'Portrait':'21%','Landscape':'13%'},'Pc':'10vw'},
+        height:{'Mobile':{'Portrait':'21%','Landscape':'13%'},'Pc':'30vh'},
         zIndex:'10',
          opacity:'0',
       },
@@ -7205,9 +7207,16 @@ MainContainers:{
     }
    },
     },
+    NeuroPedagogyContainer:{
+      Id:'NeuroPedagogyContainer',
+      Type:'div',
+      Style:{
+     minHeight:{'Pc':'100vh','Mobile':{'Portrait':'50vh','Landscape':'130vh'}},
+      },
+     Childs:{
     NeuroPedagogyLetter:{
       Id:'NeuroPedagogyLetter',
-      type:'div',
+      Type:'div',
       Text:'Neuropedagogia',
       Style:{
       color:['black','white'],
@@ -7216,9 +7225,10 @@ MainContainers:{
             fontWeight: '400',
             fontStyle: 'normal',
             //textShadow:'2px 4px 10px rgba(0, 0, 0, 0.9)',
-            position:'absolute',
-            top:{'Mobile':'4.5%','Pc':'15%'},
-            left:{'Mobile':'20%','Pc':'25%'},
+            position:'relative',
+            display:'block',
+            
+            marginLeft:{'Mobile':'20%','Pc':'25%'},
              borderBottom:['solid 1px black','solid 1px white'],
              width:{'Mobile':'60%','Pc':'60%'},
               opacity:'0',
@@ -7236,15 +7246,15 @@ MainContainers:{
       Id:'NeuroPedagogyLetterDecoration1',
       Type:'div',
       Style:{
-         position:'absolute',
-      left:{'Mobile':{'Portrait':'16%','Landscape':'13%'},'Pc':'19%'},
-      top:{'Mobile':'3%','Pc':'11%'},
+         position:'relative',
+      marginLeft:{'Mobile':{'Portrait':'16%','Landscape':'13%'},'Pc':'19%'},
+      marginTop:{'Mobile':'3%','Pc':'-6%'},
       backgroundImage:"url('./Images/NeuroPedagogyAsset1.png')",
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
         backgroundSize:'cover',
-        width:{'Mobile':'8%','Pc':'7%'},
-        height:{'Mobile':'2%','Pc':'7%'},
+        width:{'Mobile':'8%','Pc':'7vw'},
+        height:{'Mobile':'2%','Pc':'14vh'},
          opacity:'0',
         zIndex:'10',
        
@@ -7258,37 +7268,16 @@ MainContainers:{
     }
    },
     },
-    NeuroPedagogyImage:{
-      Id:'NeuroPedagogyImage',
-      Type:'div',
-      Style:{
-        position:'absolute',
-        width:{'Mobile':'65%',Pc:'40%'},
-        height:{'Mobile':'16%',Pc:'40%'},
-        top:{'Mobile':'6%',Pc:'16%'},
-        left:{'Mobile':'35%',Pc:'55%'},
-         backgroundImage:"url('./Images/NeuroPedagogyImage.png')",
-        backgroundRepeat:'no-repeat',
-        backgroundPosition:'center',
-         opacity:'0',
-        backgroundSize:'cover',
-      },
-        Listener:{
-    UmbraViewportLogic:{
-      Action:UmbraAnimations.Active,
-      Params:['SlideForRightAnimation','NeuroPedagogyImage'],
 
-    }
-   },
-    },
-   NeuroPedagogyText:{
+     NeuroPedagogyText:{
     Id:'NeuroPedagogyText',
     Type:'div',
     Style:{
-      position:'absolute',
-      top:{'Mobile':'6%','Pc':'25%'},
+      position:'relative',
+      display:'block',
+      marginTop:{'Mobile':'6%','Pc':'1%'},
       borderLeft:['solid 1px black','solid 1px white'],
-      left:{'Mobile':'13%','Pc':'30%'},
+      marginLeft:{'Mobile':'13%','Pc':'24%'},
       fontSize:{'Mobile':{'Portrait':'0.7rem','Landscape':'1.2rem'},'Pc':'21px'},
       color:['rgb(0, 0, 0)','rgb(240,240,240)'],
       width:{'Mobile':'40%','Pc':'30%'},
@@ -7313,18 +7302,43 @@ MainContainers:{
    },
     Text:"Avaliação e intervenção em dificuldades de aprendizagem, com estratégias personalizadas para o desenvolvimento cognitivo.",
     },
+    NeuroPedagogyImage:{
+      Id:'NeuroPedagogyImage',
+      Type:'div',
+      Style:{
+        position:'relative',
+        display:'block',
+        width:{'Mobile':'65%',Pc:'40%'},
+        height:{'Mobile':'32vh',Pc:'80vh'},
+        marginTop:{'Mobile':'6%',Pc:'-10%'},
+        marginLeft:{'Mobile':'35%',Pc:'55%'},
+         backgroundImage:"url('./Images/NeuroPedagogyImage.png')",
+        backgroundRepeat:'no-repeat',
+        backgroundPosition:'center',
+         opacity:'0',
+        backgroundSize:'cover',
+      },
+        Listener:{
+    UmbraViewportLogic:{
+      Action:UmbraAnimations.Active,
+      Params:['SlideForRightAnimation','NeuroPedagogyImage'],
+
+    }
+   },
+    },
+  
     NeuroPedagogyMoreAboutButton:{
       Id:'NeuroPedagogyMoreAboutButton',
       Type:'div',
       Style:{
         boxShadow:'rgba(0,0,0,0.2) 2px 10px 10px',
                width:{'Pc':'14%','Mobile':{'Portrait':'17%','Landscape':'18%'}},
-               height:'2%',
-               position:'absolute',
+               height:'4vh',
+               position:'relative',
                opacity:'0',
-               top:{'Pc':'40%','Mobile':{'Portrait':'14%','Landscape':'14%'}},
-               left:{'Pc':'40%','Mobile':{'Portrait':'18%','Landscape':'27%'}},
-               transform:'translate(-50%,-50%)',
+               marginTop:{'Pc':'-15%','Mobile':{'Portrait':'14%','Landscape':'14%'}},
+               marginLeft:{'Pc':'35%','Mobile':{'Portrait':'18%','Landscape':'27%'}},
+               
               
       },
       Childs:{
@@ -7413,6 +7427,15 @@ MainContainers:{
       },
   
     },
+  },
+    },
+    ClinicPsicContainer:{
+      Id:'ClinicPsicContainer',
+      Type:'div',
+      Style:{
+     minHeight:{'Pc':'100vh','Mobile':{'Portrait':'50vh','Landscape':'130vh'}},
+      },
+     Childs:{
      ClinicPsicLetter:{
       Id:'ClinicPsicLetter',
       type:'div',
@@ -7633,6 +7656,8 @@ MainContainers:{
    
    }
   },
+},
+  },
   SpecsContainer2:{
    Id:'SpecsContainer2',
    Type:'div',
@@ -7640,10 +7665,9 @@ MainContainers:{
     position:'relative',
     left:'0%',
    // top:{'Mobile':{'Portrait':'152%','Landscape':'291%'},'Pc':'306%'},
-    height:{'Mobile':{'Portrait':'210%','Landscape':'900%'},'Pc':'210%'},
     width:'100%',
      backgroundColor:['white','rgb(17,17,17)'],
-    marginTop:{'Pc':'-7%','Mobile':{'Portrait':'-270%','Landscape':'-189%'}},
+
     zIndex:'11',
     // backgroundImage:{Pc:["url('./Images/GradientMinimalistLight.png')","url('./Images/GradientMinimalistDark.png')"],
     //  Mobile:{'Portrait':["url('./Images/GradientMinimalistLightMobile.png')","url('./Images/GradientMinimalistDarkMobile.png')"],'Landscape':["url('./Images/GradientMinimalistLightMobile.png')","url('./Images/GradientMinimalistDarkMobile.png')"]}
@@ -7657,6 +7681,13 @@ MainContainers:{
    },
    Childs:{
    
+      SpecialEducationContainer:{
+      Id:'SpecialEducationContainer',
+      Type:'div',
+      Style:{
+     minHeight:{'Pc':'100vh','Mobile':{'Portrait':'50vh','Landscape':'130vh'}},
+      },
+     Childs:{
     SpecialEducationLetter:{
       Id:'SpecialEducationLetter',
       type:'div',
@@ -7873,7 +7904,16 @@ MainContainers:{
         }
       }
     },
+  },
+},
 
+  TEAContainer:{
+      Id:'TEAContainer',
+      Type:'div',
+      Style:{
+     minHeight:{'Pc':'100vh','Mobile':{'Portrait':'50vh','Landscape':'130vh'}},
+      },
+     Childs:{
      TEALetter:{
       Id:'TEALetterLetter',
       type:'div',
@@ -8093,14 +8133,14 @@ MainContainers:{
     },
   }
   },
-
+},
+  },
    SpecsContainer3:{
    Id:'SpecsContainer3',
    Type:'div',
    Style:{
     position:'relative',
     left:'0%',
-    marginTop:{'Pc':'-25%','Mobile':{'Portrait':'-250%','Landscape':'-200%'}},
      backgroundColor:['white','rgb(17,17,17)'],
    // top:{'Mobile':{'Portrait':'233%','Landscape':'170%'},'Pc':'454%'},
     height:{'Mobile':{'Portrait':'210%','Landscape':'900%'},'Pc':'210%'},
