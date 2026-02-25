@@ -6997,6 +6997,7 @@ MainContainers:{
     Style:{
       position:'relative',
       opacity:'0',
+      display:'block',
       marginTop:'0%',
       marginLeft:{'Pc':'7%','Mobile':{'Portrait':'5%','Landscape':'7%'}},
       fontSize:{'Mobile':'1rem','Pc':'22px'},
@@ -7033,8 +7034,8 @@ MainContainers:{
                position:'relative',
                display:'block',
                opacity:'0',
-                marginTop:{'Pc':'0%','Mobile':{'Portrait':'25%','Landsca1pe':'0%'}},
-           marginLeft:{'Pc':'5%','Mobile':{'Portrait':'5%','Landscape':'10%'}},
+                marginTop:{'Pc':'0%','Mobile':{'Portrait':'25%','Landscape':'0%'}},
+           marginLeft:{'Pc':'55%','Mobile':{'Portrait':'13%','Landscape':'45%'}},
                transform:'translate(-50%,-50%)',
                background:{'Pc':'linear-gradient(to left, rgba(0,0,255,0.2),rgba(255, 37, 255, 0.2))',
                 'Mobile':'linear-gradient(to left, rgb(0, 0, 255),rgb(255, 37, 255))'
