@@ -7032,10 +7032,10 @@ MainContainers:{
                width:{'Pc':'20%','Mobile':{'Portrait':'30%','Landscape':'20%'}},
                height:{'Pc':'13vh','Mobile':{'Portrait':'5vh','Landscape':'13vh'}},
                position:'relative',
-               display:'block',
+               display:'inline-block',
                opacity:'0',
                 marginTop:{'Pc':'0%','Mobile':{'Portrait':'25%','Landscape':'0%'}},
-           marginLeft:{'Pc':'55%','Mobile':{'Portrait':'13%','Landscape':'45%'}},
+           marginLeft:{'Pc':'55%','Mobile':{'Portrait':'31%','Landscape':'51%'}},
                transform:'translate(-50%,-50%)',
                background:{'Pc':'linear-gradient(to left, rgba(0,0,255,0.2),rgba(255, 37, 255, 0.2))',
                 'Mobile':'linear-gradient(to left, rgb(0, 0, 255),rgb(255, 37, 255))'
