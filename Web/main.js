@@ -7035,7 +7035,7 @@ MainContainers:{
                display:'inline-block',
                opacity:'0',
                 marginTop:{'Pc':'0%','Mobile':{'Portrait':'25%','Landscape':'0%'}},
-           marginLeft:{'Pc':'50%','Mobile':{'Portrait':'31%','Landscape':'51%'}},
+           marginLeft:{'Pc':'50%','Mobile':{'Portrait':'40%','Landscape':'51%'}},
                transform:'translate(-50%,-50%)',
                background:{'Pc':'linear-gradient(to left, rgba(0,0,255,0.2),rgba(255, 37, 255, 0.2))',
                 'Mobile':'linear-gradient(to left, rgb(0, 0, 255),rgb(255, 37, 255))'
@@ -7160,7 +7160,7 @@ MainContainers:{
       Style:{
          position:'relative',
             marginTop:{'Mobile':'0%','Pc':'5%'},
-            marginBottom:{'Mobile':'0%','Pc':'10%'},
+            marginBottom:{'Mobile':'10%','Pc':'10%'},
             display:'block',
              textAlign:'center',
             color:['black','white'],
@@ -7211,7 +7211,8 @@ MainContainers:{
       Id:'NeuroPedagogyContainer',
       Type:'div',
       Style:{
-     minHeight:{'Pc':'100vh','Mobile':{'Portrait':'50vh','Landscape':'130vh'}},
+        marginBottom: '0 auto',
+     minHeight:{'Pc':'50vh','Mobile':{'Portrait':'100vh','Landscape':'300vh'}},
       },
      Childs:{
     NeuroPedagogyLetter:{
@@ -7310,7 +7311,7 @@ MainContainers:{
         display:'block',
         width:{'Mobile':'65%',Pc:'40%'},
         height:{'Mobile':'32vh',Pc:'80vh'},
-        marginTop:{'Mobile':'6%',Pc:'-10%'},
+        marginTop:{'Mobile':'-6%',Pc:'-10%'},
         marginLeft:{'Mobile':'35%',Pc:'55%'},
          backgroundImage:"url('./Images/NeuroPedagogyImage.png')",
         backgroundRepeat:'no-repeat',
@@ -7336,7 +7337,7 @@ MainContainers:{
                height:'4vh',
                position:'relative',
                opacity:'0',
-               marginTop:{'Pc':'-15%','Mobile':{'Portrait':'14%','Landscape':'14%'}},
+               marginTop:{'Pc':'-15%','Mobile':{'Portrait':'-14%','Landscape':'-14%'}},
                marginLeft:{'Pc':'35%','Mobile':{'Portrait':'18%','Landscape':'27%'}},
                
               
@@ -7433,6 +7434,8 @@ MainContainers:{
       Id:'ClinicPsicContainer',
       Type:'div',
       Style:{
+        position:'relative',
+        display:'block',
      minHeight:{'Pc':'100vh','Mobile':{'Portrait':'50vh','Landscape':'130vh'}},
       },
      Childs:{
