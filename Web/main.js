@@ -7251,7 +7251,7 @@ MainContainers:{
       Style:{
          position:'relative',
       marginLeft:{'Mobile':{'Portrait':'11%','Landscape':'13%'},'Pc':'19%'},
-      marginTop:{'Mobile':{'Portrait':'-7','Landscape':'-7%'},'Pc':'-6%'},
+      marginTop:{'Mobile':{'Portrait':'-8%','Landscape':'-7%'},'Pc':'-6%'},
       backgroundImage:"url('./Images/NeuroPedagogyAsset1.png')",
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
@@ -7339,7 +7339,7 @@ MainContainers:{
                position:'relative',
                opacity:'0',
                marginTop:{'Pc':'10%','Mobile':{'Portrait':'6%','Landscape':'12%'}},
-               marginLeft:{'Pc':'35%','Mobile':{'Portrait':'18%','Landscape':'20%'}},
+               marginLeft:{'Pc':'35%','Mobile':{'Portrait':'18%','Landscape':'13%'}},
                
               
       },
@@ -7477,7 +7477,7 @@ MainContainers:{
       Style:{
            position:'relative',
       marginLeft:{'Mobile':{'Portrait':'12%','Landscape':'13%'},'Pc':'19%'},
-       marginTop:{'Mobile':{'Portrait':'-7%','Landscape':'-7%'},'Pc':'-6%'},
+       marginTop:{'Mobile':{'Portrait':'-20%','Landscape':'-27%'},'Pc':'-6%'},
       backgroundImage:["url('./Images/PscikIcon1Dark.png')","url('./Images/PscikIcon1Light.png')"],
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
@@ -7503,9 +7503,9 @@ MainContainers:{
       Type:'div',
       Style:{
         position:'absolute',
-        width:{'Mobile':{'Portrait':'65%','Landscape':'40%'},Pc:'40%'},
-         height:{'Mobile':{'Portrait':'32vh','Landscape':'100vh'},Pc:'80vh'},
-        marginTop:{'Mobile':'-20%',Pc:'-5%'},
+        width:{'Mobile':{'Portrait':'65%','Landscape':'50%'},Pc:'40%'},
+         height:{'Mobile':{'Portrait':'32vh','Landscape':'105vh'},Pc:'80vh'},
+        marginTop:{'Mobile':'-14%',Pc:'-5%'},
         marginLeft:{'Mobile':'-1%',Pc:'20%'},
          backgroundImage:"url('./Images/PisciImage.png')",
         backgroundRepeat:'no-repeat',
