@@ -7477,7 +7477,7 @@ MainContainers:{
       Style:{
            position:'relative',
       marginLeft:{'Mobile':{'Portrait':'12%','Landscape':'13%'},'Pc':'19%'},
-       marginTop:{'Mobile':{'Portrait':'-22%','Landscape':'-36%'},'Pc':'-6%'},
+       marginTop:{'Mobile':{'Portrait':'-22%','Landscape':'-30%'},'Pc':'-6%'},
       backgroundImage:["url('./Images/PscikIcon1Dark.png')","url('./Images/PscikIcon1Light.png')"],
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
@@ -7732,15 +7732,15 @@ MainContainers:{
       Style:{
          position:'relative',
       left:{'Mobile':{'Portrait':'10%','Landscape':'11%'},'Pc':'19%'},
-      marginTop:{'Mobile':{'Portrait':'-8%','Landscape':'-12%'},'Pc':'-16%'},
+      marginTop:{'Mobile':{'Portrait':'-9%','Landscape':'-20%'},'Pc':'-16%'},
       marginBottom:{'Pc':'5%','Mobile':{'Portrait':'5%','Landscape':'5%'}},
       backgroundImage:"url('./Images/EducationIcon.png')",
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
         backgroundSize:'cover',
         opacity:'0',
-        width:{'Mobile':{'Portrait':'4vh','Landscape':'20vh'},'Pc':'8%'},
-        height:{'Mobile':{'Portrait':'4vh','Landscape':'20vh'},'Pc':'14vh'},
+        width:{'Mobile':{'Portrait':'6vh','Landscape':'20vw'},'Pc':'8%'},
+        height:{'Mobile':{'Portrait':'6vh','Landscape':'20vw'},'Pc':'14vh'},
         zIndex:'10',
        
 
