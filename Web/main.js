@@ -7251,7 +7251,7 @@ MainContainers:{
       Style:{
          position:'relative',
       marginLeft:{'Mobile':{'Portrait':'16%','Landscape':'13%'},'Pc':'19%'},
-      marginTop:{'Mobile':{'Portrait':'-3%','Landscape':'-7%'},'Pc':'-6%'},
+      marginTop:{'Mobile':{'Portrait':'-5%','Landscape':'-7%'},'Pc':'-6%'},
       backgroundImage:"url('./Images/NeuroPedagogyAsset1.png')",
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
@@ -7338,7 +7338,7 @@ MainContainers:{
                height:{'Pc':'4vh','Mobile':{'Portrait':'4vh','Landscape':'8vh'}},
                position:'relative',
                opacity:'0',
-               marginTop:{'Pc':'10%','Mobile':{'Portrait':'6%','Landscape':'14%'}},
+               marginTop:{'Pc':'10%','Mobile':{'Portrait':'3%','Landscape':'12%'}},
                marginLeft:{'Pc':'35%','Mobile':{'Portrait':'18%','Landscape':'27%'}},
                
               
@@ -7476,8 +7476,8 @@ MainContainers:{
       Type:'div',
       Style:{
            position:'relative',
-      marginLeft:{'Mobile':{'Portrait':'16%','Landscape':'13%'},'Pc':'19%'},
-      marginTop:{'Mobile':'3%','Pc':'-6%'},
+      marginLeft:{'Mobile':{'Portrait':'12%','Landscape':'13%'},'Pc':'19%'},
+       marginTop:{'Mobile':{'Portrait':'-5%','Landscape':'-7%'},'Pc':'-6%'},
       backgroundImage:["url('./Images/PscikIcon1Dark.png')","url('./Images/PscikIcon1Light.png')"],
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
@@ -7504,9 +7504,9 @@ MainContainers:{
       Style:{
         position:'absolute',
         width:{'Mobile':{'Portrait':'65%','Landscape':'65%'},Pc:'40%'},
-         height:{'Mobile':{'Portrait':'32vh','Landscape':'105vh'},Pc:'80vh'},
+         height:{'Mobile':{'Portrait':'32vh','Landscape':'110vh'},Pc:'80vh'},
         marginTop:{'Mobile':'-20%',Pc:'-5%'},
-        marginLeft:{'Mobile':'2%',Pc:'20%'},
+        marginLeft:{'Mobile':'-1%',Pc:'20%'},
          backgroundImage:"url('./Images/PisciImage.png')",
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
