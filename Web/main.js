@@ -7732,7 +7732,7 @@ MainContainers:{
       Style:{
          position:'relative',
       left:{'Mobile':{'Portrait':'10%','Landscape':'11%'},'Pc':'19%'},
-      marginTop:{'Mobile':{'Portrait':'-13%','Landscape':'-24%'},'Pc':'-16%'},
+      marginTop:{'Mobile':{'Portrait':'-13%','Landscape':'-19%'},'Pc':'-16%'},
       marginBottom:{'Pc':'5%','Mobile':{'Portrait':'5%','Landscape':'5%'}},
       backgroundImage:"url('./Images/EducationIcon.png')",
         backgroundRepeat:'no-repeat',
@@ -7963,7 +7963,7 @@ MainContainers:{
       Style:{
          position:'relative',
       left:{'Mobile':{'Portrait':'12%','Landscape':'14%'},'Pc':'20%'},
-      marginTop:{'Mobile':{'Portrait':'-15%','Landscape':'-16%'},'Pc':'-13%'},
+      marginTop:{'Mobile':{'Portrait':'-12%','Landscape':'-16%'},'Pc':'-13%'},
       backgroundImage:"url('./Images/AutismIcon.png')",
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
