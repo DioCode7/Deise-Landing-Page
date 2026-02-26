@@ -7250,8 +7250,8 @@ MainContainers:{
       Type:'div',
       Style:{
          position:'relative',
-      marginLeft:{'Mobile':{'Portrait':'16%','Landscape':'13%'},'Pc':'19%'},
-      marginTop:{'Mobile':{'Portrait':'-5%','Landscape':'-7%'},'Pc':'-6%'},
+      marginLeft:{'Mobile':{'Portrait':'11%','Landscape':'13%'},'Pc':'19%'},
+      marginTop:{'Mobile':{'Portrait':'-7','Landscape':'-7%'},'Pc':'-6%'},
       backgroundImage:"url('./Images/NeuroPedagogyAsset1.png')",
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
@@ -7338,8 +7338,8 @@ MainContainers:{
                height:{'Pc':'4vh','Mobile':{'Portrait':'4vh','Landscape':'8vh'}},
                position:'relative',
                opacity:'0',
-               marginTop:{'Pc':'10%','Mobile':{'Portrait':'3%','Landscape':'12%'}},
-               marginLeft:{'Pc':'35%','Mobile':{'Portrait':'18%','Landscape':'27%'}},
+               marginTop:{'Pc':'10%','Mobile':{'Portrait':'6%','Landscape':'12%'}},
+               marginLeft:{'Pc':'35%','Mobile':{'Portrait':'18%','Landscape':'20%'}},
                
               
       },
@@ -7454,7 +7454,7 @@ MainContainers:{
            // textShadow:'2px 4px 10px rgba(0, 0, 0, 0.9)',
             position:'relative',
             opacity:'0',
-            marginBottom:'2%',
+            marginBottom:{'Pc':'2%','Mobile':{'Portrait':'7%','Landscape':'20%'}},
             top:{'Mobile':{'Portrait':'20%','Landscape':'20%'},'Pc':'50%'},
             left:{'Mobile':{'Portrait':'20%','Landscape':'20%'},'Pc':'25%'},
              borderBottom:['solid 1px black','solid 1px white'],
@@ -7477,7 +7477,7 @@ MainContainers:{
       Style:{
            position:'relative',
       marginLeft:{'Mobile':{'Portrait':'12%','Landscape':'13%'},'Pc':'19%'},
-       marginTop:{'Mobile':{'Portrait':'-5%','Landscape':'-7%'},'Pc':'-6%'},
+       marginTop:{'Mobile':{'Portrait':'-7%','Landscape':'-7%'},'Pc':'-6%'},
       backgroundImage:["url('./Images/PscikIcon1Dark.png')","url('./Images/PscikIcon1Light.png')"],
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
@@ -7503,8 +7503,8 @@ MainContainers:{
       Type:'div',
       Style:{
         position:'absolute',
-        width:{'Mobile':{'Portrait':'65%','Landscape':'65%'},Pc:'40%'},
-         height:{'Mobile':{'Portrait':'32vh','Landscape':'110vh'},Pc:'80vh'},
+        width:{'Mobile':{'Portrait':'65%','Landscape':'40%'},Pc:'40%'},
+         height:{'Mobile':{'Portrait':'32vh','Landscape':'100vh'},Pc:'80vh'},
         marginTop:{'Mobile':'-20%',Pc:'-5%'},
         marginLeft:{'Mobile':'-1%',Pc:'20%'},
          backgroundImage:"url('./Images/PisciImage.png')",
