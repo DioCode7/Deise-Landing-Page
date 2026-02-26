@@ -7211,8 +7211,9 @@ MainContainers:{
       Id:'NeuroPedagogyContainer',
       Type:'div',
       Style:{
+        zIndex:'10',
         marginBottom: '0 auto',
-     minHeight:{'Pc':'50vh','Mobile':{'Portrait':'50vh','Landscape':'150vh'}},
+     minHeight:{'Pc':'100vh','Mobile':{'Portrait':'50vh','Landscape':'150vh'}},
       },
      Childs:{
     NeuroPedagogyLetter:{
@@ -7228,11 +7229,12 @@ MainContainers:{
             //textShadow:'2px 4px 10px rgba(0, 0, 0, 0.9)',
             position:'relative',
             display:'block',
-            
+              
             marginLeft:{'Mobile':'20%','Pc':'25%'},
              borderBottom:['solid 1px black','solid 1px white'],
              width:{'Mobile':'60%','Pc':'60%'},
               opacity:'0',
+              zIndex:'10',
 
       },
        Listener:{
@@ -7249,7 +7251,7 @@ MainContainers:{
       Style:{
          position:'relative',
       marginLeft:{'Mobile':{'Portrait':'16%','Landscape':'13%'},'Pc':'19%'},
-      marginTop:{'Mobile':'3%','Pc':'-6%'},
+      marginTop:{'Mobile':{'Portrait':'-3%','Landscape':'-7%'},'Pc':'-6%'},
       backgroundImage:"url('./Images/NeuroPedagogyAsset1.png')",
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
@@ -7434,6 +7436,7 @@ MainContainers:{
       Type:'div',
       Style:{
         position:'relative',
+        zIndex:'11',
         display:'block',
      minHeight:{'Pc':'100vh','Mobile':{'Portrait':'50vh','Landscape':'130vh'}},
       },
@@ -7449,12 +7452,15 @@ MainContainers:{
             fontWeight: '400',
             fontStyle: 'normal',
            // textShadow:'2px 4px 10px rgba(0, 0, 0, 0.9)',
-            position:'absolute',
+            position:'relative',
             opacity:'0',
+            marginBottom:'2%',
             top:{'Mobile':{'Portrait':'20%','Landscape':'20%'},'Pc':'50%'},
             left:{'Mobile':{'Portrait':'20%','Landscape':'20%'},'Pc':'25%'},
              borderBottom:['solid 1px black','solid 1px white'],
              width:{'Mobile':'60%','Pc':'60%'},
+             zIndex:'10',
+             display:'block'
 
       },
         Listener:{
@@ -7469,16 +7475,16 @@ MainContainers:{
       Id:'ClinicPsicLetterDecoration1',
       Type:'div',
       Style:{
-         position:'absolute',
-      left:{'Mobile':'14%','Pc':'20%'},
-      top:{'Mobile':'19%','Pc':'48%'},
+           position:'relative',
+      marginLeft:{'Mobile':{'Portrait':'16%','Landscape':'13%'},'Pc':'19%'},
+      marginTop:{'Mobile':'3%','Pc':'-6%'},
       backgroundImage:["url('./Images/PscikIcon1Dark.png')","url('./Images/PscikIcon1Light.png')"],
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
         backgroundSize:'cover',
         opacity:'0',
-       width:{'Mobile':{'Portrait':'8%','Landscape':'5%'},'Pc':'5%'},
-        height:{'Mobile':'2%','Pc':'5%'},
+        width:{'Mobile':{'Portrait':'4vh','Landscape':'20vh'},'Pc':'7vw'},
+        height:{'Mobile':{'Portrait':'4vh','Landscape':'20vh'},'Pc':'14vh'},
         zIndex:'10',
        
 
@@ -7498,10 +7504,9 @@ MainContainers:{
       Style:{
         position:'absolute',
         width:{'Mobile':{'Portrait':'65%','Landscape':'65%'},Pc:'40%'},
-        height:{'Mobile':{'Portrait':'16%','Landscape':'16%'},Pc:'40%'},
-        top:{'Mobile':{'Portrait':'19%','Landscape':'19%'},Pc:'48%'},
-        opacity:'0',
-        left:{'Mobile':{'Portrait':'0%','Landscape':'6%'},Pc:'20%'},
+         height:{'Mobile':{'Portrait':'32vh','Landscape':'105vh'},Pc:'80vh'},
+        marginTop:{'Mobile':'-20%',Pc:'-5%'},
+        marginLeft:{'Mobile':'2%',Pc:'20%'},
          backgroundImage:"url('./Images/PisciImage.png')",
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
@@ -7519,7 +7524,7 @@ MainContainers:{
     Id:'ClinicPsicText',
     Type:'div',
     Style:{
-      position:'absolute',
+      position:'relative',
       top:{'Mobile':'23%','Pc':'57%'},
       borderLeft:['solid 1px black','solid 1px white'],
       left:{'Mobile':{'Portrait':'57%','Landscape':'66%'},'Pc':'58%'},
@@ -7527,6 +7532,8 @@ MainContainers:{
       color:['rgb(0, 0, 0)','rgb(240,240,240)'],
       width:{'Mobile':{'Portrait':'40%','Landscape':'30%'},'Pc':'30%'},
      opacity:'0',
+     borderBottom:'7%',
+     display:'block',
       padding:'1%',
        fontFamily: "'Delius', cursive",
             fontWeight: '400',
@@ -7551,13 +7558,12 @@ MainContainers:{
       Id:'ClinicPsicMoreAboutButton',
       Type:'div',
       Style:{
-        position:'absolute',
+        position:'relative',
         color:['black','white'],
-        top:{'Mobile':{'Portrait':'28%','Landscape':'31%'},'Pc':'67%'},
+        marginTop:{'Mobile':{'Portrait':'5%','Landscape':'6%'},'Pc':'10%'},
         left:{'Mobile':{'Portrait':'65%','Landscape':'71%'},'Pc':'65%'},
-       // border:['solid 1px black','solid 1px white'],
         width:{'Mobile':{'Portrait':'17%','Landscape':'18%'},'Pc':'14%'},
-        height:{'Mobile':{'Portrait':'2%','Landscape':'2%'},'Pc':'2%'},
+         height:{'Pc':'4vh','Mobile':{'Portrait':'4vh','Landscape':'8vh'}},
         opacity:'0',
         boxShadow:'rgba(0,0,0,0.6) 5px 5px 5px',
          fontSize:{'Pc':'15px','Mobile':'0.7rem'},
