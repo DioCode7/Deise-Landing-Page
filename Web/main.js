@@ -7963,7 +7963,7 @@ MainContainers:{
       Style:{
          position:'relative',
       left:{'Mobile':{'Portrait':'12%','Landscape':'14%'},'Pc':'20%'},
-      top:{'Mobile':{'Portrait':'21.6%','Landscape':'16%'},'Pc':'30%'},
+      marginTop:{'Mobile':{'Portrait':'-17%','Landscape':'-16%'},'Pc':'-13%'},
       backgroundImage:"url('./Images/AutismIcon.png')",
         backgroundRepeat:'no-repeat',
         backgroundPosition:'center',
@@ -7992,7 +7992,7 @@ MainContainers:{
         position:'absolute',
         width:{'Mobile':{'Portrait':'65%','Landscape':'50%'},Pc:'35%'},
         height:{'Mobile':{'Portrait':'32vh','Landscape':'105vh'},Pc:'35%'},
-        top:{'Mobile':{'Portrait':'23%','Landscape':'19%'},Pc:'34%'},
+        marginTop:{'Mobile':{'Portrait':'1%','Landscape':'2%'},Pc:'-5%'},
          opacity:'0',
         left:{'Mobile':{'Portrait':'0%','Landscape':'0%'},Pc:'20%'},
          backgroundImage:"url('./Images/AutismImage.png')",
