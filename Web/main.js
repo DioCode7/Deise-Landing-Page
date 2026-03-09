@@ -7187,7 +7187,7 @@ MainContainers:{
       Type:'div',
       Style:{
          position:'absolute',
-         display:'inline-block',
+         display:{'Pc':'none','Mobile':'inline-block'},
       marginLeft:{'Mobile':{'Portrait':'0%','Landscape':'22%'},'Pc':'29%'},
       top:{'Mobile':{'Portrait':'-10%','Landscape':'-6%'},'Pc':'2%'},
       backgroundImage:"url('./Images/FlowersAsset1.png')",
