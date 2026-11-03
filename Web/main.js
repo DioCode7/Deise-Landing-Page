@@ -176,10 +176,7 @@ let NeuroPedagogyPageDiagram = {
     Id:'FirstImage',
     Type:'div',
     Style:{
-<<<<<<< HEAD
       opacity:'0.4',
-=======
->>>>>>> 23fd8f0c200401d12f6c7a8f336c977d3092793f
       position:'absolute',
       width:{'Pc':'50%','Mobile':{'Portrait':'100%','Landscape':'50%'}},
       height:{'Pc':'30%','Mobile':{'Portrait':'30%','Landscape':'30%'}},
@@ -201,10 +198,7 @@ let NeuroPedagogyPageDiagram = {
     Type:'div',
     Style:{
       position:'absolute',
-<<<<<<< HEAD
          opacity:'0.4',
-=======
->>>>>>> 23fd8f0c200401d12f6c7a8f336c977d3092793f
       width:{'Pc':'50%','Mobile':{'Portrait':'70%','Landscape':'50%'}},
       height:{'Pc':'30%','Mobile':{'Portrait':'20%','Landscape':'30%'}},
       left:{'Pc':'1%','Mobile':{'Portrait':'30%','Landscape':'1%'}},
@@ -831,10 +825,7 @@ let PsicClinicPageDiagram = {
     Type:'div',
     Style:{
       position:'absolute',
-<<<<<<< HEAD
          opacity:'0.4',
-=======
->>>>>>> 23fd8f0c200401d12f6c7a8f336c977d3092793f
       width:{'Pc':'50%','Mobile':{'Portrait':'100%','Landscape':'50%'}},
       height:{'Pc':'30%','Mobile':{'Portrait':'30%','Landscape':'30%'}},
       left:{'Pc':'47%','Mobile':{'Portrait':'4%','Landscape':'48%'}},
@@ -854,10 +845,7 @@ let PsicClinicPageDiagram = {
     Id:'SecondImage',
     Type:'div',
     Style:{
-<<<<<<< HEAD
          opacity:'0.4',
-=======
->>>>>>> 23fd8f0c200401d12f6c7a8f336c977d3092793f
       position:'absolute',
       width:{'Pc':'50%','Mobile':{'Portrait':'70%','Landscape':'50%'}},
       height:{'Pc':'30%','Mobile':{'Portrait':'20%','Landscape':'30%'}},
@@ -1486,10 +1474,7 @@ let SpecialEducationPageDiagram = {
     Id:'FirstImage',
     Type:'div',
     Style:{
-<<<<<<< HEAD
          opacity:'0.4',
-=======
->>>>>>> 23fd8f0c200401d12f6c7a8f336c977d3092793f
       position:'absolute',
       width:{'Pc':'50%','Mobile':{'Portrait':'100%','Landscape':'50%'}},
       height:{'Pc':'30%','Mobile':{'Portrait':'30%','Landscape':'30%'}},
@@ -1510,10 +1495,7 @@ let SpecialEducationPageDiagram = {
     Id:'SecondImage',
     Type:'div',
     Style:{
-<<<<<<< HEAD
          opacity:'0.4',
-=======
->>>>>>> 23fd8f0c200401d12f6c7a8f336c977d3092793f
       position:'absolute',
       width:{'Pc':'50%','Mobile':{'Portrait':'70%','Landscape':'50%'}},
       height:{'Pc':'30%','Mobile':{'Portrait':'20%','Landscape':'30%'}},
@@ -2142,10 +2124,7 @@ let TEAPageDiagram = {
     Id:'FirstImage',
     Type:'div',
     Style:{
-<<<<<<< HEAD
          opacity:'0.4',
-=======
->>>>>>> 23fd8f0c200401d12f6c7a8f336c977d3092793f
       position:'absolute',
       width:{'Pc':'50%','Mobile':{'Portrait':'100%','Landscape':'50%'}},
       height:{'Pc':'30%','Mobile':{'Portrait':'30%','Landscape':'30%'}},
@@ -2166,10 +2145,7 @@ let TEAPageDiagram = {
     Id:'SecondImage',
     Type:'div',
     Style:{
-<<<<<<< HEAD
          opacity:'0.4',
-=======
->>>>>>> 23fd8f0c200401d12f6c7a8f336c977d3092793f
       position:'absolute',
       width:{'Pc':'50%','Mobile':{'Portrait':'70%','Landscape':'50%'}},
       height:{'Pc':'30%','Mobile':{'Portrait':'20%','Landscape':'30%'}},
@@ -2797,10 +2773,7 @@ let ABAPageDiagram = {
     Id:'FirstImage',
     Type:'div',
     Style:{
-<<<<<<< HEAD
          opacity:'0.4',
-=======
->>>>>>> 23fd8f0c200401d12f6c7a8f336c977d3092793f
       position:'absolute',
       width:{'Pc':'50%','Mobile':{'Portrait':'100%','Landscape':'50%'}},
       height:{'Pc':'30%','Mobile':{'Portrait':'30%','Landscape':'30%'}},
@@ -2821,10 +2794,7 @@ let ABAPageDiagram = {
     Id:'SecondImage',
     Type:'div',
     Style:{
-<<<<<<< HEAD
          opacity:'0.4',
-=======
->>>>>>> 23fd8f0c200401d12f6c7a8f336c977d3092793f
       position:'absolute',
       width:{'Pc':'50%','Mobile':{'Portrait':'70%','Landscape':'50%'}},
       height:{'Pc':'30%','Mobile':{'Portrait':'20%','Landscape':'30%'}},
@@ -3455,10 +3425,7 @@ let TherapyPageDiagram = {
     Id:'FirstImage',
     Type:'div',
     Style:{
-<<<<<<< HEAD
          opacity:'0.4',
-=======
->>>>>>> 23fd8f0c200401d12f6c7a8f336c977d3092793f
       position:'absolute',
       width:{'Pc':'50%','Mobile':{'Portrait':'100%','Landscape':'50%'}},
       height:{'Pc':'30%','Mobile':{'Portrait':'30%','Landscape':'30%'}},
@@ -3479,10 +3446,7 @@ let TherapyPageDiagram = {
     Id:'SecondImage',
     Type:'div',
     Style:{
-<<<<<<< HEAD
          opacity:'0.4',
-=======
->>>>>>> 23fd8f0c200401d12f6c7a8f336c977d3092793f
       position:'absolute',
       width:{'Pc':'50%','Mobile':{'Portrait':'70%','Landscape':'50%'}},
       height:{'Pc':'30%','Mobile':{'Portrait':'20%','Landscape':'30%'}},
@@ -4113,10 +4077,7 @@ let ParentalPageDiagram = {
     Id:'FirstImage',
     Type:'div',
     Style:{
-<<<<<<< HEAD
          opacity:'0.4',
-=======
->>>>>>> 23fd8f0c200401d12f6c7a8f336c977d3092793f
       position:'absolute',
       width:{'Pc':'50%','Mobile':{'Portrait':'100%','Landscape':'50%'}},
       height:{'Pc':'30%','Mobile':{'Portrait':'30%','Landscape':'30%'}},
@@ -4137,10 +4098,7 @@ let ParentalPageDiagram = {
     Id:'SecondImage',
     Type:'div',
     Style:{
-<<<<<<< HEAD
          opacity:'0.4',
-=======
->>>>>>> 23fd8f0c200401d12f6c7a8f336c977d3092793f
       position:'absolute',
       width:{'Pc':'50%','Mobile':{'Portrait':'70%','Landscape':'50%'}},
       height:{'Pc':'30%','Mobile':{'Portrait':'20%','Landscape':'30%'}},
@@ -4767,10 +4725,6 @@ let TDAHPageDiagram = {
     Id:'FirstImage',
     Type:'div',
     Style:{
-<<<<<<< HEAD
-         opacity:'0.4',
-=======
->>>>>>> 23fd8f0c200401d12f6c7a8f336c977d3092793f
       position:'absolute',
       width:{'Pc':'50%','Mobile':{'Portrait':'100%','Landscape':'50%'}},
       height:{'Pc':'30%','Mobile':{'Portrait':'30%','Landscape':'30%'}},
@@ -4791,10 +4745,7 @@ let TDAHPageDiagram = {
     Id:'SecondImage',
     Type:'div',
     Style:{
-<<<<<<< HEAD
          opacity:'0.4',
-=======
->>>>>>> 23fd8f0c200401d12f6c7a8f336c977d3092793f
       position:'absolute',
       width:{'Pc':'50%','Mobile':{'Portrait':'70%','Landscape':'50%'}},
       height:{'Pc':'30%','Mobile':{'Portrait':'20%','Landscape':'30%'}},
@@ -6194,7 +6145,7 @@ let GeneralMoreAboutBluePrint = {
         
     }
   },
-<<<<<<< HEAD
+
 
   FourthBodyContainer:{
     Id:'FourthBodyContainer',
@@ -6409,8 +6360,8 @@ let GeneralMoreAboutBluePrint = {
 
      } 
   },
-=======
->>>>>>> 23fd8f0c200401d12f6c7a8f336c977d3092793f
+
+
   FinalContainer:{
     Id:'FinalContainer',
     Type:'div',
@@ -9825,11 +9776,11 @@ Centro - (em frente ao ginâsio Nenão)
       height:{Mobile:{'Portrait':'15%','Landscape':'23%'},Pc:'29%'},
       border:[`solid 3px black`,`solid 1px white`],
       },
-<<<<<<< HEAD
+
       Src:'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.458376242205!2d-52.8149343882477!3d-28.46573928070195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94fd4934041be555%3A0xe1379ff49ef501a8!2sAv.%20Guilherme%20Augustin%2C%20148%20-%20Ipiranga%2C%20N%C3%A3o-Me-Toque%20-%20RS%2C%2099470-000!5e0!3m2!1spt-BR!2sbr!4v1793661055114!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin',
-=======
-      Src:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.625192007345!2d-52.81937202577039!3d-28.46071287575896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94fd493a75b28651%3A0xf8999cf2fbab63ed!2sR.%20Padre%20Valentim%20Rumpel%2C%20272%20-%20Centro%2C%20N%C3%A3o-Me-Toque%20-%20RS%2C%2099470-000!5e0!3m2!1spt-BR!2sbr!4v1771033514004!5m2!1spt-BR!2sbr",
->>>>>>> 23fd8f0c200401d12f6c7a8f336c977d3092793f
+
+     
+
       Listener:{
     UmbraViewportLogic:{
       Action:UmbraAnimations.Active,
